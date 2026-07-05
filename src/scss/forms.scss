@@ -1,0 +1,293 @@
+.form {
+	display: flex;
+	flex-direction: column;
+
+	// .form__field
+	&__field {
+		position: relative;
+		display: block;
+
+		&+.form__field {
+			margin-top: .5rem;
+		}
+
+		&._error {
+			.form__error {
+				display: block;
+			}
+
+		}
+	}
+
+	// .form__error
+	&__error {
+		color: $red;
+		font-size: rem(12);
+		display: none;
+		margin-top: 0.5rem;
+	}
+
+	// .form__control
+	&__control {
+		text-overflow: ellipsis;
+		transition: border-color 0.3s ease, color 0.3s ease;
+		width: 100%;
+		font-size: 1rem;
+		line-height: 160%;
+		border-radius: 0.5rem;
+		border: rem(1) solid #F6F8FA;
+		background: #F6F8FA;
+		color: #313542;
+		caret-color: $accent;
+		padding: 0.8rem 0.75rem;
+		min-height: rem(56);
+
+		&::placeholder {
+			color: #A1A5A7;
+			opacity: 1;
+		}
+
+		&:focus {
+			border: rem(1) solid $accent;
+		}
+
+
+		&._error {
+			border-color: $red;
+
+		}
+
+		&:is(textarea) {
+			height: 6.5rem;
+			resize: none;
+		}
+	}
+
+
+	// .form__submit
+	&__submit {
+		width: 100%;
+		margin-top: 1.5rem;
+	}
+
+	// .form__checkbox
+	&__checkbox {
+		margin-top: 1rem;
+	}
+
+	// .form__checkbox-input
+	&__checkbox-input {}
+
+	// .form__checkbox-text
+	&__checkbox-text {}
+
+}
+
+.checkbox {
+	display: block;
+
+	// .checkbox__input
+	&__input {
+		&:checked {
+			&+.checkbox__content {
+				&::before {
+					@extend %ic, .icon-check;
+					background: $accent;
+				}
+			}
+		}
+
+		&._error {
+			&+.checkbox__content {
+				&::before {
+					border: 1px solid $red;
+					background: #fff1ed;
+				}
+			}
+		}
+	}
+
+	// .checkbox__content
+	&__content {
+		position: relative;
+		display: block;
+		color: #313542;
+		padding-left: 1.88rem;
+		font-size: 0.75rem;
+		line-height: 120%;
+
+
+		cursor: pointer;
+		user-select: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: transparent;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #fff;
+			color: #fff;
+			border: rem(1) solid #2343A7;
+			border-radius: rem(4);
+			width: 1.25rem;
+			height: 1.25rem;
+			font-size: 0.4rem;
+
+		}
+
+		& a {
+			text-decoration: underline;
+
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.btn {
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	justify-content: center;
+	gap: 1.5rem;
+	align-items: center;
+	text-align: center;
+	user-select: none;
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 0.75rem;
+	padding: 1rem 1.5rem;
+	font-weight: 500;
+	line-height: 150%;
+	letter-spacing: -0.0195rem;
+	font-size: 0.875rem;
+
+	@media (min-width:$md5) {
+		font-size: 1rem;
+
+	}
+
+	&::before {
+		order: 1;
+		transition: all 0.3s ease;
+	}
+
+	&:focus-visible {
+		box-shadow: 0 0 rem(1) rem(1) #000;
+	}
+
+	&.btn-primary {
+		--btn-text-color: #fff;
+		color: var(--btn-text-color, #fff);
+		background: $accent;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: #1F398E;
+			}
+		}
+
+		&:active {
+			background: #1C3586;
+		}
+
+		&:disabled,
+		&[aria-disabled="true"] {
+			background: #A7B3DA;
+			color: rgba(255, 255, 255, 0.70);
+		}
+
+	}
+
+	&.btn-secondary {
+		--btn-text-color: #313542;
+		color: var(--btn-text-color, #313542);
+		background: #FFF;
+		box-shadow: 0 rem(4) rem(20.7) 0 #B9BCC7;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: #F7F9FF;
+				box-shadow: 0 rem(4) rem(20.7) 0 #A0A6B8;
+			}
+		}
+
+		&:active {
+			background: #F8FAFF;
+			box-shadow: none;
+		}
+
+		&:disabled,
+		&[aria-disabled="true"] {
+			box-shadow: none;
+			color: rgba($color: #313542, $alpha: 0.2);
+		}
+
+
+	}
+
+	&.btn-sm {
+		text-transform: none;
+		padding: rem(5) rem(8);
+		font-size: 0.875rem;
+		gap: 0.5rem;
+
+		@media (min-width:$md4) {
+			gap: 1rem;
+			font-size: 0.875rem;
+			padding: 0.75rem 1rem;
+
+		}
+
+		@media (min-width:$md3) {
+			font-size: 1rem;
+
+		}
+	}
+
+
+	&:disabled,
+	&[aria-disabled="true"] {
+		cursor: default;
+		pointer-events: none;
+	}
+
+	&._loading {
+		color: transparent !important;
+		pointer-events: none;
+		transition: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: rem(20);
+			height: rem(20);
+			border: rem(3) solid var(--btn-text-color, #000);
+			border-bottom-color: transparent;
+			border-radius: 50%;
+			transform-origin: center;
+			animation: rotation 1s linear infinite;
+			z-index: 3;
+		}
+
+		@keyframes rotation {
+			0% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			100% {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	}
+
+}

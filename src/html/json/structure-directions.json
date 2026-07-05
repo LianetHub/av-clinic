@@ -1,0 +1,33 @@
+[
+    {
+        "color": "white",
+        "size": "medium-desktop",
+        "imageURL": "@img/icons/calc.svg",
+        "caption": "Компании-резиденты",
+        "desc": "Ведущие производители электротехнического оборудования",
+        "connectionRightDesktop": true,
+        "connectionBottomDesktop": true
+    },
+    {
+        "color": "white",
+        "size": "extralarge-desktop",
+        "imageURL": "@img/icons/production.svg",
+        "caption": "Производственная инфраструктура",
+        "desc": "Современные производственно-складские помещения"
+    },
+    {
+        "color": "white",
+        "size": "extralarge",
+        "imageURL": "@img/icons/lab.svg",
+        "caption": "Научно-Исследовательский Испытательный Центр",
+        "desc": "Лаборатории и оборудование для&nbsp;тестирования",
+        "connectionRightDesktop": true
+    },
+    {
+        "color": "white",
+        "size": "medium",
+        "imageURL": "@img/icons/specialist.svg",
+        "caption": "Корпоративный университет",
+        "desc": "Подготовка и развитие специалистов"
+    }
+]

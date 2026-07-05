@@ -1,0 +1,53 @@
+<header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="header__container container">
+        <a href="/" class="header__logo" itemprop="url">
+            <img src="img/logo.svg" alt="Логотип Искра-Волга" itemprop="image">
+        </a>
+        <div class="header__menu menu">
+            <div class="menu__content">
+                <nav aria-label="Меню в шапке" class="menu__navbar" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="/" class="menu__link@@if(typeof active !== 'undefined' && active === 1){ active}" itemprop="url">
+                                <span itemprop="name">Главная</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/about.html" class="menu__link@@if(typeof active !== 'undefined' && active === 2){ active}" itemprop="url">
+                                <span itemprop="name">О технопарке</span>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--parent">
+                            <a href="/university.html" class="menu__link@@if(typeof active !== 'undefined' && active === 3){ active}@@if(typeof active !== 'undefined' && active === 4){ active}" itemprop="url">
+                                <span itemprop="name">Корпоративный университет</span>
+                            </a>
+                            <button type="button" class="menu__arrow icon-chevron-down" aria-label="Открыть подменю" aria-expanded="false" aria-haspopup="true"></button>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a href="/university.html" class="submenu__link@@if(typeof active !== 'undefined' && active === 3){ active}" itemprop="url">
+                                        <span itemprop="name">Обучение и подготовка кадров</span>
+                                    </a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="/interaction.html" class="submenu__link@@if(typeof active !== 'undefined' && active === 4){ active}" itemprop="url">
+                                        <span itemprop="name">Взаимодействие с&nbsp;образовательной средой</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/contacts.html" class="menu__link@@if(typeof active !== 'undefined' && active === 5){ active}" itemprop="url">
+                                <span itemprop="name">Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:88432150332" class="menu__phone icon-phone">8 (843) 215-03-32</a>
+            </div>
+        </div>
+        <a href="tel:88432150332" class="header__phone icon-phone">8 (843) 215-03-32</a>
+        <button type="button" aria-label="Открыть мобильное меню" class="header__menu-toggler icon-menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>

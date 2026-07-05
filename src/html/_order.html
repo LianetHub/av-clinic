@@ -1,0 +1,24 @@
+<section class="order@@if(typeof color !== 'undefined'){ order--@@color}">
+    <div class="order__container container">
+        <div class="order__banner" data-animate="bottom">
+            <h2 class="order__title title">
+                @@if(typeof title !== 'undefined'){@@title}
+                @@if(typeof title == 'undefined'){Станьте резидентом технопарка}
+            </h2>
+            <div class="order__banner-subtitle">
+                @@if(typeof desc !== 'undefined'){@@desc}
+                @@if(typeof desc == 'undefined'){Приглашаем компании, специалистов и&nbsp;партнеров к&nbsp;взаимодействию. Совместно мы создаем будущее российской электроэнергетики.}
+            </div>
+            <a href="#callback" data-fancybox data-form-title="@@if(typeof btnText !== 'undefined'){@@btnText}@@if(typeof btnText == 'undefined'){Оставить запрос}" class="order__banner-btn btn btn-secondary">
+                @@if(typeof btnText !== 'undefined'){@@btnText}
+                @@if(typeof btnText == 'undefined'){Оставить запрос}
+            </a>
+            <div class="order__video">
+                <video class="order__video-block" playsinline autoplay loop muted preload="none" poster="@img/order-poster.jpg">
+                    <source src="files/promo.webm" type='video/webm; codecs="vp9, vorbis"'>
+                    <source src="files/promo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                </video>
+            </div>
+        </div>
+    </div>
+</section>

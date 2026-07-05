@@ -1,0 +1,1001 @@
+.interaction {
+
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    border-radius: 0 0 rem(30) rem(30);
+    margin-bottom: rem(-30);
+
+    padding: 0.5rem 0 rem(38);
+
+    @media (min-width:$md5) {
+        padding: 0 0 rem(48);
+
+    }
+
+    @media (min-width:$md4) {
+        border-radius: 0 0 rem(58) rem(58);
+        margin-bottom: rem(-58);
+    }
+
+    @media (min-width:$md3) {
+        padding: 0.25rem 0 rem(64);
+    }
+
+    &:not(:last-child) {
+
+        &+* {
+            padding-top: rem(72);
+
+            @media (min-width:$md5) {
+                padding-top: rem(100);
+
+            }
+
+            @media (min-width:$md2) {
+                padding-top: rem(124);
+
+            }
+        }
+    }
+
+    // .interaction__container
+    &__container {}
+
+    // .interaction__banner
+    &__banner {
+        min-height: 31.25rem;
+
+        @media (min-width:$md3) {
+            min-height: 36.15625rem;
+
+        }
+
+        @media (min-width:$md2) {
+            min-height: 41.0625rem;
+
+        }
+
+        @media (max-width:$md5) {
+            .banner__image {
+                position: static;
+
+                & img,
+                & source {
+                    min-height: 16.3125rem;
+                    object-position: 57.5% center;
+                }
+            }
+
+            background: transparent;
+
+            .banner__description {
+
+                position: static;
+                max-width: calc(100% + 2px);
+                border-radius: 0;
+                padding: 1.25rem 0 0;
+
+                &::before,
+                &::after {
+                    display: none;
+
+                }
+            }
+
+
+        }
+
+        .banner__description {
+
+            @media (min-width:$md5) {
+                padding-top: rem(14);
+                max-width: 18rem;
+
+            }
+
+            @media (min-width:$md4) {
+                max-width: 24.3rem;
+
+            }
+
+            @media (min-width:$md3) {
+                padding-top: rem(40);
+                max-width: 30rem;
+            }
+
+            @media (min-width:$md2) {
+                max-width: 39.1rem;
+
+            }
+
+            .banner__title {
+                font-weight: 500;
+                font-size: 1.75rem;
+                letter-spacing: -0.09544rem;
+                line-height: 110%;
+
+                @media (min-width:$md4) {
+                    font-size: 1.9375rem;
+                    line-height: 100%;
+                    letter-spacing: -0.09544rem;
+                    margin-right: -1rem;
+
+                }
+
+                @media (min-width:$md2) {
+                    font-size: rem(47);
+                    letter-spacing: -0.125rem;
+                    line-height: 114.894%;
+
+
+                }
+            }
+
+            .banner__text {
+                font-size: 0.875rem;
+                line-height: 130%;
+                margin-top: rem(14);
+
+
+                @media (min-width:$md5) {
+                    margin-top: rem(10);
+                }
+
+                @media (min-width:$md2) {
+                    margin-top: 1.5rem;
+                    font-size: 1.15rem;
+                    line-height: 140%;
+                    max-width: 36.1875rem;
+
+                }
+            }
+
+            .banner__btn {
+                width: 100%;
+                margin-top: 1.5rem;
+
+                @media (min-width:$md5) {
+                    margin-top: 1.125rem;
+                    min-width: 10.8125rem;
+                    width: auto;
+
+                }
+
+                @media (max-width:$md3) {
+                    font-size: 0.875rem;
+                }
+
+                @media (min-width:$md2) {
+                    margin-top: 2.5rem;
+                    min-width: 13rem;
+
+                }
+            }
+        }
+    }
+}
+
+.advantages {
+    background: #F6F8FA;
+    padding: 2.5rem 0 2.5rem;
+
+    @media (min-width:$md3) {
+        padding: 2.5rem 0 3.75rem;
+
+    }
+
+    // .advantages__title
+    &__title {
+        @media (max-width:$md5) {
+            font-size: 1.75rem;
+            font-weight: 500;
+        }
+
+        @media (min-width:$md5) {
+            font-weight: 600;
+
+        }
+    }
+
+    // .advantages__list
+    &__list {
+        margin-top: rem(30);
+        display: grid;
+        gap: rem(12);
+
+        &.advantages__list--row-header-mobile {
+            .advantages__card-header {
+                @media (max-width:$md4) {
+                    flex-direction: row;
+                    align-items: center;
+
+                    .advantages__card-title {
+                        width: min-content;
+                    }
+                }
+            }
+        }
+
+        @media (min-width:$md4) {
+            gap: 1rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width:$md3) {
+            gap: rem(24);
+        }
+
+        @media (min-width:$md2) {
+            margin-top: 2.75rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+    }
+
+    // .advantages__card
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background: #FFF;
+        padding: 1rem 0.5rem 1rem 1rem;
+        gap: 0.875rem;
+        border-radius: 1rem;
+        box-shadow: rem(-4) rem(8) rem(16) 0 rgba(236, 241, 245, 0.70);
+
+
+        @media (min-width:$md4) {
+            @media (max-width:$md2) {
+                @for $i from 1 through 2 {
+                    &:nth-child(2n + #{$i}) {
+                        transition-delay: $i * 0.25s;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: $md2) {
+            @for $i from 1 through 4 {
+                &:nth-child(4n + #{$i}) {
+                    transition-delay: $i * 0.125s;
+                }
+            }
+        }
+
+        @media (min-width:$md5) {
+            border-radius: 1.125rem;
+            box-shadow: 0 rem(4) rem(10) 0 rgba(0, 0, 0, 0.11);
+
+            gap: 0.5rem;
+        }
+
+        @media (min-width:$md3) {
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            gap: 1rem;
+
+        }
+
+    }
+
+    // .advantages__card-icon
+    &__card-icon {
+
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        position: relative;
+        z-index: 1;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        width: 3.75rem;
+        height: 3.75rem;
+
+        @media (min-width:$md5) {
+            width: 3.125rem;
+            height: 3.125rem;
+        }
+
+        @media (min-width:$md3) {
+            border-radius: 1.81819rem;
+
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+            z-index: -1;
+            background: url("@img/decor/glass-substrat-advantages-mobile.png") 0 0 / cover no-repeat;
+
+            @media (min-width:$md5) {
+                background: url("@img/decor/glass-substrat-advantages-tablet.png") 0 0 / cover no-repeat;
+            }
+
+            @media (min-width:$md3) {
+                background: url("@img/decor/glass-substrat-advantages.png") 0 0 / cover no-repeat;
+                border-radius: 1.81819rem;
+            }
+        }
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: rem(3);
+            right: rem(3);
+            width: rem(13);
+            height: rem(13);
+            border-radius: 50%;
+            z-index: -2;
+            background: #2342A7;
+            filter: blur(13px);
+
+            @media (min-width:$md3) {
+                width: rem(20);
+                height: rem(20);
+                filter: blur(21.950000762939453px);
+            }
+        }
+
+        & img {
+            max-width: 2.15625rem;
+
+            @media (min-width:$md5) {
+                max-width: 1.79688rem;
+
+            }
+
+            @media (min-width:$md3) {
+                max-width: rem(46);
+            }
+        }
+
+        @media (min-width:$md3) {
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+
+    // .advantages__card-header
+    &__card-header {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media (min-width:$md5) {
+            align-items: center;
+            flex-direction: row;
+            gap: 0.75rem;
+        }
+
+        @media (min-width:$md3) {
+            gap: 1.62rem;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+    }
+
+    // .advantages__card-title
+    &__card-title {
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -0.0375rem;
+        font-size: 1.125rem;
+        max-width: 90%;
+
+        @media (min-width:$md5) {
+            max-width: 100%;
+            width: min-content;
+        }
+
+        @media (min-width:$md3) {
+            font-size: 1.375rem;
+            letter-spacing: -0.02806rem;
+            line-height: 120%;
+            width: auto;
+
+        }
+    }
+
+    // .advantages__card-text
+    &__card-text {
+
+        color: #4A5565;
+        line-height: 120%;
+        letter-spacing: -0.00938rem;
+        font-size: 0.875rem;
+        max-width: 90%;
+
+        @media (min-width:$md5) {
+            line-height: 140%;
+            max-width: 100%;
+            letter-spacing: -0.01875rem;
+        }
+
+        @media (min-width:$md3) {
+            margin-top: auto;
+            font-size: 1rem;
+
+        }
+    }
+}
+
+.partners {
+    padding: rem(42) 0 2.5rem;
+
+    @media (min-width:$md6) {
+        padding: rem(42) 0 3.25rem;
+
+    }
+
+    @media (min-width:$md3) {
+        padding: rem(64) 0 6.72rem;
+
+    }
+
+    // .partners__title
+    &__title {
+        @media (max-width:$md5) {
+            font-size: 1.75rem;
+        }
+
+        @media (min-width:$md5) {
+            max-width: 80%;
+
+        }
+
+        @media (min-width:$md3) {
+            max-width: 100%;
+            font-weight: 600;
+        }
+    }
+
+    // .partners__list
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: rem(28);
+
+        @media (min-width:$md5) {
+            margin-top: rem(54);
+
+        }
+
+        @media (min-width:$md3) {
+            margin-top: rem(40);
+            gap: 1.5rem;
+
+        }
+    }
+
+    // .partners__card
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+
+        @media (min-width:$md4) {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        @media (min-width:$md3) {
+            gap: rem(35);
+
+        }
+
+        &:not(:last-child) {
+            border-bottom: rem(1) solid #E9E9E9;
+            padding-bottom: rem(14);
+
+            @media (min-width:$md5) {
+                padding-bottom: rem(22);
+            }
+
+            @media (min-width:$md3) {
+                padding-bottom: rem(40);
+
+            }
+        }
+
+
+    }
+
+    // .partners__card-image
+    &__card-image {
+        flex-shrink: 0;
+
+        border-radius: 1rem;
+        overflow: hidden;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (min-width:$md4) {
+            width: 16.375rem;
+            height: 10.1075rem;
+        }
+
+        @media (min-width:$md3) {
+            width: rem(371);
+            height: rem(228);
+            border-radius: rem(24);
+        }
+    }
+
+    // .partners__card-content
+    &__card-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        @media (min-width:$md5) {
+            gap: 1rem;
+        }
+    }
+
+    // .partners__card-name
+    &__card-name {
+        font-weight: 500;
+        line-height: 120%;
+        font-size: 1.125rem;
+
+        @media (min-width:$md5) {
+            font-size: 1.5rem;
+
+        }
+    }
+
+    // .partners__card-text
+    &__card-text {
+        line-height: 130%;
+        max-width: rem(716);
+        font-size: 0.875rem;
+
+        @media (min-width:$md5) {
+            font-size: 1.125rem;
+            line-height: 140%;
+
+        }
+    }
+}
+
+.career-guidance {
+    background: #F6F8FA;
+    padding: 2.5rem 0 4.5rem;
+
+    @media (min-width:$md5) {
+        padding: 2.5rem 0 6rem;
+
+    }
+
+    @media (min-width:$md3) {
+        padding: 4.34rem 0 8.5rem;
+
+    }
+
+    &+.results {
+        margin-top: rem(-30);
+        border-top-right-radius: rem(30);
+        border-top-left-radius: rem(30);
+
+        @media (min-width:$md4) {
+            border-top-right-radius: rem(58);
+            border-top-left-radius: rem(58);
+            margin-top: rem(-58);
+            padding-top: rem(42);
+        }
+
+        @media (min-width:$md3) {
+            padding-top: rem(74);
+
+        }
+    }
+
+    // .career-guidance__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .career-guidance__header
+    &__header {
+        display: contents;
+
+        @media (min-width:$md4) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+    }
+
+    // .career-guidance__title
+    &__title {
+        max-width: 26.9375rem;
+
+        margin-bottom: 2.375rem;
+
+        @media (max-width:$md5) {
+            font-size: 1.75rem;
+        }
+
+        @media (min-width:$md4) {
+            margin-bottom: 0;
+        }
+
+        @media (min-width:$md3) {
+            max-width: 37.375rem;
+        }
+    }
+
+    // .career-guidance__controls
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        order: 1;
+        margin-top: 1.875rem;
+
+        @media (min-width:$md4) {
+            margin-top: 0;
+        }
+    }
+
+    // .career-guidance__prev
+    &__prev {
+        @media (min-width:$md2) {
+            width: 4.375rem;
+            height: 4.375rem;
+            font-size: 2.25rem;
+        }
+    }
+
+    // .career-guidance__next
+    &__next {
+        @media (min-width:$md2) {
+            width: 4.375rem;
+            height: 4.375rem;
+            font-size: 2.25rem;
+
+        }
+    }
+
+    // .career-guidance__body
+    &__body {
+        display: contents;
+
+        @media (min-width:$md4) {
+            display: grid;
+            grid-template-columns: 1fr 1.125fr;
+            gap: 1.5rem;
+            align-items: end;
+            margin-top: 1.75rem;
+
+        }
+
+        @media (min-width:$md3) {
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 2rem;
+
+        }
+    }
+
+    // .career-guidance__info
+    &__info {
+        max-width: 29rem;
+    }
+
+    // .career-guidance__stat
+    &__stat {
+        color: #2342A7;
+        font-weight: 500;
+        line-height: 78.33%;
+        letter-spacing: -0.01938rem;
+        font-size: 4rem;
+
+        @media (min-width:$md3) {
+            font-size: 5rem;
+
+        }
+    }
+
+    // .career-guidance__caption
+    &__caption {
+        color: #4A5565;
+        line-height: 130%;
+        letter-spacing: -0.01938rem;
+        margin-top: 0.25rem;
+        font-size: 1.5rem;
+
+        @media (min-width:$md5) {
+            font-size: 1.25rem;
+        }
+
+        @media (min-width:$md3) {
+            margin-top: 1rem;
+            font-size: 1.875rem;
+
+        }
+    }
+
+    // .career-guidance__desc
+    &__desc {
+        color: #313542;
+        line-height: 144.444%;
+        letter-spacing: -0.0195rem;
+        font-size: 0.875rem;
+        margin-top: 1rem;
+
+        @media (min-width:$md3) {
+            margin-top: 2rem;
+            font-size: 1.125rem;
+        }
+    }
+
+    // .career-guidance__slider
+    &__slider {
+        min-width: 0;
+        order: 1;
+        margin-top: 1.125rem;
+
+        @media (min-width:$md4) {
+            margin-top: 0;
+        }
+    }
+
+    // .career-guidance__slide
+    &__slide {
+        overflow: hidden;
+        border-radius: 1.25rem;
+        height: 14.125rem;
+
+        @media (min-width:$md5) {
+            height: 15.625rem;
+
+        }
+
+        @media (min-width:$md3) {
+            border-radius: 2rem;
+            height: 20.5rem;
+
+        }
+    }
+}
+
+.results {
+    padding: rem(40) 0;
+
+    @media (min-width:$md3) {
+        padding: rem(74) 0;
+
+    }
+
+    background: #fff;
+
+    &:not(:last-child) {
+        position: relative;
+        z-index: 2;
+        margin-bottom: rem(-30);
+        border-bottom-right-radius: rem(30);
+        border-bottom-left-radius: rem(30);
+
+        @media (min-width:$md4) {
+            border-bottom-right-radius: rem(58);
+            border-bottom-left-radius: rem(58);
+            margin-bottom: rem(-58);
+        }
+
+        &+* {
+            padding-top: rem(72);
+
+            @media (min-width:$md5) {
+                padding-top: rem(100);
+
+            }
+
+            @media (min-width:$md2) {
+                padding-top: rem(110);
+
+            }
+        }
+    }
+
+    // .results__container
+    &__container {}
+
+    // .results__title
+    &__title {
+        @media (max-width:$md5) {
+            font-size: 1.75rem;
+        }
+
+        @media (min-width:$md3) {
+            font-weight: 600;
+
+        }
+    }
+
+    // .results__list
+    &__list {
+        display: grid;
+        gap: 0.75rem;
+        margin-top: rem(32);
+
+        @media (min-width:$md5) {
+            margin-top: rem(42);
+            gap: 1rem;
+        }
+
+        @media (min-width:$md4) {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+
+    // .results__card
+    &__card {
+        display: grid;
+        grid-auto-rows: min-content;
+        column-gap: 1rem;
+        border-radius: 1.5rem;
+        background: #FFF;
+        box-shadow: 0 rem(13) rem(28) 0 #ECF1F5;
+        padding: 1rem;
+        row-gap: 0.875rem;
+        grid-template-columns: 3rem 1fr;
+
+        @media (min-width:$md4) {
+            @for $i from 1 through 2 {
+                &:nth-child(2n + #{$i}) {
+                    transition-delay: $i * 0.25s;
+                }
+            }
+
+        }
+
+        @media (min-width:$md5) {
+            grid-template-columns: 3.125rem 1fr;
+
+        }
+
+        @media (min-width:$md3) {
+            grid-template-columns: 6rem 1fr;
+            align-items: center;
+            padding: 2.625rem 2rem;
+            column-gap: rem(31);
+            row-gap: 1rem;
+        }
+    }
+
+    // .results__card-image
+    &__card-image {
+
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        border-radius: 1rem;
+        align-self: center;
+        width: 3rem;
+        height: 3rem;
+
+        @media (min-width:$md5) {
+            width: 3.125rem;
+            height: 3.125rem;
+        }
+
+        @media (min-width:$md3) {
+            grid-row: span 2;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 1rem;
+
+            background: url("@img/decor/glass-substrat-training-tablet.png") 0 0 / cover no-repeat;
+
+            @media (min-width:$md3) {
+                background: url("@img/decor/glass-substrat-training.png") 0 0 / cover no-repeat;
+                border-radius: 2rem;
+
+            }
+        }
+
+
+        &::after {
+            content: '';
+            position: absolute;
+
+            bottom: rem(3);
+            right: rem(3);
+            border-radius: 50%;
+            z-index: -2;
+            background: #2342A7;
+
+            width: 0.81675rem;
+            height: 0.81675rem;
+            filter: blur(13px);
+
+            @media (min-width:$md3) {
+                width: 1.5rem;
+                height: 1.5rem;
+                bottom: rem(11);
+                right: rem(10);
+                filter: blur(23.950000762939453px);
+            }
+        }
+
+        & img {
+            max-width: 1.62763rem;
+
+            @media (min-width:$md3) {
+                max-width: 3.125rem;
+            }
+        }
+
+        @media (min-width:$md3) {
+            border-radius: 2rem;
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+
+
+    // .results__card-name
+    &__card-name {
+        color: #313542;
+        font-weight: 500;
+        line-height: 116.667%;
+        letter-spacing: -0.02806rem;
+        align-self: center;
+        font-size: 1rem;
+
+        @media (min-width:$md5) {
+            font-size: 1.125rem;
+
+        }
+
+        @media (min-width:$md3) {
+            font-size: 1.5rem;
+        }
+    }
+
+    // .results__card-desc
+    &__card-desc {
+        color: #4A5565;
+        letter-spacing: -0.00938rem;
+        font-size: 0.875rem;
+        line-height: 120%;
+        grid-column: span 2;
+        align-self: start;
+
+        @media (min-width:$md3) {
+            line-height: 130%;
+            font-size: 1.125rem;
+            grid-column: auto;
+        }
+    }
+}

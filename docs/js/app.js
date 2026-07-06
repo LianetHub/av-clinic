@@ -97,6 +97,13 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 	}
+	if (document.querySelector(".directions__slider")) {
+		new Swiper(".directions__slider", {
+			slidesPerView: 3,
+			speed: 600,
+			spaceBetween: 24
+		});
+	}
 
 
 

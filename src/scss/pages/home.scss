@@ -90,3 +90,22 @@
 
     }
 }
+
+.directions {
+
+    // .directions__chips
+    &__chips {
+        margin-top: rem(40);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    // .directions__chip
+    &__chip {}
+
+    // .directions__slider
+    &__slider {
+        margin-top: rem(40);
+    }
+}

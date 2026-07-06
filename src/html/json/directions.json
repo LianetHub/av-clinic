@@ -1,0 +1,130 @@
+[
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/checkups.html",
+        "poster": "@img/services/check-ups.jpg",
+        "name": "Чек-апы",
+        "desc": "Полная диагностика организма за 1 день. 18 чек-ап программ для женщин и мужчин.",
+        "price": "30&nbsp;000"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/lab.html",
+        "poster": "@img/services/lab.jpg",
+        "name": "Лабораторная диагностика",
+        "desc": "Более 3000 видов анализов: от общеклинических до генетических исследований.",
+        "price": "от 500"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/ginekologiya.html",
+        "poster": "@img/services/ginekologiya.jpg",
+        "name": "Гинекология",
+        "desc": "Комплексное обследование, ведение беременности, лечение женских заболеваний.",
+        "price": "2&nbsp;500"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/kosmetologiya.html",
+        "poster": "@img/services/kosmetologiya.jpg",
+        "name": "Косметология",
+        "desc": "Аппаратные и инъекционные методики омоложения и коррекции лица.",
+        "price": "от 4&nbsp;000"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/urologiya.html",
+        "poster": "@img/services/urologiya.jpg",
+        "name": "Урология",
+        "desc": "Диагностика и лечение заболеваний мужской мочеполовой системы.",
+        "price": "2&nbsp;500"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/endokrinologiya.html",
+        "poster": "@img/services/endokrinologiya.jpg",
+        "name": "Эндокринология",
+        "desc": "Коррекция гормональных нарушений, лечение заболеваний щитовидной железы.",
+        "price": "2&nbsp;500"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/terapiya.html",
+        "poster": "@img/services/terapiya.jpg",
+        "name": "Терапия",
+        "desc": "Консультации терапевта, подбор лечения, выдача справок и направлений.",
+        "price": "2&nbsp;000"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/trihologiya.html",
+        "poster": "@img/services/trihologiya.jpg",
+        "name": "Трихология",
+        "desc": "Диагностика и лечение заболеваний волос и кожи головы.",
+        "price": "2&nbsp;500"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/dermatologiya.html",
+        "poster": "@img/services/dermatologiya.jpg",
+        "name": "Дерматология",
+        "desc": "Лечение кожных заболеваний, удаление новообразований, диагностика.",
+        "price": "2&nbsp;500"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/nevrologiya.html",
+        "poster": "@img/services/nevrologiya.jpg",
+        "name": "Неврология",
+        "desc": "Диагностика и лечение заболеваний нервной системы, головных болей.",
+        "price": "2&nbsp;500"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/kardiologiya.html",
+        "poster": "@img/services/kardiologiya.jpg",
+        "name": "Кардиология",
+        "desc": "Обследование сердца, контроль давления, профилактика сердечно-сосудистых заболеваний.",
+        "price": "2&nbsp;500"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/pulmonologiya.html",
+        "poster": "@img/services/pulmonologiya.jpg",
+        "name": "Пульмонология",
+        "desc": "Диагностика и лечение заболеваний легких и дыхательных путей.",
+        "price": "2&nbsp;500"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/gastroenterologiya.html",
+        "poster": "@img/services/gastroenterologiya.jpg",
+        "name": "Гастроэнтерология",
+        "desc": "Лечение заболеваний желудочно-кишечного тракта и печени.",
+        "price": "2&nbsp;500"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/osteopatiya.html",
+        "poster": "@img/services/osteopatiya.jpg",
+        "name": "Остеопатия",
+        "desc": "Безопасное восстановление опорно-двигательного аппарата и устранение болей.",
+        "price": "4&nbsp;000"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/dietologiya.html",
+        "poster": "@img/services/dietologiya.jpg",
+        "name": "Диетология",
+        "desc": "Составление персонального плана питания для снижения веса и улучшения здоровья.",
+        "price": "3&nbsp;000"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/onkologiya.html",
+        "poster": "@img/services/onkologiya.jpg",
+        "name": "Онкология",
+        "desc": "Ранняя диагностика новообразований, профилактические осмотры.",
+        "price": "3&nbsp;000"
+    }
+]

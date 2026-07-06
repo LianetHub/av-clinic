@@ -2869,6 +2869,16 @@ body._touch .menu__item.menu__item--parent.open-submenu .menu__link {
   margin: 0 auto;
 }
 
+.directions__chips {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.directions__slider {
+  margin-top: 2.5rem;
+}
+
 @media (max-width: 575.98px) {
   .about-park {
     padding: 0.55rem 0 0;

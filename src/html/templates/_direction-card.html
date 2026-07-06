@@ -6,7 +6,9 @@
         <div class="directions__card-name title-sm">@@name</div>
         <div class="directions__card-desc">@@desc</div>
         <div class="directions__card-footer">
+            @@if(typeof price !=='undefined'){
             <div class="directions__card-price">от <span>@@price</span> ₽</div>
+            }
             <div class="directions__card-more btn btn-secondary btn-sm">Подробнее</div>
         </div>
     </div>

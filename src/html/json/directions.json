@@ -9,122 +9,131 @@
     },
     {
         "extrasClass": "swiper-slide",
-        "slug": "/lab.html",
-        "poster": "@img/services/lab.jpg",
-        "name": "Лабораторная диагностика",
-        "desc": "Более 3000 видов анализов: от общеклинических до генетических исследований.",
-        "price": "от 500"
+        "slug": "/drips.html",
+        "poster": "@img/services/IV-drips.jpg",
+        "name": "Капельницы (IV-терапия)",
+        "desc": "Необходимая база и уникальные коктейли для решения конкретных задач",
+        "price": "8&nbsp;000"
     },
     {
         "extrasClass": "swiper-slide",
-        "slug": "/ginekologiya.html",
-        "poster": "@img/services/ginekologiya.jpg",
+        "slug": "/gynecology.html",
+        "poster": "@img/services/gynecology.jpg",
         "name": "Гинекология",
-        "desc": "Комплексное обследование, ведение беременности, лечение женских заболеваний.",
-        "price": "2&nbsp;500"
+        "desc": "Комплексная диагностика и лечение заболеваний женской репродуктивной системы",
+        "price": "9&nbsp;000"
     },
     {
         "extrasClass": "swiper-slide",
-        "slug": "/kosmetologiya.html",
-        "poster": "@img/services/kosmetologiya.jpg",
+        "slug": "/cosmetology.html",
+        "poster": "@img/services/cosmetology.jpg",
         "name": "Косметология",
-        "desc": "Аппаратные и инъекционные методики омоложения и коррекции лица.",
-        "price": "от 4&nbsp;000"
+        "desc": "Индивидуальные программы ухода и омоложения",
+        "price": "750"
     },
     {
         "extrasClass": "swiper-slide",
-        "slug": "/urologiya.html",
-        "poster": "@img/services/urologiya.jpg",
-        "name": "Урология",
-        "desc": "Диагностика и лечение заболеваний мужской мочеполовой системы.",
-        "price": "2&nbsp;500"
-    },
-    {
-        "extrasClass": "swiper-slide",
-        "slug": "/endokrinologiya.html",
-        "poster": "@img/services/endokrinologiya.jpg",
-        "name": "Эндокринология",
-        "desc": "Коррекция гормональных нарушений, лечение заболеваний щитовидной железы.",
-        "price": "2&nbsp;500"
-    },
-    {
-        "extrasClass": "swiper-slide",
-        "slug": "/terapiya.html",
-        "poster": "@img/services/terapiya.jpg",
-        "name": "Терапия",
-        "desc": "Консультации терапевта, подбор лечения, выдача справок и направлений.",
-        "price": "2&nbsp;000"
-    },
-    {
-        "extrasClass": "swiper-slide",
-        "slug": "/trihologiya.html",
-        "poster": "@img/services/trihologiya.jpg",
-        "name": "Трихология",
-        "desc": "Диагностика и лечение заболеваний волос и кожи головы.",
-        "price": "2&nbsp;500"
-    },
-    {
-        "extrasClass": "swiper-slide",
-        "slug": "/dermatologiya.html",
-        "poster": "@img/services/dermatologiya.jpg",
-        "name": "Дерматология",
-        "desc": "Лечение кожных заболеваний, удаление новообразований, диагностика.",
-        "price": "2&nbsp;500"
-    },
-    {
-        "extrasClass": "swiper-slide",
-        "slug": "/nevrologiya.html",
-        "poster": "@img/services/nevrologiya.jpg",
-        "name": "Неврология",
-        "desc": "Диагностика и лечение заболеваний нервной системы, головных болей.",
-        "price": "2&nbsp;500"
-    },
-    {
-        "extrasClass": "swiper-slide",
-        "slug": "/kardiologiya.html",
-        "poster": "@img/services/kardiologiya.jpg",
-        "name": "Кардиология",
-        "desc": "Обследование сердца, контроль давления, профилактика сердечно-сосудистых заболеваний.",
-        "price": "2&nbsp;500"
-    },
-    {
-        "extrasClass": "swiper-slide",
-        "slug": "/pulmonologiya.html",
-        "poster": "@img/services/pulmonologiya.jpg",
-        "name": "Пульмонология",
-        "desc": "Диагностика и лечение заболеваний легких и дыхательных путей.",
-        "price": "2&nbsp;500"
-    },
-    {
-        "extrasClass": "swiper-slide",
-        "slug": "/gastroenterologiya.html",
-        "poster": "@img/services/gastroenterologiya.jpg",
-        "name": "Гастроэнтерология",
-        "desc": "Лечение заболеваний желудочно-кишечного тракта и печени.",
-        "price": "2&nbsp;500"
-    },
-    {
-        "extrasClass": "swiper-slide",
-        "slug": "/osteopatiya.html",
-        "poster": "@img/services/osteopatiya.jpg",
-        "name": "Остеопатия",
-        "desc": "Безопасное восстановление опорно-двигательного аппарата и устранение болей.",
-        "price": "4&nbsp;000"
-    },
-    {
-        "extrasClass": "swiper-slide",
-        "slug": "/dietologiya.html",
-        "poster": "@img/services/dietologiya.jpg",
+        "slug": "/dietetics.html",
+        "poster": "@img/services/dietetics.jpg",
         "name": "Диетология",
-        "desc": "Составление персонального плана питания для снижения веса и улучшения здоровья.",
-        "price": "3&nbsp;000"
+        "desc": "Индивидуальные программы питания для здоровья, энергии и долголетия"
     },
     {
         "extrasClass": "swiper-slide",
-        "slug": "/onkologiya.html",
-        "poster": "@img/services/onkologiya.jpg",
-        "name": "Онкология",
-        "desc": "Ранняя диагностика новообразований, профилактические осмотры.",
-        "price": "3&nbsp;000"
+        "slug": "/shortage.html",
+        "poster": "@img/services/shortage.jpg",
+        "name": "Лечение дефицитов",
+        "desc": "Комплексная диагностика и восполнение дефицитов витаминов и микроэлементов: от чекапа до индивидуальных схем терапии"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/urology.html",
+        "poster": "@img/services/urology.jpg",
+        "name": "Урология",
+        "desc": "Комплексная диагностика и эффективное лечение заболеваний мочевыделительной и мужской половой системы"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/hair-restoration.html",
+        "poster": "@img/services/hair-restoration.jpg",
+        "name": "Восстановление волос",
+        "desc": "Комплексная диагностика и лечение выпадения и истончения волос: от чекапа до индивидуальных программ терапии"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/endocrinology.html",
+        "poster": "@img/services/endocrinology.jpg",
+        "name": "Эндокринология",
+        "desc": "Комплексная диагностика и лечение заболеваний эндокринной системы с индивидуальным подходом и использованием современных методик"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/dermatology.html",
+        "poster": "@img/services/dermatology.jpg",
+        "name": "Дерматология",
+        "desc": "Комплексная диагностика и лечение заболеваний кожи, волос и ногтей"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/otorhinolaryngology.html",
+        "poster": "@img/services/otorhinolaryngology.jpg",
+        "name": "Оториноларингология",
+        "desc": "Комплексная диагностика и лечение заболеваний уха, горла и носа"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/allergology.html",
+        "poster": "@img/services/allergology.jpg",
+        "name": "Аллергология",
+        "desc": "Комплексный подход к диагностике и лечению аллергических заболеваний"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/pulmonology.html",
+        "poster": "@img/services/pulmonology.jpg",
+        "name": "Пульмонология",
+        "desc": "Комплексная диагностика и лечение заболеваний органов дыхания"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/cardiology.html",
+        "poster": "@img/services/cardiology.jpg",
+        "name": "Кардиология",
+        "desc": "Комплексная диагностика и лечение сердечно-сосудистых заболеваний"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/neurology.html",
+        "poster": "@img/services/neurology.jpg",
+        "name": "Неврология",
+        "desc": "Комплексная диагностика и лечение заболеваний центральной и периферической нервной системы"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/therapy.html",
+        "poster": "@img/services/therapy.jpg",
+        "name": "Терапия",
+        "desc": "Комплексный подход к диагностике и лечению заболеваний внутренних органов"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/gastroenterology.html",
+        "poster": "@img/services/gastroenterology.jpg",
+        "name": "Гастроэнтерология",
+        "desc": "Комплексная диагностика и лечение заболеваний желудочно-кишечного тракта"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/ultrasound.html",
+        "poster": "@img/services/ultrasound.jpg",
+        "name": "УЗИ",
+        "desc": "Современная ультразвуковая диагностика для точного и безопасного обследования вашего организма"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "slug": "/functional-diagnostics.html",
+        "poster": "@img/services/functional-diagnostics.jpg",
+        "name": "Функциональная диагностика",
+        "desc": "Современные методы оценки состояния организма для точной диагностики и эффективного лечения"
     }
 ]

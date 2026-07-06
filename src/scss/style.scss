@@ -25,7 +25,7 @@ $md6: 389.98px;
 
 $minWidth: 360; // Минимальная ширина страницы
 $maxWidth: 1920; // Ширина макета
-$maxWidthContainer: rem(1247); // Максимальная ширина ограничивающего контейнера
+$maxWidthContainer: rem(1320); // Максимальная ширина ограничивающего контейнера
 $containerPadding: 30;
 
 // ЦВЕТА
@@ -63,6 +63,7 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 // ОБЩИЕ ПАРАМЕТРЫ
 
 @import "ui";
+@import "modules/grid";
 @import "forms";
 @import "common";
 @import "header";

@@ -1,44 +1,27 @@
 .title-lg {
 	font-size: 1.75rem;
-	font-weight: 500;
-	line-height: 110%;
-	letter-spacing: -0.09544rem;
-
-	@media (min-width:$md5) {
-		font-size: 2.25rem;
-		line-height: 110%;
-		letter-spacing: -0.09544rem;
-	}
+	font-weight: 600;
+	line-height: 120%;
 
 	@media (min-width:$md4) {
-		font-size: 3.375rem;
-	}
-
-	@media (min-width:$md2) {
-		font-size: 3.3125rem;
-		line-height: 101.887%;
-		letter-spacing: -0.0625rem;
+		font-size: 2.5rem;
 	}
 }
 
 .title {
-	font-size: 1.625rem;
-	font-weight: 600;
-	line-height: 110%;
-	letter-spacing: -0.0175rem;
 
-	@media (min-width:$md5) {
-		font-size: 2.25rem;
-		font-weight: 600;
-		line-height: 110%;
-		letter-spacing: -0.0225rem;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 120%;
+
+	@media (min-width:$md4) {
+		font-size: 1.875rem;
+
 	}
 
 	@media (min-width:$md2) {
-		font-size: 2.875rem;
-		font-weight: 500;
-		line-height: 108.696%;
-		letter-spacing: -0.02875rem;
+		font-size: 2rem;
+
 	}
 }
 

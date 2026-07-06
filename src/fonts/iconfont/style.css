@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?sqxg4i');
+  src:  url('fonts/icons.eot?sqxg4i#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?sqxg4i') format('truetype'),
+    url('fonts/icons.woff?sqxg4i') format('woff'),
+    url('fonts/icons.svg?sqxg4i#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-check:before {
+  content: "\e902";
+}
+.icon-chevron-down:before {
+  content: "\e903";
+}
+.icon-max:before {
+  content: "\e904";
+}
+.icon-play:before {
+  content: "\e905";
+}
+.icon-search:before {
+  content: "\e906";
+}
+.icon-star:before {
+  content: "\e907";
+}
+.icon-telegram:before {
+  content: "\e908";
+}
+.icon-whatsapp:before {
+  content: "\e909";
+}
+.icon-youtube:before {
+  content: "\e90a";
+}

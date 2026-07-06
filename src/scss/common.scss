@@ -318,4 +318,11 @@ body {
 
 	// .section-header__title
 	&__title {}
+
+	// .section-header__desc
+	&__desc {
+		margin-top: 1rem;
+		font-size: 1rem;
+		line-height: 140%;
+	}
 }

@@ -73,6 +73,115 @@
     }
 }
 
+
+.states {
+
+    // .states__container
+    &__container {}
+
+    // .states__list
+    &__list {
+        margin-top: 2.5rem;
+        border-top: rem(1) solid rgba(128, 100, 72, 0.35);
+    }
+
+    // .states__item
+    &__item {
+        padding-block: 1.5rem;
+        border-bottom: rem(1) solid rgba(128, 100, 72, 0.35);
+
+        @media (any-hover: hover) {
+            &:hover {
+                .states__item-title {
+                    color: #806448;
+                    transform: scale(math.div(1.625, 1.5));
+                }
+
+                .states__item-image {
+                    opacity: 1;
+                }
+
+                .states__item-arrow {
+                    color: #fff;
+                    background: #432821;
+                }
+            }
+        }
+    }
+
+    // .states__item-main
+    &__item-main {}
+
+    // .states__item-title
+    &__item-title {
+        transition: color 0.6s ease-in-out, transform 0.6s ease-in-out;
+        color: #432821;
+        transform-origin: left center;
+    }
+
+    // .states__item-image
+    &__item-image {
+        width: 13rem;
+        height: 12.5rem;
+        margin: -3rem 0;
+        transition: opacity 0.6s ease-in-out;
+        opacity: 0;
+    }
+
+    // .states__item-desc
+    &__item-desc {}
+
+    // .states__item-chips
+    &__item-chips {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    // .states__item-chip
+    &__item-chip {}
+
+    // .states__item-arrow
+    &__item-arrow {
+        margin-left: auto;
+        width: rem(44);
+        height: rem(44);
+        font-size: rem(20);
+        border-radius: 50%;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #432821;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+}
+
+
+.chip {
+    color: rgba($color: #271605, $alpha: .60);
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    line-height: 130%;
+    border-radius: 1rem;
+    border: 1px solid rgba($color: #271605, $alpha: .60);
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: #271605;
+            border-color: #271605;
+            color: #fff;
+        }
+    }
+
+}
+
+
+
 .tagline {
 
 

@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Manrope-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
@@ -25,52 +32,48 @@
   display: block;
 }
 
-.icon-right:before {
-  content: "\e90b";
-}
-
-.icon-globe:before {
-  content: "\e90a";
-}
-
-.icon-check:before, .checkbox__input:checked + .checkbox__content:before {
-  content: "\e909";
-}
-
-.icon-arrow:before {
+.icon-arrow-left:before {
   content: "\e900";
 }
 
-.icon-chevron-down:before {
+.icon-arrow-right:before {
   content: "\e901";
 }
 
-.icon-download:before {
+.icon-check:before, .checkbox__input:checked + .checkbox__content:before {
   content: "\e902";
 }
 
-.icon-envelope:before {
+.icon-chevron-down:before {
   content: "\e903";
 }
 
-.icon-location:before {
+.icon-max:before {
   content: "\e904";
 }
 
-.icon-next:before {
+.icon-play:before {
   content: "\e905";
 }
 
-.icon-phone:before {
+.icon-search:before {
   content: "\e906";
 }
 
-.icon-prev:before {
+.icon-star:before {
   content: "\e907";
 }
 
-.icon-share:before {
+.icon-telegram:before {
   content: "\e908";
+}
+
+.icon-whatsapp:before {
+  content: "\e909";
+}
+
+.icon-youtube:before {
+  content: "\e90a";
 }
 
 :root {
@@ -120,25 +123,17 @@
 }
 
 .title-sm {
-  font-size: 1.75rem;
   font-weight: 600;
-  line-height: 110%;
-  letter-spacing: -0.0175rem;
+  font-size: 1.25rem;
 }
-@media (min-width: 575.98px) {
+@media (min-width: 743.98px) {
   .title-sm {
-    font-size: 2.25rem;
-    font-weight: 600;
-    line-height: 110%;
-    letter-spacing: -0.0225rem;
+    font-size: 1.375rem;
   }
 }
 @media (min-width: 1199.98px) {
   .title-sm {
-    font-size: 2.25rem;
-    font-weight: 500;
-    line-height: 111%;
-    letter-spacing: -0.0225rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1989,6 +1984,12 @@ body {
   flex-shrink: 0;
   order: -1;
 }
+.section-header__desc {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 140%;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -2750,6 +2751,77 @@ body._touch .menu__item.menu__item--parent.open-submenu .menu__link {
   margin-top: 1.5rem;
   max-width: 19.625rem;
   width: 100%;
+}
+
+.states__list {
+  margin-top: 2.5rem;
+  border-top: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+.states__item {
+  padding-block: 1.5rem;
+  border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+@media (any-hover: hover) {
+  .states__item:hover .states__item-title {
+    color: #806448;
+    transform: scale(1.0833333333);
+  }
+  .states__item:hover .states__item-image {
+    opacity: 1;
+  }
+  .states__item:hover .states__item-arrow {
+    color: #fff;
+    background: #432821;
+  }
+}
+.states__item-title {
+  transition: color 0.6s ease-in-out, transform 0.6s ease-in-out;
+  color: #432821;
+  transform-origin: left center;
+}
+.states__item-image {
+  width: 13rem;
+  height: 12.5rem;
+  margin: -3rem 0;
+  transition: opacity 0.6s ease-in-out;
+  opacity: 0;
+}
+.states__item-chips {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.states__item-arrow {
+  margin-left: auto;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #432821;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.chip {
+  color: rgba(39, 22, 5, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  line-height: 130%;
+  border-radius: 1rem;
+  border: 1px solid rgba(39, 22, 5, 0.6);
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .chip:hover {
+    background-color: #271605;
+    border-color: #271605;
+    color: #fff;
+  }
 }
 
 .tagline__text {

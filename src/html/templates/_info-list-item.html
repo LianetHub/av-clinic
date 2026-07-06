@@ -1,0 +1,35 @@
+<li class="info-list__item">
+    <div class="row">
+        <div class="col-6">
+            <a href="" class="info-list__item-main row">
+                <div class="col-6">
+                    <div class="info-list__item-title title-sm">
+                        @@title
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="info-list__item-image">
+                        <img src="@@image" class="cover-image" alt="Фото услуги">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-5">
+            @@if(typeof desc !=='undefined'){
+                <p class="info-list__item-desc">@@desc</p>
+            }
+            @@if(typeof chips !=='undefined'){
+                <ul class="info-list__item-tags">
+                @@for (var i = 0; i < chips.length; i++) {
+                        <li class="info-list__item-tag">
+                            <a href="" class="chip">`+chips[i]+`</a>
+                        </li>
+                    }    
+                </ul>
+            }
+        </div>
+        <div class="col-1">
+            <span aria-hidden="true" class="info-list__item-arrow icon-arrow-right"></span>
+        </div>
+    </div>
+</li>

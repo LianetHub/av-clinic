@@ -10,10 +10,10 @@
                 </div>
             </a>
         </div>
-        <div class="col-5">
-            <div class="info-list__item-details">
+        <div class="col-6">
+            <div class="info-list__item-details icon-arrow-right">
                 @@if(typeof desc !=='undefined'){
-                    <p class="info-list__item-desc@@if(typeof price !=='undefined'){ info-list__item-desc--small}">@@desc</p>
+                    <p class="info-list__item-desc">@@desc</p>
                 }
                 @@if(typeof chips !=='undefined'){
                     <ul class="info-list__item-tags">
@@ -33,8 +33,6 @@
                 }
             </div>
         </div>
-        <div class="col-1">
-            <span aria-hidden="true" class="info-list__item-arrow icon-arrow-right"></span>
-        </div>
+       
     </div>
 </li>

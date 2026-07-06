@@ -107,7 +107,7 @@
 	&__list {
 		display: flex;
 		justify-content: center;
-		gap: rem(40);
+		gap: rem(37);
 	}
 
 	// .menu__item
@@ -117,6 +117,19 @@
 		gap: 0.125rem;
 
 		&.menu__item--parent {}
+
+		@media (any-hover: hover) {
+			&:hover {
+				.menu__arrow {
+					transform: rotate(180deg);
+					color: #806448;
+				}
+
+				.menu__link {
+					color: #806448;
+				}
+			}
+		}
 	}
 
 
@@ -124,10 +137,14 @@
 	&__link {
 		font-size: 0.875rem;
 		font-weight: 600;
+		transition: color 0.3s ease;
 	}
 
 	// .menu__arrow	
-	&__arrow {}
+	&__arrow {
+		transition: color 0.3s ease, transform 0.3s ease;
+
+	}
 }
 
 

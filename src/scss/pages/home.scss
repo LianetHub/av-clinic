@@ -1,226 +1,74 @@
 .hero {
-    padding: rem(16) 0 rem(20);
+    height: rem(848);
+    background: #432821;
+    color: #fff;
+    position: relative;
+    z-index: 1;
 
-    @media (min-width:$md5) {
-        padding: rem(8) 0 rem(20);
-
+    // .hero__slider
+    &__slider {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
     }
 
-    @media (min-width:$md3) {
-        padding: rem(5) 0 rem(40);
-
-    }
+    // .hero__slide
+    &__slide {}
 
     // .hero__container
     &__container {
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: rem(40);
-
-        @media (min-width:$md4) {
-            gap: rem(60);
-
-        }
-
-        @media (min-width:$md3) {
-            gap: rem(20);
-            flex-direction: row;
-        }
+        text-align: center;
+        align-content: end;
+        min-height: 100%;
     }
 
-    // .hero__main
-    &__main {
-        align-self: stretch;
+    // .hero__offer
+    &__offer {
+        padding: 2.5rem 0;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-
-        @media (min-width:$md3) {
-            flex: 0 0 57%;
-            justify-content: flex-end;
-            position: relative;
-            z-index: 1;
-
-        }
-
-        &::before {
-            @media (min-width:$md3) {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                height: 100%;
-                background: linear-gradient(156deg, rgba(255, 255, 255, 0.00) 27.43%, #FFF 84.59%);
-                clip-path: polygon(0% 61%, 100% 0%, 100% 100%, 0% 100%);
-                z-index: -1;
-                width: calc(100% + 2rem);
-
-            }
-
-            @media (min-width:$md1) {
-                width: calc(100% + (100vw - rem(1247))/2);
-            }
-
-        }
-
-        &::after {
-            @media (min-width:$md3) {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                height: 100%;
-                z-index: -1;
-                background: url("@img/decor/hero-offer-bg.svg") 100% 0 / auto 100% no-repeat;
-                width: calc(100% + 2rem);
-
-            }
-
-            @media (min-width:$md1) {
-                width: calc(100% + (100vw - rem(1247))/2);
-            }
-        }
-    }
-
-    // .hero__title
-    &__title {}
-
-    // .hero__subtitle
-    &__subtitle {
-        color: #4A5565;
-        margin-top: 0.75rem;
-        line-height: 130%;
-        max-width: 41rem;
-        font-size: 0.875rem;
-        max-width: 95%;
-
-        @media (min-width:$md5) {
-            max-width: 100%;
-            margin-top: 1.5rem;
-            font-size: 1.125rem;
-        }
-
-        @media (min-width:$md4) {
-            font-size: 1.375rem;
-
-        }
-
-        @media (min-width:$md3) {
-            margin-top: 2rem;
-            font-size: 1.125rem;
-            line-height: 162.5%;
-        }
-    }
-
-    // .hero__actions
-    &__actions {
-        display: flex;
-        gap: rem(13);
-        margin-top: 1.5rem;
-        width: 100%;
-
-        @media (min-width:$md5) {
-            gap: 1rem;
-            width: auto;
-        }
-
-        @media (min-width:$md4) {
-            margin-top: 2.38rem;
-
-        }
-    }
-
-    // .hero__btn
-    &__btn {
-        flex: 1 1 50%;
-
-        @media (max-width:$md5) {
-            padding-inline: 0.5rem;
-        }
-
-        @media (min-width:$md5) {
-            min-width: 10.5rem;
-            flex: 0 1 auto;
-
-        }
-    }
-
-    // .hero__video
-    &__video {
+        align-items: center;
         position: relative;
 
-        border-radius: rem(30) 0 0 rem(30);
-        height: 16rem;
-        margin-right: -1rem;
-
-        @media (min-width:$md5) {
-            margin-right: -2rem;
-            height: 22rem;
-
-        }
-
-        @media (min-width:$md4) {
-            height: rem(438);
-
-        }
 
         &::before {
             content: '';
             position: absolute;
-            inset: -1px;
-            border-radius: rem(30) 0 0 rem(30);
-            background: url("@img/decor/hero-mask-mobile.svg") 0 center / cover no-repeat;
-
-            @media (min-width:$md3) {
-                border-radius: rem(30);
-                background: url("@img/decor/hero-mask.svg") 0 0 / cover no-repeat;
-
-            }
+            top: 0;
+            left: 50%;
+            width: 58.375rem;
+            height: 75%;
+            opacity: 0.9;
+            background: rgba($color: #271605, $alpha: .10);
+            z-index: 1;
+            transform: translateX(-50%);
+            pointer-events: none;
+            border-radius: 58.375rem;
+            filter: blur(rem(150));
+            z-index: -1;
         }
-
-        @media (min-width:$md3) {
-            align-self: stretch;
-            border-radius: rem(30);
-            flex: 0 0 rem(761);
-            height: rem(488);
-            margin-right: 0;
-
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: calc(100% + rem(20));
-                width: 100%;
-                height: 100%;
-                background: url("@img/decor/hero-offer-bg-side.svg") 0 0 / auto 100% no-repeat;
-            }
-
-        }
-
-
-
-
     }
 
-    // .hero__video-block
-    &__video-block {
+    // .hero__title
+    &__title {
+        max-width: 50rem;
+    }
+
+    // .hero__subtitle
+    &__subtitle {
+        margin-top: 1rem;
+        max-width: 39.0625rem;
+    }
+
+    // .hero__btn
+    &__btn {
+        margin-top: 1.5rem;
+        max-width: 19.625rem;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: rem(12) 0 0 rem(12);
-
-        @media (min-width:$md5) {
-            border-radius: rem(30) 0 0 rem(30);
-
-        }
-
-        @media (min-width:$md3) {
-            border-radius: rem(30);
-
-        }
     }
 }
+
 
 .stats {
     padding: rem(20) 0 rem(38);

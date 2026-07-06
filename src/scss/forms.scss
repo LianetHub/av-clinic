@@ -161,17 +161,12 @@
 	text-align: center;
 	user-select: none;
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-	border-radius: 0.75rem;
-	padding: 1rem 1.5rem;
-	font-weight: 500;
-	line-height: 150%;
-	letter-spacing: -0.0195rem;
+	padding: 0.75rem 2.25rem;
+	border-radius: 1.25rem;
+
 	font-size: 0.875rem;
-
-	@media (min-width:$md5) {
-		font-size: 1rem;
-
-	}
+	font-weight: 600;
+	text-transform: uppercase;
 
 	&::before {
 		order: 1;
@@ -189,18 +184,17 @@
 
 		@media (any-hover: hover) {
 			&:hover {
-				background: #1F398E;
+				background: #806448
 			}
 		}
 
 		&:active {
-			background: #1C3586;
+			background: rgba($color: #432821, $alpha: .5)
 		}
 
 		&:disabled,
 		&[aria-disabled="true"] {
-			background: #A7B3DA;
-			color: rgba(255, 255, 255, 0.70);
+			opacity: 0.5;
 		}
 
 	}

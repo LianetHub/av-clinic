@@ -105,6 +105,11 @@
                                 <p class="section-header__desc">Большинство врачей — кандидаты наук и специалисты высшей категории, которые работают в консилиуме, а не рассматривают состояние пациента по отдельным симптомам.</p>
                             </div>
                         </div>
+                        <div class="doctors__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_doctor-card.html', './html/json/doctors.json')
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="benefits">

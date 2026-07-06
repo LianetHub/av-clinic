@@ -2588,3 +2588,41 @@ body {
 .directions__card-more {
   margin-left: auto;
 }
+
+.doctors__slider {
+  margin-top: 2.5rem;
+}
+
+.doctor-card {
+  display: flex;
+  flex-direction: column;
+  background: #FFF;
+}
+.doctor-card__poster {
+  position: relative;
+  background: rgba(67, 40, 33, 0.1);
+}
+.doctor-card__badge {
+  border-radius: 1rem;
+  border: 1px solid rgba(39, 22, 5, 0.6);
+  padding: 0.375rem 1rem;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.625rem;
+  color: rgba(39, 22, 5, 0.6);
+  font-size: 0.75rem;
+  line-height: 130%;
+}
+.doctor-card__body {
+  padding: 1.5rem;
+}
+.doctor-card__name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.doctor-card__desc {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: rgba(39, 22, 5, 0.6);
+}

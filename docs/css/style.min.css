@@ -2344,6 +2344,91 @@ body {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
+.footer {
+  background: #FFF;
+  padding: 5rem 0 0;
+}
+.footer__header {
+  display: flex;
+}
+.footer__main {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  max-width: 19rem;
+  width: 100%;
+  padding-block: 1.25rem;
+}
+.footer__logo img {
+  width: 100%;
+}
+.footer__btn {
+  margin-top: 2.5rem;
+}
+.footer__socials {
+  margin-top: 1.59rem;
+  gap: 0.75rem;
+}
+.footer__socials .socials__item {
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #806448;
+}
+@media (any-hover: hover) {
+  .footer__socials .socials__item:hover {
+    color: #271605;
+  }
+}
+.footer__license {
+  margin-top: 5.1875rem;
+  font-size: 0.875rem;
+  line-height: 120%;
+}
+.footer__nav-caption {
+  color: #806448;
+  border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.4);
+  margin-bottom: 1.25rem;
+}
+.footer__nav-list {
+  display: grid;
+  gap: 0.15rem;
+  column-gap: 2rem;
+}
+.footer__nav-list.footer__nav-list--large {
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer__nav-link {
+  color: rgba(39, 22, 5, 0.8);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .footer__nav-link:hover {
+    color: #806448;
+  }
+}
+.footer__bottom {
+  margin-top: 1.25rem;
+  border-top: 0.0625rem solid rgba(128, 100, 72, 0.4);
+  padding-block: 1rem;
+  color: rgba(39, 22, 5, 0.6);
+  font-size: 0.75rem;
+  line-height: 130%;
+}
+.footer__policy {
+  text-decoration-line: underline;
+  transition: color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .footer__policy:hover {
+    text-decoration: none;
+    color: #806448;
+  }
+}
+
 .hero {
   height: 52.5rem;
   background: #432821;

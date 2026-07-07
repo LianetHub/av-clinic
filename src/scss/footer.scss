@@ -1,0 +1,128 @@
+.footer {
+    background: #FFF;
+    padding: 5rem 0 0;
+
+    // .footer__container
+    &__container {}
+
+    // .footer__header 
+    &__header {
+        display: flex;
+    }
+
+    // .footer__main
+    &__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .footer__logo
+    &__logo {
+        max-width: 19rem;
+        width: 100%;
+        padding-block: 1.25rem;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    // .footer__btn
+    &__btn {
+        margin-top: 2.5rem;
+    }
+
+    // .footer__socials
+    &__socials {
+        margin-top: 1.59rem;
+        gap: rem(12);
+
+        .socials__item {
+            font-size: 1.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            color: #806448;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    color: #271605;
+                }
+            }
+        }
+    }
+
+    // .footer__license
+    &__license {
+        margin-top: rem(83);
+        font-size: 0.875rem;
+        line-height: 120%;
+    }
+
+    // .footer__nav
+    &__nav {}
+
+    // .footer__nav-caption
+    &__nav-caption {
+        color: #806448;
+        border-bottom: rem(1) solid rgba($color: #806448, $alpha: .4);
+        margin-bottom: rem(20);
+    }
+
+    // .footer__nav-list
+    &__nav-list {
+        display: grid;
+        gap: 0.15rem;
+        column-gap: 2rem;
+
+        &.footer__nav-list--large {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    // .footer__nav-item
+    &__nav-item {}
+
+    // .footer__nav-link
+    &__nav-link {
+        color: rgba($color: #271605, $alpha: 0.8);
+        font-size: 0.875rem;
+        font-weight: 600;
+        transition: color 0.3s ease;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: #806448;
+            }
+        }
+    }
+
+    // .footer__bottom
+    &__bottom {
+        margin-top: 1.25rem;
+        border-top: rem(1) solid rgba($color: #806448, $alpha: .4);
+        padding-block: 1rem;
+        color: rgba($color: #271605, $alpha: 0.6);
+        font-size: 0.75rem;
+        line-height: 130%;
+    }
+
+    // .footer__bottom-container
+    &__bottom-container {}
+
+    // .footer__copyright
+    &__copyright {}
+
+    // .footer__policy
+    &__policy {
+
+        text-decoration-line: underline;
+        transition: color 0.3s ease;
+
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: none;
+                color: #806448;
+            }
+        }
+    }
+}

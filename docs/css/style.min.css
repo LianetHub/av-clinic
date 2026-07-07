@@ -1342,37 +1342,39 @@
   display: block;
 }
 .form__field + .form__field {
-  margin-top: 0.5rem;
+  margin-top: 0.875rem;
 }
 .form__field._error .form__error {
   display: block;
 }
-.form__error {
-  color: #ba2028;
-  font-size: 0.75rem;
-  display: none;
-  margin-top: 0.5rem;
+.form__label {
+  font-size: 0.875rem;
+  line-height: 120%;
+  margin-bottom: 0.875rem;
+  display: block;
 }
 .form__control {
   text-overflow: ellipsis;
   transition: border-color 0.3s ease, color 0.3s ease;
   width: 100%;
   font-size: 1rem;
-  line-height: 160%;
-  border-radius: 0.5rem;
-  border: 0.0625rem solid #F6F8FA;
-  background: #F6F8FA;
-  color: #313542;
+  line-height: 140%;
+  border-radius: 0;
+  border: 0.0625rem solid rgba(128, 100, 72, 0.35);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  background: transparent;
+  color: #271605;
   caret-color: #432821;
-  padding: 0.8rem 0.75rem;
-  min-height: 3.5rem;
+  padding: 0.5rem 1.5rem;
 }
 .form__control::placeholder {
-  color: #A1A5A7;
-  opacity: 1;
+  color: #271605;
+  opacity: 0.6;
 }
 .form__control:focus {
-  border: 0.0625rem solid #432821;
+  border-color: #432821;
 }
 .form__control._error {
   border-color: #ba2028;
@@ -1388,11 +1390,15 @@
 .form__checkbox {
   margin-top: 1rem;
 }
+.form__btn {
+  margin-top: 2.5rem;
+  max-width: 19.625rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
 .checkbox {
   display: block;
-}
-.checkbox__input:checked + .checkbox__content::before {
-  background: #432821;
 }
 .checkbox__input._error + .checkbox__content::before {
   border: 1px solid #ba2028;
@@ -1402,7 +1408,7 @@
   position: relative;
   display: block;
   color: #313542;
-  padding-left: 1.88rem;
+  padding-left: 2rem;
   font-size: 0.75rem;
   line-height: 120%;
   cursor: pointer;
@@ -1418,12 +1424,11 @@
   justify-content: center;
   align-items: center;
   background: #fff;
-  color: #fff;
-  border: 0.0625rem solid #2343A7;
-  border-radius: 0.25rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  font-size: 0.4rem;
+  color: #806448;
+  border: 0.0625rem solid rgba(128, 100, 72, 0.4);
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.675rem;
 }
 .checkbox__content a {
   text-decoration: underline;
@@ -2638,4 +2643,33 @@ body {
     opacity: 1;
     background: transparent;
   }
+}
+
+.visit__content {
+  max-width: 43.75rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.visit__title {
+  text-align: center;
+  max-width: 26rem;
+}
+.visit__subtitle {
+  margin-top: 1.5rem;
+  text-align: center;
+  max-width: 39rem;
+}
+.visit__hint {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: rgba(39, 22, 5, 0.6);
+  font-size: 0.75rem;
+  line-height: 130%;
+}
+.visit__form {
+  margin-top: 2.25rem;
+  width: 100%;
+  padding-left: 0.5rem;
 }

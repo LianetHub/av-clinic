@@ -14,8 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	devFunctions.isWebp();
 	devFunctions.OS();
-	devFunctions.formSubmit();
+	// devFunctions.formSubmit();
 	devFunctions.initYandexMap();
+	devFunctions.mask()
 
 	// clickHandler
 

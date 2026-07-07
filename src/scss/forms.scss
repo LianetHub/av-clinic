@@ -8,7 +8,7 @@
 		display: block;
 
 		&+.form__field {
-			margin-top: .5rem;
+			margin-top: .875rem;
 		}
 
 		&._error {
@@ -19,13 +19,14 @@
 		}
 	}
 
-	// .form__error
-	&__error {
-		color: $red;
-		font-size: rem(12);
-		display: none;
-		margin-top: 0.5rem;
+	// .form__label
+	&__label {
+		font-size: 0.875rem;
+		line-height: 120%;
+		margin-bottom: 0.875rem;
+		display: block;
 	}
+
 
 	// .form__control
 	&__control {
@@ -33,22 +34,25 @@
 		transition: border-color 0.3s ease, color 0.3s ease;
 		width: 100%;
 		font-size: 1rem;
-		line-height: 160%;
-		border-radius: 0.5rem;
-		border: rem(1) solid #F6F8FA;
-		background: #F6F8FA;
-		color: #313542;
+		line-height: 140%;
+		border-radius: 0;
+		border: rem(1) solid rgba(128, 100, 72, 0.35);
+		border-left: 0;
+		border-right: 0;
+		border-top: 0;
+		background: transparent;
+		color: #271605;
 		caret-color: $accent;
-		padding: 0.8rem 0.75rem;
-		min-height: rem(56);
+		padding: 0.5rem 1.5rem;
+
 
 		&::placeholder {
-			color: #A1A5A7;
-			opacity: 1;
+			color: #271605;
+			opacity: 0.6;
 		}
 
 		&:focus {
-			border: rem(1) solid $accent;
+			border-color: $accent;
 		}
 
 
@@ -75,11 +79,19 @@
 		margin-top: 1rem;
 	}
 
-	// .form__checkbox-input
-	&__checkbox-input {}
 
-	// .form__checkbox-text
-	&__checkbox-text {}
+
+	// .form__field
+	&__field {}
+
+
+	// .form__btn
+	&__btn {
+		margin-top: 2.5rem;
+		max-width: 19.625rem;
+		width: 100%;
+		margin-inline: auto;
+	}
 
 }
 
@@ -92,7 +104,6 @@
 			&+.checkbox__content {
 				&::before {
 					@extend %ic, .icon-check;
-					background: $accent;
 				}
 			}
 		}
@@ -112,11 +123,9 @@
 		position: relative;
 		display: block;
 		color: #313542;
-		padding-left: 1.88rem;
+		padding-left: 2rem;
 		font-size: 0.75rem;
 		line-height: 120%;
-
-
 		cursor: pointer;
 		user-select: none;
 
@@ -130,12 +139,11 @@
 			justify-content: center;
 			align-items: center;
 			background: #fff;
-			color: #fff;
-			border: rem(1) solid #2343A7;
-			border-radius: rem(4);
-			width: 1.25rem;
-			height: 1.25rem;
-			font-size: 0.4rem;
+			color: #806448;
+			border: rem(1) solid rgba($color: #806448, $alpha: .40);
+			width: 1rem;
+			height: 1rem;
+			font-size: 0.675rem;
 
 		}
 

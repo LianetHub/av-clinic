@@ -171,6 +171,31 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
+	if (document.querySelector(".reviews__slider")) {
+
+		const sliderEl = document.querySelector(".reviews__slider");
+
+		new Swiper(sliderEl, {
+			slidesPerView: 3,
+			speed: 600,
+			spaceBetween: 24,
+			pagination: {
+				el: sliderEl.querySelector('.swiper__pagination'),
+				type: "fraction",
+				renderFraction: function (currentClass, totalClass) {
+
+					return '<span class="' + currentClass + '"></span>' +
+						' / ' +
+						'<span class="' + totalClass + '"></span>';
+				}
+			},
+			navigation: {
+				nextEl: sliderEl.querySelector('.swiper__next'),
+				prevEl: sliderEl.querySelector('.swiper__prev')
+			}
+		});
+	}
+
 
 
 

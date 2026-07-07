@@ -506,3 +506,61 @@
         line-height: 140%;
     }
 }
+
+.reviews {
+
+    // .reviews__slider
+    &__slider {
+        margin-top: 2.5rem;
+    }
+
+    // .reviews__card
+    &__card {
+        background: #FFF;
+        height: auto;
+        padding: 1.5rem 2.5rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    // .reviews__card-rates
+    &__card-rates {
+        display: flex;
+        gap: 0.25rem;
+    }
+
+    // .reviews__card-rate
+    &__card-rate {
+        color: #806448;
+        width: 1.125rem;
+        height: 1.125rem;
+        flex-shrink: 0;
+    }
+
+
+    // .reviews__card-time
+    &__card-time {
+        margin-top: 0.5rem;
+        display: inline-block;
+        color: rgba($color: #271605, $alpha: 0.6);
+        font-size: 0.875rem;
+        line-height: 120%;
+    }
+
+    // .reviews__card-author
+    &__card-author {
+        margin-top: 2.5rem;
+        color: #271605;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    // .reviews__card-blockquote
+    &__card-blockquote {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        line-height: 140%;
+    }
+}

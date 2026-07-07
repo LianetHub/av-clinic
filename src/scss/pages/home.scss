@@ -1,21 +1,32 @@
 .hero {
-    height: rem(840);
     background: #432821;
     color: #fff;
     position: relative;
     z-index: 1;
+    height: rem(1054);
+
+    @media (min-width:$md2) {
+        height: rem(840);
+
+    }
 
     // .hero__badge
     &__badge {
         background: #fff;
         border-radius: rem(8);
         position: absolute;
-        top: rem(40);
-        right: rem(32);
+
         display: flex;
         align-items: center;
         gap: rem(8);
         padding: 0.75rem 1.75rem;
+        top: rem(24);
+        right: rem(24);
+
+        @media (min-width:$md3) {
+            top: rem(40);
+            right: rem(32);
+        }
     }
 
     // .hero__slider
@@ -39,12 +50,19 @@
 
     // .hero__offer
     &__offer {
-        padding: 2.5rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
+        padding: rem(64) 0;
 
+        @media (min-width:$md5) {
+            padding: rem(80) 0;
+        }
+
+        @media (min-width:$md3) {
+            padding: 2.5rem 0;
+        }
 
         &::before {
             content: '';
@@ -66,7 +84,12 @@
 
     // .hero__title
     &__title {
-        max-width: 50rem;
+        max-width: 40rem;
+
+        @media (min-width:$md3) {
+            max-width: 50rem;
+
+        }
 
         & span {
             font-weight: 700;
@@ -81,9 +104,14 @@
 
     // .hero__btn
     &__btn {
-        margin-top: 1.5rem;
         max-width: 19.625rem;
         width: 100%;
+        margin-top: 2.5rem;
+
+        @media (min-width:$md3) {
+            margin-top: 1.5rem;
+
+        }
     }
 }
 
@@ -97,10 +125,14 @@
     &__text {
         max-width: 50.25rem;
         text-align: center;
-        font-size: 1.5rem;
         line-height: 140%;
         margin: 0 auto;
+        font-size: rem(22);
 
+        @media (min-width:$md3) {
+            font-size: 1.5rem;
+
+        }
     }
 }
 

@@ -451,3 +451,58 @@
         max-width: rem(600);
     }
 }
+
+.rates {
+
+    // .rates__conatiner
+    &__conatiner {}
+
+    // .rates__slider
+    &__slider {
+        margin-top: rem(40);
+    }
+
+    // .rates__card
+    &__card {
+        background: rgba($color: #432821, $alpha: .1);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        transition: background-color 0.3s ease;
+
+
+
+        @media (any-hover: hover) {
+            &:hover {
+                background: #fff;
+
+                .rates__card-image {
+                    opacity: 1;
+                    filter: saturate(100%);
+                }
+            }
+        }
+    }
+
+    // .rates__card-image
+    &__card-image {
+        margin: auto;
+        opacity: 0.6;
+        filter: saturate(50%);
+        transition: opacity 0.3s ease, filter 0.3s ease;
+
+    }
+
+    // .rates__card-value
+    &__card-value {}
+
+    // .rates__card-quantity
+    &__card-quantity {
+        margin-top: 0.25rem;
+        color: #271605;
+        font-size: 1rem;
+        line-height: 140%;
+    }
+}

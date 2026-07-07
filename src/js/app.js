@@ -133,7 +133,31 @@ document.addEventListener("DOMContentLoaded", function () {
 				el: sliderEl.querySelector('.swiper__pagination'),
 				type: "fraction",
 				renderFraction: function (currentClass, totalClass) {
-					console.log(this);
+
+					return '<span class="' + currentClass + '"></span>' +
+						' / ' +
+						'<span class="' + totalClass + '"></span>';
+				}
+			},
+			navigation: {
+				nextEl: sliderEl.querySelector('.swiper__next'),
+				prevEl: sliderEl.querySelector('.swiper__prev')
+			}
+		});
+	}
+
+	if (document.querySelector(".rates__slider")) {
+
+		const sliderEl = document.querySelector(".rates__slider");
+
+		new Swiper(sliderEl, {
+			slidesPerView: 3,
+			speed: 600,
+			spaceBetween: 24,
+			pagination: {
+				el: sliderEl.querySelector('.swiper__pagination'),
+				type: "fraction",
+				renderFraction: function (currentClass, totalClass) {
 
 					return '<span class="' + currentClass + '"></span>' +
 						' / ' +
@@ -148,22 +172,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 
-
-	document.querySelectorAll(".banner__slider")?.forEach((slider) => {
-		new Swiper(slider, {
-			slidesPerView: 1,
-			speed: 1000,
-			effect: "fade",
-			loop: true,
-			autoplay: {
-				delay: 5000,
-				stopOnLastSlide: false,
-			},
-			fadeEffect: {
-				crossFade: true,
-			},
-		});
-	});
 
 
 	if (document.querySelector(".career-guidance__slider")) {

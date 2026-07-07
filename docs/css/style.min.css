@@ -204,6 +204,7 @@
   align-items: center;
 }
 .swiper__controls {
+  margin-left: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2538,4 +2539,38 @@ body {
   color: rgba(39, 22, 5, 0.6);
   transition: color 0.3s ease-in-out;
   max-width: 37.5rem;
+}
+
+.rates__slider {
+  margin-top: 2.5rem;
+}
+.rates__card {
+  background: rgba(67, 40, 33, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  transition: background-color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .rates__card:hover {
+    background: #fff;
+  }
+  .rates__card:hover .rates__card-image {
+    opacity: 1;
+    filter: saturate(100%);
+  }
+}
+.rates__card-image {
+  margin: auto;
+  opacity: 0.6;
+  filter: saturate(50%);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+.rates__card-quantity {
+  margin-top: 0.25rem;
+  color: #271605;
+  font-size: 1rem;
+  line-height: 140%;
 }

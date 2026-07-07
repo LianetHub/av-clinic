@@ -1,0 +1,26 @@
+[
+    {
+        "slug": "https://yandex.com/maps/org/av_clinic/91166645893/reviews/",
+        "image": "@img/rates/yandex-maps.png",
+        "width": "233",
+        "height": "85",
+        "value": "5.0",
+        "quantity": "428 оценок"
+    },
+    {
+        "slug": "https://prodoctorov.ru/moskva/lpu/97329-av-klinik/",
+        "image": "@img/rates/prodoctorov-logo.png",
+        "width": "300",
+        "height": "78",
+        "value": "4.0",
+        "quantity": "15 отзывов"
+    },
+    {
+        "slug": "https://2gis.ru/moscow/search/%D0%B0%D0%B1%D0%B0%D0%BA%D1%83%D0%BC%D0%BE%D0%B2/firm/70000001083308555/37.569118%2C55.746662?m=37.62017%2C55.753887%2F10.87",
+        "image": "@img/rates/2GIS-logo.png",
+        "width": "180",
+        "height": "56",
+        "value": "4.9",
+        "quantity": "68 оценок"
+    }
+]

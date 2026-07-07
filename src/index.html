@@ -91,12 +91,12 @@
                             <div class="swiper-wrapper">
                                 @@loop('./html/templates/_direction-card.html', './html/json/directions.json')
                             </div>
-                            <div class="directions__footer">
-                                <a href="" class="directions__more more-link">Все направления</a>
-                                <div class="directions__controls">
-                                    <button type="button" class="directions__prev swiper-button-prev icon-arrow-left"></button>
-                                    <div class="directions__pagination swiper-pagination"></div>
-                                    <button type="button" class="directions__next swiper-button-next icon-arrow-right"></button>
+                            <div class="swiper__footer">
+                                <a href="" class="swiper__more more-link">Все направления</a>
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
                                 </div>
                             </div>
                         </div>
@@ -135,6 +135,14 @@
                         <div class="doctors__slider swiper">
                             <div class="swiper-wrapper">
                                 @@loop('./html/templates/_doctor-card.html', './html/json/doctors.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <a href="" class="swiper__more more-link">Все врачи</a>
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
                             </div>
                         </div>
                     </div>

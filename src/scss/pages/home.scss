@@ -200,33 +200,6 @@
     &__card-more {
         margin-left: auto;
     }
-
-    // .directions__footer
-    &__footer {
-        margin-top: 1.125rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    // .directions__more
-    &__more {}
-
-    // .directions__controls
-    &__controls {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    // .directions__prev
-    &__prev {}
-
-    // .directions__pagination
-    &__pagination {
-        min-width: rem(57);
-    }
 }
 
 .director {
@@ -309,10 +282,49 @@
     flex-direction: column;
     background: #FFF;
 
+    @media (any-hover: hover) {
+        &:hover {
+            .doctor-card__btn {
+                opacity: 1;
+            }
+
+            .doctor-card__poster {
+                & img {
+                    transform: scale(1.05);
+                }
+            }
+
+            .doctor-card__name {
+                color: #806448;
+            }
+        }
+    }
+
+
+
     // .doctor-card__poster
     &__poster {
         position: relative;
         background: rgba($color: #432821, $alpha: 0.1);
+        overflow: hidden;
+
+        & img {
+            transition: transform 0.3s ease;
+        }
+    }
+
+    //.doctor-card__btn
+    &__btn {
+        position: absolute;
+        bottom: rem(24);
+        left: 50%;
+        transform: translateX(-50%);
+
+        &.chip {
+            color: rgba($color: #fff, $alpha: .60);
+            border: rem(1) solid rgba($color: #fff, $alpha: .60);
+            opacity: 0;
+        }
     }
 
     // .doctor-card__badge
@@ -337,6 +349,7 @@
     &__name {
         font-size: 1.25rem;
         font-weight: 600;
+        transition: color 0.3s ease;
     }
 
     // .doctor-card__desc

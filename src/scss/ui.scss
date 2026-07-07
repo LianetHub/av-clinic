@@ -109,6 +109,40 @@
 	}
 }
 
+.swiper {
+
+	// .swiper__footer
+	&__footer {
+		margin-top: 1.125rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .swiper__more
+	&__more {}
+
+	// .swiper__controls
+	&__controls {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	// .swiper__prev
+	&__prev {}
+
+	// .swiper__pagination
+	&__pagination {
+		min-width: rem(57);
+	}
+
+	// .swiper__next
+	&__next {}
+}
+
+
 
 .swiper-pagination {
 	&.swiper-pagination-lock {

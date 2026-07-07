@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	devFunctions.OS();
 	devFunctions.formSubmit();
 	devFunctions.initYandexMap();
-	devFunctions.initMailtoLinks();
 
 	// clickHandler
 
@@ -99,12 +98,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	if (document.querySelector(".directions__slider")) {
-		new Swiper(".directions__slider", {
+
+		const sliderEl = document.querySelector(".directions__slider");
+
+		new Swiper(sliderEl, {
 			slidesPerView: 3,
 			speed: 600,
 			spaceBetween: 24,
 			pagination: {
-				el: '.directions__pagination',
+				el: sliderEl.querySelector('.swiper__pagination'),
 				type: "fraction",
 				renderFraction: function (currentClass, totalClass) {
 					return '<span class="' + currentClass + '"></span>' +
@@ -113,17 +115,35 @@ document.addEventListener("DOMContentLoaded", function () {
 				}
 			},
 			navigation: {
-				nextEl: '.directions__next',
-				prevEl: '.directions__prev'
+				nextEl: sliderEl.querySelector('.swiper__next'),
+				prevEl: sliderEl.querySelector('.swiper__prev')
 			}
 		});
 	}
 
 	if (document.querySelector(".doctors__slider")) {
-		new Swiper(".doctors__slider", {
+
+		const sliderEl = document.querySelector(".doctors__slider");
+
+		new Swiper(sliderEl, {
 			slidesPerView: 3,
 			speed: 600,
-			spaceBetween: 24
+			spaceBetween: 24,
+			pagination: {
+				el: sliderEl.querySelector('.swiper__pagination'),
+				type: "fraction",
+				renderFraction: function (currentClass, totalClass) {
+					console.log(this);
+
+					return '<span class="' + currentClass + '"></span>' +
+						' / ' +
+						'<span class="' + totalClass + '"></span>';
+				}
+			},
+			navigation: {
+				nextEl: sliderEl.querySelector('.swiper__next'),
+				prevEl: sliderEl.querySelector('.swiper__prev')
+			}
 		});
 	}
 

@@ -197,6 +197,21 @@
   color: #fff;
 }
 
+.swiper__footer {
+  margin-top: 1.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.swiper__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.swiper__pagination {
+  min-width: 3.5625rem;
+}
 .swiper-pagination.swiper-pagination-lock {
   display: none !important;
 }
@@ -2106,17 +2121,17 @@ body {
 }
 .chip {
   color: rgba(39, 22, 5, 0.6);
+  border: 1px solid rgba(39, 22, 5, 0.6);
   padding: 0.45rem 1rem;
   min-height: 2rem;
   font-size: 0.75rem;
   line-height: 130%;
   border-radius: 1rem;
-  border: 1px solid rgba(39, 22, 5, 0.6);
   display: inline-flex;
   align-items: center;
   text-align: center;
   gap: 0.25rem;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
 }
 @media (any-hover: hover) {
   .chip:hover {
@@ -2361,21 +2376,6 @@ body {
 .directions__card-more {
   margin-left: auto;
 }
-.directions__footer {
-  margin-top: 1.125rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.directions__controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.directions__pagination {
-  min-width: 3.5625rem;
-}
 
 .director__content {
   text-align: center;
@@ -2425,9 +2425,35 @@ body {
   flex-direction: column;
   background: #FFF;
 }
+@media (any-hover: hover) {
+  .doctor-card:hover .doctor-card__btn {
+    opacity: 1;
+  }
+  .doctor-card:hover .doctor-card__poster img {
+    transform: scale(1.05);
+  }
+  .doctor-card:hover .doctor-card__name {
+    color: #806448;
+  }
+}
 .doctor-card__poster {
   position: relative;
   background: rgba(67, 40, 33, 0.1);
+  overflow: hidden;
+}
+.doctor-card__poster img {
+  transition: transform 0.3s ease;
+}
+.doctor-card__btn {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.doctor-card__btn.chip {
+  color: rgba(255, 255, 255, 0.6);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.6);
+  opacity: 0;
 }
 .doctor-card__badge {
   border-radius: 1rem;
@@ -2446,6 +2472,7 @@ body {
 .doctor-card__name {
   font-size: 1.25rem;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 .doctor-card__desc {
   margin-top: 0.5rem;

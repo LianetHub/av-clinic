@@ -1996,7 +1996,7 @@ body {
   margin-top: 1rem;
   font-size: 1rem;
   line-height: 140%;
-  max-width: 36rem;
+  max-width: 39rem;
 }
 
 .info-list__list {
@@ -2479,4 +2479,63 @@ body {
   font-size: 0.875rem;
   line-height: 120%;
   color: rgba(39, 22, 5, 0.6);
+}
+
+.benefits__list {
+  margin-top: 2.5rem;
+}
+.benefits__item:first-child .benefits__item-details {
+  border-top: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+.benefits__item:first-child .benefits__item-image img {
+  top: 0;
+  transform: none;
+}
+.benefits__item:last-child .benefits__item-image img {
+  bottom: 0;
+  top: auto;
+  transform: none;
+}
+@media (any-hover: hover) {
+  .benefits__item:hover .benefits__item-title {
+    color: #806448;
+    transform: scale(1.0833333333);
+  }
+  .benefits__item:hover .benefits__item-desc {
+    color: #271605;
+  }
+  .benefits__item:hover .benefits__item-image {
+    opacity: 1;
+  }
+}
+.benefits__item-image {
+  position: relative;
+  width: 26.5rem;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.benefits__item-image img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.benefits__item-details {
+  padding: 1.475rem 0;
+  border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+.benefits__item-title {
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform-origin: left center;
+}
+.benefits__item-desc {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: rgba(39, 22, 5, 0.6);
+  transition: color 0.3s ease-in-out;
+  max-width: 37.5rem;
 }

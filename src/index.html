@@ -158,6 +158,9 @@
                                 <p class="section-header__desc">Уникальное пространство, комфорт и сервис доведенные до совершенства в сочетании с высочайшими стандартами качества медицинской помощи, делают каждый визит в AV-Clinic особенными.</p>
                             </div>
                         </div>
+                        <ul class="benefits__list">
+                            @@loop('./html/templates/_benefits-item.html', './html/json/benefits.json')
+                        </ul>
                     </div>
                 </section>
                 <section class="rates">

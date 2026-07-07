@@ -263,9 +263,6 @@
     }
 }
 
-
-
-
 .doctors {
 
     // .doctors__container
@@ -358,5 +355,99 @@
         font-size: 0.875rem;
         line-height: 120%;
         color: rgba($color: #271605, $alpha: .60);
+    }
+}
+
+.benefits {
+
+    // .benefits__container
+    &__container {}
+
+    // .benefits__list
+    &__list {
+        margin-top: rem(40);
+
+    }
+
+    // .benefits__item
+    &__item {
+        &:first-child {
+            .benefits__item-details {
+                border-top: rem(1) solid rgba(128, 100, 72, 0.35);
+            }
+
+            .benefits__item-image {
+
+                img {
+                    top: 0;
+                    transform: none;
+                }
+            }
+        }
+
+        &:last-child {
+            .benefits__item-image img {
+                bottom: 0;
+                top: auto;
+                transform: none;
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                .benefits__item-title {
+                    color: #806448;
+                    transform: scale(math.div(1.625, 1.5));
+                }
+
+                .benefits__item-desc {
+                    color: #271605;
+                }
+
+                .benefits__item-image {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    // .benefits__item-image
+    &__item-image {
+        position: relative;
+        width: 26.5rem;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+
+        & img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // .benefits__item-details
+    &__item-details {
+        padding: 1.475rem 0;
+        border-bottom: rem(1) solid rgba(128, 100, 72, 0.35);
+    }
+
+    // .benefits__item-title
+    &__item-title {
+        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform-origin: left center;
+    }
+
+    // .benefits__item-desc
+    &__item-desc {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        line-height: 120%;
+        color: rgba($color: #271605, $alpha: .6);
+        transition: color 0.3s ease-in-out;
+        max-width: rem(600);
     }
 }

@@ -278,6 +278,7 @@
     display: flex;
     flex-direction: column;
     background: #FFF;
+    height: auto;
 
     @media (any-hover: hover) {
         &:hover {
@@ -330,11 +331,17 @@
         border: 1px solid rgba($color: #271605, $alpha: 0.6);
         padding: 0.375rem 1rem;
         position: absolute;
-        top: 1.25rem;
-        right: 1.625rem;
         color: rgba($color: #271605, $alpha: 0.6);
         font-size: 0.75rem;
         line-height: 130%;
+        top: 1rem;
+        right: 1rem;
+
+        @media (min-width:$md2) {
+            right: 1.625rem;
+            top: 1.25rem;
+
+        }
     }
 
     // .doctor-card__body
@@ -414,10 +421,15 @@
     // .benefits__item-image
     &__item-image {
         position: relative;
-        width: 26.5rem;
         height: 100%;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
+        width: 20rem;
+
+        @media (min-width:$md2) {
+            width: 26.5rem;
+
+        }
 
         & img {
             position: absolute;
@@ -582,11 +594,16 @@
             left: 50%;
             transform: translate(-50%, -50%);
             color: #806448;
-            font-size: 8rem;
             border-radius: 50%;
             background: #fff;
             opacity: 0.6;
             transition: background-color 0.3s ease, opacity 0.3s ease;
+            font-size: 6rem;
+
+            @media (min-width:$md2) {
+                font-size: 8rem;
+
+            }
         }
 
         @media (any-hover: hover) {

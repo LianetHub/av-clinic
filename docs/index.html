@@ -17,7 +17,7 @@
       <link rel="icon" type="image/svg+xml" href="/favicon.svg">
       <link rel="shortcut icon" href="/favicon.ico">
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-      <meta name="apple-mobile-web-app-title" content="Альтера Вита">
+      <meta name="apple-mobile-web-app-title" content="AV Clinic">
       <link rel="manifest" href="/site.webmanifest">
       <!-- favicon -->
 
@@ -666,7 +666,7 @@
                 <section class="director">
                     <div class="director__container container">
                         <div class="director__content">
-                            <h2 class="director__title title">Приём Романа Терушкина в&nbsp;AV-Clinic</h2>
+                            <h2 class="director__title title">Приём Романа Терушкина <br> в&nbsp;AV-Clinic</h2>
                             <div class="director__person">
                                 <div class="director__person-photo">
                                     <picture><source srcset="img/doctors/roman-terushkin.webp" type="image/webp"><img src="img/doctors/roman-terushkin.png" alt="Фото доктора"></picture>
@@ -988,7 +988,7 @@
                 <section class="visit">
                     <div class="visit__container container">
                         <div class="visit__content">
-                            <h2 class="visit__title title">Запланируйте свой визит в AV-Clinic</h2>
+                            <h2 class="visit__title title">Запланируйте свой визит в&nbsp;AV-Clinic</h2>
                             <p class="visit__subtitle">Сделайте шаг навстречу состоянию, где есть жизненная энергия, внутренний баланс и&nbsp;красота, которая идёт изнутри.</p>
                             <div class="visit__hint">Оставьте свой номер телефона, мы перезвоним в течение 15 минут и&nbsp;подберем для вас удобное время.</div>
                             <form action="#" class="visit__form form">
@@ -1038,14 +1038,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contacts__map" id="map" data-center="55.746678033864825,37.56285460577391" data-coords="55.74662356898305,37.568991499999974" data-zoom="17" data-icon="img/placemark.svg"></div>
+                        <div class="contacts__map" id="map" data-center="55.746578033864825,37.56585460577391" data-coords="55.74662356898305,37.568991499999974" data-zoom="17" data-icon="img/placemark.svg"></div>
                     </div>
                 </section>
             </main>
             <footer class="footer">
                 <div class="footer__container container">
                     <div class="footer__header row">
-                        <div class="col-3">
+                        <div class="col-xl-3 col-4">
                             <div class="footer__main">
                                 <a href="/" class="footer__logo">
                                     <img src="img/logo.svg" alt="Логотип">
@@ -1058,7 +1058,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 offset-3">
+                        <div class="col-xxl-4 col-5 offset-xxl-3 offset-xl-2 offset-1">
                             <nav aria-label="Меню услуг в подвале" class="footer__nav">
                                 <div class="footer__nav-caption title-sm">Услуги</div>
                                 <ul class="footer__nav-list footer__nav-list--large">
@@ -1106,58 +1106,20 @@
                 <div class="footer__bottom">
                     <div class="footer__bottom-container container">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-xl-6 col-5">
                                 <div class="footer__copyright">© 2026, ООО «Ди-Мед»</div>
                             </div>
                             <div class="col-4">
                                 <a href="" class="footer__policy">Согласие на обработку персональных данных</a>
                             </div>
-                            <div class="col-2">
+                            <div class="col-xl-2 col-3">
                                 <a href="" class="footer__policy">Политика конфиденциальности</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
-            <dialog id="callback" class="popup" aria-labelledby="callback-modal-title">
-                <h2 id="callback-modal-title" class="popup__title title-sm">Напишите нам, и мы свяжемся с вами</h2>
-                <form action="/send.php" method="post" class="popup__form form" data-ya-captcha-form>
-                    <div class="form__field">
-                        <input type="text" name="name" autocomplete="name" class="form__control" placeholder="Контактное лицо" data-required>
-                        <span class="form__error">Введите ваше имя</span>
-                    </div>
-                    <div class="form__field">
-                        <input type="email" name="email" autocomplete="email" class="form__control" placeholder="Email" data-required>
-                        <span class="form__error">Введите корректный email</span>
-                    </div>
-                    <div class="form__field">
-                        <textarea name="comment" class="form__control" placeholder="Комментарий"></textarea>
-                    </div>
-                    <input type="hidden" name="smart-token" value="">
-                    <button type="submit" class="form__submit btn btn-primary" disabled>Отправить</button>
-                    <label class="form__checkbox checkbox">
-                        <input type="checkbox" name="policy" class="checkbox__input hidden" hidden data-required>
-                        <span class="checkbox__content">Нажимая на кнопку, Вы даете согласие на <a href="/policy.html">обработку персональных данных</a></span>
-                        <span class="form__error">Необходимо согласие</span>
-                    </label>
-                </form>
-            </dialog>
-
-            <dialog id="success" class="popup" aria-labelledby="success-modal-title">
-                <div class="popup__icon">
-                    <img src="img/icons/success.svg" alt="Иконка">
-                </div>
-                <h2 id="success-modal-title" class="popup__title title-sm">Успешно!</h2>
-                <p class="popup__subtitle">Наш специалист свяжется с Вами</p>
-            </dialog>
-
-            <dialog id="error" class="popup" aria-labelledby="error-modal-title">
-                <div class="popup__icon">
-                    <img src="img/icons/error.svg" alt="Иконка">
-                </div>
-                <h2 id="error-modal-title" class="popup__title title-sm">Ошибка</h2>
-                <p class="popup__subtitle">Что-то пошло не так. Попробуйте позже.</p>
-            </dialog>
+            
             <!-- plugins -->
             <script defer src="js/libs/swiper-bundle.min.js"></script>
             <script defer src="js/libs/fancybox.umd.js"></script>

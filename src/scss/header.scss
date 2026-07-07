@@ -64,7 +64,11 @@
 
 
 	// .header__btn
-	&__btn {}
+	&__btn {
+		@media (max-width:$md2) {
+			display: none;
+		}
+	}
 }
 
 
@@ -82,7 +86,12 @@
 	&__list {
 		display: flex;
 		justify-content: center;
-		gap: rem(37);
+		gap: rem(24);
+
+		@media (min-width:$md2) {
+			gap: rem(37);
+
+		}
 	}
 
 	// .menu__item

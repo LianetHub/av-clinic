@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		const sliderEl = document.querySelector(".reviews__slider");
 
 		new Swiper(sliderEl, {
-			slidesPerView: 3,
+			slidesPerView: 2,
 			speed: 600,
 			spaceBetween: 24,
 			pagination: {
@@ -193,6 +193,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			navigation: {
 				nextEl: sliderEl.querySelector('.swiper__next'),
 				prevEl: sliderEl.querySelector('.swiper__prev')
+			},
+			breakpoints: {
+				1199.98: {
+
+					slidesPerView: 3,
+				}
 			}
 		});
 	}

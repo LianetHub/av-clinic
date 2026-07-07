@@ -53,9 +53,14 @@
 
     // .footer__license
     &__license {
-        margin-top: rem(83);
         font-size: 0.875rem;
         line-height: 120%;
+        margin-top: rem(60);
+
+        @media (min-width:$md2) {
+            margin-top: rem(83);
+
+        }
     }
 
     // .footer__nav

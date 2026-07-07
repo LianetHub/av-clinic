@@ -91,6 +91,33 @@
                             <div class="swiper-wrapper">
                                 @@loop('./html/templates/_direction-card.html', './html/json/directions.json')
                             </div>
+                            <div class="directions__footer">
+                                <a href="" class="directions__more more-link">Все направления</a>
+                                <div class="directions__controls">
+                                    <button type="button" class="directions__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="directions__pagination swiper-pagination"></div>
+                                    <button type="button" class="directions__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="director">
+                    <div class="director__container container">
+                        <div class="director__content">
+                            <h2 class="director__title title">Приём Романа Терушкина в&nbsp;AV-Clinic</h2>
+                            <div class="director__person">
+                                <div class="director__person-photo">
+                                    <img src="@img/doctors/roman-terushkin.png" alt="Фото доктора">
+                                </div>
+                                <div class="director__person-chips">
+                                    <a href="" class="director__person-chip chip">Эндокринология</a>
+                                    <a href="" class="director__person-chip chip">Превентивный подход</a>
+                                    <a href="" class="director__person-chip chip icon-youtube">>30 млн просмотров</a>
+                                </div>
+                            </div>
+                            <p class="director__desc">Теперь в клинике ведет прием и курирует направление превентивной медицины Роман Терушкин — врач-эндокринолог, эксперт превентивной и интегративной медицины. Его подход строится на поиске первопричин, глубоком разборе анализов и персональной стратегии здоровья.</p>
+                            <a href="" class="director__btn btn btn-primary">Записаться на приём</a>
                         </div>
                     </div>
                 </section>

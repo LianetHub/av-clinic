@@ -200,7 +200,98 @@
     &__card-more {
         margin-left: auto;
     }
+
+    // .directions__footer
+    &__footer {
+        margin-top: 1.125rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .directions__more
+    &__more {}
+
+    // .directions__controls
+    &__controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    // .directions__prev
+    &__prev {}
+
+    // .directions__pagination
+    &__pagination {
+        min-width: rem(57);
+    }
 }
+
+.director {
+
+    // .director__container
+    &__container {}
+
+    // .director__content
+    &__content {
+        text-align: center;
+        max-width: 40.5rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .director__title
+    &__title {
+        max-width: 30rem;
+    }
+
+    // .director__person
+    &__person {
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    // .director__person-photo
+    &__person-photo {
+        width: 12.5rem;
+        height: 12.5rem;
+        grid-column: 2 / 3;
+        background: rgba($color: #432821, $alpha: .10);
+    }
+
+    // .director__person-chips
+    &__person-chips {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    // .director__person-chip
+    &__person-chip {}
+
+    // .director__desc
+    &__desc {
+        margin-top: 1.5rem;
+    }
+
+    // .director__btn
+    &__btn {
+        margin-top: 2.5rem;
+        max-width: 19.625rem;
+        width: 100%;
+    }
+}
+
+
+
 
 .doctors {
 

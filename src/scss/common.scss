@@ -324,6 +324,7 @@ body {
 		margin-top: 1rem;
 		font-size: 1rem;
 		line-height: 140%;
+		max-width: 36rem;
 	}
 }
 
@@ -505,8 +506,10 @@ body {
 	line-height: 130%;
 	border-radius: 1rem;
 	border: 1px solid rgba($color: #271605, $alpha: .60);
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	text-align: center;
+	gap: 0.25rem;
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 
 	@media (any-hover: hover) {

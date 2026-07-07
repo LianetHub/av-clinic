@@ -102,7 +102,20 @@ document.addEventListener("DOMContentLoaded", function () {
 		new Swiper(".directions__slider", {
 			slidesPerView: 3,
 			speed: 600,
-			spaceBetween: 24
+			spaceBetween: 24,
+			pagination: {
+				el: '.directions__pagination',
+				type: "fraction",
+				renderFraction: function (currentClass, totalClass) {
+					return '<span class="' + currentClass + '"></span>' +
+						' / ' +
+						'<span class="' + totalClass + '"></span>';
+				}
+			},
+			navigation: {
+				nextEl: '.directions__next',
+				prevEl: '.directions__prev'
+			}
 		});
 	}
 

@@ -143,8 +143,6 @@
 	&__next {}
 }
 
-
-
 .swiper-pagination {
 	&.swiper-pagination-lock {
 		display: none !important;
@@ -196,6 +194,36 @@
 		color: #806448;
 		font-weight: 600;
 	}
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+
+	// .socials__item
+	&__item {
+		width: 1.125rem;
+		height: 1.125rem;
+		font-size: 1.125rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #432821;
+
+		&.icon-max {
+			font-size: 1rem;
+		}
+
+		transition: color 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: #806448;
+			}
+		}
+	}
+
 }
 
 // .swiper-scrollbar {

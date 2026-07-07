@@ -59,34 +59,9 @@
 
 	// .header__socials
 	&__socials {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
 		margin-right: 0.5rem;
-
 	}
 
-	// .header__social
-	&__social {
-		width: 1.125rem;
-		height: 1.125rem;
-		font-size: 1.125rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		&.icon-max {
-			font-size: 1rem;
-		}
-
-		transition: color 0.3s ease;
-
-		@media (any-hover: hover) {
-			&:hover {
-				color: #806448;
-			}
-		}
-	}
 
 	// .header__btn
 	&__btn {}

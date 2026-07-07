@@ -6,13 +6,7 @@ export const initYandexMap = () => {
 
     const getIconParams = () => {
         const width = window.innerWidth;
-        let size = [104, 116];
-
-        if (width <= 767) {
-            size = [78, 88];
-        } else if (width <= 1024) {
-            size = [67, 75];
-        }
+        let size = [39, 47];
 
         return {
             size: size,
@@ -21,8 +15,10 @@ export const initYandexMap = () => {
     };
 
     const init = () => {
+        const centerRowCoords = mapContainer.dataset.center ? mapContainer.dataset.center : mapContainer.dataset.coords;
         const rawCoords = mapContainer.dataset.coords;
-        const coords = rawCoords ? rawCoords.split(',').map(item => parseFloat(item.trim())) : [55.8528135688981, 48.842075499999964];
+        const coords = rawCoords ? rawCoords.split(',').map(item => parseFloat(item.trim())) : [55.74662356898305, 37.568991499999974];
+        const centerCoords = centerRowCoords ? centerRowCoords.split(',').map(item => parseFloat(item.trim())) : [55.746678033864825, 37.5628546057739];
 
         const zoom = parseInt(mapContainer.dataset.zoom) || 16;
         const iconPath = mapContainer.dataset.icon;
@@ -30,7 +26,7 @@ export const initYandexMap = () => {
         const iconParams = getIconParams();
 
         myMap = new ymaps.Map('map', {
-            center: coords,
+            center: centerCoords,
             zoom: zoom,
             controls: ['zoomControl']
         });

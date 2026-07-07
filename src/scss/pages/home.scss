@@ -564,3 +564,38 @@
         line-height: 140%;
     }
 }
+
+.video {
+
+    // .video__container
+    &__container {}
+
+    // .video__block
+    &__block {
+        margin-top: 2.5rem;
+        position: relative;
+        display: block;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #806448;
+            font-size: 8rem;
+            border-radius: 50%;
+            background: #fff;
+            opacity: 0.6;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                &::before {
+                    opacity: 1;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}

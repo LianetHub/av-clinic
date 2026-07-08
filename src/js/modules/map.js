@@ -19,6 +19,7 @@ export const initYandexMap = () => {
         const rawCoords = mapContainer.dataset.coords;
         const coords = rawCoords ? rawCoords.split(',').map(item => parseFloat(item.trim())) : [55.74662356898305, 37.568991499999974];
         const centerCoords = centerRowCoords ? centerRowCoords.split(',').map(item => parseFloat(item.trim())) : [55.746678033864825, 37.5628546057739];
+        const mapCenter = window.innerWidth >= 991.98 ? centerCoords : coords;
 
         const zoom = parseInt(mapContainer.dataset.zoom) || 16;
         const iconPath = mapContainer.dataset.icon;
@@ -26,7 +27,7 @@ export const initYandexMap = () => {
         const iconParams = getIconParams();
 
         myMap = new ymaps.Map('map', {
-            center: centerCoords,
+            center: mapCenter,
             zoom: zoom,
             controls: ['zoomControl']
         });

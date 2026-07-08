@@ -650,13 +650,22 @@ body {
 
 	// .contacts__content
 	&__content {
-		margin-top: rem(42);
-		position: relative;
-		padding: 5rem 0;
+		margin-top: 1.5rem;
+
+		@media (min-width:$md3) {
+			margin-top: rem(42);
+			position: relative;
+			padding: 5rem 0;
+
+		}
 	}
 
 	// .contacts__container
-	&__container {}
+	&__container {
+		@media (max-width:$md3) {
+			padding: 0;
+		}
+	}
 
 	// .contacts__body
 	&__body {
@@ -665,9 +674,17 @@ body {
 		z-index: 2;
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
-		max-width: rem(500);
-		padding: 1.5rem 3rem;
+		align-items: center;
+		text-align: center;
+		padding: 1.5rem;
+
+		@media (min-width:$md3) {
+			max-width: rem(500);
+			align-items: flex-start;
+			text-align: left;
+			padding: 1.5rem 3rem;
+
+		}
 
 		@media (min-width:$md2) {
 			padding: 2.5rem 5rem;
@@ -683,8 +700,13 @@ body {
 
 	// .contacts__phone
 	&__phone {
-		margin-top: rem(60);
 		transition: color 0.3s ease;
+		margin-top: rem(26);
+
+		@media (min-width:$md3) {
+			margin-top: rem(60);
+
+		}
 
 		@media (any-hover: hover) {
 			&:hover {
@@ -707,8 +729,13 @@ body {
 
 	// .contacts__email
 	&__email {
-		margin-top: 2.5rem;
 		transition: color 0.3s ease;
+		margin-top: 1.5rem;
+
+		@media (min-width:$md3) {
+			margin-top: 2.5rem;
+
+		}
 
 		@media (any-hover: hover) {
 			&:hover {
@@ -719,8 +746,13 @@ body {
 
 	// .contacts__socials
 	&__socials {
-		margin-top: 0.5rem;
 		gap: rem(12);
+		margin-top: 1.25rem;
+
+		@media (min-width:$md3) {
+			margin-top: 0.5rem;
+
+		}
 
 		.socials__item {
 			font-size: 1.5rem;
@@ -731,10 +763,15 @@ body {
 
 	// .contacts__chips
 	&__chips {
-		margin-top: rem(76);
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem;
+		margin-top: rem(24);
+
+		@media (min-width:$md3) {
+			margin-top: rem(76);
+
+		}
 	}
 
 	// .contacts__chip
@@ -743,6 +780,8 @@ body {
 	// .contacts__map
 	&__map {
 		filter: saturate(10%);
+		width: 100%;
+		height: 25rem;
 
 		@media (min-width:$md2) {
 			position: absolute;

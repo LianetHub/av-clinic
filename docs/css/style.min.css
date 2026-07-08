@@ -146,7 +146,7 @@
 
 .more-link {
   color: #806448;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -155,6 +155,12 @@
 .more-link::before {
   order: 1;
   transition: transform 0.3s ease;
+  font-size: 1.25rem;
+}
+@media (min-width: 575.98px) {
+  .more-link {
+    font-size: 1.125rem;
+  }
 }
 @media (min-width: 1199.98px) {
   .more-link {
@@ -206,7 +212,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+}
+@media (min-width: 575.98px) {
+  .swiper__footer {
+    margin-top: 1rem;
+  }
 }
 @media (min-width: 1199.98px) {
   .swiper__footer {
@@ -214,14 +225,19 @@
   }
 }
 .swiper__controls {
-  margin-left: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.25rem;
+  display: none;
 }
-.swiper__controls:first-child {
-  margin-right: auto;
+@media (min-width: 575.98px) {
+  .swiper__controls {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .swiper__controls:first-child {
+    margin-right: auto;
+  }
 }
 @media (min-width: 1199.98px) {
   .swiper__controls {
@@ -1617,7 +1633,12 @@ body {
   overflow-x: clip;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4rem;
+}
+@media (min-width: 575.98px) {
+  .page {
+    gap: 5rem;
+  }
 }
 @media (min-width: 959.98px) {
   .page {
@@ -2033,34 +2054,57 @@ body {
 }
 
 .section-header {
-  --gutter-y: 1.5rem;
+  --gutter-y: 1rem;
+}
+@media (min-width: 575.98px) {
+  .section-header {
+    --gutter-y: 1.5rem;
+  }
 }
 .section-header__caption {
   color: #806448;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 .section-header__caption::after {
   content: "";
   display: block;
   flex-shrink: 0;
-  width: 0.625rem;
-  height: 0.625rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
-  margin-right: 0.5rem;
+  margin-right: 0.25rem;
   background: currentColor;
   order: -1;
+}
+@media (min-width: 575.98px) {
+  .section-header__caption::after {
+    margin-right: 0.5rem;
+    width: 0.625rem;
+    height: 0.625rem;
+  }
 }
 .section-header__caption::before {
   content: "";
   background: currentColor;
-  width: 2.5rem;
   height: 0.0625rem;
   flex-shrink: 0;
   order: -1;
+  width: 1.5rem;
+}
+@media (min-width: 575.98px) {
+  .section-header__caption::before {
+    width: 2.5rem;
+  }
+}
+@media (min-width: 575.98px) {
+  .section-header__caption {
+    font-size: 1.125rem;
+    gap: 0.5rem;
+  }
 }
 @media (min-width: 1199.98px) {
   .section-header__caption {
@@ -2078,9 +2122,14 @@ body {
 }
 .section-header__desc {
   margin-top: 1rem;
-  font-size: 1rem;
   line-height: 140%;
   max-width: 41.25rem;
+  font-size: 0.875rem;
+}
+@media (min-width: 575.98px) {
+  .section-header__desc {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 959.98px) {
   .section-header__desc {
@@ -2089,13 +2138,26 @@ body {
 }
 
 .info-list__list {
-  margin-top: 2.5rem;
   border-top: 0.0625rem solid rgba(128, 100, 72, 0.35);
+  margin-top: 2rem;
+}
+@media (min-width: 743.98px) {
+  .info-list__list {
+    margin-top: 2.5rem;
+  }
 }
 .info-list__item {
   position: relative;
-  padding-block: 1.5rem;
   border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.35);
+  padding-block: 1rem;
+}
+.info-list__item .row {
+  --gutter-y: 0.25rem;
+}
+@media (min-width: 743.98px) {
+  .info-list__item {
+    padding-block: 1.5rem;
+  }
 }
 @media (any-hover: hover) {
   .info-list__item:hover .info-list__item-title {
@@ -2174,7 +2236,11 @@ body {
 }
 .info-list__item-desc {
   font-size: 0.875rem;
-  max-width: 20rem;
+}
+@media (min-width: 575.98px) {
+  .info-list__item-desc {
+    max-width: 20rem;
+  }
 }
 @media (min-width: 959.98px) {
   .info-list__item-desc {
@@ -2215,7 +2281,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
+}
+@media (min-width: 575.98px) {
+  .info-list__item-tags {
+    margin-top: 0.75rem;
+  }
 }
 @media (min-width: 959.98px) {
   .info-list__item-tags {
@@ -2436,7 +2507,12 @@ body {
 }
 .header__top {
   border-bottom: 0.0625rem solid rgba(39, 22, 5, 0.1);
-  padding: 1.25rem 0;
+  padding: 0.875rem 0;
+}
+@media (min-width: 743.98px) {
+  .header__top {
+    padding: 1.25rem 0;
+  }
 }
 @media (min-width: 959.98px) {
   .header__top {
@@ -2445,10 +2521,17 @@ body {
 }
 .header__top-container {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr auto 1fr;
 }
 .header__address {
-  font-size: 0.75rem;
+  display: none;
+}
+@media (min-width: 743.98px) {
+  .header__address {
+    font-size: 0.75rem;
+    display: block;
+  }
 }
 .header__address-value {
   font-weight: 500;
@@ -2456,15 +2539,35 @@ body {
 .header__address-metro {
   font-weight: 300;
 }
+.header__logo {
+  max-width: 4.625rem;
+}
+@media (min-width: 743.98px) {
+  .header__logo {
+    max-width: 8.5625rem;
+  }
+}
 .header__contacts {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: flex-end;
+  display: contents;
+}
+@media (min-width: 743.98px) {
+  .header__contacts {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
 }
 .header__phone {
   font-weight: 600;
   transition: color 0.3s ease;
+  order: -1;
+  font-size: 0.625rem;
+}
+@media (min-width: 575.98px) {
+  .header__phone {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 959.98px) {
   .header__phone {
@@ -2490,6 +2593,9 @@ body {
   .header__btn {
     display: none;
   }
+}
+.header__toggler {
+  margin-left: auto;
 }
 @media (min-width: 959.98px) {
   .header__toggler {
@@ -2562,7 +2668,7 @@ body {
   background: transparent;
   z-index: 11;
   transition: all 0.3s ease;
-  width: 1.875rem;
+  width: 2rem;
   height: 1rem;
 }
 @media (min-width: 575.98px) {
@@ -2581,11 +2687,21 @@ body {
   align-self: stretch;
   transition: transform 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
   will-change: transform;
-  padding: 0.3125rem 0;
+  padding: 0.1875rem 0;
+}
+@media (min-width: 743.98px) {
+  .icon-menu span {
+    padding: 0.3125rem 0;
+  }
 }
 .icon-menu span:nth-child(2) {
-  width: 85%;
   margin-left: auto;
+  width: 82%;
+}
+@media (min-width: 743.98px) {
+  .icon-menu span:nth-child(2) {
+    width: 85%;
+  }
 }
 .icon-menu span::before {
   content: "";
@@ -2792,7 +2908,12 @@ body {
   color: #fff;
   position: relative;
   z-index: 1;
-  height: 65.875rem;
+  height: 51.4375rem;
+}
+@media (min-width: 743.98px) {
+  .hero {
+    height: 65.875rem;
+  }
 }
 @media (min-width: 1199.98px) {
   .hero {
@@ -2801,14 +2922,21 @@ body {
 }
 .hero__badge {
   background: #fff;
-  border-radius: 0.5rem;
   position: absolute;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.75rem;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 2.125rem;
+  right: 1rem;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.5rem;
+}
+@media (min-width: 575.98px) {
+  .hero__badge {
+    padding: 0.75rem 1.75rem;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
 }
 @media (min-width: 959.98px) {
   .hero__badge {
@@ -2873,13 +3001,25 @@ body {
   font-weight: 700;
 }
 .hero__subtitle {
-  margin-top: 1rem;
+  margin-top: 1.125rem;
   max-width: 39.0625rem;
+  font-size: 0.875rem;
+}
+@media (min-width: 575.98px) {
+  .hero__subtitle {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
 }
 .hero__btn {
-  max-width: 19.625rem;
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
+}
+@media (min-width: 575.98px) {
+  .hero__btn {
+    margin-top: 2.5rem;
+    max-width: 19.625rem;
+  }
 }
 @media (min-width: 959.98px) {
   .hero__btn {
@@ -2892,7 +3032,12 @@ body {
   text-align: center;
   line-height: 140%;
   margin: 0 auto;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
+}
+@media (min-width: 575.98px) {
+  .tagline__text {
+    font-size: 1.375rem;
+  }
 }
 @media (min-width: 959.98px) {
   .tagline__text {
@@ -2901,19 +3046,37 @@ body {
 }
 
 .directions__chips {
-  margin-top: 2.5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  margin-top: 1.875rem;
+  gap: 0.5rem;
+}
+@media (min-width: 743.98px) {
+  .directions__chips {
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
 }
 .directions__slider {
-  margin-top: 2.5rem;
+  overflow: visible;
+  margin-top: 1.875rem;
+}
+@media (min-width: 743.98px) {
+  .directions__slider {
+    margin-top: 2.5rem;
+    overflow: hidden;
+  }
 }
 .directions__card {
   background: #fff;
   display: flex;
   flex-direction: column;
   height: auto;
+}
+@media (max-width: 743.98px) {
+  .directions__card.swiper-slide {
+    width: 17.5625rem;
+  }
 }
 @media (any-hover: hover) {
   .directions__card:hover .directions__card-poster img {
@@ -2925,26 +3088,42 @@ body {
 }
 .directions__card-poster {
   width: 100%;
-  height: 20rem;
   overflow: hidden;
+  height: 15rem;
+}
+@media (min-width: 743.98px) {
+  .directions__card-poster {
+    height: 20rem;
+  }
 }
 .directions__card-poster img {
   transition: transform 0.3s ease;
 }
 .directions__card-body {
-  padding: 1rem 1.5rem 1.35rem;
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+  padding: 1rem 1rem 1.125rem;
+}
+@media (min-width: 743.98px) {
+  .directions__card-body {
+    padding: 1rem 1.5rem 1.35rem;
+  }
 }
 .directions__card-name {
   transition: color 0.3s ease;
 }
 .directions__card-desc {
-  font-size: 0.875rem;
-  line-height: 120%;
   margin-bottom: auto;
   margin-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 130%;
+}
+@media (min-width: 575.98px) {
+  .directions__card-desc {
+    font-size: 0.875rem;
+    line-height: 120%;
+  }
 }
 @media (min-width: 1199.98px) {
   .directions__card-desc {
@@ -2952,11 +3131,16 @@ body {
   }
 }
 .directions__card-footer {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.5rem;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+@media (min-width: 743.98px) {
+  .directions__card-footer {
+    gap: 1.5rem;
+  }
 }
 @media (min-width: 1199.98px) {
   .directions__card-footer {
@@ -2971,7 +3155,12 @@ body {
 }
 .directions__card-price span {
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
+}
+@media (min-width: 575.98px) {
+  .directions__card-price span {
+    font-size: 1.375rem;
+  }
 }
 @media (min-width: 1199.98px) {
   .directions__card-price span {

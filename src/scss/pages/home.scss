@@ -3,7 +3,11 @@
     color: #fff;
     position: relative;
     z-index: 1;
-    height: rem(1054);
+    height: rem(823);
+
+    @media (min-width:$md4) {
+        height: rem(1054);
+    }
 
     @media (min-width:$md2) {
         height: rem(840);
@@ -13,15 +17,20 @@
     // .hero__badge
     &__badge {
         background: #fff;
-        border-radius: rem(8);
         position: absolute;
-
         display: flex;
         align-items: center;
         gap: rem(8);
-        padding: 0.75rem 1.75rem;
-        top: rem(24);
-        right: rem(24);
+        top: rem(34);
+        right: rem(16);
+        padding: 0.375rem 0.5rem;
+        border-radius: rem(8);
+
+        @media (min-width:$md5) {
+            padding: 0.75rem 1.75rem;
+            top: rem(24);
+            right: rem(24);
+        }
 
         @media (min-width:$md3) {
             top: rem(40);
@@ -98,15 +107,26 @@
 
     // .hero__subtitle
     &__subtitle {
-        margin-top: 1rem;
+        margin-top: 1.125rem;
         max-width: 39.0625rem;
+        font-size: rem(14);
+
+        @media (min-width:$md5) {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
     }
 
     // .hero__btn
     &__btn {
-        max-width: 19.625rem;
         width: 100%;
-        margin-top: 2.5rem;
+
+        margin-top: 2rem;
+
+        @media (min-width:$md5) {
+            margin-top: 2.5rem;
+            max-width: 19.625rem;
+        }
 
         @media (min-width:$md3) {
             margin-top: 1.5rem;
@@ -117,7 +137,6 @@
 
 .tagline {
 
-
     // .tagline__container
     &__container {}
 
@@ -127,11 +146,14 @@
         text-align: center;
         line-height: 140%;
         margin: 0 auto;
-        font-size: rem(22);
+        font-size: rem(18);
+
+        @media (min-width:$md5) {
+            font-size: rem(22);
+        }
 
         @media (min-width:$md3) {
             font-size: 1.5rem;
-
         }
     }
 }
@@ -140,10 +162,16 @@
 
     // .directions__chips
     &__chips {
-        margin-top: rem(40);
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        margin-top: rem(30);
+        gap: 0.5rem;
+
+        @media (min-width:$md4) {
+            gap: 1rem;
+            margin-top: rem(40);
+
+        }
     }
 
     // .directions__chip
@@ -151,7 +179,13 @@
 
     // .directions__slider
     &__slider {
-        margin-top: rem(40);
+        overflow: visible;
+        margin-top: rem(30);
+
+        @media (min-width:$md4) {
+            margin-top: rem(40);
+            overflow: hidden;
+        }
     }
 
     // .directions__card
@@ -160,6 +194,12 @@
         display: flex;
         flex-direction: column;
         height: auto;
+
+        &.swiper-slide {
+            @media (max-width:$md4) {
+                width: rem(281)
+            }
+        }
 
         @media (any-hover: hover) {
             &:hover {
@@ -179,8 +219,13 @@
     // .directions__card-poster
     &__card-poster {
         width: 100%;
-        height: 20rem;
         overflow: hidden;
+        height: rem(240);
+
+        @media (min-width:$md4) {
+            height: 20rem;
+
+        }
 
         & img {
             transition: transform 0.3s ease;
@@ -189,10 +234,15 @@
 
     // .directions__card-body
     &__card-body {
-        padding: 1rem 1.5rem 1.35rem;
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
+        padding: 1rem 1rem 1.125rem;
+
+        @media (min-width:$md4) {
+            padding: 1rem 1.5rem 1.35rem;
+
+        }
     }
 
     // .directions__card-name
@@ -202,10 +252,15 @@
 
     // .directions__card-desc
     &__card-desc {
-        font-size: 0.875rem;
-        line-height: 120%;
         margin-bottom: auto;
         margin-top: 0.5rem;
+        font-size: 0.75rem;
+        line-height: 130%;
+
+        @media (min-width:$md5) {
+            font-size: 0.875rem;
+            line-height: 120%;
+        }
 
         @media (min-width:$md2) {
             margin-top: 0.25rem;
@@ -216,11 +271,15 @@
 
     // .directions__card-footer
     &__card-footer {
-        margin-top: 1rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 1.5rem;
+        margin-top: 1rem;
+        gap: 1rem;
+
+        @media (min-width:$md4) {
+            gap: 1.5rem;
+        }
 
         @media (min-width:$md2) {
             flex-direction: row;
@@ -237,7 +296,11 @@
 
         & span {
             font-weight: 600;
-            font-size: 1.375rem;
+            font-size: 1.25rem;
+
+            @media (min-width:$md5) {
+                font-size: 1.375rem;
+            }
 
             @media (min-width:$md2) {
                 font-size: 1.5rem;
@@ -313,7 +376,6 @@
 
         @media (min-width:$md2) {
             margin-top: 1.5rem;
-
         }
     }
 

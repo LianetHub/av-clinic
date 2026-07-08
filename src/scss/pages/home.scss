@@ -202,19 +202,32 @@
 
     // .directions__card-desc
     &__card-desc {
-        margin-top: 0.25rem;
         font-size: 0.875rem;
         line-height: 120%;
         margin-bottom: auto;
+        margin-top: 0.5rem;
+
+        @media (min-width:$md2) {
+            margin-top: 0.25rem;
+
+        }
 
     }
 
     // .directions__card-footer
     &__card-footer {
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+
+        @media (min-width:$md2) {
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+
+        }
     }
 
     // .directions__card-price
@@ -223,14 +236,22 @@
         line-height: 140%;
 
         & span {
-            font-size: 1.5rem;
             font-weight: 600;
+            font-size: 1.375rem;
+
+            @media (min-width:$md2) {
+                font-size: 1.5rem;
+
+            }
         }
     }
 
     // .directions__card-more
     &__card-more {
-        margin-left: auto;
+        @media (min-width:$md2) {
+            margin-left: auto;
+
+        }
     }
 }
 
@@ -259,7 +280,11 @@
         margin-top: 2.5rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+        gap: 2rem;
+
+        @media (min-width:$md2) {
+            gap: 1.5rem;
+        }
     }
 
     // .director__person-photo
@@ -284,7 +309,12 @@
 
     // .director__desc
     &__desc {
-        margin-top: 1.5rem;
+        margin-top: 2.5rem;
+
+        @media (min-width:$md2) {
+            margin-top: 1.5rem;
+
+        }
     }
 
     // .director__btn
@@ -338,6 +368,12 @@
         background: rgba($color: #432821, $alpha: 0.1);
         overflow: hidden;
 
+        .doctor-card__btn {
+            @media (max-width:$md2) {
+                display: none;
+            }
+        }
+
         & img {
             transition: transform 0.3s ease;
         }
@@ -345,15 +381,20 @@
 
     //.doctor-card__btn
     &__btn {
-        position: absolute;
-        bottom: rem(24);
-        left: 50%;
-        transform: translateX(-50%);
+        margin-top: auto;
 
-        &.chip {
-            color: rgba($color: #fff, $alpha: .60);
-            border: rem(1) solid rgba($color: #fff, $alpha: .60);
-            opacity: 0;
+        @media (min-width:$md2) {
+
+            position: absolute;
+            bottom: rem(24);
+            left: 50%;
+            transform: translateX(-50%);
+
+            &.chip {
+                color: rgba($color: #fff, $alpha: .60);
+                border: rem(1) solid rgba($color: #fff, $alpha: .60);
+                opacity: 0;
+            }
         }
     }
 
@@ -366,8 +407,8 @@
         color: rgba($color: #271605, $alpha: 0.6);
         font-size: 0.75rem;
         line-height: 130%;
-        top: 1rem;
-        right: 1rem;
+        top: 0.5rem;
+        right: 0.5rem;
 
         @media (min-width:$md2) {
             right: 1.625rem;
@@ -378,22 +419,45 @@
 
     // .doctor-card__body
     &__body {
-        padding: 1.5rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        flex: 1 1 auto;
+
+        @media (min-width:$md2) {
+            padding: 1.5rem;
+
+        }
     }
 
     // .doctor-card__name
     &__name {
-        font-size: 1.25rem;
         font-weight: 600;
         transition: color 0.3s ease;
+        font-size: 1.375rem;
+
+        @media (min-width:$md2) {
+            font-size: 1.25rem;
+
+            br {
+                display: none;
+            }
+
+        }
     }
 
     // .doctor-card__desc
     &__desc {
-        margin-top: 0.5rem;
         font-size: 0.875rem;
         line-height: 120%;
         color: rgba($color: #271605, $alpha: .60);
+        padding-bottom: 0.5rem;
+
+        @media (min-width:$md2) {
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -406,30 +470,46 @@
     &__list {
         margin-top: rem(40);
 
+        @media (max-width:$md3) {
+            border-top: rem(1) solid rgba(128, 100, 72, 0.35);
+
+        }
     }
 
     // .benefits__item
     &__item {
-        &:first-child {
-            .benefits__item-details {
-                border-top: rem(1) solid rgba(128, 100, 72, 0.35);
-            }
+        @media (max-width:$md3) {
+            padding: 1rem 1.56rem;
+            border-bottom: rem(1) solid rgba(128, 100, 72, 0.35);
 
-            .benefits__item-image {
-
-                img {
-                    top: 0;
-                    transform: none;
-                }
+            .row {
+                flex-direction: row-reverse;
             }
         }
 
-        &:last-child {
-            .benefits__item-image img {
-                bottom: 0;
-                top: auto;
-                transform: none;
+        @media (min-width:$md3) {
+            &:first-child {
+                .benefits__item-details {
+                    border-top: rem(1) solid rgba(128, 100, 72, 0.35);
+                }
+
+                .benefits__item-image {
+
+                    img {
+                        top: 0;
+                        transform: none;
+                    }
+                }
             }
+
+            &:last-child {
+                .benefits__item-image img {
+                    bottom: 0;
+                    top: auto;
+                    transform: none;
+                }
+            }
+
         }
 
         @media (any-hover: hover) {
@@ -452,31 +532,41 @@
 
     // .benefits__item-image
     &__item-image {
-        position: relative;
-        height: 100%;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        width: 20rem;
+        @media (min-width:$md3) {
+            position: relative;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            width: 20rem;
+
+            & img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 100%;
+                height: auto;
+            }
+        }
 
         @media (min-width:$md2) {
             width: 26.5rem;
 
         }
 
-        & img {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 0;
-            width: 100%;
-            height: auto;
-        }
+
     }
 
     // .benefits__item-details
     &__item-details {
-        padding: 1.475rem 0;
-        border-bottom: rem(1) solid rgba(128, 100, 72, 0.35);
+        padding: 0.5rem 0 0;
+        max-width: rem(340);
+
+        @media (min-width:$md3) {
+            max-width: 100%;
+            padding: 1.475rem 0;
+            border-bottom: rem(1) solid rgba(128, 100, 72, 0.35);
+        }
     }
 
     // .benefits__item-title
@@ -487,12 +577,17 @@
 
     // .benefits__item-desc
     &__item-desc {
-        margin-top: 1rem;
         font-size: 0.875rem;
         line-height: 120%;
         color: rgba($color: #271605, $alpha: .6);
         transition: color 0.3s ease-in-out;
-        max-width: rem(600);
+        margin-top: 0.5rem;
+
+        @media (min-width:$md3) {
+            margin-top: 1rem;
+            max-width: rem(600);
+
+        }
     }
 }
 
@@ -503,20 +598,24 @@
 
     // .rates__slider
     &__slider {
-        margin-top: rem(40);
+        margin-top: rem(24);
+
+        @media (min-width:$md2) {
+            margin-top: rem(40);
+
+        }
     }
 
     // .rates__card
     &__card {
         background: rgba($color: #432821, $alpha: .1);
-        padding: 1.5rem;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         height: auto;
         transition: background-color 0.3s ease;
-
-
+        padding: 1.5rem;
 
         @media (any-hover: hover) {
             &:hover {
@@ -562,10 +661,15 @@
     &__card {
         background: #FFF;
         height: auto;
-        padding: 1.5rem 2.5rem 2.5rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        padding: 1.5rem;
+
+        @media (min-width:$md2) {
+            padding: 1.5rem 2.5rem 2.5rem;
+
+        }
     }
 
     // .reviews__card-rates
@@ -582,7 +686,6 @@
         flex-shrink: 0;
     }
 
-
     // .reviews__card-time
     &__card-time {
         margin-top: 0.5rem;
@@ -594,11 +697,17 @@
 
     // .reviews__card-author
     &__card-author {
-        margin-top: 2.5rem;
         color: #271605;
-        font-size: 1.25rem;
         font-weight: 600;
         line-height: 120%;
+        margin-top: 1.75rem;
+        font-size: 1.125rem;
+
+        @media (min-width:$md2) {
+            font-size: 1.25rem;
+            margin-top: 2.5rem;
+
+        }
     }
 
     // .reviews__card-blockquote
@@ -616,7 +725,7 @@
 
     // .video__block
     &__block {
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
         position: relative;
         display: block;
 
@@ -630,12 +739,15 @@
             background: #fff;
             opacity: 0.6;
             transition: background-color 0.3s ease, opacity 0.3s ease;
-            font-size: 6rem;
+            font-size: 8rem;
+        }
 
-            @media (min-width:$md2) {
-                font-size: 8rem;
+        & img {
+            min-height: 25rem;
+        }
 
-            }
+        @media (min-width:$md2) {
+            margin-top: 2.5rem;
         }
 
         @media (any-hover: hover) {

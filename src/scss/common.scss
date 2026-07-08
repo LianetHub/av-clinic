@@ -297,7 +297,6 @@ body {
 
 	// .section-header__caption
 	&__caption {
-
 		color: #806448;
 		font-size: 1.125rem;
 		font-weight: 500;
@@ -334,14 +333,25 @@ body {
 	}
 
 	// .section-header__title
-	&__title {}
+	&__title {
+		max-width: 38rem;
+
+		@media (min-width:$md2) {
+			max-width: 100%;
+		}
+	}
 
 	// .section-header__desc
 	&__desc {
 		margin-top: 1rem;
 		font-size: 1rem;
 		line-height: 140%;
-		max-width: 39rem;
+		max-width: rem(660);
+
+		@media (min-width:$md3) {
+			max-width: 39rem;
+
+		}
 	}
 }
 
@@ -585,11 +595,16 @@ body {
 
 	// .visit__content
 	&__content {
-		max-width: rem(700);
 		margin: auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		max-width: 28.5rem;
+
+		@media (min-width:$md2) {
+			max-width: rem(700);
+
+		}
 	}
 
 	// .visit__title
@@ -600,9 +615,15 @@ body {
 
 	// .visit__subtitle
 	&__subtitle {
-		margin-top: 1.5rem;
 		text-align: center;
-		max-width: 39rem;
+		margin-top: 1rem;
+		max-width: 28.4375rem;
+
+		@media (min-width:$md2) {
+			max-width: 39rem;
+			margin-top: 1.5rem;
+
+		}
 	}
 
 	// .visit__hint
@@ -721,11 +742,14 @@ body {
 
 	// .contacts__map
 	&__map {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
 		filter: saturate(10%);
+
+		@media (min-width:$md2) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 	}
 }

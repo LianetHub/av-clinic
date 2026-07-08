@@ -3,35 +3,35 @@
         "extrasClass": "swiper-slide",
         "expirience": "Стаж 25 лет",
         "image": "@img/doctors/mrachkovskaya-natalya.png",
-        "name": "Мрачковская Наталья Владимировна",
+        "name": "Мрачковская <br> Наталья Владимировна",
         "desc": "Врач-гинеколог, эндокринолог, врач ультразвуковой диагностики, кандидат медицинских наук"
     },
     {
         "extrasClass": "swiper-slide",
         "expirience": "Стаж 16 лет",
         "image": "@img/doctors/bala-anatoly.png",
-        "name": "Бала Анатолий Михайлович",
+        "name": "Бала <br> Анатолий Михайлович",
         "desc": "Врач-аллерголог-иммунолог, кандидат медицинских наук"
     },
     {
         "extrasClass": "swiper-slide",
         "expirience": "Стаж 18 лет",
         "image": "@img/doctors/jioeva-larisa.png",
-        "name": "Джиоева Лариса Малхазовна",
+        "name": "Джиоева <br> Лариса Малхазовна",
         "desc": "Врач-кардиолог, терапевт, врач функциональной диагностики, кандидат медицинских наук"
     },
     {
         "extrasClass": "swiper-slide",
         "expirience": "Стаж 9 лет",
         "image": "@img/doctors/malygina-anastasia.png",
-        "name": "Малыгина Анастасия Андреевна",
+        "name": "Малыгина <br> Анастасия Андреевна",
         "desc": "Врач-эндокринолог, кандидат медицинских наук"
     },
     {
         "extrasClass": "swiper-slide",
         "expirience": "Стаж 25 лет",
         "image": "@img/doctors/kazakova-elena.png",
-        "name": "Казакова Елена Владимировна",
+        "name": "Казакова <br> Елена Владимировна",
         "desc": "Семейный врач, эксперт превентивной медицины, врач-косметолог высшей категории"
     }
 ]

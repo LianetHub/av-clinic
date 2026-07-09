@@ -3,27 +3,27 @@
     @@include('html/_head.html', {
     "title": "Капельницы"
     })
-    <body itemscope itemtype="https://schema.org/WebPage">
+    <body itemscope itemtype="https://schema.org/MedicalWebPage">
         <div class="wrapper">
             @@include('html/_header.html', {
             'active': 3
             })
             <main class="page" itemprop="mainContentOfPage">
-                <section class="heading">
+                <section class="heading" itemscope itemtype="https://schema.org/MedicalProcedure">
                     <div class="heading__wrapper">
                         <div class="heading__container container">
                             <div class="heading__content">
-                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                                     <ul class="breadcrumbs__list">
-                                        <li class="breadcrumbs__item">
-                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
                                         </li>
-                                        <li class="breadcrumbs__item">
-                                            <span class="breadcrumbs__link">Капельницы</span>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Капельницы</span><meta itemprop="position" content="2">
                                         </li>
                                     </ul>
                                 </nav>
-                                <h1 class="heading__title title-lg">Капельницы (IV-терапия)</h1>
+                                <h1 class="heading__title title-lg" itemprop="name">Капельницы (IV-терапия)</h1>
                                 <div class="heading__desc">
                                     <p>Внутривенное введение питательных веществ — один из самых эффективных способов поддержать организм: активные компоненты поступают напрямую в&nbsp;кровоток, минуя ЖКТ, и усваиваются на&nbsp;100%.</p>
                                     <p>Каждый курс начинается с консультации врача и,&nbsp;при&nbsp;необходимости, лабораторной диагностики. Мы предлагаем индивидуальные программы обследования с результатами в день обращения.</p>
@@ -34,8 +34,9 @@
                         </div>
                     </div>
                     <div class="heading__image">
-                        <img src="@img/drips.jpg" class="cover-image" alt="Фото услуги">
+                        <img src="@img/drips.jpg" class="cover-image" alt="Фото услуги" itemprop="image">
                     </div>
+                    <div itemprop="provider" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic"><meta itemprop="name" content="Альтера Вита"></div>
                 </section>
                 <section class="info-list">
                     <div class="info-list__container container">

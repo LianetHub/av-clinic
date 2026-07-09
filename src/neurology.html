@@ -3,31 +3,31 @@
     @@include('html/_head.html', {
     "title": "Неврология"
     })
-    <body itemscope itemtype="https://schema.org/WebPage">
+    <body itemscope itemtype="https://schema.org/MedicalWebPage">
         <div class="wrapper">
             @@include('html/_header.html', {
             'active': 0
             })
             <main class="page" itemprop="mainContentOfPage">
-                <section class="heading">
+                <section class="heading" itemscope itemtype="https://schema.org/MedicalProcedure">
                     <div class="heading__wrapper">
                         <div class="heading__container container">
                             <div class="heading__content">
-                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                                     <ul class="breadcrumbs__list">
-                                        <li class="breadcrumbs__item">
-                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
                                         </li>
-                                        <li class="breadcrumbs__item">
-                                            <a href="index.html#directions" class="breadcrumbs__link">Направления</a>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html#directions" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Направления</span></a><meta itemprop="position" content="2">
                                         </li>
-                                        <li class="breadcrumbs__item">
-                                            <span class="breadcrumbs__link">Неврология</span>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Неврология</span><meta itemprop="position" content="3">
                                         </li>
                                     </ul>
                                 </nav>
-                                <h1 class="heading__title title-lg">Неврология</h1>
-                                <div class="heading__tagline">Комплексная диагностика и лечение заболеваний центральной и периферической нервной системы</div>
+                                <h1 class="heading__title title-lg" itemprop="name">Неврология</h1>
+                                <div class="heading__tagline" itemprop="description">Комплексная диагностика и лечение заболеваний центральной и периферической нервной системы</div>
                                 <div class="heading__desc">
                                     <p>Неврология в нашей клинике — это диагностика, лечение заболеваний головного и спинного мозга, периферической нервной системы и вегетативных расстройств. Мы работаем с головными болями и мигренью, нарушениями сна, головокружениями, болями в спине, когнитивными нарушениями, эпилепсией, последствиями инсульта и нейродегенеративными заболеваниями.</p>
                                     <p>Точная диагностика, современные методы лечения и долгосрочное наблюдение — чтобы ваша нервная система работала чётко и без сбоев.</p>
@@ -37,8 +37,9 @@
                         </div>
                     </div>
                     <div class="heading__image">
-                        <img src="@img/directions/neurology.jpg" class="cover-image" alt="Фото направления">
+                        <img src="@img/directions/neurology.jpg" class="cover-image" alt="Фото направления" itemprop="image">
                     </div>
+                    <div itemprop="provider" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic"><meta itemprop="name" content="Альтера Вита"></div>
                 </section>
                 <section class="description">
                     <div class="description__container container">

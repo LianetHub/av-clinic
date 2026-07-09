@@ -1,8 +1,16 @@
-<li class="reviews__card swiper-slide">
-    <div class="reviews__card-rates">
+<li class="reviews__card swiper-slide" itemscope itemtype="https://schema.org/Review">
+    <div class="reviews__card-rates" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+        <meta itemprop="ratingValue" content="5">
+        <meta itemprop="bestRating" content="5">
         <span class="reviews__card-rate icon-star"></span><span class="reviews__card-rate icon-star"></span><span class="reviews__card-rate icon-star"></span><span class="reviews__card-rate icon-star"></span><span class="reviews__card-rate icon-star"></span>
     </div>
-    <time datetime="@@datetime" class="reviews__card-time">@@time</time>
-    <div class="reviews__card-author">@@author</div>
-    <blockquote class="reviews__card-blockquote">@@quote</blockquote>
+    <time datetime="@@datetime" class="reviews__card-time" itemprop="datePublished">@@time</time>
+    <div class="reviews__card-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">@@author</span>
+    </div>
+    <blockquote class="reviews__card-blockquote" itemprop="reviewBody">@@quote</blockquote>
+    <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/MedicalClinic">
+        <meta itemprop="name" content="Альтера Вита">
+        <meta itemprop="url" content="https://av-clinic.ru/">
+    </div>
 </li>

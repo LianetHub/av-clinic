@@ -550,7 +550,7 @@ body {
 			max-width: rem(500);
 		}
 
-		p + p {
+		p+p {
 			margin-top: 0.5rem;
 		}
 
@@ -559,7 +559,7 @@ body {
 			list-style: disc;
 		}
 
-		li + li {
+		li+li {
 			margin-top: 0.5rem;
 		}
 
@@ -650,7 +650,7 @@ body {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem;
-		padding-bottom: rem(1);
+		padding-bottom: rem(2);
 
 		@media (any-hover: hover) {
 			max-height: 0;

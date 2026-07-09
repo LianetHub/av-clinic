@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic">
     <div class="contacts__header">
         <div class="container">
             <div class="section-header row">
@@ -11,11 +11,13 @@
     <div class="contacts__content">
         <div class="contacts__container container">
             <div class="contacts__body">
-                <h2 class="contacts__title title">Контакты</h2>
-                <a href="tel:+74951064040" class="contacts__phone title">+7 (495) 106-40-40</a>
-                <address class="contacts__address title-sm">г. Москва, ул. 1-я Бородинская д.3</address>
-                <div class="contacts__time">ежедневно: 08.00 - 20.00</div>
-                <a href="mailto:info@av-clinic.ru" class="contacts__email title-sm">info@av-clinic.ru</a>
+                <h2 class="contacts__title title" itemprop="name">Контакты</h2>
+                <a href="tel:+74951064040" class="contacts__phone title" itemprop="telephone">+7 (495) 106-40-40</a>
+                <address class="contacts__address title-sm" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">г. Москва, ул. 1-я Бородинская д.3</span>
+                </address>
+                <div class="contacts__time" itemprop="openingHours" content="Mo-Su 08:00-20:00">ежедневно: 08.00 - 20.00</div>
+                <a href="mailto:info@av-clinic.ru" class="contacts__email title-sm" itemprop="email">info@av-clinic.ru</a>
                 <div class="contacts__socials socials">
                     <a href="" aria-label="Мы в Max" class="socials__item icon-max"></a>
                     <a href="" aria-label="Мы в Telegram" class="socials__item icon-telegram"></a>
@@ -27,6 +29,9 @@
                 </div>
             </div>
         </div>
-        <div class="contacts__map" id="map" data-center="55.746578033864825,37.56585460577391" data-coords="55.74662356898305,37.568991499999974" data-zoom="17" data-icon="@img/placemark.svg"></div>
+        <div class="contacts__map" id="map" data-center="55.746578033864825,37.56585460577391" data-coords="55.74662356898305,37.568991499999974" data-zoom="17" data-icon="@img/placemark.svg" itemprop="geo" itemscope itemtype="https://schema.org/GeoCoordinates">
+            <meta itemprop="latitude" content="55.74662356898305">
+            <meta itemprop="longitude" content="37.568991499999974">
+        </div>
     </div>
 </section>

@@ -3,31 +3,31 @@
     @@include('html/_head.html', {
     "title": "Аллергология"
     })
-    <body itemscope itemtype="https://schema.org/WebPage">
+    <body itemscope itemtype="https://schema.org/MedicalWebPage">
         <div class="wrapper">
             @@include('html/_header.html', {
             'active': 0
             })
             <main class="page" itemprop="mainContentOfPage">
-                <section class="heading">
+                <section class="heading" itemscope itemtype="https://schema.org/MedicalProcedure">
                     <div class="heading__wrapper">
                         <div class="heading__container container">
                             <div class="heading__content">
-                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                                     <ul class="breadcrumbs__list">
-                                        <li class="breadcrumbs__item">
-                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
                                         </li>
-                                        <li class="breadcrumbs__item">
-                                            <a href="index.html#directions" class="breadcrumbs__link">Направления</a>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html#directions" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Направления</span></a><meta itemprop="position" content="2">
                                         </li>
-                                        <li class="breadcrumbs__item">
-                                            <span class="breadcrumbs__link">Аллергология</span>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Аллергология</span><meta itemprop="position" content="3">
                                         </li>
                                     </ul>
                                 </nav>
-                                <h1 class="heading__title title-lg">Аллергология</h1>
-                                <div class="heading__tagline">Аллергия — не приговор. Это задача, у которой есть решение.</div>
+                                <h1 class="heading__title title-lg" itemprop="name">Аллергология</h1>
+                                <div class="heading__tagline" itemprop="description">Аллергия — не приговор. Это задача, у которой есть решение.</div>
                                 <div class="heading__desc">
                                     <p>Специалисты нашей клиники занимаются широким спектром заболеваний, в основе которых лежит неправильная ракция иммунной системы — будь то избыточный ответ на безобидные вещества или, напротив, недостаточная защита от реальных угроз.</p>
                                     <p>Наша цель — не просто снять симптомы, а вернуть пациенту полную свободу: возможность завести кошку, есть любимые продукты, проводить время на природе, заниматься спортом и путешествовать без страха и горсти таблеток в кармане.</p>
@@ -37,8 +37,9 @@
                         </div>
                     </div>
                     <div class="heading__image">
-                        <img src="@img/directions/allergology.jpg" class="cover-image" alt="Фото направления">
+                        <img src="@img/directions/allergology.jpg" class="cover-image" alt="Фото направления" itemprop="image">
                     </div>
+                    <div itemprop="provider" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic"><meta itemprop="name" content="Альтера Вита"></div>
                 </section>
                 <section class="description">
                     <div class="description__container container">

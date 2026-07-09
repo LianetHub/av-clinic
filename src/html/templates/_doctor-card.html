@@ -1,12 +1,12 @@
-<a href="" class="doctor-card @@extrasClass">
+<a href="" class="doctor-card @@extrasClass" itemscope itemtype="https://schema.org/Physician">
     <div class="doctor-card__poster">
         <div class="doctor-card__badge">@@expirience</div>
-        <img src="@@image" alt="Фото Доктора">
+        <img src="@@image" alt="Фото Доктора" itemprop="image">
         <span class="doctor-card__btn chip">Подробнее о враче</span>
     </div>
     <div class="doctor-card__body">
-        <div class="doctor-card__name">@@name</div>
-        <div class="doctor-card__desc">@@desc</div>
+        <div class="doctor-card__name" itemprop="name">@@name</div>
+        <div class="doctor-card__desc" itemprop="jobTitle">@@desc</div>
         <span class="doctor-card__btn chip">Подробнее о враче</span>
     </div>
 </a>

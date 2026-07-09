@@ -3,41 +3,42 @@
     @@include('html/_head.html', {
     "title": "Капельница «Вечная молодость»"
     })
-    <body itemscope itemtype="https://schema.org/WebPage">
+    <body itemscope itemtype="https://schema.org/MedicalWebPage">
         <div class="wrapper">
             @@include('html/_header.html', {
             'active': 0
             })
             <main class="page" itemprop="mainContentOfPage">
-                <section class="heading">
+                <section class="heading" itemscope itemtype="https://schema.org/MedicalTherapy">
                     <div class="heading__wrapper">
                         <div class="heading__container container">
                             <div class="heading__content">
-                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                                     <ul class="breadcrumbs__list">
-                                        <li class="breadcrumbs__item">
-                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
                                         </li>
-                                        <li class="breadcrumbs__item">
-                                            <a href="drips.html" class="breadcrumbs__link">Капельницы</a>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="drips.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Капельницы</span></a><meta itemprop="position" content="2">
                                         </li>
-                                        <li class="breadcrumbs__item">
-                                            <span class="breadcrumbs__link">Капельница «Вечная молодость»</span>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Капельница «Вечная молодость»</span><meta itemprop="position" content="3">
                                         </li>
                                     </ul>
                                 </nav>
-                                <h1 class="heading__title title-lg">Капельница <br> «Вечная молодость»</h1>
-                                <div class="heading__tagline">— это уникальная формула, насыщенная аминокислотами, антиоксидантами, витаминами группы B, витамином С, компонентами детоксикации, а также веществами регулирующие углеводный и липидный обмен.</div>
-                                <div class="heading__price">
-                                    стоимость <span class="heading__price-value">25&nbsp;000 ₽</span>
+                                <h1 class="heading__title title-lg" itemprop="name">Капельница <br> «Вечная молодость»</h1>
+                                <div class="heading__tagline" itemprop="description">— это уникальная формула, насыщенная аминокислотами, антиоксидантами, витаминами группы B, витамином С, компонентами детоксикации, а также веществами регулирующие углеводный и липидный обмен.</div>
+                                <div class="heading__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    стоимость <span class="heading__price-value" itemprop="price">25&nbsp;000 ₽</span><meta itemprop="priceCurrency" content="RUB">
                                 </div>
                                 <a href="" class="heading__btn btn btn-primary">Записаться на процедуру</a>
                             </div>
                         </div>
                     </div>
                     <div class="heading__image">
-                        <img src="@img/drips/eternal-youth.jpg" class="cover-image" alt="Фото услуги">
+                        <img src="@img/drips/eternal-youth.jpg" class="cover-image" alt="Фото услуги" itemprop="image">
                     </div>
+                    <div itemprop="provider" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic"><meta itemprop="name" content="Альтера Вита"></div>
                 </section>
                 <section class="description">
                     <div class="description__container container">

@@ -4169,6 +4169,9 @@ body {
   .doctor-card__body {
     padding: 1.5rem;
   }
+  .doctor-card__body .doctor-card__btn {
+    display: none;
+  }
 }
 .doctor-card__name {
   font-weight: 600;

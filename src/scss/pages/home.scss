@@ -555,6 +555,10 @@
         flex: 1 1 auto;
 
         @media (min-width:$md2) {
+            .doctor-card__btn {
+                display: none;
+            }
+
             padding: 1.5rem;
 
         }

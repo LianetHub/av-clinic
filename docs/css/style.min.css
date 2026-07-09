@@ -2346,6 +2346,16 @@ body {
     max-width: 31.25rem;
   }
 }
+.info-list__item-desc p + p {
+  margin-top: 0.5rem;
+}
+.info-list__item-desc ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.info-list__item-desc li + li {
+  margin-top: 0.5rem;
+}
 .info-list__item-details {
   overflow: hidden;
 }

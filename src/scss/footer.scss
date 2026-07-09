@@ -1,6 +1,11 @@
 .footer {
     background: #FFF;
-    padding: rem(50) 0 0;
+    padding: rem(110) 0 0;
+    position: relative;
+
+    @media (min-width:$md4) {
+        padding: rem(50) 0 0;
+    }
 
     @media (min-width:$md3) {
         padding: 5rem 0 0;
@@ -13,13 +18,27 @@
     // .footer__header 
     &__header {
         display: flex;
-        --gutter-y: 2.25rem;
+        --gutter-y: 1.75rem;
+
+        @media (min-width:$md4) {
+            --gutter-y: 2.25rem;
+
+        }
     }
 
     // .footer__main
     &__main {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        order: 1;
+
+        @media (min-width:$md4) {
+            order: 0;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: stretch;
+        }
 
         @media (min-width:$md3) {
             flex-direction: column;
@@ -29,7 +48,20 @@
     // .footer__logo
     &__logo {
         width: 100%;
-        max-width: 13.5rem;
+        max-width: rem(126);
+
+        @media (max-width:$md4) {
+            position: absolute;
+            top: 2.15rem;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        @media (min-width:$md5) {
+            max-width: 13.5rem;
+
+        }
 
         @media (min-width:$md3) {
             padding-block: 1.25rem;
@@ -46,7 +78,13 @@
     &__actions {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
+        width: 100%;
+
+        @media (min-width:$md4) {
+            width: auto;
+            align-items: flex-end;
+        }
 
         @media (min-width:$md3) {
             align-items: stretch;
@@ -56,7 +94,11 @@
     }
 
     // .footer__btn
-    &__btn {}
+    &__btn {
+        @media (max-width:$md5) {
+            width: 100%;
+        }
+    }
 
     // .footer__socials
     &__socials {
@@ -94,7 +136,14 @@
     &__license {
         font-size: 0.875rem;
         line-height: 120%;
-        margin-top: rem(74);
+        margin-top: rem(32);
+        margin-bottom: rem(32);
+
+        @media (min-width:$md4) {
+            margin-bottom: 0;
+            margin-top: rem(74);
+
+        }
 
         @media (min-width:$md2) {
             margin-top: rem(83);
@@ -110,22 +159,44 @@
         color: #806448;
         padding-bottom: 0.5rem;
         border-bottom: rem(1) solid rgba($color: #806448, $alpha: .4);
-        margin-bottom: rem(20);
+        margin-bottom: rem(16);
+
+        @media (min-width:$md4) {
+            margin-bottom: rem(20);
+
+        }
     }
 
     // .footer__nav-list
     &__nav-list {
         display: grid;
         gap: 0.15rem;
-        column-gap: 2rem;
+        column-gap: 0.75rem;
 
-        &.footer__nav-list--large {
+        @media (max-width:$md4) {
             grid-template-columns: repeat(2, 1fr);
+
         }
+
+        @media (min-width:$md4) {
+            column-gap: 2rem;
+
+            &.footer__nav-list--large {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
     }
 
     // .footer__nav-item
-    &__nav-item {}
+    &__nav-item {
+        &.footer__nav-item--large {
+            @media (max-width:$md4) {
+                order: 1;
+            }
+        }
+    }
 
     // .footer__nav-link
     &__nav-link {
@@ -148,7 +219,10 @@
         line-height: 130%;
 
 
-        margin-top: -2.5rem;
+        @media (min-width:$md4) {
+            margin-top: -2.5rem;
+
+        }
 
         @media (min-width:$md3) {
             border-top: rem(1) solid rgba($color: #806448, $alpha: .4);
@@ -184,10 +258,13 @@
         transition: color 0.3s ease;
 
         @media (max-width:$md3) {
-            text-align: right;
-            display: flex;
-            width: fit-content;
-            margin-left: auto;
+            @media (min-width:$md4) {
+                text-align: right;
+                display: flex;
+                width: fit-content;
+                margin-left: auto;
+
+            }
         }
 
         @media (any-hover: hover) {

@@ -331,6 +331,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     // .director__title
@@ -340,10 +341,19 @@
 
     // .director__person
     &__person {
-        margin-top: 2.5rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.875rem;
+        align-items: center;
+        gap: 1rem;
+
+        @media (min-width:$md4) {
+            gap: 2rem;
+            display: grid;
+            align-items: stretch;
+            margin-top: 2.5rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
 
         @media (min-width:$md2) {
             gap: 1.5rem;
@@ -354,17 +364,31 @@
     &__person-photo {
         width: 12.5rem;
         height: 12.5rem;
-        grid-column: 2 / 3;
         background: rgba($color: #432821, $alpha: .10);
+
+        @media (min-width:$md4) {
+            grid-column: 2 / 3;
+
+        }
     }
 
     // .director__person-chips
     &__person-chips {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
-        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        @media (min-width:$md4) {
+            gap: 1rem;
+            align-items: flex-start;
+            justify-content: flex-end;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+        }
     }
 
     // .director__person-chip
@@ -372,7 +396,16 @@
 
     // .director__desc
     &__desc {
-        margin-top: 2.5rem;
+        font-size: 0.875rem;
+        margin-top: 2rem;
+        line-height: 140%;
+
+        @media (min-width:$md4) {
+            font-size: 1rem;
+            line-height: normal;
+            margin-top: 2.5rem;
+
+        }
 
         @media (min-width:$md2) {
             margin-top: 1.5rem;
@@ -381,9 +414,14 @@
 
     // .director__btn
     &__btn {
-        margin-top: 2.5rem;
-        max-width: 19.625rem;
         width: 100%;
+        margin-top: 2.25rem;
+
+        @media (min-width:$md4) {
+            max-width: 19.625rem;
+            margin-top: 2.5rem;
+
+        }
     }
 }
 
@@ -394,7 +432,13 @@
 
     // .doctors__slider
     &__slider {
-        margin-top: rem(40);
+        margin-top: rem(32);
+        overflow: visible;
+
+        @media (min-width:$md4) {
+            overflow: hidden;
+            margin-top: rem(40);
+        }
     }
 }
 
@@ -403,6 +447,12 @@
     flex-direction: column;
     background: #FFF;
     height: auto;
+
+    &.swiper-slide {
+        @media (max-width:$md4) {
+            width: 17.5625rem;
+        }
+    }
 
     @media (any-hover: hover) {
         &:hover {
@@ -429,6 +479,15 @@
         position: relative;
         background: rgba($color: #432821, $alpha: 0.1);
         overflow: hidden;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media (min-width:$md3) {
+            height: 26.5rem;
+        }
 
         .doctor-card__btn {
             @media (max-width:$md2) {
@@ -437,6 +496,7 @@
         }
 
         & img {
+            width: 100%;
             transition: transform 0.3s ease;
         }
     }
@@ -498,7 +558,12 @@
     &__name {
         font-weight: 600;
         transition: color 0.3s ease;
-        font-size: 1.375rem;
+        font-size: 1.25rem;
+
+        @media (min-width:$md4) {
+            font-size: 1.375rem;
+
+        }
 
         @media (min-width:$md2) {
             font-size: 1.25rem;
@@ -512,10 +577,16 @@
 
     // .doctor-card__desc
     &__desc {
-        font-size: 0.875rem;
-        line-height: 120%;
         color: rgba($color: #271605, $alpha: .60);
         padding-bottom: 0.5rem;
+        font-size: 0.75rem;
+        line-height: 130%;
+
+        @media (min-width:$md4) {
+            font-size: 0.875rem;
+            line-height: 120%;
+
+        }
 
         @media (min-width:$md2) {
             padding-bottom: 0;
@@ -530,7 +601,11 @@
 
     // .benefits__list
     &__list {
-        margin-top: rem(40);
+        margin-top: rem(32);
+
+        @media (min-width:$md4) {
+            margin-top: rem(40);
+        }
 
         @media (max-width:$md3) {
             border-top: rem(1) solid rgba(128, 100, 72, 0.35);
@@ -541,11 +616,21 @@
     // .benefits__item
     &__item {
         @media (max-width:$md3) {
-            padding: 1rem 1.56rem;
+            padding: 1rem 0;
             border-bottom: rem(1) solid rgba(128, 100, 72, 0.35);
 
             .row {
-                flex-direction: row-reverse;
+                --gutter-x: 0.875rem;
+            }
+
+            @media (min-width:$md4) {
+                padding: 1rem 1.56rem;
+
+                .row {
+                    flex-direction: row-reverse;
+
+                }
+
             }
         }
 
@@ -594,6 +679,10 @@
 
     // .benefits__item-image
     &__item-image {
+        & img {
+            min-height: 10rem;
+        }
+
         @media (min-width:$md3) {
             position: relative;
             height: 100%;
@@ -621,8 +710,12 @@
 
     // .benefits__item-details
     &__item-details {
-        padding: 0.5rem 0 0;
-        max-width: rem(340);
+
+        @media (min-width:$md4) {
+            padding: 0.5rem 0 0;
+            max-width: rem(340);
+
+        }
 
         @media (min-width:$md3) {
             max-width: 100%;
@@ -660,24 +753,42 @@
 
     // .rates__slider
     &__slider {
-        margin-top: rem(24);
+        margin-top: rem(32);
+        overflow: visible;
+
+        @media (min-width:$md4) {
+            overflow: hidden;
+        }
+
+        @media (min-width:$md3) {
+            margin-top: rem(24);
+
+        }
 
         @media (min-width:$md2) {
             margin-top: rem(40);
-
         }
     }
 
     // .rates__card
     &__card {
         background: rgba($color: #432821, $alpha: .1);
-
         display: flex;
         flex-direction: column;
         align-items: center;
         height: auto;
         transition: background-color 0.3s ease;
-        padding: 1.5rem;
+        padding: 1rem 3rem;
+
+        @media (min-width:$md4) {
+            padding: 1.5rem 2.5rem;
+        }
+
+        &.swiper-slide {
+            @media (max-width:$md4) {
+                width: 17.5625rem;
+            }
+        }
 
         @media (any-hover: hover) {
             &:hover {
@@ -697,18 +808,42 @@
         opacity: 0.6;
         filter: saturate(50%);
         transition: opacity 0.3s ease, filter 0.3s ease;
+        height: auto;
+
+        & picture {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        & img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
 
     }
 
     // .rates__card-value
-    &__card-value {}
+    &__card-value {
+        @media (max-width:$md4) {
+            margin-top: 1rem;
+            font-size: 1.75rem;
+        }
+    }
 
     // .rates__card-quantity
     &__card-quantity {
-        margin-top: 0.25rem;
         color: #271605;
-        font-size: 1rem;
         line-height: 140%;
+        font-size: 0.875rem;
+
+        @media (min-width:$md4) {
+            margin-top: 0.25rem;
+            font-size: 1rem;
+
+        }
     }
 }
 
@@ -716,7 +851,12 @@
 
     // .reviews__slider
     &__slider {
-        margin-top: 2.5rem;
+        margin-top: 2.25rem;
+
+        @media (min-width:$md4) {
+            margin-top: 2.5rem;
+
+        }
     }
 
     // .reviews__card
@@ -726,7 +866,16 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 1.5rem;
+        padding: 1rem;
+
+        &.swiper-slide {
+            width: 17.5625rem;
+        }
+
+        @media (min-width:$md4) {
+            padding: 1.5rem;
+
+        }
 
         @media (min-width:$md2) {
             padding: 1.5rem 2.5rem 2.5rem;
@@ -753,8 +902,13 @@
         margin-top: 0.5rem;
         display: inline-block;
         color: rgba($color: #271605, $alpha: 0.6);
-        font-size: 0.875rem;
         line-height: 120%;
+        font-size: 0.75rem;
+
+        @media (min-width:$md4) {
+            font-size: 0.875rem;
+
+        }
     }
 
     // .reviews__card-author
@@ -762,8 +916,13 @@
         color: #271605;
         font-weight: 600;
         line-height: 120%;
-        margin-top: 1.75rem;
-        font-size: 1.125rem;
+        margin-top: 2.06rem;
+
+        @media (min-width:$md4) {
+            margin-top: 1.75rem;
+            font-size: 1.125rem;
+
+        }
 
         @media (min-width:$md2) {
             font-size: 1.25rem;
@@ -774,9 +933,14 @@
 
     // .reviews__card-blockquote
     &__card-blockquote {
-        margin-top: 1rem;
         font-size: 0.875rem;
+        margin-top: 0.5rem;
         line-height: 140%;
+
+        @media (min-width:$md4) {
+            margin-top: 1rem;
+
+        }
     }
 }
 
@@ -787,9 +951,14 @@
 
     // .video__block
     &__block {
-        margin-top: 1.5rem;
         position: relative;
         display: block;
+        margin-top: 2rem;
+
+        @media (min-width:$md4) {
+            margin-top: 1.5rem;
+
+        }
 
         &::before {
             position: absolute;
@@ -801,11 +970,21 @@
             background: #fff;
             opacity: 0.6;
             transition: background-color 0.3s ease, opacity 0.3s ease;
-            font-size: 8rem;
+            font-size: 6rem;
+
+            @media (min-width:$md4) {
+                font-size: 8rem;
+
+            }
         }
 
         & img {
-            min-height: 25rem;
+            min-height: 20rem;
+
+            @media (min-width:$md4) {
+                min-height: 25rem;
+
+            }
         }
 
         @media (min-width:$md2) {

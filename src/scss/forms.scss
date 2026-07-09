@@ -21,10 +21,16 @@
 
 	// .form__label
 	&__label {
-		font-size: 0.875rem;
 		line-height: 120%;
-		margin-bottom: 0.875rem;
 		display: block;
+		font-size: 0.75rem;
+		margin-bottom: 0.5rem;
+
+		@media (min-width:$md4) {
+			margin-bottom: 0.875rem;
+			font-size: 0.875rem;
+
+		}
 	}
 
 
@@ -33,7 +39,6 @@
 		text-overflow: ellipsis;
 		transition: border-color 0.3s ease, color 0.3s ease;
 		width: 100%;
-		font-size: 1rem;
 		line-height: 140%;
 		border-radius: 0;
 		border: rem(1) solid rgba(128, 100, 72, 0.35);
@@ -43,8 +48,14 @@
 		background: transparent;
 		color: #271605;
 		caret-color: $accent;
-		padding: 0.5rem 1.5rem;
+		font-size: 0.875rem;
+		padding: 0.5rem 1rem;
 
+		@media (min-width:$md4) {
+			padding: 0.5rem 1.5rem;
+			font-size: 1rem;
+
+		}
 
 		&::placeholder {
 			color: #271605;
@@ -87,10 +98,15 @@
 
 	// .form__btn
 	&__btn {
-		margin-top: 2.5rem;
-		max-width: 19.625rem;
 		width: 100%;
 		margin-inline: auto;
+		margin-top: 2rem;
+
+		@media (min-width:$md4) {
+			margin-top: 2.5rem;
+			max-width: 19.625rem;
+
+		}
 	}
 
 }

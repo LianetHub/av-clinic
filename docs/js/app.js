@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				prevEl: sliderEl.querySelector('.swiper__prev')
 			},
 			breakpoints: {
-				767.98: {
+				743.98: {
 					slidesPerView: 2,
 					spaceBetween: 24,
 				},
@@ -137,9 +137,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		const sliderEl = document.querySelector(".doctors__slider");
 
 		new Swiper(sliderEl, {
-			slidesPerView: 2,
+			slidesPerView: "auto",
 			speed: 600,
-			spaceBetween: 24,
+			spaceBetween: 16,
 			pagination: {
 				el: sliderEl.querySelector('.swiper__pagination'),
 				type: "fraction",
@@ -155,8 +155,13 @@ document.addEventListener("DOMContentLoaded", function () {
 				prevEl: sliderEl.querySelector('.swiper__prev')
 			},
 			breakpoints: {
+				743.98: {
+					slidesPerView: 2,
+					spaceBetween: 24,
+				},
 				1199.98: {
 					slidesPerView: 3,
+					spaceBetween: 24,
 				}
 			}
 		});
@@ -167,9 +172,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		const sliderEl = document.querySelector(".rates__slider");
 
 		new Swiper(sliderEl, {
-			slidesPerView: 2,
+			slidesPerView: "auto",
 			speed: 600,
-			spaceBetween: 24,
+			spaceBetween: 16,
 			pagination: {
 				el: sliderEl.querySelector('.swiper__pagination'),
 				type: "fraction",
@@ -185,8 +190,13 @@ document.addEventListener("DOMContentLoaded", function () {
 				prevEl: sliderEl.querySelector('.swiper__prev')
 			},
 			breakpoints: {
+				743.98: {
+					slidesPerView: 2,
+					spaceBetween: 24,
+				},
 				1199.98: {
 					slidesPerView: 3,
+					spaceBetween: 24,
 				}
 			}
 		});
@@ -197,9 +207,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		const sliderEl = document.querySelector(".reviews__slider");
 
 		new Swiper(sliderEl, {
-			slidesPerView: 2,
+			slidesPerView: "auto",
 			speed: 600,
-			spaceBetween: 24,
+			spaceBetween: 16,
 			pagination: {
 				el: sliderEl.querySelector('.swiper__pagination'),
 				type: "fraction",
@@ -215,8 +225,13 @@ document.addEventListener("DOMContentLoaded", function () {
 				prevEl: sliderEl.querySelector('.swiper__prev')
 			},
 			breakpoints: {
+				743.98: {
+					slidesPerView: 2,
+					spaceBetween: 24,
+				},
 				1199.98: {
 					slidesPerView: 3,
+					spaceBetween: 24,
 				}
 			}
 		});

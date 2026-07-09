@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     @@include('html/_head.html', {
-    "title": "Главная страница"
+    "title": "Капельницы"
     })
     <body itemscope itemtype="https://schema.org/WebPage">
         <div class="wrapper">
@@ -9,14 +9,42 @@
             'active': 3
             })
             <main class="page" itemprop="mainContentOfPage">
+                <section class="heading">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item">
+                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <span class="breadcrumbs__link">Капельницы</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg">Капельницы (IV-терапия)</h1>
+                                <div class="heading__desc">
+                                    <p>Внутривенное введение питательных веществ — один из самых эффективных способов поддержать организм: активные компоненты поступают напрямую в&nbsp;кровоток, минуя ЖКТ, и усваиваются на&nbsp;100%.</p>
+                                    <p>Каждый курс начинается с консультации врача и,&nbsp;при&nbsp;необходимости, лабораторной диагностики. Мы предлагаем индивидуальные программы обследования с результатами в день обращения.</p>
+                                    <p>Запишитесь на консультацию, и мы составим протокол, который будет работать именно для вас.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Запланировать визит</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/drips.jpg" class="cover-image" alt="Фото услуги">
+                    </div>
+                </section>
                 <section class="info-list">
                     <div class="info-list__container container">
                         <div class="section-header row">
-                            <div class="col-6">
+                            <div class="col-lg-6">
                                 <div class="section-header__caption">виды капельниц</div>
                             </div>
-                            <div class="col-6">
-                                <h2 class="section-header__title title color-accent">Эффективные капельницы на основе чекапа — почувствуйте баланс, здоровье и энергию</h2>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Эффективные капельницы на&nbsp;основе чекапа — почувствуйте баланс, здоровье&nbsp;и энергию</h2>
                             </div>
                         </div>
                         <ul class="info-list__list">

@@ -13,7 +13,6 @@
 
 		@media (min-width:$md4) {
 			padding: 1.25rem 0;
-
 		}
 
 		@media (min-width:$md3) {
@@ -115,6 +114,10 @@
 	// .header__toggler
 	&__toggler {
 		margin-left: auto;
+
+		@media (min-width:$md4) {
+			margin-left: 0;
+		}
 
 		@media (min-width:$md3) {
 			display: none;

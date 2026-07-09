@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Направления"
+    })
+    <body itemscope itemtype="https://schema.org/WebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 4
+            })
+            <main class="page" itemprop="mainContentOfPage">
+
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

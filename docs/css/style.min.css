@@ -2790,6 +2790,11 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.gallery__slide.swiper-slide {
+  width: 19.5rem;
+  height: 18.125rem;
+}
+
 .header {
   position: sticky;
   top: 0;

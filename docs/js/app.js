@@ -237,22 +237,23 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
+	if (document.querySelector(".gallery__slider")) {
 
-	if (document.querySelector(".career-guidance__slider")) {
-		new Swiper(".career-guidance__slider", {
+		const sliderEl = document.querySelector(".gallery__slider");
+
+		new Swiper(sliderEl, {
 			slidesPerView: "auto",
-			spaceBetween: 8,
-			navigation: {
-				nextEl: ".career-guidance__next",
-				prevEl: ".career-guidance__prev",
-			},
-			breakpoints: {
-				575.98: {
-					spaceBetween: 16,
-				},
+			speed: 600,
+			spaceBetween: 24,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				stopOnLastSlide: false,
 			},
 		});
 	}
+
+
 
 	initAnimation();
 });

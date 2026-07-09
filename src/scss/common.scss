@@ -1092,3 +1092,17 @@ body {
 		}
 	}
 }
+
+.gallery {
+
+	// .gallery__slider
+	&__slider {}
+
+	// .gallery__slide
+	&__slide {
+		&.swiper-slide {
+			width: rem(312);
+			height: rem(290);
+		}
+	}
+}

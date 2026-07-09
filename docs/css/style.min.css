@@ -2719,6 +2719,9 @@ body {
   font-weight: 600;
   transition: color 0.3s ease;
 }
+.menu__link.active {
+  color: #806448;
+}
 .menu__arrow {
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -3440,7 +3443,7 @@ body {
   position: relative;
   background: rgba(67, 40, 33, 0.1);
   overflow: hidden;
-  height: 20rem;
+  min-height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -3448,7 +3451,7 @@ body {
 }
 @media (min-width: 959.98px) {
   .doctor-card__poster {
-    height: 26.5rem;
+    min-height: 26.5rem;
   }
 }
 @media (max-width: 1199.98px) {
@@ -3708,16 +3711,18 @@ body {
   transition: opacity 0.3s ease, filter 0.3s ease;
   height: auto;
 }
-.rates__card-image picture {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-}
-.rates__card-image img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
+@media (max-width: 743.98px) {
+  .rates__card-image picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .rates__card-image img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
 }
 @media (max-width: 743.98px) {
   .rates__card-value {
@@ -3739,9 +3744,11 @@ body {
 
 .reviews__slider {
   margin-top: 2.25rem;
+  overflow: visible;
 }
 @media (min-width: 743.98px) {
   .reviews__slider {
+    overflow: hidden;
     margin-top: 2.5rem;
   }
 }

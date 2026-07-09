@@ -103,7 +103,7 @@
                                     <button type="button" aria-label="Открыть подменю" class="menu__arrow icon-chevron-down"></button>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="" class="menu__link">Капельницы</a>
+                                    <a href="/drips.html" class="menu__link active">Капельницы</a>
                                 </li>
                                 <li class="menu__item menu__item--parent">
                                     <a href="" class="menu__link">Направления</a>
@@ -489,6 +489,93 @@
                                     </div>
        
                                 </div>
+                            </li><li class="info-list__item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="" class="info-list__item-main">
+                                             <div class="info-list__item-title title-sm icon-arrow-right">
+                                                8 витаминов
+                                            </div>
+                                            <div class="info-list__item-image">
+                                                <picture><source srcset="img/drips/8-vitamins.webp" type="image/webp"><img src="img/drips/8-vitamins.jpg" class="cover-image" alt="Фото услуги"></picture>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-list__item-details icon-arrow-right">
+                                            
+                                                <p class="info-list__item-desc">Комплекс питательных веществ укрепляет кости, сосуды, повышает иммунитет, улучшает настроение и снижает утомляемость</p>
+                                            
+                                            
+                                            
+                                                <div class="info-list__item-price">стоимость <span>12&nbsp;000</span> ₽</div>
+                                                <div class="info-list__item-actions">
+                                                    <a href="" class="info-list__item-action btn btn-sm btn-primary">Записаться</a>
+                                                    <a href="" class="info-list__item-action btn btn-sm btn-secondary">Подробнее</a>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+       
+                                </div>
+                            </li><li class="info-list__item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="" class="info-list__item-main">
+                                             <div class="info-list__item-title title-sm icon-arrow-right">
+                                                Биоамино 200
+                                            </div>
+                                            <div class="info-list__item-image">
+                                                <picture><source srcset="img/drips/bioamino-200.webp" type="image/webp"><img src="img/drips/bioamino-200.jpg" class="cover-image" alt="Фото услуги"></picture>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-list__item-details icon-arrow-right">
+                                            
+                                                <p class="info-list__item-desc">Аминокислотный коктейль восполняет белок, ускоряет реабилитацию, поддерживает мышцы и улучшает работоспособность</p>
+                                            
+                                            
+                                            
+                                                <div class="info-list__item-price">стоимость <span>20&nbsp;000</span> ₽</div>
+                                                <div class="info-list__item-actions">
+                                                    <a href="" class="info-list__item-action btn btn-sm btn-primary">Записаться</a>
+                                                    <a href="" class="info-list__item-action btn btn-sm btn-secondary">Подробнее</a>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+       
+                                </div>
+                            </li><li class="info-list__item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="" class="info-list__item-main">
+                                             <div class="info-list__item-title title-sm icon-arrow-right">
+                                                Элементарный заряд
+                                            </div>
+                                            <div class="info-list__item-image">
+                                                <picture><source srcset="img/drips/8-vitamins.webp" type="image/webp"><img src="img/drips/8-vitamins.jpg" class="cover-image" alt="Фото услуги"></picture>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-list__item-details icon-arrow-right">
+                                            
+                                                <p class="info-list__item-desc">Комплекс микроэлементов поддерживает сердце, иммунитет и нервную систему, помогает восстановиться после стресса и нагрузок</p>
+                                            
+                                            
+                                            
+                                                <div class="info-list__item-price">стоимость <span>8&nbsp;000</span> ₽</div>
+                                                <div class="info-list__item-actions">
+                                                    <a href="" class="info-list__item-action btn btn-sm btn-primary">Записаться</a>
+                                                    <a href="" class="info-list__item-action btn btn-sm btn-secondary">Подробнее</a>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+       
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -627,29 +714,7 @@
                     </div>
                 </div>
             </footer>
-            <dialog id="callback" class="popup" aria-labelledby="callback-modal-title">
-                <h2 id="callback-modal-title" class="popup__title title-sm">Напишите нам, и мы свяжемся с вами</h2>
-                <form action="/send.php" method="post" class="popup__form form" data-ya-captcha-form>
-                    <div class="form__field">
-                        <input type="text" name="name" autocomplete="name" class="form__control" placeholder="Контактное лицо" data-required>
-                        <span class="form__error">Введите ваше имя</span>
-                    </div>
-                    <div class="form__field">
-                        <input type="email" name="email" autocomplete="email" class="form__control" placeholder="Email" data-required>
-                        <span class="form__error">Введите корректный email</span>
-                    </div>
-                    <div class="form__field">
-                        <textarea name="comment" class="form__control" placeholder="Комментарий"></textarea>
-                    </div>
-                    <input type="hidden" name="smart-token" value="">
-                    <button type="submit" class="form__submit btn btn-primary" disabled>Отправить</button>
-                    <label class="form__checkbox checkbox">
-                        <input type="checkbox" name="policy" class="checkbox__input hidden" hidden data-required>
-                        <span class="checkbox__content">Нажимая на кнопку, Вы даете согласие на <a href="/policy.html">обработку персональных данных</a></span>
-                        <span class="form__error">Необходимо согласие</span>
-                    </label>
-                </form>
-            </dialog>
+            
             <!-- plugins -->
             <script defer src="js/libs/swiper-bundle.min.js"></script>
             <script defer src="js/libs/fancybox.umd.js"></script>

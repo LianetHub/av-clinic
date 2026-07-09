@@ -479,14 +479,14 @@
         position: relative;
         background: rgba($color: #432821, $alpha: 0.1);
         overflow: hidden;
-        height: 20rem;
+        min-height: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
 
         @media (min-width:$md3) {
-            height: 26.5rem;
+            min-height: 26.5rem;
         }
 
         .doctor-card__btn {
@@ -810,17 +810,21 @@
         transition: opacity 0.3s ease, filter 0.3s ease;
         height: auto;
 
-        & picture {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 100%;
-        }
+        @media (max-width:$md4) {
 
-        & img {
-            max-width: 100%;
-            width: auto;
-            height: auto;
+            & picture {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 100%;
+            }
+
+            & img {
+                max-width: 100%;
+                width: auto;
+                height: auto;
+
+            }
         }
 
     }
@@ -852,8 +856,10 @@
     // .reviews__slider
     &__slider {
         margin-top: 2.25rem;
+        overflow: visible;
 
         @media (min-width:$md4) {
+            overflow: hidden;
             margin-top: 2.5rem;
 
         }

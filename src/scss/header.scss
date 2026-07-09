@@ -189,6 +189,10 @@
 		font-size: 0.875rem;
 		font-weight: 600;
 		transition: color 0.3s ease;
+
+		&.active {
+			color: #806448;
+		}
 	}
 
 	// .menu__arrow	

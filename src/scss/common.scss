@@ -406,6 +406,25 @@ body {
 		border-bottom: rem(1) solid rgba(128, 100, 72, 0.35);
 		padding-block: 1rem;
 
+		&--plain {
+			.info-list__item-details {
+				padding-right: 0;
+
+				&::before {
+					display: none !important;
+				}
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					.info-list__item-title {
+						color: #432821;
+						transform: none;
+					}
+				}
+			}
+		}
+
 		.row {
 			--gutter-y: 0.25rem;
 		}

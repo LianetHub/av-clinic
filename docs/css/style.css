@@ -2229,6 +2229,18 @@ body {
   border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.35);
   padding-block: 1rem;
 }
+.info-list__item--plain .info-list__item-details {
+  padding-right: 0;
+}
+.info-list__item--plain .info-list__item-details::before {
+  display: none !important;
+}
+@media (any-hover: hover) {
+  .info-list__item--plain:hover .info-list__item-title {
+    color: #432821;
+    transform: none;
+  }
+}
 .info-list__item .row {
   --gutter-y: 0.25rem;
 }

@@ -2346,6 +2346,9 @@ body {
     max-width: 31.25rem;
   }
 }
+.info-list__item-details {
+  overflow: hidden;
+}
 .info-list__item-details::before {
   display: none;
 }
@@ -2412,6 +2415,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-bottom: 0.0625rem;
 }
 @media (any-hover: hover) {
   .info-list__item-actions {

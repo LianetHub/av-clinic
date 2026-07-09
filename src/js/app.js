@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// devFunctions.formSubmit();
 	devFunctions.initYandexMap();
 	devFunctions.mask()
+	devFunctions.initDetailsTabs();
 
 	// clickHandler
 

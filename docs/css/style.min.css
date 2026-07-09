@@ -2400,6 +2400,7 @@ body {
   line-height: 130%;
   border-radius: 1rem;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   gap: 0.25rem;
@@ -3555,6 +3556,9 @@ body {
   line-height: 140%;
   margin: 0 auto;
   font-size: 1.125rem;
+}
+.tagline__text p:not(:last-child) {
+  margin-bottom: 0.75rem;
 }
 @media (min-width: 575.98px) {
   .tagline__text {

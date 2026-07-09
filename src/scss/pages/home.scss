@@ -148,6 +148,12 @@
         margin: 0 auto;
         font-size: rem(18);
 
+        & p {
+            &:not(:last-child) {
+                margin-bottom: 0.75rem;
+            }
+        }
+
         @media (min-width:$md5) {
             font-size: rem(22);
         }

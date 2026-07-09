@@ -61,6 +61,60 @@
                         </div>
                     </div>
                 </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">симптомы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">При каких симптомах стоит обратиться</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/hair-restoration-symptoms.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="methods">
+                    <div class="methods__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">диагностика и лечение</div>
+                            </div>
+                            <div class="col-lg-6 pc-only">
+                                <h2 class="section-header__title title color-accent">Методы диагностики и&nbsp;лечения</h2>
+                            </div>
+                        </div>
+                        <div class="methods__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Диагностика</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/hair-restoration-diagnosis.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Лечение</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/hair-restoration-treatment.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="doctors">
                     <div class="doctors__container container">
                         <div class="section-header row">
@@ -84,6 +138,19 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <h2 class="section-header__caption">цены</h2>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/hair-restoration-prices.json')
+                        </ul>
                     </div>
                 </section>
                 @@include('html/_gallery.html', {})

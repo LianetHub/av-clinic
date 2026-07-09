@@ -140,6 +140,12 @@
   }
 }
 
+@media (max-width: 959.98px) {
+  .pc-only {
+    display: none !important;
+  }
+}
+
 .color-accent {
   color: #432821;
 }
@@ -2276,7 +2282,7 @@ body {
   padding: 0.5rem 0;
 }
 @media (min-width: 959.98px) {
-  .info-list__item-title {
+  .info-list__item-title:not(.info-list__item-title-large) {
     max-width: 27.5rem;
   }
   .info-list__item-title:first-child:last-child {
@@ -2402,28 +2408,6 @@ body {
     transition: all 0.3s ease-in-out;
   }
 }
-.info-list--simple .info-list__item-title {
-  padding: 0.5rem 0;
-}
-@media (min-width: 959.98px) {
-  .info-list--simple .info-list__item-title {
-    padding: 0;
-    max-width: 32.5rem;
-  }
-}
-@media (min-width: 959.98px) {
-  .info-list--simple .info-list__item-details {
-    display: flex;
-    align-items: center;
-    min-height: 7.375rem;
-  }
-}
-@media (min-width: 959.98px) {
-  .info-list--simple .info-list__item-desc {
-    max-width: 31.875rem;
-  }
-}
-
 .feature-list__body {
   margin-top: 1rem;
 }
@@ -2488,6 +2472,69 @@ body {
 @media (min-width: 743.98px) {
   .feature-list__item-desc {
     margin-top: 0.125rem;
+    font-size: 1rem;
+  }
+}
+
+.methods__grid {
+  margin-top: 1rem;
+}
+.methods__grid .row {
+  --gutter-y: 1rem;
+}
+@media (min-width: 743.98px) {
+  .methods__grid .row {
+    --gutter-y: 2rem;
+  }
+}
+@media (min-width: 959.98px) {
+  .methods__grid {
+    margin-top: 2rem;
+  }
+}
+.methods__card {
+  background: #fff;
+  height: 100%;
+  padding: 1rem;
+}
+@media (min-width: 743.98px) {
+  .methods__card {
+    padding: 2rem;
+  }
+}
+@media (min-width: 959.98px) {
+  .methods__card {
+    padding: 2.5rem 2rem;
+    min-height: 21.75rem;
+  }
+}
+.methods__card-title {
+  color: #432821;
+  margin-bottom: 1rem;
+}
+@media (min-width: 743.98px) {
+  .methods__card-title {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 959.98px) {
+  .methods__card-title {
+    margin-bottom: 2rem;
+  }
+}
+.methods__list {
+  border-top: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+.methods__item {
+  padding: 0.5rem 0;
+  line-height: 140%;
+  color: #271605;
+  font-size: 0.875rem;
+  border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+@media (min-width: 743.98px) {
+  .methods__item {
+    padding: 0.625rem 0;
     font-size: 1rem;
   }
 }

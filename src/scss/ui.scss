@@ -38,6 +38,12 @@
 	}
 }
 
+.pc-only {
+	@media (max-width:$md3) {
+		display: none !important;
+	}
+}
+
 .color-accent {
 	color: $accent;
 }

@@ -744,6 +744,25 @@
 
         }
     }
+
+    // .benefits__details
+    &__details {
+        border-top: rem(1) solid rgba($color: #806448, $alpha: .3);
+
+        & li {
+            font-weight: 600;
+            color: #432821;
+            border-bottom: rem(1) solid rgba($color: #806448, $alpha: .3);
+            font-size: 1rem;
+            padding: 0.5rem 0;
+
+            @media (min-width:$md4) {
+                padding: 1rem 0;
+                font-size: 1.25rem;
+
+            }
+        }
+    }
 }
 
 .rates {

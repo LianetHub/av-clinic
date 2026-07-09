@@ -3893,6 +3893,22 @@ body {
     max-width: 37.5rem;
   }
 }
+.benefits__details {
+  border-top: 0.0625rem solid rgba(128, 100, 72, 0.3);
+}
+.benefits__details li {
+  font-weight: 600;
+  color: #432821;
+  border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.3);
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+@media (min-width: 743.98px) {
+  .benefits__details li {
+    padding: 1rem 0;
+    font-size: 1.25rem;
+  }
+}
 
 .rates__slider {
   margin-top: 2rem;

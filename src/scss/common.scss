@@ -1106,3 +1106,154 @@ body {
 		}
 	}
 }
+
+.details {
+
+	// .details__container
+	&__container {}
+
+	// .details__header
+	&__header {
+		--gutter-x: 0;
+	}
+
+	// .details__button
+	&__button {
+		padding-block: 1.25rem;
+		text-align: center;
+		position: relative;
+
+		@media (max-width:$md4) {
+			font-size: 1rem;
+		}
+
+		& span {
+			padding: 0.125rem 0.5rem;
+			border-bottom: rem(1) solid transparent;
+
+			@media (min-width:$md4) {
+				border-bottom: rem(2) solid transparent;
+				padding: 0.25rem 1rem;
+			}
+
+			@media (min-width:$md2) {
+				padding: 0.25rem 1.5rem;
+
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50vw;
+			height: 100%;
+			background: #fff;
+			z-index: -1;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+
+		&:nth-child(even) {
+			&::before {
+				left: 0;
+				right: auto;
+			}
+		}
+
+		&.active {
+			& span {
+				border-bottom: rem(1) solid #432821;
+
+				@media (min-width:$md4) {
+					border-bottom: rem(2) solid #432821;
+
+				}
+			}
+
+			&::before {
+				opacity: 1;
+			}
+		}
+	}
+
+	// .details__body
+	&__body {
+		position: relative;
+		padding: 0.4rem 0 1.5rem;
+
+		@media (min-width:$md2) {
+			padding: 0.4rem 0 2.5rem;
+
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100vw;
+			height: 100%;
+			z-index: -1;
+			background: #fff;
+		}
+	}
+
+	// .details__tab-block
+	&__tab-block {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	// .details__list
+	&__list {
+
+		& li {
+			counter-increment: num;
+			border-bottom: rem(1) solid rgba($color: #806448, $alpha: .3);
+			position: relative;
+			font-size: 0.875rem;
+			padding: .5rem 0 .5rem 10%;
+
+			@media (min-width:$md4) {
+				padding: 1rem 0 .5rem 16.66667%;
+				font-weight: 500;
+				font-size: 1.25rem;
+
+			}
+
+			@for $i from 1 through 9 {
+				&:nth-child(#{$i}) {
+					&::before {
+						content: "0" counter(num) '/';
+					}
+				}
+			}
+
+
+			&::before {
+				content: counter(num) '/';
+				position: absolute;
+				top: 0.55rem;
+				left: 0;
+				color: #271605;
+				font-weight: 400;
+				line-height: 140%;
+				font-size: 0.875rem;
+
+				@media (min-width:$md4) {
+					font-size: 1rem;
+					top: 1rem;
+
+				}
+
+			}
+		}
+	}
+}

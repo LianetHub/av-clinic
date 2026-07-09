@@ -2759,6 +2759,37 @@ body {
   }
 }
 
+.description__content {
+  font-size: 0.875rem;
+  line-height: 140%;
+  margin-top: 1.5rem;
+}
+.description__content .row {
+  --gutter-y: 1.5rem;
+}
+@media (min-width: 743.98px) {
+  .description__content {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .description__content {
+    margin-top: 2.25rem;
+  }
+}
+.description__content strong {
+  font-weight: 500;
+  font-size: 1rem;
+}
+@media (min-width: 743.98px) {
+  .description__content strong {
+    font-size: 1.25rem;
+  }
+}
+.description__content p:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
 .header {
   position: sticky;
   top: 0;

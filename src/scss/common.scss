@@ -1051,3 +1051,44 @@ body {
 		}
 	}
 }
+
+.description {
+
+	// .description__container
+	&__container {}
+
+	// .description__content
+	&__content {
+		font-size: 0.875rem;
+		line-height: 140%;
+		margin-top: 1.5rem;
+
+		.row {
+			--gutter-y: 1.5rem;
+		}
+
+		@media (min-width:$md4) {
+			font-size: 1rem;
+		}
+
+		@media (min-width:$md2) {
+			margin-top: rem(36);
+
+		}
+
+		& strong {
+			font-weight: 500;
+			font-size: 1rem;
+
+			@media (min-width:$md4) {
+				font-size: 1.25rem;
+			}
+		}
+
+		& p {
+			&:not(:last-child) {
+				margin-bottom: 0.75rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 14 лет",
+        "image": "@img/doctors/vasiliev-andrey.png",
+        "name": "Васильев <br> Андрей Владимирович",
+        "desc": "Врач-гастроэнтеролог, терапевт, врач ультразвуковой диагностики"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 26 лет",
+        "image": "@img/doctors/klyanchina-darya.png",
+        "name": "Клянчина <br> Дарья Сергеевна",
+        "desc": "Врач-гастроэнтеролог, диетолог, терапевт"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 5 лет",
+        "image": "@img/doctors/gusenova-asiyat.png",
+        "name": "Гусенова <br> Асият Вазировна",
+        "desc": "Врач-гастроэнтеролог-гепатолог"
+    }
+]

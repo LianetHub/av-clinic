@@ -1,0 +1,16 @@
+[
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 16 лет",
+        "image": "@img/doctors/romanova-zarifa.png",
+        "name": "Романова <br> Зарифа Андреевна",
+        "desc": "Врач-диетолог, кандидат медицинских наук"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 26 лет",
+        "image": "@img/doctors/klyanchina-darya.png",
+        "name": "Клянчина <br> Дарья Сергеевна",
+        "desc": "Врач-гастроэнтеролог, диетолог, терапевт"
+    }
+]

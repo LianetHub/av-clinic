@@ -1,0 +1,58 @@
+[
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 9 лет",
+        "image": "@img/doctors/malygina-anastasia.png",
+        "name": "Малыгина <br> Анастасия Андреевна",
+        "desc": "Врач-эндокринолог, кандидат медицинских наук"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 7 лет",
+        "image": "@img/doctors/romanovsky-rostislav.png",
+        "name": "Романовский <br> Ростислав Русланович",
+        "desc": "Врач-эндокринолог, терапевт, профпатолог, врач физической и реабилитационной медицины"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 25 лет",
+        "image": "@img/doctors/mrachkovskaya-natalya.png",
+        "name": "Мрачковская <br> Наталья Владимировна",
+        "desc": "Врач-гинеколог, эндокринолог, врач ультразвуковой диагностики, кандидат медицинских наук"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 26 лет",
+        "image": "@img/doctors/klyanchina-darya.png",
+        "name": "Клянчина <br> Дарья Сергеевна",
+        "desc": "Врач-гастроэнтеролог, диетолог, терапевт"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 16 лет",
+        "image": "@img/doctors/romanova-zarifa.png",
+        "name": "Романова <br> Зарифа Андреевна",
+        "desc": "Врач-диетолог, кандидат медицинских наук"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 14 лет",
+        "image": "@img/doctors/vasiliev-andrey.png",
+        "name": "Васильев <br> Андрей Владимирович",
+        "desc": "Врач-гастроэнтеролог, терапевт, врач ультразвуковой диагностики"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 18 лет",
+        "image": "@img/doctors/jioeva-larisa.png",
+        "name": "Джиоева <br> Лариса Малхазовна",
+        "desc": "Врач-кардиолог, терапевт, врач функциональной диагностики, кандидат медицинских наук"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 26 лет",
+        "image": "@img/doctors/ilyina-ella.png",
+        "name": "Ильина <br> Элла Андреевна",
+        "desc": "Врач-пульмонолог, аллерголог высшей категории, терапевт, кандидат медицинских наук, профессор РАЕ"
+    }
+]

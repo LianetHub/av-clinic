@@ -69,6 +69,31 @@
                         </blockquote>
                     </div>
                 </div>
+                <section class="doctors">
+                    <div class="doctors__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">приём ведут</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Наши специалисты</h2>
+                            </div>
+                        </div>
+                        <div class="doctors__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_doctor-card.html', './html/json/doctors-dermatology.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <a href="" class="swiper__more more-link">Все врачи</a>
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 @@include('html/_gallery.html', {})
                 @@include('html/_visit.html', {})
                 @@include('html/_contacts.html', {})

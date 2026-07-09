@@ -1,0 +1,16 @@
+[
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 6 лет",
+        "image": "@img/doctors/medem-diana.png",
+        "name": "Медем <br> Диана Олеговна",
+        "desc": "Врач-акушер-гинеколог, врач ультразвуковой диагностики."
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 25 лет",
+        "image": "@img/doctors/mrachkovskaya-natalya.png",
+        "name": "Мрачковская <br> Наталья Владимировна",
+        "desc": "Врач-гинеколог, эндокринолог, врач ультразвуковой диагностики, кандидат медицинских наук"
+    }
+]

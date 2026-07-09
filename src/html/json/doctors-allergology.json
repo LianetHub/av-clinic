@@ -1,0 +1,16 @@
+[
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 16 лет",
+        "image": "@img/doctors/bala-anatoly.png",
+        "name": "Бала <br> Анатолий Михайлович",
+        "desc": "Врач-аллерголог-иммунолог, кандидат медицинских наук"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 26 лет",
+        "image": "@img/doctors/ilyina-ella.png",
+        "name": "Ильина <br> Элла Андреевна",
+        "desc": "Врач-пульмонолог, аллерголог высшей категории, терапевт, кандидат медицинских наук, профессор РАЕ"
+    }
+]

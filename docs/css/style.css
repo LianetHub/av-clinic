@@ -2643,6 +2643,7 @@ body {
 @media (min-width: 959.98px) {
   .heading__content {
     width: 50%;
+    padding-right: 2rem;
   }
 }
 .heading__title {
@@ -2658,8 +2659,60 @@ body {
     margin-top: 5rem;
   }
 }
+.heading__tagline {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+@media (min-width: 575.98px) {
+  .heading__tagline {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 743.98px) {
+  .heading__tagline {
+    max-width: 40rem;
+  }
+}
+@media (min-width: 959.98px) {
+  .heading__tagline {
+    max-width: 34.5625rem;
+  }
+}
+.heading__tagline + .heading__desc {
+  margin-top: 1rem;
+}
+.heading__price {
+  font-size: 1rem;
+  line-height: 140%;
+  margin-top: 2rem;
+}
+@media (min-width: 743.98px) {
+  .heading__price {
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .heading__price {
+    margin-top: 4.375rem;
+  }
+}
+.heading__price-value {
+  font-weight: 600;
+  line-height: 120%;
+  font-size: 1.5rem;
+}
+@media (min-width: 743.98px) {
+  .heading__price-value {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .heading__price-value {
+    font-size: 2rem;
+  }
+}
 .heading__desc {
-  max-width: 40rem;
   font-size: 0.875rem;
   margin-top: 1.125rem;
 }
@@ -2673,6 +2726,7 @@ body {
 }
 @media (min-width: 743.98px) {
   .heading__desc {
+    max-width: 40rem;
     margin-top: 1.625rem;
     font-size: 1rem;
   }

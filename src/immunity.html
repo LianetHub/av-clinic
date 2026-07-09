@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Капельница «Иммунитет»"
+    })
+    <body itemscope itemtype="https://schema.org/WebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 0
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item">
+                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <a href="drips.html" class="breadcrumbs__link">Капельницы</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <span class="breadcrumbs__link">Капельница «Иммунитет»</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg">Капельница <br> «Иммунитет»</h1>
+                                <div class="heading__tagline">витаминно-антиоксидантный комплекс восстанавливает силу организма и его защитные свойства</div>
+                                <div class="heading__desc">
+                                    <p>Рекомендуется при гиповитаминозах, восстановлении после перенесенных заболеваний, включая Covid-19, а также в период повышенных физических и умственных нагрузок.</p>
+                                </div>
+                                <div class="heading__price">
+                                    стоимость <span class="heading__price-value">32&nbsp;000 ₽</span>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на процедуру</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/drips/immunity.jpg" class="cover-image" alt="Фото услуги">
+                    </div>
+                </section>
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Капельница «Биоамино 200»"
+    })
+    <body itemscope itemtype="https://schema.org/WebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 0
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item">
+                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <a href="drips.html" class="breadcrumbs__link">Капельницы</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <span class="breadcrumbs__link">Капельница «Биоамино 200»</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg">Капельница <br> «Биоамино 200»</h1>
+                                <div class="heading__tagline">— это мощный аминокислотный коктейль для быстрого восстановления организма</div>
+                                <div class="heading__desc">
+                                    <p>Идеально подходит для спортсменов, пациентов в период восстановления и людей с повышенными физическими и умственными нагрузками.</p>
+                                </div>
+                                <div class="heading__price">
+                                    стоимость <span class="heading__price-value">20&nbsp;000 ₽</span>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на процедуру</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/drips/bioamino-200.jpg" class="cover-image" alt="Фото услуги">
+                    </div>
+                </section>
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

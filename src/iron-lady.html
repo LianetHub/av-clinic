@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Капельница «Железная леди»"
+    })
+    <body itemscope itemtype="https://schema.org/WebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 0
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item">
+                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <a href="drips.html" class="breadcrumbs__link">Капельницы</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <span class="breadcrumbs__link">Капельница «Железная леди»</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg">Капельница <br> «Железная леди»</h1>
+                                <div class="heading__tagline">— это надежный способ восполнить дефицит железа, индивидуально подобранный с учетом Ваших особенностей.</div>
+                                <div class="heading__desc">
+                                    <p>Рекомендуется при железодефицитной анемии, выпадении волос, ломкости ногтей, нарушении сна и общей слабости.</p>
+                                </div>
+                                <div class="heading__price">
+                                    стоимость <span class="heading__price-value">20&nbsp;000 ₽</span>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на процедуру</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/drips/iron-lady.jpg" class="cover-image" alt="Фото услуги">
+                    </div>
+                </section>
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

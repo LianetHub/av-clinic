@@ -69,6 +69,69 @@
                         </blockquote>
                     </div>
                 </div>
+                <section class="info-list">
+                    <div class="info-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">направления</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Основные направления</h2>
+                            </div>
+                        </div>
+                        <ul class="info-list__list">
+                            @@loop('./html/templates/_info-list-item.html', './html/json/endocrinology-directions.json')
+                        </ul>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">симптомы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Когда стоит обратиться к&nbsp;эндокринологу</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="feature-list__lead">Не&nbsp;ждите, пока симптомы станут невыносимыми, обратитесь за&nbsp;консультацией</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/endocrinology-symptoms.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="steps">
+                    <div class="steps__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">лечение</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Как проходит лечение</h2>
+                            </div>
+                        </div>
+                        <div class="steps__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_steps-item.html', './html/json/endocrinology-steps.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="doctors">
                     <div class="doctors__container container">
                         <div class="section-header row">
@@ -93,6 +156,19 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <h2 class="section-header__caption">цены</h2>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/endocrinology-prices.json')
+                        </ul>
                     </div>
                 </section>
                 @@include('html/_gallery.html', {})

@@ -5,9 +5,11 @@
                  <div class="info-list__item-title title-sm icon-arrow-right">
                     @@title
                 </div>
-                <div class="info-list__item-image">
-                    <img src="@@image" class="cover-image" alt="Фото услуги">
-                </div>
+                @@if(typeof image !=='undefined'){
+                    <div class="info-list__item-image">
+                        <img src="@@image" class="cover-image" alt="Фото услуги">
+                    </div>
+                }
             </a>
         </div>
         <div class="col-md-6">
@@ -28,6 +30,11 @@
                     <div class="info-list__item-price">стоимость <span>@@price</span> ₽</div>
                     <div class="info-list__item-actions">
                         <a href="" class="info-list__item-action btn btn-sm btn-primary">Записаться</a>
+                        <a href="" class="info-list__item-action btn btn-sm btn-secondary">Подробнее</a>
+                    </div>
+                }
+                @@if(typeof more !=='undefined' && more === true){
+                    <div class="info-list__item-actions">
                         <a href="" class="info-list__item-action btn btn-sm btn-secondary">Подробнее</a>
                     </div>
                 }

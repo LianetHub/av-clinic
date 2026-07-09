@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Терапия"
+    })
+    <body itemscope itemtype="https://schema.org/WebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 0
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item">
+                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <a href="" class="breadcrumbs__link">Направления</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <span class="breadcrumbs__link">Терапия</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg">Терапия</h1>
+                                <div class="heading__tagline">— это фундаментальное направление медицины, в центре которого находится пациент как единое целое</div>
+                                <div class="heading__desc">
+                                    <p>Врач-терапевт занимается диагностикой и лечением болезней внутренних органов, ведет пациентов с хроническими заболеваниями, проводит профилактические осмотры и координирует помощь узких специалистов.</p>
+                                    <p>Это первый врач, с которого начинается любой медицинский маршрут.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Запланировать визит</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/directions/therapy.jpg" class="cover-image" alt="Фото направления">
+                    </div>
+                </section>
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

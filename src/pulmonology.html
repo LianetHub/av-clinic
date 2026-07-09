@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Пульмонология"
+    })
+    <body itemscope itemtype="https://schema.org/WebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 0
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item">
+                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <a href="" class="breadcrumbs__link">Направления</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <span class="breadcrumbs__link">Пульмонология</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg">Пульмонология</h1>
+                                <div class="heading__tagline">Комплексная диагностика и лечение заболеваний органов дыхания</div>
+                                <div class="heading__desc">
+                                    <p>Дышите полной грудью — именно этого мы хотим для каждого нашего пациента. Мы помогаем пациентам при острых и хронических состояниях — от затяжного кашля до сложных патологий лёгких.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Запланировать визит</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/directions/pulmonology.jpg" class="cover-image" alt="Фото направления">
+                    </div>
+                </section>
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Дерматология"
+    })
+    <body itemscope itemtype="https://schema.org/WebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 0
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item">
+                                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <a href="" class="breadcrumbs__link">Направления</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <span class="breadcrumbs__link">Дерматология</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg">Дерматология</h1>
+                                <div class="heading__tagline">Комплексная диагностика и лечение заболеваний кожи, волос и ногтей</div>
+                                <div class="heading__desc">
+                                    <p>Кожа — самый большой орган человеческого тела, и одновременно самый открытый: она первой реагирует на внешние воздействия и нередко сигнализирует о внутренних проблемах — гормональных нарушениях, сбоях в работе иммунной системы, заболеваниях внутренних органов.</p>
+                                    <p>Именно поэтому задача дерматолога — не просто устранить видимый симптом, а разобраться в его причине. Высыпания, зуд, шелушение или изменение цвета кожи могут быть как самостоятельным заболеванием, так и проявлением чего‑то более глубокого. Грамотный специалист видит разницу</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Запланировать визит</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/directions/dermatology.jpg" class="cover-image" alt="Фото направления">
+                    </div>
+                </section>
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

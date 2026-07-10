@@ -29,17 +29,17 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<!-- Open Graph  -->
 	<!-- plugins -->
-	<link rel="preload" href="css/libs/swiper-bundle.min.css?_v=20260709232235" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="css/libs/swiper-bundle.min.css?_v=20260710141919" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
-		<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260709232235">
+		<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260710141919">
 	</noscript>
-	<link rel="preload" href="css/libs/fancybox.css?_v=20260709232235" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="css/libs/fancybox.css?_v=20260710141919" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
-		<link rel="stylesheet" href="css/libs/fancybox.css?_v=20260709232235">
+		<link rel="stylesheet" href="css/libs/fancybox.css?_v=20260710141919">
 	</noscript>
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20260709232235">
-	<link rel="stylesheet" href="css/style.min.css?_v=20260709232235">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20260710141919">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260710141919">
 </head>
 
 <body itemscope itemtype="https://schema.org/MedicalWebPage">
@@ -64,50 +64,296 @@
 							<a href="" aria-label="Мы в Whatsapp" class="socials__item icon-whatsapp"></a>
 						</div>
 						<a href="" class="header__btn btn btn-primary btn-sm">Запланировать визит</a>
-						<button type="button" class="header__toggler icon-menu">
-							<span></span><span></span><span></span>
-						</button>
+						<div class="header__actions">
+							<button type="button" aria-label="Открыть поиск" class="header__search-toggler icon-search"></button>
+							<button type="button" aria-label="Открыть меню" class="header__toggler icon-menu">
+								<span></span><span></span><span></span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="header__menu menu">
 				<div class="menu__container container">
-					<nav aria-label="Меню" class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item menu__item--parent">
-								<a href="" class="menu__link">Состояния</a>
-								<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-chevron-down"></button>
-							</li>
-							<li class="menu__item menu__item--parent">
-								<a href="" class="menu__link">Чек-апы</a>
-								<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-chevron-down"></button>
-							</li>
-							<li class="menu__item">
-								<a href="/drips.html" class="menu__link">Капельницы</a>
-							</li>
-							<li class="menu__item menu__item--parent">
-								<a href="index.html#directions" class="menu__link">Направления</a>
-								<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-chevron-down"></button>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Врачи</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Цены</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">О клинике</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Пациентам</a>
-							</li>
-							<li class="menu__item">
-								<a href="" class="menu__link">Контакты</a>
-							</li>
-						</ul>
-					</nav>
+					<div class="menu__content">
+						<nav aria-label="Меню" class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item--parent">
+									<a href="" class="menu__link">Состояния</a>
+									<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-chevron-down"></button>
+									<div class="submenu">
+										<ul class="submenu__list">
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Энергия и усталость</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Нет энергии</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Бессонница</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Выгорание</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Вес и метаболизм</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Растёт живот</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лишний вес</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Отёки</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Контроль аппетита</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Женское здоровье</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Болезненные месячные</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Нарушение цикла</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Беременность</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">После родов</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Интимное омоложение</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Красота изнутри</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Здоровая кожа</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Здоровое лицо</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Здоровые волосы</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Здоровые ногти</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Мужское здоровье</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Мужская эстетика</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Мужская сила</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Мужская энергия</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Выпадение волос</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item--parent">
+									<a href="" class="menu__link">Чек-апы</a>
+									<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-chevron-down"></button>
+									<div class="submenu">
+										<ul class="submenu__list">
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Программы для женщин</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Женское здоровье 18-40</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Женское здоровье 40+</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Женское здоровье 60+</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">После родов</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Нерегулярный цикл</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Онкоскрининг (шейка матки)</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Подготовка к беременности (light)</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Подготовка к беременности (premium)</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Программы для мужчин</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Мужское здоровье 18-40</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Мужское здоровье 40+</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Мужское здоровье 60+</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item"><a href="" class="submenu__link">Сияние</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link">Гастро чек-ап</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link">Программа похудения</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link">Аллергия + астма</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link">Диагностика крапивницы</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link">Диагностика псориаза</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link">Забыть о железодефиците</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item">
+									<a href="/drips.html" class="menu__link">Капельницы</a>
+								</li>
+								<li class="menu__item menu__item--parent">
+									<a href="index.html#directions" class="menu__link">Направления</a>
+									<button type="button" aria-label="Открыть подменю" class="menu__arrow icon-chevron-down"></button>
+									<div class="submenu submenu--large">
+										<ul class="submenu__list">
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Аллергология</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Диагностика и лечение аллергии и астмы</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Диагностика и лечение крапивницы</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Комплексное обследование при острой и&nbsp;хронической крапивнице</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение аллергического ринита и&nbsp;конъюктивита</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Гинекология</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Ведение беременности</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение кисты яичников</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение миомы матки</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение молочницы</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение патологий шейки матки</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение урогенитальных инфекций</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Оперативное лечение полипов матки и&nbsp;гиперплазии</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Эстетическая гинекология</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Урология</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение простатита</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение цистита и расстройств мочеиспускания</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Эндокринология</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение заболеваний щитовидной железы</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение инсулинорезистентности и&nbsp;ожирения</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение сахарного диабета</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Дерматология</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение герпеса</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение дерматита</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение псориаза</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение экземы</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item"><a href="" class="submenu__link">Косметология</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link">Восстановление волос</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link">Диетология</a></li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Кардиология</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение аритмии</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение атеросклероза</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение гипертонии</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение и профилактика инфаркта</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение стенокардии</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение тромбоза</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Неврология</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение боли в спине</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение головной боли</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение и восстановление после инсульта</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Терапия</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение артрита</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение артроза</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Пульмонология</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение аллергии</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение астмы</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение бронхита</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение органов дыхания</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение саркоидоза лёгких</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение ХОБЛ</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Гастроэнтерология</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение гастрита</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение изжоги</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение язвы желудка</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item">
+												<a href="" class="submenu__link">Гематология</a>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Оториноларингология</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Восстановительная терапия слизистой носа</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение гайморита</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение отита</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение ринита и аденоидов</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Лечение тонзиллита</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">Функциональная диагностика</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">ЭКГ</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Суточный мониторинг артериального давления СМАД</a></li>
+												</ul>
+											</li>
+											<li class="submenu__item submenu__item--parent">
+												<a href="" class="submenu__link">УЗИ</a>
+												<button type="button" aria-label="Открыть подменю 2 уровня" class="submenu__arrow icon-arrow-right"></button>
+												<ul class="subsubmenu">
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">УЗИ брахиоцефальных артерий</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">УЗИ молочных желез</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">УЗИ щитовидной железы</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">УЗИ мочевого пузыря</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">УЗИ органов брюшной полости</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">УЗИ органов малого таза</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">УЗИ органов почек</a></li>
+													<li class="subsubmenu__item"><a href="" class="subsubmenu__link">Эхокардиография (ЭХО-КГ)</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Врачи</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Цены</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">О клинике</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Пациентам</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<button type="button" class="header__search-toggler icon-search">Поиск</button>
+					</div>
 				</div>
 			</div>
+			<form action="#" class="search">
+				<div class="search__container container">
+					<div class="search__row">
+						<input type="text" name="search" class="search__input form__control" placeholder="Искать">
+						<button type="submit" aria-label="Искать" class="search__btn icon-search"></button>
+					</div>
+				</div>
+			</form>
 		</header>
 		<main class="page" itemprop="mainContentOfPage">
 			<section class="heading" itemscope itemtype="https://schema.org/MedicalTherapy">
@@ -410,10 +656,10 @@
 				</div>
 			</div>
 		</footer> <!-- plugins -->
-		<script defer src="js/libs/swiper-bundle.min.js?_v=20260709232235"></script>
-		<script defer src="js/libs/fancybox.umd.js?_v=20260709232235"></script>
+		<script defer src="js/libs/swiper-bundle.min.js?_v=20260710141919"></script>
+		<script defer src="js/libs/fancybox.umd.js?_v=20260710141919"></script>
 		<!-- plugins -->
-		<script src="js/app.min.js?_v=20260709232235"></script>
+		<script src="js/app.min.js?_v=20260710141919"></script>
 		</script>
 	</div>
 </body>

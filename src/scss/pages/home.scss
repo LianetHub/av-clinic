@@ -3,15 +3,19 @@
     color: #fff;
     position: relative;
     z-index: 1;
-    height: rem(823);
+    max-height: rem(823);
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100dvh - rem(53));
 
     @media (min-width:$md4) {
-        height: rem(1054);
+        max-height: rem(1054);
+        min-height: calc(100dvh - rem(80));
     }
 
     @media (min-width:$md2) {
-        height: rem(840);
-
+        max-height: rem(840);
+        min-height: calc(100dvh - rem(116));
     }
 
     // .hero__badge
@@ -34,7 +38,11 @@
 
         @media (min-width:$md3) {
             top: rem(40);
-            right: rem(32);
+        }
+
+        @media (min-width: 1359.98px) {
+            right: rem(0);
+
         }
     }
 
@@ -51,10 +59,14 @@
 
     // .hero__container
     &__container {
+        padding-top: 4rem;
         text-align: center;
         align-content: end;
         position: relative;
         min-height: 100%;
+        box-sizing: border-box;
+        width: 100%;
+        flex: 1 1 auto;
     }
 
     // .hero__offer

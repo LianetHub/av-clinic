@@ -1,0 +1,16 @@
+[
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 14 лет",
+        "image": "@img/doctors/zherebtsov-anton.png",
+        "name": "Жеребцов <br> Антон Викторович",
+        "desc": "Врач-оториноларинголог высшей категории"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 10 лет",
+        "image": "@img/doctors/gribenyuk-asiyat.png",
+        "name": "Грибенюк (Кипкеева) <br> Асият&nbsp;Рамазановна",
+        "desc": "Врач-оториноларинголог, хирург"
+    }
+]

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Оториноларингология"
+    })
+    <body itemscope itemtype="https://schema.org/MedicalWebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 0
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/MedicalProcedure">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a>
+                                            <meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html#directions" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Направления</span></a>
+                                            <meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Оториноларингология</span>
+                                            <meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg" itemprop="name">Оториноларингология</h1>
+                                <div class="heading__tagline" itemprop="description">Комплексная диагностика и&nbsp;лечение заболеваний уха, горла и&nbsp;носа</div>
+                                <div class="heading__desc">
+                                    <p>ЛОР-заболевания&nbsp;— одни из&nbsp;самых распространённых в&nbsp;медицинской практике. Насморк, который никак не&nbsp;проходит, снижение слуха, храп, заложенность уха, хроническая боль в&nbsp;горле&nbsp;— всё&nbsp;это&nbsp;не&nbsp;мелочи, а&nbsp;симптомы, которые заслуживают внимания специалиста. Без&nbsp;лечения они&nbsp;способны существенно снизить качество жизни и&nbsp;привести к&nbsp;серьёзным осложнениям.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Запланировать визит</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/directions/otorhinolaryngology.jpg" class="cover-image" alt="Фото направления" itemprop="image">
+                    </div>
+                    <div itemprop="provider" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic">
+                        <meta itemprop="name" content="Альтера Вита">
+                    </div>
+                </section>
+                <section class="description">
+                    <div class="description__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">описание</div>
+                            </div>
+                        </div>
+                        <div class="description__content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Органы слуха и&nbsp;дыхания обеспечивают базовые функции организма&nbsp;— мы&nbsp;дышим, слышим, говорим и&nbsp;воспринимаем запахи каждую секунду. Когда что‑то из&nbsp;этого нарушается, страдает не&nbsp;только здоровье, но&nbsp;и&nbsp;работоспособность, сон, общение и&nbsp;эмоциональное состояние.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Хронические ЛОР-заболевания без&nbsp;лечения прогрессируют: гайморит переходит в&nbsp;полипоз, снижение слуха&nbsp;— в&nbsp;тугоухость, храп&nbsp;— в&nbsp;апноэ с&nbsp;серьёзными кардиологическими последствиями.</p>
+                                    <p>Своевременная консультация оториноларинголога позволяет остановить этот&nbsp;процесс&nbsp;— и&nbsp;вернуть привычное качество жизни.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="info-list">
+                    <div class="info-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">направления</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Основные направления</h2>
+                            </div>
+                        </div>
+                        <ul class="info-list__list">
+                            @@loop('./html/templates/_info-list-item.html', './html/json/otorhinolaryngology-directions.json')
+                            @@loop('./html/templates/_info-list-item-simple.html', './html/json/otorhinolaryngology-directions-simple.json')
+                        </ul>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">симптомы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Когда стоит обратиться к&nbsp;ЛОР-врачу</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="feature-list__lead">Поводом для&nbsp;консультации служат:</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/otorhinolaryngology-symptoms.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="methods">
+                    <div class="methods__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">диагностика и лечение</div>
+                            </div>
+                            <div class="col-lg-6 pc-only">
+                                <h2 class="section-header__title title color-accent">Методы диагностики и&nbsp;лечения</h2>
+                            </div>
+                        </div>
+                        <div class="methods__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Диагностика</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/otorhinolaryngology-diagnosis.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Лечение</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/otorhinolaryngology-treatment.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctors">
+                    <div class="doctors__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">приём ведут</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Наши специалисты</h2>
+                            </div>
+                        </div>
+                        <div class="doctors__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_doctor-card.html', './html/json/doctors-otorhinolaryngology.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <a href="" class="swiper__more more-link">Все врачи</a>
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <h2 class="section-header__caption">цены</h2>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/otorhinolaryngology-prices.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_gallery.html', {})
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

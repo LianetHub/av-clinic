@@ -1,0 +1,30 @@
+[
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 15 лет",
+        "image": "@img/doctors/ryabukha-tatyana.png",
+        "name": "Рябуха <br> Татьяна Юрьевна",
+        "desc": "Врач ультразвуковой диагностики"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 30 лет",
+        "image": "@img/doctors/mrachkovskaya-natalya.png",
+        "name": "Мрачковская <br> Наталья Владимировна",
+        "desc": "Врач-гинеколог, эндокринолог, врач ультразвуковой диагностики, кандидат медицинских наук"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 6 лет",
+        "image": "@img/doctors/medem-diana.png",
+        "name": "Медем <br> Диана Олеговна",
+        "desc": "Врач-акушер-гинеколог, врач ультразвуковой диагностики"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 14 лет",
+        "image": "@img/doctors/vasiliev-andrey.png",
+        "name": "Васильев <br> Андрей Владимирович",
+        "desc": "Врач-гастроэнтеролог, терапевт, врач ультразвуковой диагностики"
+    }
+]

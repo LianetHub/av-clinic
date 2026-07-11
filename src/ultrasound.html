@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Ультразвуковое исследование (УЗИ)"
+    })
+    <body itemscope itemtype="https://schema.org/MedicalWebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 0
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/MedicalProcedure">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a>
+                                            <meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html#directions" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Направления</span></a>
+                                            <meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">УЗИ</span>
+                                            <meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg" itemprop="name">Ультразвуковое исследование (УЗИ)</h1>
+                                <div class="heading__tagline" itemprop="description">Современная ультразвуковая диагностика для&nbsp;точного и&nbsp;безопасного обследования вашего организма</div>
+                                <div class="heading__desc">
+                                    <p>УЗИ&nbsp;— один из&nbsp;наиболее востребованных и&nbsp;универсальных методов медицинской диагностики. Безопасный и&nbsp;безболезненный, не&nbsp;требующий лучевой нагрузки и&nbsp;доступный в&nbsp;режиме реального времени&nbsp;— УЗИ&nbsp;позволяет врачу увидеть то, что&nbsp;скрыто от&nbsp;глаз: состояние внутренних органов, сосудов, мягких тканей, суставов и&nbsp;плода во&nbsp;время беременности.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Запланировать визит</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/directions/ultrasound.jpg" class="cover-image" alt="Фото направления" itemprop="image">
+                    </div>
+                    <div itemprop="provider" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic">
+                        <meta itemprop="name" content="Альтера Вита">
+                    </div>
+                </section>
+                <section class="description">
+                    <div class="description__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">описание</div>
+                            </div>
+                        </div>
+                        <div class="description__content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Главное преимущество ультразвука&nbsp;— информативность при&nbsp;полной безвредности. Метод не&nbsp;имеет противопоказаний по&nbsp;возрасту, может применяться многократно и&nbsp;даёт результат непосредственно во&nbsp;время исследования.</p>
+                                    <p>Именно поэтому УЗИ&nbsp;— первый инструмент диагностики при&nbsp;большинстве клинических ситуаций и&nbsp;надёжный способ контроля уже&nbsp;установленного диагноза.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Многие серьёзные заболевания на&nbsp;ранних стадиях протекают без&nbsp;симптомов. Жёлчные камни, кисты, узлы щитовидной железы, изменения в&nbsp;предстательной железе, тромбоз вен&nbsp;— всё&nbsp;это&nbsp;может долго не&nbsp;давать явных жалоб, пока не&nbsp;достигнет стадии осложнений.</p>
+                                    <p>Регулярное профилактическое УЗИ&nbsp;— простой и&nbsp;доступный способ выявить патологию до&nbsp;того, как&nbsp;она&nbsp;потребует сложного лечения. Полчаса вашего времени может дать полную картину состояния внутренних органов и&nbsp;уверенность в&nbsp;том, что&nbsp;всё&nbsp;в&nbsp;порядке&nbsp;— или&nbsp;своевременный повод принять меры.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="info-list">
+                    <div class="info-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">направления</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Основные виды УЗИ</h2>
+                            </div>
+                        </div>
+                        <ul class="info-list__list">
+                            @@loop('./html/templates/_info-list-item.html', './html/json/ultrasound-directions.json')
+                        </ul>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">симптомы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Когда следует пройти УЗИ</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="feature-list__lead">Важно понимать: заключение УЗИ&nbsp;— это&nbsp;не&nbsp;диагноз, а&nbsp;описание ультразвуковой картины. Окончательный диагноз ставит лечащий врач на&nbsp;основании совокупности данных&nbsp;— жалоб, осмотра, лабораторных и&nbsp;инструментальных исследований.</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/ultrasound-symptoms.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctors">
+                    <div class="doctors__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">приём ведут</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Наши специалисты</h2>
+                            </div>
+                        </div>
+                        <div class="doctors__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_doctor-card.html', './html/json/doctors-ultrasound.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <a href="" class="swiper__more more-link">Все врачи</a>
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_gallery.html', {})
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            <!-- @@include('html/_modal.html', {}) -->
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Казакова Елена Владимировна"
+    })
+    <body itemscope itemtype="https://schema.org/ProfilePage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 5
+            })
+            <main class="page doctor-page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/Physician">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="doctors.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Врачи</span></a><meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Казакова Елена Владимировна</span><meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="heading__badge section-header__caption">стаж 14 лет</div>
+                                <h1 class="heading__title title-lg color-accent" itemprop="name">Казакова <br> Елена Владимировна</h1>
+                                <div class="heading__tagline" itemprop="jobTitle">Семейный врач, эксперт превентивной медицины, врач-дерматолог-косметолог высшей категории с&nbsp;14-летним опытом</div>
+                                <div class="heading__desc">
+                                    <p>Специализируется на&nbsp;инъекционных и&nbsp;аппаратных методиках, интимном омоложении, нитевом лифтинге Aptos, липофилинге и&nbsp;липоредукции. Ведёт консультации по&nbsp;чек-апам и&nbsp;комплексной превентивной оценке здоровья, а&nbsp;также занимается ведением осложнений после&nbsp;косметологических процедур и&nbsp;пластических операций. Является специалистом первой клиники инъекционной косметологии.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на&nbsp;приём</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image heading__image--doctor">
+                        <img src="@img/doctors/kazakova-elena.png" alt="Казакова Елена Владимировна" itemprop="image">
+                    </div>
+                </section>
+                <div class="tags">
+                    <div class="tags__inner container">
+                        @@loop('./html/templates/_doctor-tag.html', './html/json/doctor-kazakova-tags.json')
+                    </div>
+                </div>
+                @@include('html/_doctor-booking.html', {})
+                <section class="doctor-about">
+                    <div class="doctor-about__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">о враче</div>
+                            </div>
+                        </div>
+                        <div class="doctor-about__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Елена Владимировна&nbsp;— семейный врач, эксперт превентивной медицины и&nbsp;врач-косметолог высшей категории с&nbsp;14-летним опытом. Специализируется на&nbsp;инъекционных и&nbsp;аппаратных методиках, интимном омоложении, нитевом лифтинге Aptos, инъекционной липоредукции. Ведёт консультации по&nbsp;чек-апам и&nbsp;комплексной превентивной оценке здоровья, а&nbsp;также занимается ведением осложнений после&nbsp;косметологических процедур и&nbsp;пластических операций. Является специалистом первой клиники инъекционной косметологии.</p>
+                                        <p>В&nbsp;рамках превентивной медицины корректирует дефициты микроэлементов, витаминов и&nbsp;аминокислот при&nbsp;помощи БАДов, рекомендаций по&nbsp;питанию, инфузионной терапии. Оценивает организм как&nbsp;систему, а&nbsp;не&nbsp;набор отдельных органов: если&nbsp;в&nbsp;тканях или&nbsp;органах стабилизировать кровоснабжение, иннервацию, полноценное клеточное дыхание и&nbsp;межсистемное взаимодействие, в&nbsp;целом мы&nbsp;получим результат быстрее.</p>
+                                        <p>Отличается междисциплинарным подходом: помимо лабораторных показателей и&nbsp;жалоб, огромное внимание уделяет приоритетам (целям) пациента, в&nbsp;связи с&nbsp;чем работает не&nbsp;только на&nbsp;отсроченную перспективу, но&nbsp;и&nbsp;на&nbsp;результат «здесь и&nbsp;сейчас», создавая персонализированный «штучный» продукт по&nbsp;управлению состоянием.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Основные направления работы:</p>
+                                        <ul>
+                                            <li>консультации семейного врача и&nbsp;эксперта превентивной медицины</li>
+                                            <li>консультации и&nbsp;маршрутизация по&nbsp;чек-апам</li>
+                                            <li>ведение осложнений после&nbsp;косметологических процедур и&nbsp;пластических операций</li>
+                                            <li>инъекционная косметология (ботулинотерапия, контурная пластика, биоревитализация, мезотерапия)</li>
+                                            <li>аппаратная косметология (лазерные и&nbsp;плазменные технологии, RF-лифтинг)</li>
+                                            <li>нитевой лифтинг Aptos</li>
+                                            <li>интимное омоложение</li>
+                                            <li>липоредукция</li>
+                                            <li>PRP-терапия</li>
+                                            <li>трихология</li>
+                                            <li>коррекция возрастных изменений лица и&nbsp;тела (включая увеличение ягодиц)</li>
+                                        </ul>
+                                        <p>Дерматология:</p>
+                                        <ul>
+                                            <li>псориаз</li>
+                                            <li>атопический дерматит</li>
+                                            <li>экзема</li>
+                                            <li>кожные новообразования</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-education">
+                    <div class="doctor-education__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">образование</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Образование и&nbsp;повышение квалификации</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-education__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Российский национальный исследовательский медицинский университет имени Н.&nbsp;И.&nbsp;Пирогова</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">2011&nbsp;— Лечебное дело (базовое образование)</li>
+                                    </ul>
+                                    <h3 class="doctor-education__subtitle">Российский университет дружбы народов им.&nbsp;П.&nbsp;Лумумбы (РУДН)</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">2012&nbsp;— Дерматовенерология (интернатура)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Повышение квалификации</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-list-item.html', './html/json/doctor-kazakova-training.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">симптомы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">С&nbsp;какими симптомами обращаться</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Косметология</p>
+                                        <ul>
+                                            <li>морщины, гипертонус мышц лица (включая бруксизм) и&nbsp;тела</li>
+                                            <li>повышенное потоотделение</li>
+                                            <li>«поплывший овал лица»</li>
+                                            <li>дряблость кожи&nbsp;— лицо и&nbsp;тело</li>
+                                            <li>недостаточный объём ягодиц</li>
+                                            <li>жировые ловушки (тело, второй подбородок)</li>
+                                            <li>осложнения после&nbsp;пластических и&nbsp;косметологических вмешательств (рубцы, разрывы нитей, отёки, неравномерное распределение жира после&nbsp;липофилинга, фиброзы, удаление филлера, инфицирование филлеров или&nbsp;нитей, некрозы, включая после&nbsp;пересадки волос)</li>
+                                            <li>улучшение приживаемости фолликулов</li>
+                                            <li>пигментация, акне</li>
+                                            <li>желание получить своё&nbsp;же&nbsp;лицо, но&nbsp;10&nbsp;лет назад; деликатная коррекция объёмов и&nbsp;бьютификация с&nbsp;гарантией отсутствия отёков и&nbsp;«лица алкоголика»&nbsp;— эксклюзивно</li>
+                                        </ul>
+                                        <p>Дерматология</p>
+                                        <ul>
+                                            <li>кожные высыпания</li>
+                                            <li>пятна</li>
+                                            <li>зуд</li>
+                                            <li>гнойники</li>
+                                            <li>кожные новообразования</li>
+                                        </ul>
+                                        <p>Трихология</p>
+                                        <ul>
+                                            <li>выпадение волос различной этиологии</li>
+                                        </ul>
+                                        <p>Превентивная медицина</p>
+                                        <ul>
+                                            <li>жалобы на&nbsp;вспышки гнева, раздражительность, апатию, низкую стрессоустойчивость, перепады настроения, эмоциональное выгорание, тревожность, невозможность сосредоточиться на&nbsp;задаче, бессонницу</li>
+                                            <li>повышенное давление (не&nbsp;купирующееся обычными гипотензивными&nbsp;— симпатикоадреналовый тип)</li>
+                                            <li>появление новых множественных аллергий</li>
+                                            <li>состояния после&nbsp;операций</li>
+                                            <li>подготовка к&nbsp;спортивным соревнованиям (улучшение показателей)</li>
+                                            <li>восстановление после&nbsp;острой стрессовой ситуации</li>
+                                            <li>восстановление после&nbsp;длительных праздников</li>
+                                            <li>коррекция дефицитов отмены гормонов</li>
+                                            <li>вегетарианство и&nbsp;коррекция дефицитов после&nbsp;длительных диет или&nbsp;приёма метформина</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-preparation">
+                    <div class="doctor-preparation__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">подготовка к приёму</div>
+                            </div>
+                        </div>
+                        <div class="doctor-preparation__body">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-6">
+                                    <div class="doctor-preparation__items">
+                                        <div class="doctor-preparation__item">
+                                            <h3 class="doctor-preparation__subtitle">При косметологическом/дерматологическом приёме</h3>
+                                            <p>Анализы сдавать не&nbsp;требуется, достаточно взять имеющиеся старые анализы и&nbsp;заключения специалистов.</p>
+                                        </div>
+                                        <div class="doctor-preparation__item">
+                                            <h3 class="doctor-preparation__subtitle">При приёме по&nbsp;превентивной медицине</h3>
+                                            <p>Желательно&nbsp;— спектральный анализ волос (23&nbsp;показателя), аминокислоты (48&nbsp;показателей), стероидный профиль в&nbsp;слюне, общий и&nbsp;биохимический анализ крови.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="methods">
+                    <div class="methods__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">приём и методы лечения</div>
+                            </div>
+                        </div>
+                        <div class="methods__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Что входит в&nbsp;приём</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-kazakova-appointment.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Основные методы лечения</h3>
+                                        <div class="doctor-about__content">
+                                            <p>Превентивная медицина</p>
+                                            <ul>
+                                                <li>стабилизация нервной и&nbsp;гуморальной регуляции организма (нейропротекторы, ноотропы, антиоксиданты, антигипоксанты, пептиды и&nbsp;факторы роста, кардиопротекторы)</li>
+                                                <li>работа с&nbsp;дефицитами&nbsp;— витамины, аминокислоты, микроэлементы, препараты на&nbsp;основе плаценты, инфузионная терапия, гепатопротекторы</li>
+                                                <li>оптимизация процессов регуляции, детоксикации, кровообращения, клеточного дыхания, улучшение нейропластичности&nbsp;— пациент получает реализацию целей, согласованных на&nbsp;приёме</li>
+                                            </ul>
+                                            <p>Косметология</p>
+                                            <ul>
+                                                <li>лечение гипергидроза</li>
+                                                <li>лечение гипертонуса мышц ботоксом</li>
+                                                <li>радиоволновые методы</li>
+                                                <li>сепарация, филлеры, дипроспан (гипертрофические рубцы), ферменты, ботокс, гидроксиапатит кальция, пептиды и&nbsp;нуклеотиды, полимолочная кислота, низкомолекулярная гиалуроновая кислота, коллаген</li>
+                                                <li>нити рассасывающиеся и&nbsp;не&nbsp;рассасывающиеся, армирующие и&nbsp;лифтинговые</li>
+                                                <li>компактизация, перемещение, сшивание жировых пакетов, удаление жировых ловушек, восполнение дефицитов объёма тканей (лицо и&nbsp;тело), уплотнение и&nbsp;улучшение тургора тканей</li>
+                                            </ul>
+                                            <p>Сначала идёт работа с&nbsp;плотностью и&nbsp;качеством кожи (биорепарация, полимолочная кислота, векторный лифтинг, радиоволновое воздействие), гипертонусом мышц-депрессоров (ботокс)&nbsp;— из-за&nbsp;которых наше лицо с&nbsp;возрастом как&nbsp;бы&nbsp;стекает вниз, компактизируются жировые пакеты (более глубокое радиоволновое воздействие, липоредукция, сепарация, нитевой лифтинг) и&nbsp;только потом начинается работа контурной пластикой (филлеры или&nbsp;Radiesse).</p>
+                                            <p>В&nbsp;результате&nbsp;— красивый естественный результат без&nbsp;«переколотости».</p>
+                                            <p>Дерматология</p>
+                                            <ul>
+                                                <li>удаление новообразований аппаратом Фотек</li>
+                                                <li>лечение псориаза, атопического дерматита по&nbsp;стандартам и&nbsp;с&nbsp;выявлением дефицитов (тогда можем получить стойкую ремиссию без&nbsp;системных глюкокортикоидов, антител и&nbsp;т.&nbsp;д.)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-works">
+                    <div class="doctor-works__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">работы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Примеры работ</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-works__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="doctor-works__grid">
+                                        <div class="doctor-works__item">
+                                            <img src="@img/doctors/kazakova-work.jpg" alt="Пример работы до процедуры" class="doctor-works__image">
+                                        </div>
+                                        <div class="doctor-works__item">
+                                            <img src="@img/doctors/kazakova-work.jpg" alt="Пример работы после процедуры" class="doctor-works__image doctor-works__image_after">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">цены</div>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/doctor-kazakova-prices.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {
+                "subtitle": "Если нужен первичный приём, второе мнение или сопровождение по лечению, оставьте свой телефон, и мы поможем согласовать визит.",
+                "hideHint": true
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

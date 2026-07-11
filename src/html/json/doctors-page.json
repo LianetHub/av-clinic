@@ -113,7 +113,8 @@
         "expirience": "Стаж 5 лет",
         "image": "@img/doctors/gusenova-asiyat.png",
         "name": "Гусенова <br> Асият Вазировна",
-        "desc": "Врач-гастроэнтеролог-гепатолог"
+        "desc": "Врач-гастроэнтеролог-гепатолог",
+        "slug": "gusenova-asiyat.html"
     },
     {
         "extrasClass": "",

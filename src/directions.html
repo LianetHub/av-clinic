@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Направления"
+    })
+    <body itemscope itemtype="https://schema.org/CollectionPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 4
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="directions-page">
+                    <div class="directions-page__container container">
+                        <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                </li>
+                                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <span class="breadcrumbs__link" itemprop="name">Направления</span><meta itemprop="position" content="2">
+                                </li>
+                            </ul>
+                        </nav>
+                        <h1 class="directions-page__heading title-lg color-accent" itemprop="name">Услуги AV-Clinic</h1>
+                        <ul class="directions-page__list">
+                            @@loop('./html/templates/_directions-page-item.html', './html/json/directions-page.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

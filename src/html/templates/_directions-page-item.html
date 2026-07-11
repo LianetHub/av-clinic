@@ -1,0 +1,17 @@
+<li class="directions-page__item@@if(typeof subsections !== 'undefined' && subsections.length){ directions-page__item_has-subsections}">
+    <div class="directions-page__head">
+        <a href="@@slug" class="directions-page__title">@@name</a>
+        <a href="@@slug" class="directions-page__more btn btn-secondary btn-sm icon-arrow-right"@@if(typeof subsections !== 'undefined' && subsections.length){ data-directions-toggle aria-expanded="false" aria-label="Показать подразделы"}><span class="directions-page__more-text">Подробнее</span></a>
+    </div>
+    @@if(typeof subsections !== 'undefined' && subsections.length){
+    <div class="directions-page__subsections">
+        <ul class="directions-page__subsections-list">
+            @@for (var i = 0; i < subsections.length; i++) {
+            <li class="directions-page__subsection">
+                <a href="#" class="directions-page__subsection-title">`+subsections[i].title+`</a>
+            </li>
+            }
+        </ul>
+    </div>
+    }
+</li>

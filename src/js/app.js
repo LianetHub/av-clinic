@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	devFunctions.mask();
 	devFunctions.initDetailsTabs();
 	devFunctions.initSwipers();
+	devFunctions.initDirectionsPage();
 
 	// clickHandler
 

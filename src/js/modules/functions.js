@@ -4,6 +4,7 @@ export { formSubmit } from "./formsubmit.js";
 export { initYandexMap } from "./map.js";
 export { mask } from "./maskRussia.js";
 export { initDetailsTabs } from "./details-tabs.js";
+export { initDirectionsPage } from "./directions-page.js";
 export { initSwipers } from "./swipers.js";
 
 

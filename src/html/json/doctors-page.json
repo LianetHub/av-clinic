@@ -148,6 +148,7 @@
         "expirience": "Стаж 15 лет",
         "image": "@img/doctors/ryabukha-tatyana.png",
         "name": "Рябуха <br> Татьяна Юрьевна",
-        "desc": "Врач ультразвуковой диагностики"
+        "desc": "Врач ультразвуковой диагностики",
+        "slug": "ryabuha-tatyana.html"
     }
 ]

@@ -42,7 +42,7 @@
         "subsections": [
             { "title": "Лечение заболеваний щитовидной железы", "slug": "thyroid-treatment.html" },
             { "title": "Лечение инсулинорезистентности и&nbsp;ожирения", "slug": "insulin-resistance-treatment.html" },
-            { "title": "Лечение сахарного диабета I&nbsp;и&nbsp;II&nbsp;типов" }
+            { "title": "Лечение сахарного диабета I&nbsp;и&nbsp;II&nbsp;типов", "slug": "diabetes-treatment.html" }
         ]
     },
     {

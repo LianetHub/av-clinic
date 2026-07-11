@@ -3009,10 +3009,20 @@ body {
   }
 }
 .heading__badge {
-  margin-top: 4rem;
+  margin-top: 2.5rem;
+}
+@media (min-width: 1199.98px) {
+  .heading__badge {
+    margin-top: 4rem;
+  }
 }
 .heading__badge + .heading__title {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 1199.98px) {
+  .heading__badge + .heading__title {
+    margin-top: 1rem;
+  }
 }
 .heading__content {
   padding-bottom: 4rem;
@@ -5507,7 +5517,7 @@ body {
   margin-top: 1.5rem;
   row-gap: 2rem;
 }
-@media (min-width: 743.98px) {
+@media (min-width: 1199.98px) {
   .doctor-about__grid {
     margin-top: 2rem;
   }
@@ -5552,11 +5562,16 @@ body {
 }
 @media (min-width: 743.98px) {
   .doctor-about__subtitle {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .doctor-about__subtitle {
     font-size: 1.25rem;
   }
 }
 .doctor-about__list {
-  margin-top: 0.75rem;
+  margin-top: 0.625rem;
   padding-left: 1.5rem;
   font-size: 0.875rem;
   line-height: 1.4;
@@ -5565,12 +5580,21 @@ body {
 }
 @media (min-width: 743.98px) {
   .doctor-about__list {
-    margin-top: 1rem;
     font-size: 1rem;
   }
 }
+@media (min-width: 1199.98px) {
+  .doctor-about__list {
+    margin-top: 1rem;
+  }
+}
 .doctor-about__list li + li {
-  margin-top: 0.5rem;
+  margin-top: 0.125rem;
+}
+@media (min-width: 1199.98px) {
+  .doctor-about__list li + li {
+    margin-top: 0.5rem;
+  }
 }
 
 .doctor-experience__body {
@@ -5615,4 +5639,81 @@ body {
 }
 .doctor-reviews .swiper__controls {
   margin-inline: auto;
+}
+
+.doctor-education__body {
+  margin-top: 1.5rem;
+}
+@media (min-width: 743.98px) {
+  .doctor-education__body {
+    margin-top: 2rem;
+  }
+}
+.doctor-education__subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: normal;
+  color: #806448;
+}
+@media (min-width: 743.98px) {
+  .doctor-education__subtitle {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .doctor-education__subtitle {
+    font-size: 1.25rem;
+  }
+}
+.doctor-education .doctor-list {
+  margin-top: 1rem;
+}
+
+.doctor-preparation__body {
+  margin-top: 1.5rem;
+}
+@media (min-width: 743.98px) {
+  .doctor-preparation__body {
+    margin-top: 2rem;
+  }
+}
+.doctor-preparation__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.doctor-preparation__item {
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(67, 40, 33, 0.2);
+}
+.doctor-preparation__item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+.doctor-preparation__subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #271605;
+}
+@media (min-width: 743.98px) {
+  .doctor-preparation__subtitle {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .doctor-preparation__subtitle {
+    font-size: 1.25rem;
+  }
+}
+.doctor-preparation__item p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #271605;
+}
+@media (min-width: 743.98px) {
+  .doctor-preparation__item p {
+    font-size: 1rem;
+  }
 }

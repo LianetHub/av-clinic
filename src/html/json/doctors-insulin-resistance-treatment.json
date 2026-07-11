@@ -25,7 +25,8 @@
         "expirience": "Стаж 7&nbsp;лет",
         "image": "@img/doctors/roman-terushkin.png",
         "name": "Терушкин <br> Роман Алексеевич",
-        "desc": "Врач-эндокринолог, терапевт"
+        "desc": "Врач-эндокринолог, терапевт",
+        "slug": "roman-terushkin.html"
     },
     {
         "extrasClass": "swiper-slide",

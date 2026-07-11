@@ -1,4 +1,3 @@
-
 // .heading_doctor {
 // 	.heading__badge {
 // 		margin-top: rem(16);
@@ -267,7 +266,7 @@
 		margin-top: rem(24);
 		row-gap: rem(32);
 
-		@media (min-width:$md4) {
+		@media (min-width:$md2) {
 			margin-top: rem(32);
 		}
 	}
@@ -282,9 +281,9 @@
 			font-size: rem(16);
 		}
 
-		p + p,
-		p + ul,
-		ul + p {
+		p+p,
+		p+ul,
+		ul+p {
 			margin-top: rem(8);
 		}
 
@@ -293,7 +292,7 @@
 			list-style: disc;
 		}
 
-		li + li {
+		li+li {
 			margin-top: rem(4);
 		}
 	}
@@ -317,13 +316,17 @@
 		color: #271605;
 
 		@media (min-width:$md4) {
+			font-size: rem(18);
+		}
+
+		@media (min-width:$md2) {
 			font-size: rem(20);
 		}
 	}
 
 	// .doctor-about__list
 	&__list {
-		margin-top: rem(12);
+		margin-top: rem(10);
 		padding-left: rem(24);
 		font-size: rem(14);
 		line-height: 1.4;
@@ -331,19 +334,28 @@
 		list-style: disc;
 
 		@media (min-width:$md4) {
-			margin-top: rem(16);
 			font-size: rem(16);
 		}
 
-		li + li {
-			margin-top: rem(8);
+		@media (min-width:$md2) {
+			margin-top: rem(16);
+
+		}
+
+		li+li {
+			margin-top: rem(2);
+
+			@media (min-width:$md2) {
+				margin-top: rem(8);
+
+			}
 		}
 	}
 }
 
 .doctor-experience {
 
-	
+
 	// .doctor-experience__body
 	&__body {
 		margin-top: rem(24);
@@ -391,5 +403,94 @@
 
 	.swiper__controls {
 		margin-inline: auto;
+	}
+}
+
+.doctor-education {
+
+	// .doctor-education__body
+	&__body {
+		margin-top: rem(24);
+
+		@media (min-width:$md4) {
+			margin-top: rem(32);
+		}
+	}
+
+	// .doctor-education__subtitle
+	&__subtitle {
+		font-size: rem(16);
+		font-weight: 600;
+		line-height: normal;
+		color: #806448;
+
+		@media (min-width:$md4) {
+			font-size: rem(18);
+		}
+
+		@media (min-width:$md2) {
+			font-size: rem(20);
+		}
+	}
+
+	.doctor-list {
+		margin-top: rem(16);
+	}
+}
+
+.doctor-preparation {
+
+	// .doctor-preparation__body
+	&__body {
+		margin-top: rem(24);
+
+		@media (min-width:$md4) {
+			margin-top: rem(32);
+		}
+	}
+
+	// .doctor-preparation__items
+	&__items {
+		display: flex;
+		flex-direction: column;
+		gap: rem(24);
+	}
+
+	// .doctor-preparation__item
+	&__item {
+		padding-top: rem(24);
+		border-top: 1px solid rgba($color: #432821, $alpha: .2);
+
+		&:first-child {
+			padding-top: 0;
+			border-top: none;
+		}
+	}
+
+	// .doctor-preparation__subtitle
+	&__subtitle {
+		font-size: rem(16);
+		font-weight: 500;
+		line-height: normal;
+		color: #271605;
+
+		@media (min-width:$md4) {
+			font-size: rem(18);
+		}
+
+		@media (min-width:$md2) {
+			font-size: rem(20);
+		}
+	}
+
+	&__item p {
+		margin-top: rem(8);
+		font-size: rem(14);
+		line-height: 1.4;
+		color: #271605;
+
+		@media (min-width:$md4) {
+			font-size: rem(16);
+		}
 	}
 }

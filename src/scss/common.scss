@@ -1356,10 +1356,19 @@ body {
 
 	// .heading__badge
 	&__badge {
-		margin-top: 4rem;
+		margin-top: 2.5rem;
+
+		@media (min-width:$md2) {
+			margin-top: 4rem;
+
+		}
 
 		&+.heading__title {
-			margin-top: 1rem;
+			margin-top: 1.5rem;
+
+			@media (min-width:$md2) {
+				margin-top: 1rem;
+			}
 		}
 	}
 
@@ -1396,17 +1405,17 @@ body {
 	&__tagline {
 		margin-top: 1rem;
 		font-weight: 500;
-		
+
 		@media (min-width:$md5) {
 			font-weight: 600;
 			font-size: 1.25rem;
-			
+
 		}
-		
+
 		@media (min-width:$md4) {
 			max-width: 40rem;
 		}
-		
+
 		@media (min-width:$md3) {
 			margin-top: 1.375rem;
 			max-width: 38.4625rem;
@@ -1511,11 +1520,13 @@ body {
 	// .heading__image
 	&__image {
 		background-color: rgba($color: #432821, $alpha: .1);
+
 		&.heading__image--doctor {
 			padding: 0 4rem;
 			display: flex;
 			align-items: flex-end;
 		}
+
 		@media (max-width:$md5) {
 			height: 17.375rem;
 		}

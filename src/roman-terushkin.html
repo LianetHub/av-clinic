@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Терушкин Роман Алексеевич"
+    })
+    <body itemscope itemtype="https://schema.org/ProfilePage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 5
+            })
+            <main class="page doctor-page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/Physician">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="doctors.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Врачи</span></a><meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Терушкин Роман Алексеевич</span><meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="heading__badge section-header__caption">стаж 7 лет</div>
+                                <h1 class="heading__title title-lg color-accent" itemprop="name">Терушкин <br> Роман Алексеевич</h1>
+                                <div class="heading__tagline" itemprop="jobTitle">Врач-эндокринолог с&nbsp;опытом диагностики и&nbsp;лечения заболеваний эндокринной системы</div>
+                                <div class="heading__desc">
+                                    <p>Ведёт пациентов с&nbsp;нарушениями работы щитовидной железы, метаболическими расстройствами, дефицитными состояниями, ожирением, хронической усталостью и&nbsp;нарушениями гормонального баланса.</p>
+                                    <p>В работе делает акцент на&nbsp;комплексной диагностике, понятном разборе анализов и&nbsp;индивидуальном плане лечения.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на&nbsp;приём</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image heading__image--doctor">
+                        <img src="@img/doctors/roman-terushkin.png" alt="Терушкин Роман Алексеевич" itemprop="image">
+                    </div>
+                </section>
+                <div class="tags">
+                    <div class="tags__inner container">
+                        @@loop('./html/templates/_doctor-tag.html', './html/json/doctor-terushkin-tags.json')
+                    </div>
+                </div>
+                @@include('html/_doctor-booking.html', {})
+                <section class="doctor-about">
+                    <div class="doctor-about__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">о враче</div>
+                            </div>
+                        </div>
+                        <div class="doctor-about__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Роман Алексеевич — врач-эндокринолог с&nbsp;опытом диагностики и&nbsp;лечения заболеваний эндокринной системы. Ведёт пациентов с&nbsp;нарушениями работы щитовидной железы, метаболическими расстройствами, дефицитными состояниями, ожирением, хронической усталостью и&nbsp;нарушениями гормонального баланса.</p>
+                                        <p>В работе делает акцент на&nbsp;комплексной диагностике, понятном разборе анализов и&nbsp;индивидуальном плане лечения. Подходит к&nbsp;пациенту системно: оценивает жалобы, лабораторные показатели, образ жизни, питание и&nbsp;динамику состояния, чтобы работать не&nbsp;только с&nbsp;симптомами, но&nbsp;и&nbsp;с&nbsp;причинами нарушений.</p>
+                                        <p>Пациенты отмечают внимательность, подробные объяснения, современный подход и&nbsp;готовность сопровождать лечение в&nbsp;динамике.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Проводит диагностику и&nbsp;лечение заболеваний эндокринной системы и&nbsp;метаболических нарушений:</p>
+                                        <ul>
+                                            <li>гипотиреоз и&nbsp;другие нарушения функции щитовидной железы</li>
+                                            <li>аутоиммунный тиреоидит</li>
+                                            <li>зоб: диффузный, узловой, кистозный</li>
+                                            <li>сахарный и&nbsp;несахарный диабет</li>
+                                            <li>ожирение и&nbsp;метаболический синдром</li>
+                                            <li>дефицит витамина D и&nbsp;другие дефицитные состояния</li>
+                                            <li>синдром хронической усталости</li>
+                                            <li>гиперпролактинемия</li>
+                                            <li>расстройства сна, снижение энергии и&nbsp;работоспособности</li>
+                                            <li>остеопороз и&nbsp;нарушения обмена кальция</li>
+                                            <li>гормональный дисбаланс</li>
+                                        </ul>
+                                        <p>Помогает выстроить индивидуальный план обследования, лечения и&nbsp;дальнейшего наблюдения с&nbsp;контролем лабораторных показателей и&nbsp;самочувствия пациента.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-education">
+                    <div class="doctor-education__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">образование</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Образование и&nbsp;повышение квалификации</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-education__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Образование — Российский университет дружбы народов (РУДН)</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-list-item.html', './html/json/doctor-terushkin-education.json')
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Повышение квалификации и&nbsp;профессиональное развитие</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-list-item.html', './html/json/doctor-terushkin-training.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-preparation">
+                    <div class="doctor-preparation__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">подготовка к приёму</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Минимально желательный список анализов перед&nbsp;приёмом</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-preparation__body">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-6">
+                                    <div class="doctor-preparation__items">
+                                        <div class="doctor-preparation__item">
+                                            <h3 class="doctor-preparation__subtitle">Женщины:</h3>
+                                            <p>ОАК с&nbsp;лейкоцитарной формулой и&nbsp;СОЭ, ферритин, трансферрин, общая железосвязывающая способность, общий белок, альбумин, креатинин, СКФ, мочевина, мочевая кислота, общий холестерин, ЛПВП, ЛПНП, триглицериды, АЛТ, АСТ, ЩФ, ГГТ, общий и&nbsp;прямой билирубин, гомоцистеин, гликированный гемоглобин, ТТГ, Т3 свободный, Т4 свободный, АТ к&nbsp;ТПО, АТ к&nbsp;ТГ, ГСПГ, пролактин, ФСГ, ЛГ, цинк, медь, паратгормон, кальций общий, витамин D-25OH, эозинофильный катионный белок, общий иммуноглобулин Е, уреазный дыхательный тест</p>
+                                        </div>
+                                        <div class="doctor-preparation__item">
+                                            <h3 class="doctor-preparation__subtitle">Мужчины:</h3>
+                                            <p>ОАК с&nbsp;лейкоцитарной формулой и&nbsp;СОЭ, ферритин, трансферрин, общая железосвязывающая способность, общий белок, альбумин, креатинин, СКФ, мочевина, мочевая кислота, общий холестерин, ЛПВП, ЛПНП, триглицериды, АЛТ, АСТ, ЩФ, ГГТ, общий и&nbsp;прямой билирубин, гомоцистеин, гликированный гемоглобин, ТТГ, Т3 свободный, Т4 свободный, АТ к&nbsp;ТПО, АТ к&nbsp;ТГ, ГСПГ, пролактин, ФСГ, ЛГ, цинк, медь, паратгормон, кальций общий, витамин D-25OH, эозинофильный катионный белок, общий иммуноглобулин Е, тестостерон общий и&nbsp;свободный, эстрадиол, уреазный дыхательный тест</p>
+                                        </div>
+                                        <div class="doctor-preparation__item">
+                                            <h3 class="doctor-preparation__subtitle">Дети:</h3>
+                                            <p>ОАК с&nbsp;лейкоцитарной формулой и&nbsp;СОЭ, ферритин, трансферрин, общий белок, СКФ (детский), мочевина, мочевая кислота, АЛТ, АСТ, ЩФ, ГГТ, общий и&nbsp;прямой билирубин, гликированный гемоглобин, ТТГ, Т3 свободный, Т4 свободный, АТ к&nbsp;ТПО, АТ к&nbsp;ТГ, пролактин, цинк, медь, паратгормон, кальций общий, витамин D-25OH, эозинофильный катионный белок, общий IgE, гомоцистеин</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews doctor-reviews">
+                    <div class="reviews__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">отзывы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Отзывы пациентов (11&nbsp;отзывов)</h2>
+                            </div>
+                        </div>
+                        <div class="reviews__slider swiper">
+                            <ul class="swiper-wrapper">
+                                @@loop('./html/templates/_review-item.html', './html/json/doctor-terushkin-reviews.json')
+                            </ul>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">цены</div>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/doctor-terushkin-prices.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {
+                "subtitle": "Если нужен первичный приём, второе мнение или сопровождение по лечению, оставьте свой телефон, и мы поможем согласовать визит.",
+                "hideHint": true
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

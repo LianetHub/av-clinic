@@ -5,6 +5,7 @@ export { initYandexMap } from "./map.js";
 export { mask } from "./maskRussia.js";
 export { initDetailsTabs } from "./details-tabs.js";
 export { initDirectionsPage } from "./directions-page.js";
+export { initDoctorReviews } from "./doctor-reviews.js";
 export { initSwipers } from "./swipers.js";
 
 

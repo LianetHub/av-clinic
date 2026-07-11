@@ -1,0 +1,395 @@
+
+// .heading_doctor {
+// 	.heading__badge {
+// 		margin-top: rem(16);
+
+// 		@media (min-width:$md4) {
+// 			margin-top: rem(24);
+// 		}
+
+// 		@media (min-width:$md1) {
+// 			margin-top: rem(40);
+// 		}
+// 	}
+
+// 	.heading__title {
+// 		margin-top: rem(8);
+
+// 		@media (min-width:$md4) {
+// 			margin-top: rem(16);
+// 		}
+// 	}
+
+// 	.heading__tagline {
+// 		max-width: rem(625);
+// 	}
+
+// 	.heading__desc {
+// 		margin-top: rem(16);
+// 	}
+
+// 	.heading__list {
+// 		padding-left: rem(24);
+// 		list-style: disc;
+
+// 		li + li {
+// 			margin-top: rem(4);
+// 		}
+// 	}
+
+// 	.heading__image {
+// 		background: rgba($color: #432821, $alpha: .1);
+// 		display: flex;
+// 		align-items: flex-end;
+// 		justify-content: center;
+// 		overflow: hidden;
+
+// 		@media (max-width:$md5) {
+// 			height: auto;
+// 			min-height: rem(400);
+// 		}
+
+// 		img {
+// 			width: 100%;
+// 			max-width: rem(617);
+// 			height: auto;
+// 			max-height: 100%;
+// 			object-fit: contain;
+// 			object-position: bottom center;
+
+// 			@media (min-width:$md3) {
+// 				max-width: rem(594);
+// 				max-height: rem(652);
+// 			}
+// 		}
+// 	}
+// }
+
+.tags {
+
+	// .tags__inner
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: rem(8);
+
+		@media (min-width:$md4) {
+			gap: rem(16);
+		}
+	}
+}
+
+.doctor-booking {
+
+	// .doctor-booking__body
+	&__body {
+		margin-top: rem(24);
+
+		@media (min-width:$md4) {
+			margin-top: rem(32);
+			--gutter-y: #{rem(24)};
+		}
+
+		@media (min-width:$md2) {
+			align-items: stretch;
+		}
+	}
+
+	// .doctor-booking__panel
+	&__panel {
+		background: #fff;
+		min-height: rem(120);
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: rem(24);
+
+		@media (min-width:$md2) {
+			min-height: rem(307);
+		}
+	}
+
+	// .doctor-booking__empty
+	&__empty {
+		font-size: rem(16);
+		font-weight: 500;
+		line-height: normal;
+		color: #271605;
+		text-align: center;
+
+		@media (min-width:$md4) {
+			font-size: rem(18);
+		}
+
+		@media (min-width:$md2) {
+			font-size: rem(20);
+			font-weight: 600;
+		}
+	}
+
+	.section-header__desc {
+		@media (min-width:$md2) {
+			max-width: rem(625);
+		}
+	}
+}
+
+.doctor-calendar {
+	background: #fff;
+	padding: rem(16);
+	height: 100%;
+
+	@media (min-width:$md4) {
+		padding: rem(24);
+	}
+
+	@media (min-width:$md2) {
+		min-height: rem(307);
+	}
+
+	// .doctor-calendar__head
+	&__head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(16);
+	}
+
+	// .doctor-calendar__nav
+	&__nav {
+		flex-shrink: 0;
+		width: rem(44);
+		height: rem(44);
+		background: #fff;
+		color: #432821;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: rem(16);
+		transition: opacity 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+
+	// .doctor-calendar__month
+	&__month {
+		font-size: rem(16);
+		font-weight: 600;
+		line-height: normal;
+		color: #271605;
+		text-align: center;
+
+		@media (min-width:$md4) {
+			font-size: rem(20);
+		}
+	}
+
+	// .doctor-calendar__weekdays
+	&__weekdays {
+		margin-top: rem(24);
+		display: grid;
+		grid-template-columns: repeat(7, minmax(0, 1fr));
+		gap: rem(4);
+		font-size: rem(12);
+		line-height: 1.3;
+		color: #432821;
+		text-align: center;
+	}
+
+	// .doctor-calendar__days
+	&__days {
+		margin-top: rem(8);
+		display: grid;
+		grid-template-columns: repeat(7, minmax(0, 1fr));
+		gap: rem(7);
+
+		@media (min-width:$md4) {
+			gap: rem(8);
+		}
+	}
+
+	// .doctor-calendar__day
+	&__day {
+		min-height: rem(32);
+		padding: rem(4) rem(8);
+		border: 1px solid rgba($color: #432821, $alpha: .6);
+		border-radius: rem(8);
+		background: transparent;
+		color: #271605;
+		font-size: rem(12);
+		line-height: 1.3;
+		opacity: 0.6;
+		transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+
+		@media (min-width:$md4) {
+			min-height: rem(36);
+			padding: rem(4) rem(12);
+		}
+
+		@media (any-hover: hover) {
+			&:not(:disabled):hover {
+				opacity: 1;
+			}
+		}
+
+		&_disabled {
+			opacity: 0.3;
+			cursor: default;
+		}
+
+		&_available {
+			background: #5e8b1f;
+			border-color: #5e8b1f;
+			color: #fff;
+			opacity: 0.6;
+		}
+
+		&_selected {
+			background: #806448;
+			border-color: #806448;
+			color: #fff;
+			opacity: 0.6;
+		}
+	}
+}
+
+.doctor-about {
+
+
+	// .doctor-about__grid
+	&__grid {
+		margin-top: rem(24);
+		row-gap: rem(32);
+
+		@media (min-width:$md4) {
+			margin-top: rem(32);
+		}
+	}
+
+	// .doctor-about__content
+	&__content {
+		font-size: rem(14);
+		line-height: 1.4;
+		color: #271605;
+
+		@media (min-width:$md4) {
+			font-size: rem(16);
+		}
+
+		p + p,
+		p + ul,
+		ul + p {
+			margin-top: rem(8);
+		}
+
+		ul {
+			padding-left: rem(24);
+			list-style: disc;
+		}
+
+		li + li {
+			margin-top: rem(4);
+		}
+	}
+
+	// .doctor-about__aside
+	&__aside {
+		display: flex;
+		flex-direction: column;
+		gap: rem(24);
+
+		@media (min-width:$md4) {
+			gap: rem(32);
+		}
+	}
+
+	// .doctor-about__subtitle
+	&__subtitle {
+		font-size: rem(16);
+		font-weight: 600;
+		line-height: normal;
+		color: #271605;
+
+		@media (min-width:$md4) {
+			font-size: rem(20);
+		}
+	}
+
+	// .doctor-about__list
+	&__list {
+		margin-top: rem(12);
+		padding-left: rem(24);
+		font-size: rem(14);
+		line-height: 1.4;
+		color: #271605;
+		list-style: disc;
+
+		@media (min-width:$md4) {
+			margin-top: rem(16);
+			font-size: rem(16);
+		}
+
+		li + li {
+			margin-top: rem(8);
+		}
+	}
+}
+
+.doctor-experience {
+
+	
+	// .doctor-experience__body
+	&__body {
+		margin-top: rem(24);
+
+		@media (min-width:$md4) {
+			margin-top: rem(32);
+		}
+	}
+}
+
+.doctor-list {
+	display: flex;
+	flex-direction: column;
+	gap: rem(16);
+
+	// .doctor-list__item
+	&__item {
+		position: relative;
+		padding-left: rem(29);
+		font-size: rem(14);
+		line-height: 1.4;
+		color: #271605;
+
+		@media (min-width:$md4) {
+			font-size: rem(16);
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: rem(6);
+			width: rem(10);
+			height: rem(10);
+			border-radius: 50%;
+			background: #806448;
+		}
+	}
+}
+
+.doctor-reviews {
+	.swiper__footer {
+		justify-content: center;
+	}
+
+	.swiper__controls {
+		margin-inline: auto;
+	}
+}

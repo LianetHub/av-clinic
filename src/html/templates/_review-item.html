@@ -1,14 +1,33 @@
-<li class="reviews__card swiper-slide" itemscope itemtype="https://schema.org/Review">
+<li class="reviews__card swiper-slide@@if(typeof more !== 'undefined' && more){ reviews__card_expandable}" itemscope itemtype="https://schema.org/Review">
     <div class="reviews__card-rates" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
         <meta itemprop="ratingValue" content="5">
         <meta itemprop="bestRating" content="5">
         <span class="reviews__card-rate icon-star"></span><span class="reviews__card-rate icon-star"></span><span class="reviews__card-rate icon-star"></span><span class="reviews__card-rate icon-star"></span><span class="reviews__card-rate icon-star"></span>
     </div>
+    @@if(typeof source !== 'undefined'){
+    <div class="reviews__card-source">@@source</div>
+    }
+    @@if(typeof time !== 'undefined'){
     <time datetime="@@datetime" class="reviews__card-time" itemprop="datePublished">@@time</time>
+    }
     <div class="reviews__card-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
         <span itemprop="name">@@author</span>
     </div>
-    <blockquote class="reviews__card-blockquote" itemprop="reviewBody">@@quote</blockquote>
+    <blockquote class="reviews__card-blockquote" itemprop="reviewBody">
+        @@if(typeof more !== 'undefined' && more){
+        <span class="reviews__card-quote-short">@@quote</span>
+        <span class="reviews__card-quote-full">@@quoteFull</span>
+        }
+        @@if(typeof more === 'undefined' || !more){
+        @@quote
+        }
+    </blockquote>
+    @@if(typeof more !== 'undefined' && more){
+    <button type="button" class="reviews__card-more" aria-expanded="false">
+        <span class="reviews__card-more-open">Читать полностью</span>
+        <span class="reviews__card-more-close">Свернуть</span>
+    </button>
+    }
     <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/MedicalClinic">
         <meta itemprop="name" content="Альтера Вита">
         <meta itemprop="url" content="https://av-clinic.ru/">

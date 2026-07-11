@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Ильина Элла Андреевна"
+    })
+    <body itemscope itemtype="https://schema.org/ProfilePage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 5
+            })
+            <main class="page doctor-page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/Physician">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="doctors.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Врачи</span></a><meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Ильина Элла Андреевна</span><meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="heading__badge section-header__caption">стаж 26 лет</div>
+                                <h1 class="heading__title title-lg color-accent" itemprop="name">Ильина <br> Элла Андреевна</h1>
+                                <div class="heading__tagline" itemprop="jobTitle">Врач-пульмонолог, аллерголог высшей категории и&nbsp;терапевт, кандидат медицинских наук с&nbsp;26-летним клиническим опытом</div>
+                                <div class="heading__desc">
+                                    <ul class="heading__list">
+                                        <li>Профессор РАЕ, доцент</li>
+                                        <li>Лектор для врачей в&nbsp;области пульмонологии и&nbsp;аллергологии около&nbsp;15&nbsp;лет</li>
+                                        <li>Обладатель двух патентов на&nbsp;изобретения в&nbsp;области лечения бронхиальной астмы</li>
+                                        <li>Автор более 85&nbsp;публикаций, в&nbsp;том&nbsp;числе 12&nbsp;учебно-методических пособий, 6&nbsp;монографий и&nbsp;35&nbsp;статей в&nbsp;изданиях, рецензируемых ВАК</li>
+                                    </ul>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на&nbsp;приём</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image heading__image--doctor">
+                        <img src="@img/doctors/ilyina-ella.png" alt="Ильина Элла Андреевна" itemprop="image">
+                    </div>
+                </section>
+                <div class="tags">
+                    <div class="tags__inner container">
+                        @@loop('./html/templates/_doctor-tag.html', './html/json/doctor-ilyina-tags.json')
+                    </div>
+                </div>
+                @@include('html/_doctor-booking.html', {})
+                <section class="doctor-about">
+                    <div class="doctor-about__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">о враче</div>
+                            </div>
+                        </div>
+                        <div class="doctor-about__grid row">
+                            <div class="col-lg-6">
+                                <div class="doctor-about__content">
+                                    <p>Элла Андреевна — врач-пульмонолог, аллерголог высшей категории и&nbsp;терапевт, кандидат медицинских наук с&nbsp;26-летним клиническим опытом.</p>
+                                    <p>Специализируется на&nbsp;диагностике и&nbsp;лечении заболеваний дыхательной системы, включая:</p>
+                                    <ul>
+                                        <li>бронхиальную астму</li>
+                                        <li>аллергию</li>
+                                        <li>ХОБЛ</li>
+                                        <li>пневмонию, бронхит, плеврит</li>
+                                        <li>альвеолит, легочный фиброз</li>
+                                        <li>апноэ, дыхательную недостаточность</li>
+                                        <li>атипичную пневмонию, туберкулёз (диагностика)</li>
+                                    </ul>
+                                    <p>Помогает точно определить причину симптомов и&nbsp;подобрать эффективную терапию.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="doctor-about__aside">
+                                    <div class="doctor-about__block">
+                                        <h3 class="doctor-about__subtitle">Патенты на изобретения</h3>
+                                        <ul class="doctor-about__list">
+                                            <li>«Способ купирования холодового бронхоспазма и&nbsp;отёка слизистой у&nbsp;больных бронхиальной астмой»</li>
+                                            <li>«Способ купирования пролонгированной профилактики холодового бронхоспазма у&nbsp;больных с&nbsp;микст-патологией»</li>
+                                        </ul>
+                                    </div>
+                                    <div class="doctor-about__block">
+                                        <h3 class="doctor-about__subtitle">Награды</h3>
+                                        <ul class="doctor-about__list">
+                                            <li>Серебряная медаль имени Императрицы Марии Федоровны «За&nbsp;социальное служение» (2009)</li>
+                                            <li>Звание «Народный учитель» (2011)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-experience">
+                    <div class="doctor-experience__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">стаж</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Опыт работы</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-experience__body row">
+                            <div class="col-lg-6 offset-lg-6">
+                                <ul class="doctor-list">
+                                    @@loop('./html/templates/_doctor-list-item.html', './html/json/doctor-ilyina-experience.json')
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews doctor-reviews">
+                    <div class="reviews__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">отзывы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Отзывы пациентов</h2>
+                            </div>
+                        </div>
+                        <div class="reviews__slider swiper">
+                            <ul class="swiper-wrapper">
+                                @@loop('./html/templates/_review-item.html', './html/json/doctor-ilyina-reviews.json')
+                            </ul>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">цены</div>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/doctor-ilyina-prices.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {
+                "subtitle": "Если нужен первичный приём, второе мнение или сопровождение по лечению, оставьте свой телефон, и мы поможем согласовать визит.",
+                "hideHint": true
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

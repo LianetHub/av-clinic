@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Врачи"
+    })
+    <body itemscope itemtype="https://schema.org/CollectionPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 5
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="doctors-page">
+                    <div class="doctors-page__container container">
+                        <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                </li>
+                                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <span class="breadcrumbs__link" itemprop="name">Врачи</span><meta itemprop="position" content="2">
+                                </li>
+                            </ul>
+                        </nav>
+                        <h1 class="doctors-page__heading title-lg color-accent" itemprop="name">Врачи AV-Clinic</h1>
+                        <p class="doctors-page__desc">Большинство врачей нашей клиники&nbsp;— кандидаты наук и&nbsp;специалисты высшей категории, которые работают в&nbsp;консилиуме, а&nbsp;не&nbsp;рассматривают состояние пациента по&nbsp;отдельным симптомам.</p>
+                        <div class="doctors-page__grid">
+                            @@loop('./html/templates/_doctor-card-page.html', './html/json/doctors-page.json')
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

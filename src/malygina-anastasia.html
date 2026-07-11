@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Малыгина Анастасия Андреевна"
+    })
+    <body itemscope itemtype="https://schema.org/ProfilePage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 5
+            })
+            <main class="page doctor-page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/Physician">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="doctors.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Врачи</span></a><meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Малыгина Анастасия Андреевна</span><meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="heading__badge section-header__caption">стаж 9 лет</div>
+                                <h1 class="heading__title title-lg color-accent" itemprop="name">Малыгина <br> Анастасия Андреевна</h1>
+                                <div class="heading__tagline" itemprop="jobTitle">Врач-эндокринолог, кандидат медицинских наук, с&nbsp;более чем&nbsp;9-летним клиническим опытом</div>
+                                <div class="heading__desc">
+                                    <p>В&nbsp;своей практике сочетает классический клинический подход с&nbsp;вниманием к&nbsp;факторам образа жизни, метаболическому здоровью и&nbsp;профилактике эндокринных нарушений.</p>
+                                    <p>Уделяет большое внимание диалогу с&nbsp;пациентом: помогает разобраться в&nbsp;причинах изменений и&nbsp;выстроить понятный план восстановления здоровья.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на&nbsp;приём</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image heading__image--doctor">
+                        <img src="@img/doctors/malygina-anastasia.png" alt="Малыгина Анастасия Андреевна" itemprop="image">
+                    </div>
+                </section>
+                <div class="tags">
+                    <div class="tags__inner container">
+                        @@loop('./html/templates/_doctor-tag.html', './html/json/doctor-malygina-tags.json')
+                    </div>
+                </div>
+                @@include('html/_doctor-booking.html', {})
+                <section class="doctor-about">
+                    <div class="doctor-about__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">о враче</div>
+                            </div>
+                        </div>
+                        <div class="doctor-about__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Анастасия Андреевна&nbsp;— врач-эндокринолог, кандидат медицинских наук, с&nbsp;более чем&nbsp;9-летним клиническим опытом. В&nbsp;своей практике сочетает классический клинический подход с&nbsp;вниманием к&nbsp;факторам образа жизни, метаболическому здоровью и&nbsp;профилактике эндокринных нарушений.</p>
+                                        <p>На&nbsp;консультации подробно разбирает результаты анализов, оценивает гормональный и&nbsp;метаболический статус пациента и&nbsp;подбирает индивидуальную стратегию коррекции. Уделяет большое внимание диалогу с&nbsp;пациентом: помогает разобраться в&nbsp;причинах изменений и&nbsp;выстроить понятный план восстановления здоровья.</p>
+                                        <p>Кандидатская диссертация по&nbsp;эндокринологии защищена в&nbsp;декабре 2025&nbsp;года. Соавтор более 10&nbsp;печатных работ, включая методические пособия и&nbsp;национальное руководство по&nbsp;эндокринологии. Имеет диплом переводчика в&nbsp;сфере профессиональной коммуникации (свободный английский).</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Основные направления работы:</p>
+                                        <ul>
+                                            <li>заболевания щитовидной железы (узловые образования, гипотиреоз, тиреотоксикоз)</li>
+                                            <li>патология гипофиза (гормонально-активные и&nbsp;гормонально-неактивные аденомы)</li>
+                                            <li>нарушения углеводного обмена, инсулинорезистентность, предиабет</li>
+                                            <li>метаболический синдром и&nbsp;профилактика сахарного диабета</li>
+                                            <li>дефицитные состояния (витамин D, железо и&nbsp;др.)</li>
+                                            <li>остеопороз</li>
+                                            <li>гиперпролактинемия</li>
+                                            <li>комплексная оценка гормонального и&nbsp;метаболического здоровья</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-education">
+                    <div class="doctor-education__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">образование</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Образование и&nbsp;повышение квалификации</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-education__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Первый Московский государственный медицинский университет имени И.&nbsp;М.&nbsp;Сеченова</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">2015&nbsp;— Лечебное дело (базовое образование)</li>
+                                    </ul>
+                                    <h3 class="doctor-education__subtitle">Национальный медицинский исследовательский центр эндокринологии</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">2015–2017&nbsp;— Ординатура по&nbsp;эндокринологии</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Повышение квалификации</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-list-item.html', './html/json/doctor-malygina-training.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">симптомы</div>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2 class="feature-list__title title color-accent">С&nbsp;какими симптомами обращаться</h2>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/doctor-malygina-symptoms.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-preparation">
+                    <div class="doctor-preparation__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">подготовка к приёму</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Специально сдавать анализы не&nbsp;требуется, достаточно взять имеющиеся старые анализы, диагностики и&nbsp;заключения специалистов.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="methods">
+                    <div class="methods__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">приём и методы лечения</div>
+                            </div>
+                        </div>
+                        <div class="methods__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Что входит в&nbsp;приём</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-malygina-appointment.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Основные методы лечения</h3>
+                                        <div class="doctor-about__content">
+                                            <p>По&nbsp;результату консультации пациент получает индивидуально разработанный план для&nbsp;улучшения своего самочувствия и&nbsp;состояния здоровья, с&nbsp;рекомендациями по&nbsp;медикаментозной, IV-, при&nbsp;необходимости гормональной терапии, приёму базовой и&nbsp;курсовой нутритивной поддержки. В&nbsp;консультации также&nbsp;указан маршрут визитов к&nbsp;смежным специалистам для&nbsp;всестороннего контроля состояния.</p>
+                                            <p>В&nbsp;рамках лечения могут быть выполнены следующие действия:</p>
+                                            <ul>
+                                                <li>назначение терапии для&nbsp;снижения веса&nbsp;— семаглутид, тирзепатид</li>
+                                                <li>при&nbsp;гормональной недостаточности&nbsp;— назначение заместительной терапии</li>
+                                                <li>при&nbsp;гиперфункции&nbsp;— назначение специфической терапии для&nbsp;снижения выработки соответствующих гормонов</li>
+                                                <li>коррекция предиабета, назначение базовой сахароснижающей терапии у&nbsp;пациентов с&nbsp;СД&nbsp;2&nbsp;типа, интенсификация лечения при&nbsp;декомпенсации заболевания</li>
+                                                <li>коррекция анемии различного генеза после&nbsp;выполненного лабораторного обследования, на&nbsp;том&nbsp;же&nbsp;основании&nbsp;— коррекция дефицитов витаминов, микро- и&nbsp;макронутриентов</li>
+                                            </ul>
+                                            <p>Также&nbsp;может быть назначена гиполипидемическая терапия (эзетимиб, статины, также&nbsp;по&nbsp;показаниям такие препараты как&nbsp;инглисиран (Сибрава), эволокумаб (Репата), алирокумаб (Пралуэнт)).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews doctor-reviews">
+                    <div class="reviews__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">отзывы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Отзывы пациентов (4&nbsp;отзыва)</h2>
+                            </div>
+                        </div>
+                        <div class="reviews__slider swiper">
+                            <ul class="swiper-wrapper">
+                                @@loop('./html/templates/_review-item.html', './html/json/doctor-malygina-reviews.json')
+                            </ul>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">цены</div>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/doctor-malygina-prices.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {
+                "subtitle": "Если нужен первичный приём, второе мнение или сопровождение по лечению, оставьте свой телефон, и мы поможем согласовать визит.",
+                "hideHint": true
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

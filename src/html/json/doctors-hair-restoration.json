@@ -11,7 +11,8 @@
         "expirience": "Стаж 9 лет",
         "image": "@img/doctors/malygina-anastasia.png",
         "name": "Малыгина <br> Анастасия Андреевна",
-        "desc": "Врач-эндокринолог, кандидат медицинских наук"
+        "desc": "Врач-эндокринолог, кандидат медицинских наук",
+        "slug": "malygina-anastasia.html"
     },
     {
         "extrasClass": "swiper-slide",

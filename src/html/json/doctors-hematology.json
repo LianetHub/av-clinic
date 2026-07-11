@@ -4,6 +4,7 @@
         "expirience": "Стаж 14 лет",
         "image": "@img/doctors/ershov-nikolai.png",
         "name": "Ершов <br> Николай Михайлович",
-        "desc": "Врач-гематолог высшей категории"
+        "desc": "Врач-гематолог высшей категории",
+        "slug": "ershov-nikolai.html"
     }
 ]

@@ -4,7 +4,8 @@
         "expirience": "Стаж 15 лет",
         "image": "@img/doctors/akhunyanova-regina.png",
         "name": "Ахуньянова <br> Регина Раулевна",
-        "desc": "Врач-терапевт, диетолог, нефролог"
+        "desc": "Врач-терапевт, диетолог, нефролог",
+        "slug": "akhunyanova-regina.html"
     },
     {
         "extrasClass": "",

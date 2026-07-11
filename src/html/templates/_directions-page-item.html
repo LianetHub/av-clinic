@@ -8,7 +8,7 @@
         <ul class="directions-page__subsections-list">
             @@for (var i = 0; i < subsections.length; i++) {
             <li class="directions-page__subsection">
-                <a href="#" class="directions-page__subsection-title">`+subsections[i].title+`</a>
+                <a href="`+(subsections[i].slug || '#')+`" class="directions-page__subsection-title">`+subsections[i].title+`</a>
             </li>
             }
         </ul>

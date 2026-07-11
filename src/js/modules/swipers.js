@@ -1,4 +1,4 @@
-const CARD_SLIDER_SELECTORS = [".directions__slider", ".doctors__slider", ".steps__slider", ".rates__slider", ".reviews__slider"];
+const CARD_SLIDER_SELECTORS = [".directions__slider", ".doctors__slider", ".steps__slider", ".conditions__slider", ".rates__slider", ".reviews__slider"];
 
 function getCardSliderConfig(sliderEl) {
 	return {

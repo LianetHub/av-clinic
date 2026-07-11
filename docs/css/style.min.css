@@ -2450,6 +2450,11 @@ body {
     margin-top: 2.25rem;
   }
 }
+@media (min-width: 1199.98px) {
+  .feature-list__title {
+    max-width: 33.375rem;
+  }
+}
 .feature-list__lead {
   font-size: 0.875rem;
   line-height: normal;
@@ -2634,6 +2639,64 @@ body {
 }
 .steps__card-desc p:not(:last-child) {
   margin-bottom: 0.5rem;
+}
+
+.conditions__slider {
+  margin-top: 1.5rem;
+  overflow: visible;
+}
+.conditions__slider .swiper__controls {
+  margin-right: 0;
+}
+@media (min-width: 743.98px) {
+  .conditions__slider {
+    overflow: hidden;
+    margin-top: 2.5rem;
+  }
+}
+.conditions__card {
+  background: #FFF;
+  height: auto;
+  min-height: 11.75rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 743.98px) {
+  .conditions__card.swiper-slide {
+    width: 19.5rem;
+  }
+}
+@media (min-width: 743.98px) {
+  .conditions__card {
+    padding: 2rem 2.5rem;
+  }
+}
+.conditions__card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+  color: #271605;
+}
+@media (min-width: 743.98px) {
+  .conditions__card-title {
+    font-size: 1.25rem;
+  }
+}
+.conditions__card-desc {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: rgba(39, 22, 5, 0.6);
+}
+@media (min-width: 743.98px) {
+  .conditions__card-desc {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
 }
 
 .price__title {

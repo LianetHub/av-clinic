@@ -132,14 +132,16 @@
         "expirience": "Стаж 7 лет",
         "image": "@img/doctors/romanovsky-rostislav.png",
         "name": "Романовский <br> Ростислав Русланович",
-        "desc": "Врач-эндокринолог, терапевт, профпатолог, врач физической и&nbsp;реабилитационной медицины"
+        "desc": "Врач-эндокринолог, терапевт, профпатолог, врач физической и&nbsp;реабилитационной медицины",
+        "slug": "romanovsky-rostislav.html"
     },
     {
         "extrasClass": "",
         "expirience": "Стаж 10 лет",
         "image": "@img/doctors/gribenyuk-asiyat.png",
         "name": "Грибенюк (Кипкеева) <br> Асият&nbsp;Рамазановна",
-        "desc": "Врач-оториноларинголог, хирург"
+        "desc": "Врач-оториноларинголог, хирург",
+        "slug": "gribenyuk-asiyat.html"
     },
     {
         "extrasClass": "",

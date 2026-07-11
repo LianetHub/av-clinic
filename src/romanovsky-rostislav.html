@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Романовский Ростислав Русланович"
+    })
+    <body itemscope itemtype="https://schema.org/ProfilePage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 5
+            })
+            <main class="page doctor-page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/Physician">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="doctors.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Врачи</span></a><meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Романовский Ростислав Русланович</span><meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="heading__badge section-header__caption">стаж 7&nbsp;лет</div>
+                                <h1 class="heading__title title-lg color-accent" itemprop="name">Романовский <br> Ростислав Русланович</h1>
+                                <div class="heading__tagline" itemprop="jobTitle">Врач-терапевт-эндокринолог, врач превентивной и&nbsp;антивозрастной медицины, специалист по&nbsp;организации здравоохранения и&nbsp;общественного здоровья. Член РНМОТ, ЕАТ,&nbsp;ЕАЭ.</div>
+                                <div class="heading__desc">
+                                    <p>В&nbsp;AV Clinic ведёт пациентов с&nbsp;комплексным, персонализированным и&nbsp;доказательным подходом: анализирует не&nbsp;только симптомы, но&nbsp;и&nbsp;первопричины состояния, формирует понятную стратегию диагностики и&nbsp;лечения с&nbsp;учётом образа жизни, факторов риска и&nbsp;целей пациента.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на&nbsp;приём</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image heading__image--doctor">
+                        <img src="@img/doctors/romanovsky-rostislav.png" alt="Романовский Ростислав Русланович" itemprop="image">
+                    </div>
+                </section>
+                <div class="tags">
+                    <div class="tags__inner container">
+                        @@loop('./html/templates/_doctor-tag.html', './html/json/doctor-romanovsky-tags.json')
+                    </div>
+                </div>
+                @@include('html/_doctor-booking.html', {})
+                <section class="doctor-about">
+                    <div class="doctor-about__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">о враче</div>
+                            </div>
+                        </div>
+                        <div class="doctor-about__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Ростислав Русланович&nbsp;— врач-терапевт-эндокринолог, врач-превентивной и&nbsp;антивозрастной медицины, специалист по&nbsp;организации здравоохранения и&nbsp;общественного здоровья.</p>
+                                        <p>Член РНМОТ, ЕАТ,&nbsp;ЕАЭ.</p>
+                                        <p>В&nbsp;AV Clinic ведёт пациентов с&nbsp;комплексным, персонализированным и&nbsp;доказательным подходом: анализирует не&nbsp;только симптомы, но&nbsp;и&nbsp;первопричины состояния, формирует понятную стратегию диагностики и&nbsp;лечения с&nbsp;учётом образа жизни, факторов риска и&nbsp;целей пациента.</p>
+                                        <p>Назначает целевую лабораторную и&nbsp;инструментальную диагностику, подбирает терапию с&nbsp;учётом противопоказаний, лекарственных взаимодействий и&nbsp;индивидуальных особенностей организма.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Какие заболевания лечит:</p>
+                                        <ul>
+                                            <li>Артериальная гипертензия, гипертоническая болезнь, гипотония</li>
+                                            <li>Нарушение липидного обмена, гиперхолестеринемия, атеросклероз сосудов</li>
+                                            <li>Хронический и&nbsp;острый бронхит, хроническая обструктивная болезнь лёгких, пневмония, кашель, трахеит, фарингит</li>
+                                            <li>Гастрит, язвенная болезнь желудка, ГЭРБ (гастроэзофагеальная рефлюксная болезнь), СИБР (синдром избыточного бактериального роста)</li>
+                                            <li>Желчекаменная болезнь, нарушение обмена билирубина, синдром Жильбера</li>
+                                            <li>Нарушение обмена мочевой кислоты, подагра</li>
+                                            <li>Артриты, артрозы&nbsp;— первичная диагностика и&nbsp;маршрутизация к&nbsp;травматологу или ревматологу</li>
+                                            <li>Кишечные инфекции, отравления, алкогольные интоксикации</li>
+                                            <li>ОРВИ, грипп, COVID, герпес-вирусная инфекция</li>
+                                            <li>Гипопаратиреоз, гиперпаратиреоз, остеопороз, нарушение кальциево-фосфорного обмена</li>
+                                            <li>Узлы щитовидной железы, узловой зоб, аутоиммунный тиреоидит, болезнь Грейвса, диффузный токсический зоб, гипотиреоз, гипертиреоз</li>
+                                            <li>Ожирение, лишний вес, метаболический синдром</li>
+                                            <li>Нарушения углеводного обмена</li>
+                                            <li>Синдром поликистозных яичников, возрастной гипогонадизм, менопауза</li>
+                                            <li>Железодефицитная анемия, В9&nbsp;и&nbsp;В12-дефицитная анемия</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-education">
+                    <div class="doctor-education__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">образование</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Образование и&nbsp;повышение квалификации</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-education__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Российский университет дружбы народов (РУДН)</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">2019&nbsp;— Лечебное дело (базовое образование)</li>
+                                    </ul>
+                                    <h3 class="doctor-education__subtitle">Московский клинический научно-практический центр имени&nbsp;А.&nbsp;С.&nbsp;Логинова</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">2021&nbsp;— Терапия (ординатура)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Повышение квалификации</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-list-item.html', './html/json/doctor-romanovsky-training.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">симптомы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">С&nbsp;какими симптомами обращаться</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/doctor-romanovsky-symptoms.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-preparation">
+                    <div class="doctor-preparation__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">подготовка к приёму</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Минимально желательный список анализов перед приёмом:</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-preparation__body">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <ul>
+                                            <li>Общий анализ крови + лейкоцитарная формула + СОЭ</li>
+                                            <li>Биохимический анализ крови: общий белок, альбумин, креатинин, мочевая кислота, мочевина, билирубин общий, билирубин прямой, билирубин непрямой, холестерин общий, триглицериды, ЛПНП, ЛПВП, АЛТ, АСТ, ЩФ, ГГТ, кальций общий, натрий, калий, хлор, глюкоза, железо, С-реактивный белок, гликированный гемоглобин</li>
+                                            <li>Параметры обмена железа: сывороточное железо, ферритин, трансферрин, ОЖСС, ЛЖСС, %НТЖ</li>
+                                            <li>Витамины и&nbsp;микроэлементы: витамин&nbsp;D, витамин&nbsp;В9 и&nbsp;В12, гомоцистеин, цинк, медь</li>
+                                            <li>Параметры работы щитовидной железы: ТТГ, Т3 и&nbsp;Т4 свободные, АТ&nbsp;ТПО, АТ&nbsp;ТГ</li>
+                                            <li>Биоимпедансометрия</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="methods">
+                    <div class="methods__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">методы лечения</div>
+                            </div>
+                        </div>
+                        <div class="methods__grid">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Основные методы лечения</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-romanovsky-treatment.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews doctor-reviews">
+                    <div class="reviews__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">отзывы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Отзывы пациентов (4&nbsp;отзыва)</h2>
+                            </div>
+                        </div>
+                        <div class="reviews__slider swiper">
+                            <ul class="swiper-wrapper">
+                                @@loop('./html/templates/_review-item.html', './html/json/doctor-romanovsky-reviews.json')
+                            </ul>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">цены</div>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/doctor-romanovsky-prices.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {
+                "subtitle": "Если нужен первичный приём, второе мнение или сопровождение по лечению, оставьте свой телефон, и мы поможем согласовать визит.",
+                "hideHint": true
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

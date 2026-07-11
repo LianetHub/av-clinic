@@ -12,6 +12,7 @@
         "expirience": "Стаж 10 лет",
         "image": "@img/doctors/gribenyuk-asiyat.png",
         "name": "Грибенюк (Кипкеева) <br> Асият&nbsp;Рамазановна",
-        "desc": "Врач-оториноларинголог, хирург"
+        "desc": "Врач-оториноларинголог, хирург",
+        "slug": "gribenyuk-asiyat.html"
     }
 ]

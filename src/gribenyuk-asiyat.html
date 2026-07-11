@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Грибенюк (Кипкеева) Асият Рамазановна"
+    })
+    <body itemscope itemtype="https://schema.org/ProfilePage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 5
+            })
+            <main class="page doctor-page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/Physician">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="doctors.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Врачи</span></a><meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Грибенюк (Кипкеева) Асият Рамазановна</span><meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="heading__badge section-header__caption">стаж 10&nbsp;лет</div>
+                                <h1 class="heading__title title-lg color-accent" itemprop="name">Грибенюк (Кипкеева) <br> Асият Рамазановна</h1>
+                                <div class="heading__tagline" itemprop="jobTitle">Врач-оториноларинголог, хирург со&nbsp;стажем работы в&nbsp;экстренной и&nbsp;плановой ЛОР-хирургии более 10&nbsp;лет</div>
+                                <div class="heading__desc">
+                                    <p>Специализируется на&nbsp;лечении проблем, связанных с&nbsp;нарушением носового дыхания, диагностике и&nbsp;лечении хронического тонзиллита и&nbsp;его&nbsp;осложнений, а&nbsp;также проводит эндоскопическое удаление кист и&nbsp;инородных тел&nbsp;из&nbsp;околоносовых пазух малоинвазивным методом.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на&nbsp;приём</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image heading__image--doctor">
+                        <img src="@img/doctors/gribenyuk-asiyat.png" alt="Грибенюк (Кипкеева) Асият Рамазановна" itemprop="image">
+                    </div>
+                </section>
+                <div class="tags">
+                    <div class="tags__inner container">
+                        @@loop('./html/templates/_doctor-tag.html', './html/json/doctor-gribenyuk-tags.json')
+                    </div>
+                </div>
+                @@include('html/_doctor-booking.html', {})
+                <section class="doctor-about">
+                    <div class="doctor-about__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">о враче</div>
+                            </div>
+                        </div>
+                        <div class="doctor-about__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Асият Рамазановна&nbsp;— врач-оториноларинголог, хирург, специализируется на&nbsp;лечении проблем, связанных с&nbsp;нарушением носового дыхания, включая искривление перегородки носа, различные формы ринитов (в&nbsp;том&nbsp;числе медикаментозный&nbsp;— зависимость от&nbsp;капель) и&nbsp;новообразования полости носа.</p>
+                                        <p>В&nbsp;своей работе использует малоинвазивные эндоскопические методы, не&nbsp;применяет тампонаду носа в&nbsp;послеоперационном периоде, что&nbsp;делает восстановление безболезненным и&nbsp;максимально комфортным для&nbsp;пациента.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Также&nbsp;проводит эндоскопическое удаление кист и&nbsp;инородных тел&nbsp;из&nbsp;околоносовых пазух малоинвазивным методом, не&nbsp;требующим длительной реабилитации. Кроме того, специализируется на&nbsp;диагностике, лечении хронического тонзиллита и&nbsp;его&nbsp;осложнений.</p>
+                                        <p>Стаж работы в&nbsp;экстренной и&nbsp;плановой ЛОР-хирургии&nbsp;— более 10&nbsp;лет.</p>
+                                        <p>С&nbsp;2018 по&nbsp;2024 год работала в&nbsp;Первоградской больнице ГКБ №1 имени Пирогова.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-education">
+                    <div class="doctor-education__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">образование</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Образование и&nbsp;повышение квалификации</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-education__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Российский национальный исследовательский медицинский университет им.&nbsp;Н.И.&nbsp;Пирогова</h3>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Повышение квалификации</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-list-item.html', './html/json/doctor-gribenyuk-training.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-preparation">
+                    <div class="doctor-preparation__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">подготовка к приёму</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Специально сдавать анализы не&nbsp;требуется, достаточно взять имеющиеся старые анализы, диагностики и&nbsp;заключения специалистов.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="methods">
+                    <div class="methods__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">методы лечения</div>
+                            </div>
+                        </div>
+                        <div class="methods__grid">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Основные методы лечения</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-gribenyuk-treatment.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews doctor-reviews">
+                    <div class="reviews__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">отзывы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Отзывы пациентов (3&nbsp;отзыва)</h2>
+                            </div>
+                        </div>
+                        <div class="reviews__slider swiper">
+                            <ul class="swiper-wrapper">
+                                @@loop('./html/templates/_review-item.html', './html/json/doctor-gribenyuk-reviews.json')
+                            </ul>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">цены</div>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/doctor-gribenyuk-prices.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {
+                "subtitle": "Если нужен первичный приём, второе мнение или сопровождение по лечению, оставьте свой телефон, и мы поможем согласовать визит.",
+                "hideHint": true
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

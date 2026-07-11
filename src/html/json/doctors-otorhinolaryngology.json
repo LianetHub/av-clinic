@@ -4,7 +4,8 @@
         "expirience": "Стаж 14 лет",
         "image": "@img/doctors/zherebtsov-anton.png",
         "name": "Жеребцов <br> Антон Викторович",
-        "desc": "Врач-оториноларинголог высшей категории"
+        "desc": "Врач-оториноларинголог высшей категории",
+        "slug": "zherebtsov-anton.html"
     },
     {
         "extrasClass": "swiper-slide",

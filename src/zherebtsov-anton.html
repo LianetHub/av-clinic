@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Жеребцов Антон Викторович"
+    })
+    <body itemscope itemtype="https://schema.org/ProfilePage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 5
+            })
+            <main class="page doctor-page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/Physician">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="doctors.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Врачи</span></a><meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Жеребцов Антон Викторович</span><meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="heading__badge section-header__caption">стаж 14 лет</div>
+                                <h1 class="heading__title title-lg color-accent" itemprop="name">Жеребцов <br> Антон Викторович</h1>
+                                <div class="heading__tagline" itemprop="jobTitle">Врач-оториноларинголог высшей категории с&nbsp;14-летним опытом диагностики и&nbsp;лечения заболеваний уха, горла и&nbsp;носа, лазерный хирург</div>
+                                <div class="heading__desc">
+                                    <p>Помогает при&nbsp;хроническом насморке, синуситах, отитах, тонзиллите, нарушениях дыхания и&nbsp;слуха, подбирая лечение для&nbsp;взрослых и&nbsp;детей. Владеет лазерной хирургией с&nbsp;курсом фотодинамической терапии.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на&nbsp;приём</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image heading__image--doctor">
+                        <img src="@img/doctors/zherebtsov-anton.png" alt="Жеребцов Антон Викторович" itemprop="image">
+                    </div>
+                </section>
+                <div class="tags">
+                    <div class="tags__inner container">
+                        @@loop('./html/templates/_doctor-tag.html', './html/json/doctor-zherebtsov-tags.json')
+                    </div>
+                </div>
+                @@include('html/_doctor-booking.html', {})
+                <section class="doctor-about">
+                    <div class="doctor-about__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">о враче</div>
+                            </div>
+                        </div>
+                        <div class="doctor-about__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Антон Викторович&nbsp;— оториноларинголог высшей категории с&nbsp;14-летним опытом диагностики и&nbsp;лечения заболеваний уха, горла и&nbsp;носа. Помогает при&nbsp;хроническом насморке, синуситах, отитах, тонзиллите, нарушениях дыхания и&nbsp;слуха, подбирая лечение для&nbsp;взрослых и&nbsp;детей.</p>
+                                        <p>Владеет лазерной хирургией с&nbsp;курсом фотодинамической терапии.</p>
+                                        <p>Проводит диагностику, профилактику и&nbsp;лечение заболеваний уха и&nbsp;верхних дыхательных путей, в&nbsp;том&nbsp;числе отита, трахеита, фарингита, глухоты и&nbsp;тугоухости, гайморита, ангины (тонзиллита), ларингита, ринита.</p>
+                                        <p>Владеет методиками анестезии, взятия биопсии, внутриносовой новокаиновой блокады, меатотимпанальной блокады, нижних носовых раковин, небных миндалин, внутригортанного вливания лекарственных средств, вскрытия фурункулов, абсцессов, атеромы мочки уха, отогематомы носа, забора мазков, иссечения синехии полости носа с&nbsp;использованием микроскопа, катетеризации слуховых труб, ларингоскопии, остановки кровотечения, пневмомассажа воронкой Зигле, парацентеза, промывания носоглоточных пазух и&nbsp;т.&nbsp;д.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Какие заболевания лечит:</p>
+                                        <ul>
+                                            <li>Хронический тонзиллит: воспаление миндалин, приводящее к&nbsp;частым ангинам и&nbsp;болям в&nbsp;горле</li>
+                                            <li>Синусит и&nbsp;гайморит: воспаление пазух носа, вызывающее заложенность, боль и&nbsp;выделения из&nbsp;носа</li>
+                                            <li>Отит: воспаление уха, сопровождающееся болями и&nbsp;возможной потерей слуха</li>
+                                            <li>Ларингит: воспаление гортани, вызывающее охриплость и&nbsp;потерю голоса</li>
+                                            <li>Фарингит: воспаление задней стенки глотки, часто сопровождаемое болью в&nbsp;горле</li>
+                                            <li>Аденоиды: увеличение носоглоточных миндалин, затрудняющее дыхание</li>
+                                            <li>Аллергический ринит: воспаление слизистой носа из-за аллергии, вызывающее чихание и&nbsp;заложенность</li>
+                                            <li>Полипы в&nbsp;носу: доброкачественные образования в&nbsp;носу, затрудняющие дыхание</li>
+                                            <li>Хронический ринит: постоянное воспаление носовой слизистой, приводящее к&nbsp;заложенности и&nbsp;выделениям</li>
+                                            <li>Перфорация барабанной перепонки: разрыв барабанной перепонки, часто вызывающий боль и&nbsp;потерю слуха</li>
+                                            <li>Носовые кровотечения: повторяющиеся или сильные кровотечения из&nbsp;носа</li>
+                                            <li>Синдром обструктивного апноэ сна: затруднённое дыхание во&nbsp;сне, приводящее к&nbsp;частым пробуждениям и&nbsp;усталости</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-education">
+                    <div class="doctor-education__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">образование</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Образование и&nbsp;повышение квалификации</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-education__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Военно-медицинская академия имени С.&nbsp;М.&nbsp;Кирова</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">2012&nbsp;— Лечебное дело (базовое образование)</li>
+                                        <li class="doctor-list__item">2013&nbsp;— Терапия (интернатура)</li>
+                                        <li class="doctor-list__item">2017&nbsp;— Оториноларингология (ординатура)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Повышение квалификации</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-list-item.html', './html/json/doctor-zherebtsov-training.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">симптомы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">С&nbsp;какими симптомами обращаться</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/doctor-zherebtsov-symptoms.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-preparation">
+                    <div class="doctor-preparation__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">подготовка к приёму</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Специально сдавать анализы не&nbsp;требуется, достаточно взять имеющиеся старые анализы, диагностики и&nbsp;заключения специалистов.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="methods">
+                    <div class="methods__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">приём и методы лечения</div>
+                            </div>
+                        </div>
+                        <div class="methods__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Что входит в&nbsp;приём</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-zherebtsov-appointment.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Основные методы лечения</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-zherebtsov-treatment.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews doctor-reviews">
+                    <div class="reviews__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">отзывы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Отзывы пациентов (3&nbsp;отзыва)</h2>
+                            </div>
+                        </div>
+                        <div class="reviews__slider swiper">
+                            <ul class="swiper-wrapper">
+                                @@loop('./html/templates/_review-item.html', './html/json/doctor-zherebtsov-reviews.json')
+                            </ul>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">цены</div>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/doctor-zherebtsov-prices.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {
+                "subtitle": "Если нужен первичный приём, второе мнение или сопровождение по лечению, оставьте свой телефон, и мы поможем согласовать визит.",
+                "hideHint": true
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

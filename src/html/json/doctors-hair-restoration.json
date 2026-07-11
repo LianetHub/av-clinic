@@ -34,7 +34,8 @@
         "expirience": "Стаж 26 лет",
         "image": "@img/doctors/klyanchina-darya.png",
         "name": "Клянчина <br> Дарья Сергеевна",
-        "desc": "Врач-гастроэнтеролог, диетолог, терапевт"
+        "desc": "Врач-гастроэнтеролог, диетолог, терапевт",
+        "slug": "klyanchina-darya.html"
     },
     {
         "extrasClass": "swiper-slide",

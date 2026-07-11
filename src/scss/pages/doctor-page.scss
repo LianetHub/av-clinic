@@ -424,6 +424,10 @@
 		line-height: normal;
 		color: #806448;
 
+		&:not(:first-child) {
+			margin-top: rem(24);
+		}
+
 		@media (min-width:$md4) {
 			font-size: rem(18);
 		}

@@ -27,7 +27,8 @@
         "expirience": "Стаж 17 лет",
         "image": "@img/doctors/romanova-zarifa.png",
         "name": "Романова <br> Зарифа Андреевна",
-        "desc": "Врач-диетолог, кандидат медицинских наук"
+        "desc": "Врач-диетолог, кандидат медицинских наук",
+        "slug": "romanova-zarifa.html"
     },
     {
         "extrasClass": "",

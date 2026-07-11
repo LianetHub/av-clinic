@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Романова Зарифа Андреевна"
+    })
+    <body itemscope itemtype="https://schema.org/ProfilePage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 5
+            })
+            <main class="page doctor-page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/Physician">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="doctors.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Врачи</span></a><meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Романова Зарифа Андреевна</span><meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="heading__badge section-header__caption">стаж 17 лет</div>
+                                <h1 class="heading__title title-lg color-accent" itemprop="name">Романова <br> Зарифа Андреевна</h1>
+                                <div class="heading__tagline" itemprop="jobTitle">Врач-диетолог, нутрициолог, кандидат медицинских наук с&nbsp;17-летним опытом, специалист по&nbsp;пептидной и&nbsp;внутривенной терапии</div>
+                                <div class="heading__desc">
+                                    <p>Член Российской организации диетологов, нутрициологов и&nbsp;специалистов пищевой индустрии (РОСДНП) и&nbsp;Американского врачебного научного сообщества Seeds Scientific Research &amp; Performance (SSRP). Автор книги «Питание как&nbsp;система». Диетолог 2025&nbsp;года, премия Лидеры эпохи.</p>
+                                </div>
+                                <a href="" class="heading__btn btn btn-primary">Записаться на&nbsp;приём</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image heading__image--doctor">
+                        <img src="@img/doctors/romanova-zarifa.png" alt="Романова Зарифа Андреевна" itemprop="image">
+                    </div>
+                </section>
+                <div class="tags">
+                    <div class="tags__inner container">
+                        @@loop('./html/templates/_doctor-tag.html', './html/json/doctor-romanova-tags.json')
+                    </div>
+                </div>
+                @@include('html/_doctor-booking.html', {})
+                <section class="doctor-about">
+                    <div class="doctor-about__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">о враче</div>
+                            </div>
+                        </div>
+                        <div class="doctor-about__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Зарифа Андреевна&nbsp;— доктор-диетолог, кандидат медицинских наук с&nbsp;17-летним врачебным опытом, специалист по&nbsp;пептидной и&nbsp;внутривенной терапии. Член Российской организации диетологов, нутрициологов и&nbsp;специалистов пищевой индустрии (РОСДНП) и&nbsp;Американского врачебного научного сообщества Seeds Scientific Research &amp; Performance (SSRP). Автор книги «Питание как&nbsp;система». Диетолог 2025&nbsp;года, премия Лидеры эпохи.</p>
+                                        <p>Доктор имеет большой практический опыт в&nbsp;снижении и&nbsp;удержании веса тела у&nbsp;пациентов, в&nbsp;устранении тяги к&nbsp;сладкому, жирному, мучному, адаптации рациона питания под&nbsp;запросы и&nbsp;жизнь пациентов, а&nbsp;также повышении уровня энергии в&nbsp;теле.</p>
+                                        <p>Прошла обучение у&nbsp;ведущих специалистов России и&nbsp;Америки, что&nbsp;позволило создать авторскую методику здорового похудения. Метод Зарифы Андреевны сочетает научные достижения и&nbsp;индивидуальный подход: благодаря этому тысячи пациентов стали стройнее, здоровее и&nbsp;энергичнее.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="doctor-about__content">
+                                        <p>Проводит консультации и&nbsp;помогает при:</p>
+                                        <ul>
+                                            <li>ожирении и&nbsp;снижении веса</li>
+                                            <li>подборе и&nbsp;коррекции рациона питания</li>
+                                            <li>нарушениях пищевого поведения</li>
+                                            <li>дефиците мышечной массы</li>
+                                            <li>дефицитах белка, железа, витамина D, других витаминов и&nbsp;минералов</li>
+                                            <li>целлюлите, рыхлости и&nbsp;отечности тела</li>
+                                            <li>закрытии дефицитов&nbsp;— лекарства, БАДы, внутривенная терапия, пептидная терапия</li>
+                                            <li>хронической усталости</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-education">
+                    <div class="doctor-education__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">образование</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Образование и&nbsp;повышение квалификации</h2>
+                            </div>
+                        </div>
+                        <div class="doctor-education__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Дагестанская государственная медицинская академия, г.&nbsp;Махачкала</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">2008&nbsp;— Лечебное дело (красный диплом)</li>
+                                    </ul>
+                                    <h3 class="doctor-education__subtitle">Санкт-Петербургский институт усовершенствования врачей-экспертов</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">2009&nbsp;— Педиатрия и&nbsp;медико-социальная экспертиза (интернатура)</li>
+                                    </ul>
+                                    <h3 class="doctor-education__subtitle">Федеральное бюро медико-социальной экспертизы, г.&nbsp;Москва</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">2014&nbsp;— Аспирантура, защита диссертации, кандидат медицинских наук</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="doctor-education__subtitle">Повышение квалификации</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-list-item.html', './html/json/doctor-romanova-training.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">симптомы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">С&nbsp;какими симптомами обращаться</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/doctor-romanova-symptoms.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctor-preparation">
+                    <div class="doctor-preparation__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">подготовка к приёму</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Перед приёмом рекомендуется пройти один или несколько диагностических стартов для&nbsp;выявления дефицитов.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="methods">
+                    <div class="methods__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">приём и методы лечения</div>
+                            </div>
+                        </div>
+                        <div class="methods__grid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Что входит в&nbsp;приём</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-romanova-appointment.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="methods__card">
+                                        <h3 class="methods__card-title title">Основные методы лечения</h3>
+                                        <ul class="methods__list">
+                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-romanova-treatment.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews doctor-reviews">
+                    <div class="reviews__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">отзывы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Отзывы пациентов (1&nbsp;отзыв)</h2>
+                            </div>
+                        </div>
+                        <div class="reviews__slider swiper">
+                            <ul class="swiper-wrapper">
+                                @@loop('./html/templates/_review-item.html', './html/json/doctor-romanova-reviews.json')
+                            </ul>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="price">
+                    <div class="price__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">цены</div>
+                            </div>
+                        </div>
+                        <h2 class="price__title title color-accent">Стоимость услуг</h2>
+                        <ul class="price__list">
+                            @@loop('./html/templates/_price-list-item.html', './html/json/doctor-romanova-prices.json')
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {
+                "subtitle": "Если нужен первичный приём, второе мнение или сопровождение по лечению, оставьте свой телефон, и мы поможем согласовать визит.",
+                "hideHint": true
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

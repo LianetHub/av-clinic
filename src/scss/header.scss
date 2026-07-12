@@ -1,3 +1,15 @@
+@keyframes subsubmenuFade {
+	from {
+		opacity: 0;
+		transform: translateX(-0.75rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 .header {
 	position: sticky;
 	top: 0;
@@ -307,6 +319,26 @@
 				}
 			}
 		}
+
+		// Раскрытие с клавиатуры (Tab) на десктопе
+		@media (min-width:$md3) {
+			&:focus-within {
+				.menu__arrow {
+					transform: rotate(180deg);
+					color: #806448;
+				}
+
+				.menu__link {
+					color: #806448;
+				}
+
+				.submenu {
+					opacity: 1;
+					visibility: visible;
+					transform: none;
+				}
+			}
+		}
 	}
 
 	// .menu__link
@@ -364,10 +396,17 @@
 		z-index: 1;
 
 		&.submenu--large {
-			columns: 2;
 			left: 0;
 			right: 0;
-			column-gap: rem(40);
+
+			// Сетка вместо columns: элемент жёстко закреплён за своим
+			// столбцом и не «перепрыгивает» при раскрытии subsubmenu.
+			.submenu__list {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				column-gap: rem(40);
+				align-content: start;
+			}
 
 			.submenu__item {
 				width: 100%;
@@ -455,6 +494,21 @@
 						}
 					}
 				}
+
+				&:focus-within {
+					.submenu__arrow {
+						transform: translate(1rem);
+					}
+
+					.submenu__link {
+						color: #806448;
+						transform: scale(math.div(1.125, 1));
+					}
+
+					.subsubmenu {
+						display: flex;
+					}
+				}
 			}
 		}
 	}
@@ -511,6 +565,9 @@
 	@media (min-width:$md3) {
 		font-size: 1rem;
 		max-width: 15.625rem;
+		// Плавное появление при раскрытии (display анимировать нельзя,
+		// поэтому запускаем keyframes в момент отображения).
+		animation: subsubmenuFade 0.25s ease;
 	}
 
 	@media (max-width:$md3) {

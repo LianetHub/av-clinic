@@ -24,15 +24,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	const header = document.querySelector(".header");
 	const search = document.querySelector(".search");
+	const searchInput = search?.querySelector(".search__input");
+
+	function openSearch() {
+		search.classList.add("open");
+		document.querySelectorAll(".header__search-toggler").forEach((toggler) => {
+			toggler.classList.add("active");
+		});
+		setTimeout(() => searchInput?.focus(), 300);
+	}
+
+	function closeSearch() {
+		search.classList.remove("open");
+		document.querySelectorAll(".header__search-toggler").forEach((toggler) => {
+			toggler.classList.remove("active");
+		});
+	}
 
 	document.addEventListener("click", (e) => {
 		const target = e.target;
 
-		if (target.classList.contains('header__search-toggler')) {
-			search.classList.toggle('open');
-			document.querySelectorAll('.header__search-toggler')?.forEach(toggler => {
-				toggler.classList.toggle('active')
-			})
+		if (target.classList.contains("header__search-toggler")) {
+			if (search.classList.contains("open")) {
+				closeSearch();
+			} else {
+				openSearch();
+			}
+		} else if (search?.classList.contains("open") && !target.closest(".search")) {
+			closeSearch();
 		}
 
 		/* ---------------------------------
@@ -45,10 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			return;
 		}
 
-		if (
-			header.classList.contains("open-menu") &&
-			target.classList.contains("header__menu")
-		) {
+		if (header.classList.contains("open-menu") && target.classList.contains("header__menu")) {
 			closeMenu();
 			return;
 		}
@@ -72,26 +88,21 @@ document.addEventListener("DOMContentLoaded", function () {
 			const item = menuArrow.closest(".menu__item--parent");
 
 			// закрываем соседние
-			item.parentElement
-				.querySelectorAll(".menu__item--parent.open")
-				.forEach((el) => {
-					if (el !== item) {
-						el.classList.remove("open");
-						el.querySelector(".menu__arrow")?.setAttribute("aria-expanded", "false");
+			item.parentElement.querySelectorAll(".menu__item--parent.open").forEach((el) => {
+				if (el !== item) {
+					el.classList.remove("open");
+					el.querySelector(".menu__arrow")?.setAttribute("aria-expanded", "false");
 
-						// закрываем вложенные
-						el.querySelectorAll(".submenu__item--parent.open").forEach((sub) => {
-							sub.classList.remove("open");
-							sub.querySelector(".submenu__arrow")?.setAttribute("aria-expanded", "false");
-						});
-					}
-				});
+					// закрываем вложенные
+					el.querySelectorAll(".submenu__item--parent.open").forEach((sub) => {
+						sub.classList.remove("open");
+						sub.querySelector(".submenu__arrow")?.setAttribute("aria-expanded", "false");
+					});
+				}
+			});
 
 			item.classList.toggle("open");
-			menuArrow.setAttribute(
-				"aria-expanded",
-				item.classList.contains("open")
-			);
+			menuArrow.setAttribute("aria-expanded", item.classList.contains("open"));
 
 			return;
 		}
@@ -104,35 +115,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			const item = submenuArrow.closest(".submenu__item--parent");
 
-			item.parentElement
-				.querySelectorAll(".submenu__item--parent.open")
-				.forEach((el) => {
-					if (el !== item) {
-						el.classList.remove("open");
-						el.querySelector(".submenu__arrow")?.setAttribute("aria-expanded", "false");
-					}
-				});
+			item.parentElement.querySelectorAll(".submenu__item--parent.open").forEach((el) => {
+				if (el !== item) {
+					el.classList.remove("open");
+					el.querySelector(".submenu__arrow")?.setAttribute("aria-expanded", "false");
+				}
+			});
 
 			item.classList.toggle("open");
 
-			submenuArrow.setAttribute(
-				"aria-expanded",
-				item.classList.contains("open")
-			);
+			submenuArrow.setAttribute("aria-expanded", item.classList.contains("open"));
 
 			return;
 		}
 
 		// Клик вне меню
 		if (!target.closest(".menu__item--parent")) {
-			header
-				.querySelectorAll(".menu__item--parent.open, .submenu__item--parent.open")
-				.forEach((item) => {
-					item.classList.remove("open");
-					item
-						.querySelector(".menu__arrow, .submenu__arrow")
-						?.setAttribute("aria-expanded", "false");
-				});
+			header.querySelectorAll(".menu__item--parent.open, .submenu__item--parent.open").forEach((item) => {
+				item.classList.remove("open");
+				item.querySelector(".menu__arrow, .submenu__arrow")?.setAttribute("aria-expanded", "false");
+			});
+		}
+	});
+
+	document.addEventListener("keydown", (e) => {
+		if (e.key === "Escape" && search?.classList.contains("open")) {
+			closeSearch();
+			searchInput?.blur();
 		}
 	});
 
@@ -140,5 +149,4 @@ document.addEventListener("DOMContentLoaded", function () {
 		header.classList.remove("open-menu");
 		document.body.classList.remove("open-mobile-menu");
 	}
-
 });

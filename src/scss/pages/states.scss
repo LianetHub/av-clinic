@@ -60,6 +60,17 @@
 		line-height: 1.2;
 		color: $accent;
 
+		a {
+			color: inherit;
+			transition: color 0.3s ease;
+
+			@media (any-hover: hover) {
+				&:hover {
+					color: #806448;
+				}
+			}
+		}
+
 		@media (min-width:$md4) {
 			font-size: rem(28);
 		}

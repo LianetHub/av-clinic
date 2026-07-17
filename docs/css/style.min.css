@@ -5378,6 +5378,15 @@ body {
   line-height: 1.2;
   color: #432821;
 }
+.states-category__title a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .states-category__title a:hover {
+    color: #806448;
+  }
+}
 @media (min-width: 743.98px) {
   .states-category__title {
     font-size: 1.75rem;

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Состояния"
+    })
+    <body itemscope itemtype="https://schema.org/CollectionPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 2
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/MedicalWebPage">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Состояния</span><meta itemprop="position" content="2">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg" itemprop="name">В&nbsp;Альтера Вита мы&nbsp;предлагаем вам&nbsp;взять своё состояние под&nbsp;контроль</h1>
+                                <div class="heading__desc">
+                                    <p>Нет&nbsp;энергии, лишний вес, отёки, бессонница, проблемы с&nbsp;кожей и&nbsp;волосами? Мы&nbsp;разработали специализированные программы быстрой диагностики для&nbsp;выявления причин и&nbsp;управления своим состоянием.</p>
+                                    <p>Стартовая диагностика&nbsp;— первый осознанный шаг&nbsp;к&nbsp;тому, чтобы&nbsp;понять причину и&nbsp;начать действовать. В&nbsp;основе&nbsp;— консультация профильного специалиста, прицельный пакет лабораторных анализов и&nbsp;исследований и&nbsp;индивидуальный план действий по&nbsp;итогам. Никаких универсальных схем&nbsp;— только то, что&nbsp;актуально именно для&nbsp;вашей ситуации.</p>
+                                </div>
+                                <a href="#programs" class="heading__btn btn btn-primary">Выбрать программу</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/states/hero.jpg" class="cover-image" alt="Диагностика состояния в AV-Clinic" itemprop="image">
+                    </div>
+                    <div itemprop="provider" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic"><meta itemprop="name" content="Альтера Вита"></div>
+                </section>
+                <div class="tagline">
+                    <div class="tagline__container container">
+                        <blockquote class="tagline__text">
+                            Мы&nbsp;работаем не&nbsp;только с&nbsp;жалобой, но&nbsp;и&nbsp;с&nbsp;тем, что&nbsp;за&nbsp;ней&nbsp;стоит: помогаем слышать сигналы организма, понимать их&nbsp;причины и&nbsp;управлять своим состоянием до&nbsp;того, как&nbsp;оно&nbsp;перейдёт в&nbsp;болезнь.
+                        </blockquote>
+                    </div>
+                </div>
+                <section class="states-programs" id="programs">
+                    <div class="states-programs__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">диагностические программы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Выберите состояние, которое узнаете в&nbsp;себе&nbsp;— и&nbsp;сделайте первый осознанный шаг&nbsp;к&nbsp;тому, чтобы&nbsp;понять причину и&nbsp;начать действовать</h2>
+                            </div>
+                        </div>
+                        <div class="states-programs__body">
+                            <div class="states-category" id="energy">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="states-category__label">категория состояния</div>
+                                        <h3 class="states-category__title">Энергия и&nbsp;усталость</h3>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="states-category__list">
+                                            @@loop('./html/templates/_states-program-item.html', './html/json/states-energy.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="states-category" id="weight">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="states-category__label">категория состояния</div>
+                                        <h3 class="states-category__title">Вес&nbsp;и&nbsp;метаболизм</h3>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="states-category__list">
+                                            @@loop('./html/templates/_states-program-item.html', './html/json/states-weight.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="states-category" id="women">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="states-category__label">категория состояния</div>
+                                        <h3 class="states-category__title">Женское здоровье</h3>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="states-category__list">
+                                            @@loop('./html/templates/_states-program-item.html', './html/json/states-women.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="states-category" id="beauty">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="states-category__label">категория состояния</div>
+                                        <h3 class="states-category__title">Красота изнутри</h3>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="states-category__list">
+                                            @@loop('./html/templates/_states-program-item.html', './html/json/states-beauty.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="states-category" id="men">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="states-category__label">категория состояния</div>
+                                        <h3 class="states-category__title">Мужское здоровье</h3>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="states-category__list">
+                                            @@loop('./html/templates/_states-program-item.html', './html/json/states-men.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="steps states-results">
+                    <div class="steps__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">результаты</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">После&nbsp;диагностического старта</h2>
+                                <p class="section-header__desc">Диагностический старт&nbsp;— это&nbsp;первый&nbsp;шаг. Дальше врач подключает только те&nbsp;инструменты, которые действительно соответствуют вашей клинической картине.</p>
+                            </div>
+                        </div>
+                        <div class="steps__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_steps-item.html', './html/json/states-results.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="states-results__note">Итоговый маршрут врач собирает персонально по&nbsp;результатам стартовой диагностики.</p>
+                    </div>
+                </section>
+                <section class="doctors">
+                    <div class="doctors__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">врачи</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Специалисты по&nbsp;управлению состоянием</h2>
+                            </div>
+                        </div>
+                        <div class="doctors__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_doctor-card.html', './html/json/states-doctors.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <a href="doctors.html" class="swiper__more more-link">Все врачи</a>
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_gallery.html', {})
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

@@ -5321,6 +5321,215 @@ body {
   }
 }
 
+.states-programs__body {
+  margin-top: 2rem;
+}
+@media (min-width: 743.98px) {
+  .states-programs__body {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .states-programs__body {
+    margin-top: 4rem;
+  }
+}
+
+.states-category {
+  padding-block: 1.5rem;
+  border-top: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+.states-category:last-child {
+  border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+.states-category .row {
+  --gutter-y: rem(24);
+}
+@media (min-width: 743.98px) {
+  .states-category {
+    padding-block: 2rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .states-category {
+    padding-block: 2.5rem;
+  }
+}
+.states-category__label {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: normal;
+  color: #806448;
+}
+@media (min-width: 743.98px) {
+  .states-category__label {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .states-category__label {
+    font-size: 1.25rem;
+  }
+}
+.states-category__title {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #432821;
+}
+@media (min-width: 743.98px) {
+  .states-category__title {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .states-category__title {
+    margin-top: 0.25rem;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 959.98px) {
+  .states-category__list {
+    padding-top: 0.25rem;
+  }
+}
+
+.states-program {
+  padding-block: 1.25rem;
+}
+.states-program:not(:last-child) {
+  border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+@media (min-width: 743.98px) {
+  .states-program {
+    padding-block: 1.5rem;
+  }
+}
+@media (any-hover: hover) {
+  .states-program:hover .states-program__title, .states-program:focus-within .states-program__title {
+    color: #806448;
+    transform: scale(1.0833333333);
+  }
+  .states-program:hover .states-program__icon, .states-program:focus-within .states-program__icon {
+    color: #fff;
+    background: #432821;
+  }
+  .states-program:hover .states-program__actions, .states-program:focus-within .states-program__actions {
+    opacity: 1;
+    max-height: 3.75rem;
+    margin-top: 1rem;
+  }
+}
+.states-program__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.states-program__title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: normal;
+  color: #432821;
+  transform-origin: left center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+@media (min-width: 743.98px) {
+  .states-program__title {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .states-program__title {
+    font-size: 1.5rem;
+  }
+}
+.states-program__icon {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #432821;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+@media (max-width: 743.98px) {
+  .states-program__icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1rem;
+  }
+}
+.states-program__desc {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: #271605;
+  padding-right: 3rem;
+}
+@media (min-width: 743.98px) {
+  .states-program__desc {
+    margin-top: 1rem;
+    max-width: 32.5rem;
+  }
+}
+.states-program__price {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: #432821;
+}
+.states-program__price span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.states-program__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media (any-hover: hover) {
+  .states-program__actions {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease, margin-top 0.3s ease;
+  }
+}
+.states-results__note {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #271605;
+  max-width: 36.5rem;
+  margin-inline: auto;
+}
+@media (min-width: 743.98px) {
+  .states-results__note {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .states-results__note {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 743.98px) {
+  .states-results .steps__card-title {
+    font-size: 1.5rem;
+  }
+}
+
 .doctors-page {
   padding-top: 0.5rem;
   padding-bottom: 2.5rem;

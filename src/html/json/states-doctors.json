@@ -1,0 +1,34 @@
+[
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 16&nbsp;лет",
+        "image": "@img/doctors/romanova-zarifa.png",
+        "name": "Романова <br> Зарифа Андреевна",
+        "desc": "Врач-диетолог, кандидат медицинских наук",
+        "slug": "romanova-zarifa.html"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 9&nbsp;лет",
+        "image": "@img/doctors/malygina-anastasia.png",
+        "name": "Малыгина <br> Анастасия Андреевна",
+        "desc": "Врач-эндокринолог, кандидат медицинских наук",
+        "slug": "malygina-anastasia.html"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 7&nbsp;лет",
+        "image": "@img/doctors/romanovsky-rostislav.png",
+        "name": "Романовский <br> Ростислав Русланович",
+        "desc": "Врач-эндокринолог, терапевт, профпатолог, врач физической и&nbsp;реабилитационной медицины",
+        "slug": "romanovsky-rostislav.html"
+    },
+    {
+        "extrasClass": "swiper-slide",
+        "expirience": "Стаж 4&nbsp;года",
+        "image": "@img/doctors/klyanchina-darya.png",
+        "name": "Клянчина <br> Дарья Сергеевна",
+        "desc": "Врач-гастроэнтеролог, диетолог, терапевт",
+        "slug": "klyanchina-darya.html"
+    }
+]

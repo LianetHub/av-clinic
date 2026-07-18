@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Диагностический старт «Бессонница»"
+    })
+    <body itemscope itemtype="https://schema.org/MedicalWebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 2
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/MedicalProcedure">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="states.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Состояния</span></a><meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="energy-fatigue.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Энергия и&nbsp;усталость</span></a><meta itemprop="position" content="3">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Бессонница</span><meta itemprop="position" content="4">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <h1 class="heading__title title-lg" itemprop="name">Диагностический старт <br> «Бессонница»</h1>
+                                <div class="heading__desc" itemprop="description">
+                                    <p>Долго не&nbsp;можете уснуть, просыпаетесь ночью, страдаете от&nbsp;поверхностного и&nbsp;тревожного&nbsp;сна? Поможем узнать, что&nbsp;стоит за&nbsp;проблемами со&nbsp;сном&nbsp;— дефициты витаминов, сбои в&nbsp;работе щитовидной железы или&nbsp;общее истощение организма.</p>
+                                    <p>Диагностический старт «Бессонница»&nbsp;— первый осознанный шаг&nbsp;к&nbsp;тому, чтобы&nbsp;понять причину и&nbsp;начать действовать.</p>
+                                </div>
+                                <div class="heading__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                    стоимость <span class="heading__price-value" itemprop="price">18&nbsp;000 ₽</span><meta itemprop="priceCurrency" content="RUB">
+                                </div>
+                                <a href="#visit" class="heading__btn btn btn-primary">Записаться на&nbsp;диагностику</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/states/insomnia.jpg" class="cover-image" alt="Диагностический старт «Бессонница» в AV-Clinic" itemprop="image">
+                    </div>
+                    <div itemprop="provider" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic"><meta itemprop="name" content="Альтера Вита"></div>
+                </section>
+                <div class="tagline">
+                    <div class="tagline__container container">
+                        <blockquote class="tagline__text">
+                            Диагностический старт «Бессонница»&nbsp;— это&nbsp;комплексная диагностика, которая помогает найти биологические причины нарушений сна. В&nbsp;основе&nbsp;— консультация профильного специалиста, прицельный пакет лабораторных анализов, биоимпедансометрия и&nbsp;индивидуальный план действий по&nbsp;итогам. Никаких универсальных схем&nbsp;— только то, что&nbsp;актуально именно для&nbsp;вашей ситуации.
+                        </blockquote>
+                    </div>
+                </div>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">симптомы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Вам это знакомо?</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/insomnia-symptoms.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="info-list">
+                    <div class="info-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">причины</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Что может стоять за&nbsp;этим состоянием</h2>
+                                <p class="section-header__desc">Плохой сон не&nbsp;всегда держится только на&nbsp;стрессе или&nbsp;режиме. Дефициты, щитовидный фон и&nbsp;общий ресурс организма тоже могут мешать нормальному восстановлению во&nbsp;сне.</p>
+                                <p class="section-header__desc">Диагностический старт помогает не&nbsp;гадать по&nbsp;одному симптому.<br>Он&nbsp;собирает клиническую картину и&nbsp;показывает, что&nbsp;действительно требует приоритета.</p>
+                            </div>
+                        </div>
+                        <ul class="info-list__list">
+                            @@loop('./html/templates/_info-list-item-plain.html', './html/json/insomnia-causes.json')
+                        </ul>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">описание программы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Диагностический старт «Бессонница»</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="feature-list__title title color-accent">Что&nbsp;входит в&nbsp;диагностический старт</h3>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/insomnia-includes.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="feature-list__title title color-accent">Что вы получаете</h3>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/insomnia-receive.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="steps">
+                    <div class="steps__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">диагностика</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Как&nbsp;проходит диагностика</h2>
+                            </div>
+                        </div>
+                        <div class="steps__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_steps-item.html', './html/json/insomnia-steps.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="doctors">
+                    <div class="doctors__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">врачи</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Специалисты направления «Энергия и&nbsp;восстановление»</h2>
+                            </div>
+                        </div>
+                        <div class="doctors__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_doctor-card.html', './html/json/states-doctors.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <a href="doctors.html" class="swiper__more more-link">Все врачи</a>
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="steps states-results">
+                    <div class="steps__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">следующий шаг</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">После&nbsp;диагностического старта</h2>
+                                <p class="section-header__desc">Диагностический старт&nbsp;— это&nbsp;первый&nbsp;шаг. Дальше врач подключает только те&nbsp;инструменты, которые действительно соответствуют вашей клинической картине.</p>
+                            </div>
+                        </div>
+                        <div class="steps__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_steps-item.html', './html/json/states-results.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="states-results__note">Итоговый маршрут врач собирает персонально по&nbsp;результатам стартовой диагностики.</p>
+                    </div>
+                </section>
+                <section class="info-list">
+                    <div class="info-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">результаты</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">К&nbsp;чему вы&nbsp;придёте</h2>
+                            </div>
+                        </div>
+                        <ul class="info-list__list info-list__list--levels">
+                            @@loop('./html/templates/_info-list-item-plain-rich.html', './html/json/insomnia-outcomes.json')
+                        </ul>
+                    </div>
+                </section>
+                <section class="faq">
+                    <div class="faq__container container">
+                        <div class="section-header">
+                            <div class="section-header__caption">ответы на вопросы</div>
+                        </div>
+                        <h2 class="faq__title title color-accent">Коротко ответили на&nbsp;то, что&nbsp;чаще всего спрашивают перед&nbsp;записью на&nbsp;диагностический старт «Бессонница»</h2>
+                        <div class="faq__list" data-spollers data-one-spoller>
+                            @@loop('./html/templates/_faq-item.html', './html/json/insomnia-faq.json')
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_gallery.html', {})
+                <div id="visit">
+                    @@include('html/_visit.html', {})
+                </div>
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

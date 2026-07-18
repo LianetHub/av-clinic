@@ -5539,6 +5539,116 @@ body {
   }
 }
 
+.info-list__list--levels .info-list__item-title {
+  font-weight: 500;
+  opacity: 0.6;
+  font-size: 1rem;
+}
+@media (min-width: 743.98px) {
+  .info-list__list--levels .info-list__item-title {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .info-list__list--levels .info-list__item-title {
+    font-size: 1.25rem;
+  }
+}
+.info-list__list--levels .info-list__item-subtitle {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: normal;
+  color: #432821;
+}
+@media (min-width: 743.98px) {
+  .info-list__list--levels .info-list__item-subtitle {
+    font-size: 1.5rem;
+  }
+}
+.info-list__list--levels .info-list__item-desc p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.faq__title {
+  margin-top: 1.5rem;
+  text-align: center;
+  max-width: 53.75rem;
+  margin-inline: auto;
+}
+@media (min-width: 743.98px) {
+  .faq__title {
+    margin-top: 2rem;
+  }
+}
+.faq__list {
+  margin-top: 2rem;
+  max-width: 54.5rem;
+  margin-inline: auto;
+}
+@media (min-width: 743.98px) {
+  .faq__list {
+    margin-top: 3rem;
+  }
+}
+.faq__item {
+  border-top: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+.faq__item:last-child {
+  border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.35);
+}
+.faq__question {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: normal;
+  color: #271605;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.faq__question::after {
+  content: "+";
+  flex-shrink: 0;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #432821;
+  transition: transform 0.3s ease;
+}
+.faq__question._active::after {
+  transform: rotate(45deg);
+}
+@media (min-width: 743.98px) {
+  .faq__question {
+    padding-block: 1.25rem;
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .faq__question {
+    font-size: 1.25rem;
+  }
+}
+.faq__answer {
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #271605;
+}
+@media (min-width: 743.98px) {
+  .faq__answer {
+    padding-bottom: 1.25rem;
+    font-size: 1rem;
+  }
+}
+
 .doctors-page {
   padding-top: 0.5rem;
   padding-bottom: 2.5rem;

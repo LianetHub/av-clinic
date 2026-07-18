@@ -1,3 +1,7 @@
+import initSlideToggle from "./slideToggle.js";
+
+initSlideToggle();
+
 export { OS } from "./OS.js";
 export { isWebp } from "./webp.js";
 export { formSubmit } from "./formsubmit.js";
@@ -7,9 +11,4 @@ export { initDetailsTabs } from "./details-tabs.js";
 export { initDirectionsPage } from "./directions-page.js";
 export { initDoctorReviews } from "./doctor-reviews.js";
 export { initSwipers } from "./swipers.js";
-
-
-
-
-
-
+export { spollers } from "./spoller.js";

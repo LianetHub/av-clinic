@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	devFunctions.initSwipers();
 	devFunctions.initDirectionsPage();
 	devFunctions.initDoctorReviews();
+	devFunctions.spollers();
 
 	// clickHandler
 

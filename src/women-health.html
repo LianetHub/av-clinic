@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Женское здоровье"
+    })
+    <body itemscope itemtype="https://schema.org/MedicalWebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 2
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading" itemscope itemtype="https://schema.org/MedicalProcedure">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="states.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Состояния</span></a><meta itemprop="position" content="2">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Женское здоровье</span><meta itemprop="position" content="3">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="heading__badge states-category__label">категория состояния</div>
+                                <h1 class="heading__title title-lg" itemprop="name">Женское здоровье</h1>
+                                <div class="heading__desc" itemprop="description">
+                                    <p>Женское здоровье&nbsp;— это&nbsp;не&nbsp;один орган и&nbsp;не&nbsp;один гормон. Это&nbsp;система, в&nbsp;которой цикл, гормональный фон, нутритивный статус и&nbsp;восстановительный ресурс работают вместе. Когда что‑то идёт не&nbsp;так&nbsp;— болезненные месячные, сбившийся цикл, слабость после&nbsp;родов или&nbsp;дискомфорт, с&nbsp;которым не&nbsp;хочется просто мириться,&nbsp;— за&nbsp;этим почти всегда стоит не&nbsp;одна причина, а&nbsp;их&nbsp;сочетание.</p>
+                                    <p>Диагностический старт&nbsp;— это&nbsp;точка входа. Формат, в&nbsp;котором на&nbsp;один визит вы&nbsp;получаете не&nbsp;просто анализы, а&nbsp;клиническую картину своего состояния: что&nbsp;именно его&nbsp;поддерживает, какие факторы требуют приоритетного внимания и&nbsp;что&nbsp;делать дальше.</p>
+                                </div>
+                                <a href="#programs" class="heading__btn btn btn-primary">Выбрать программу</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/states/women-health.jpg" class="cover-image" alt="Женское здоровье — диагностика состояния в AV-Clinic" itemprop="image">
+                    </div>
+                    <div itemprop="provider" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic"><meta itemprop="name" content="Альтера Вита"></div>
+                </section>
+                <div class="tagline">
+                    <div class="tagline__container container">
+                        <blockquote class="tagline__text">
+                            Диагностические старты в&nbsp;направлении «Женское здоровье»&nbsp;— это&nbsp;короткие, чётко сфокусированные программы под&nbsp;конкретный запрос. Один визит, профильный специалист, целевой пакет лабораторных анализов и, если&nbsp;нужно,&nbsp;УЗИ. По&nbsp;итогам&nbsp;— не&nbsp;распечатка результатов, а&nbsp;понятная картина состояния и&nbsp;персональный маршрут дальнейших действий.
+                        </blockquote>
+                    </div>
+                </div>
+                <section class="info-list" id="programs">
+                    <div class="info-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">диагностические программы</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title-sm color-accent">Выберите состояние, которое узнаете в&nbsp;себе&nbsp;— и&nbsp;сделайте первый осознанный шаг&nbsp;к&nbsp;тому, чтобы&nbsp;понять причину и&nbsp;начать действовать</h2>
+                            </div>
+                        </div>
+                        <ul class="info-list__list">
+                            @@loop('./html/templates/_info-list-item.html', './html/json/states-women.json')
+                        </ul>
+                    </div>
+                </section>
+                <section class="steps states-results">
+                    <div class="steps__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">результаты</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">После&nbsp;диагностического старта</h2>
+                                <p class="section-header__desc">Диагностический старт&nbsp;— это&nbsp;первый&nbsp;шаг. Дальше врач подключает только те&nbsp;инструменты, которые действительно соответствуют вашей клинической картине.</p>
+                            </div>
+                        </div>
+                        <div class="steps__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_steps-item.html', './html/json/states-women-results.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="states-results__note">Итоговый маршрут врач собирает персонально по&nbsp;результатам стартовой диагностики.</p>
+                    </div>
+                </section>
+                <section class="doctors">
+                    <div class="doctors__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">врачи</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Специалисты направления «Женское здоровье»</h2>
+                            </div>
+                        </div>
+                        <div class="doctors__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_doctor-card.html', './html/json/states-women-doctors.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <a href="doctors.html" class="swiper__more more-link">Все врачи</a>
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_gallery.html', {})
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

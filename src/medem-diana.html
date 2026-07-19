@@ -153,30 +153,26 @@
                         </div>
                     </div>
                 </section>
-                <section class="methods">
-                    <div class="methods__container container">
+                <section class="doctor-methods">
+                    <div class="doctor-methods__container container">
                         <div class="section-header row">
                             <div class="col-lg-6">
                                 <div class="section-header__caption">приём и методы лечения</div>
                             </div>
                         </div>
-                        <div class="methods__grid">
+                        <div class="doctor-methods__body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="methods__card">
-                                        <h3 class="methods__card-title title">Что входит в&nbsp;приём</h3>
-                                        <ul class="methods__list">
-                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-medem-appointment.json')
-                                        </ul>
-                                    </div>
+                                    <h3 class="doctor-methods__title">Что входит в&nbsp;приём</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-methods-item.html', './html/json/doctor-medem-appointment.json')
+                                    </ul>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="methods__card">
-                                        <h3 class="methods__card-title title">Основные методы лечения</h3>
-                                        <ul class="methods__list">
-                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-medem-treatment.json')
-                                        </ul>
-                                    </div>
+                                    <h3 class="doctor-methods__title">Основные методы лечения</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-methods-item.html', './html/json/doctor-medem-treatment.json')
+                                    </ul>
                                 </div>
                             </div>
                         </div>

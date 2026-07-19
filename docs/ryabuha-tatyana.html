@@ -71,7 +71,7 @@
                                 <a href="" aria-label="Мы в Telegram" class="socials__item icon-telegram"></a>
                                 <a href="" aria-label="Мы в Whatsapp" class="socials__item icon-whatsapp"></a>
                             </div>
-                            <a href="" class="header__btn btn btn-primary btn-sm">Запланировать визит</a>
+                            <a href="#callback" data-fancybox class="header__btn btn btn-primary btn-sm">Запланировать визит</a>
                             <div class="header__actions">
                                 <button type="button" aria-label="Открыть поиск" class="header__search-toggler icon-search"></button>
                                 <button type="button" aria-label="Открыть меню" class="header__toggler icon-menu">
@@ -608,32 +608,29 @@
                         </div>
                     </div>
                 </section>
-                <section class="methods">
-                    <div class="methods__container container">
+                <section class="doctor-methods">
+                    <div class="doctor-methods__container container">
                         <div class="section-header row">
                             <div class="col-lg-6">
                                 <div class="section-header__caption">приём и виды диагностики</div>
                             </div>
                         </div>
-                        <div class="methods__grid">
+                        <div class="doctor-methods__body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="methods__card">
-                                        <h3 class="methods__card-title title">Как проходит&nbsp;приём</h3>
-                                        <ul class="methods__list">
-                                            <li class="methods__item">Ультразвуковое исследование&nbsp;— это&nbsp;абсолютно безболезненный, безопасный, быстрый и&nbsp;точный, без&nbsp;противопоказаний диагностический метод</li>
-<li class="methods__item">Пациент располагается на&nbsp;кушетке</li>
-<li class="methods__item">Врач с&nbsp;помощью ультразвукового датчика с&nbsp;нанесённым на&nbsp;него специальным гелем исследует различные участки тела пациента (в&nbsp;зависимости от&nbsp;поставленной задачи), выводя на&nbsp;экран изображение того&nbsp;или&nbsp;иного органа</li>
-<li class="methods__item">Во&nbsp;время исследований пациент меняет положение тела (лёжа на&nbsp;спине, на&nbsp;боку, на&nbsp;животе, сидя, стоя), по&nbsp;команде врача задерживает дыхание на&nbsp;вдохе или&nbsp;на&nbsp;выдохе, натуживается и&nbsp;т.&nbsp;д.</li>
-<li class="methods__item">По&nbsp;окончании исследования оформляется протокол исследования, который либо&nbsp;выдаётся пациенту через&nbsp;10–15&nbsp;минут лично в&nbsp;руки, либо&nbsp;отправляется на&nbsp;его&nbsp;электронную почту</li>
+                                    <h3 class="doctor-methods__title">Как проходит&nbsp;приём</h3>
+                                    <ul class="doctor-list">
+                                        <li class="doctor-list__item">Ультразвуковое исследование&nbsp;— это&nbsp;абсолютно безболезненный, безопасный, быстрый и&nbsp;точный, без&nbsp;противопоказаний диагностический метод</li>
+<li class="doctor-list__item">Пациент располагается на&nbsp;кушетке</li>
+<li class="doctor-list__item">Врач с&nbsp;помощью ультразвукового датчика с&nbsp;нанесённым на&nbsp;него специальным гелем исследует различные участки тела пациента (в&nbsp;зависимости от&nbsp;поставленной задачи), выводя на&nbsp;экран изображение того&nbsp;или&nbsp;иного органа</li>
+<li class="doctor-list__item">Во&nbsp;время исследований пациент меняет положение тела (лёжа на&nbsp;спине, на&nbsp;боку, на&nbsp;животе, сидя, стоя), по&nbsp;команде врача задерживает дыхание на&nbsp;вдохе или&nbsp;на&nbsp;выдохе, натуживается и&nbsp;т.&nbsp;д.</li>
+<li class="doctor-list__item">По&nbsp;окончании исследования оформляется протокол исследования, который либо&nbsp;выдаётся пациенту через&nbsp;10–15&nbsp;минут лично в&nbsp;руки, либо&nbsp;отправляется на&nbsp;его&nbsp;электронную почту</li>
 
-                                        </ul>
-                                    </div>
+                                    </ul>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="methods__card">
-                                        <h3 class="methods__card-title title">Основные виды диагностики</h3>
-                                        <div class="doctor-about__content">
+                                    <h3 class="doctor-methods__title">Основные виды диагностики</h3>
+                                    <div class="doctor-about__content">
                                             <p>Сосудистая патология:</p>
                                             <ul>
                                                 <li>Атеросклероз брахиоцефальных (сонных и&nbsp;позвоночных) артерий, артерий верхних и&nbsp;нижних конечностей, брюшной полости, почек</li>
@@ -674,7 +671,6 @@
                                             </ul>
                                             <p>Травмы конечностей и&nbsp;внутренних органов</p>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -826,6 +822,39 @@
                     </div>
                 </div>
             </footer>
+            <div id="callback" class="popup popup--callback">
+                <h2 id="callback-modal-title" class="popup__title">Запланируйте свой визит<br>в&nbsp;AV–Clinic</h2>
+                <p class="popup__subtitle">Оставьте свой номер телефона, мы&nbsp;перезвоним в&nbsp;течение 15&nbsp;минут и&nbsp;подберём для&nbsp;вас удобное время.</p>
+                <form action="/send.php" method="post" class="popup__form form">
+                    <div class="form__field">
+                        <label for="callback-name" class="form__label">Ваше имя</label>
+                        <input type="text" id="callback-name" name="name" autocomplete="name" class="form__control" placeholder="Ваше имя*" data-required>
+                        <span class="form__error">Введите ваше имя</span>
+                    </div>
+                    <div class="form__field">
+                        <label for="callback-phone" class="form__label">Номер телефона</label>
+                        <input type="tel" id="callback-phone" name="phone" autocomplete="tel" class="form__control" placeholder="+7(___) ___-__-__*" data-required>
+                        <span class="form__error">Введите корректный номер телефона</span>
+                    </div>
+                    <label class="form__checkbox checkbox">
+                        <input type="checkbox" name="policy" class="checkbox__input hidden" hidden data-required>
+                        <span class="checkbox__content">Я&nbsp;даю согласие на&nbsp;<a href="">обработку персональных данных</a></span>
+                        <span class="form__error">Необходимо согласие</span>
+                    </label>
+                    <button type="submit" class="form__btn form__submit btn btn-primary" disabled>Отправить</button>
+                </form>
+            </div>
+
+            <div id="success" class="popup popup--success">
+                <h2 id="success-modal-title" class="popup__title">Спасибо!<br>Мы получили вашу заявку</h2>
+                <p class="popup__subtitle">Наш администратор скоро свяжется с&nbsp;вами и&nbsp;подберёт для&nbsp;вас удобное время</p>
+            </div>
+
+            <div id="error" class="popup popup--success">
+                <h2 id="error-modal-title" class="popup__title">Не удалось отправить заявку</h2>
+                <p class="popup__subtitle">Пожалуйста, попробуйте ещё раз чуть позже или позвоните нам по&nbsp;телефону <a href="tel:+74951064040">+7&nbsp;495&nbsp;106-40-40</a></p>
+            </div>
+
             <!-- plugins -->
             <script defer src="js/libs/swiper-bundle.min.js"></script>
             <script defer src="js/libs/fancybox.umd.js"></script>

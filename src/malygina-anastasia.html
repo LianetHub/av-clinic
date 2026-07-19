@@ -147,27 +147,24 @@
                         </div>
                     </div>
                 </section>
-                <section class="methods">
-                    <div class="methods__container container">
+                <section class="doctor-methods">
+                    <div class="doctor-methods__container container">
                         <div class="section-header row">
                             <div class="col-lg-6">
                                 <div class="section-header__caption">приём и методы лечения</div>
                             </div>
                         </div>
-                        <div class="methods__grid">
+                        <div class="doctor-methods__body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="methods__card">
-                                        <h3 class="methods__card-title title">Что входит в&nbsp;приём</h3>
-                                        <ul class="methods__list">
-                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-malygina-appointment.json')
-                                        </ul>
-                                    </div>
+                                    <h3 class="doctor-methods__title">Что входит в&nbsp;приём</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-methods-item.html', './html/json/doctor-malygina-appointment.json')
+                                    </ul>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="methods__card">
-                                        <h3 class="methods__card-title title">Основные методы лечения</h3>
-                                        <div class="doctor-about__content">
+                                    <h3 class="doctor-methods__title">Основные методы лечения</h3>
+                                    <div class="doctor-about__content">
                                             <p>По&nbsp;результату консультации пациент получает индивидуально разработанный план для&nbsp;улучшения своего самочувствия и&nbsp;состояния здоровья, с&nbsp;рекомендациями по&nbsp;медикаментозной, IV-, при&nbsp;необходимости гормональной терапии, приёму базовой и&nbsp;курсовой нутритивной поддержки. В&nbsp;консультации также&nbsp;указан маршрут визитов к&nbsp;смежным специалистам для&nbsp;всестороннего контроля состояния.</p>
                                             <p>В&nbsp;рамках лечения могут быть выполнены следующие действия:</p>
                                             <ul>
@@ -179,7 +176,6 @@
                                             </ul>
                                             <p>Также&nbsp;может быть назначена гиполипидемическая терапия (эзетимиб, статины, также&nbsp;по&nbsp;показаниям такие препараты как&nbsp;инглисиран (Сибрава), эволокумаб (Репата), алирокумаб (Пралуэнт)).</p>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -133,27 +133,24 @@
                         </div>
                     </div>
                 </section>
-                <section class="methods">
-                    <div class="methods__container container">
+                <section class="doctor-methods">
+                    <div class="doctor-methods__container container">
                         <div class="section-header row">
                             <div class="col-lg-6">
                                 <div class="section-header__caption">приём и виды диагностики</div>
                             </div>
                         </div>
-                        <div class="methods__grid">
+                        <div class="doctor-methods__body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="methods__card">
-                                        <h3 class="methods__card-title title">Как проходит&nbsp;приём</h3>
-                                        <ul class="methods__list">
-                                            @@loop('./html/templates/_methods-list-item.html', './html/json/doctor-ryabuha-appointment.json')
-                                        </ul>
-                                    </div>
+                                    <h3 class="doctor-methods__title">Как проходит&nbsp;приём</h3>
+                                    <ul class="doctor-list">
+                                        @@loop('./html/templates/_doctor-methods-item.html', './html/json/doctor-ryabuha-appointment.json')
+                                    </ul>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="methods__card">
-                                        <h3 class="methods__card-title title">Основные виды диагностики</h3>
-                                        <div class="doctor-about__content">
+                                    <h3 class="doctor-methods__title">Основные виды диагностики</h3>
+                                    <div class="doctor-about__content">
                                             <p>Сосудистая патология:</p>
                                             <ul>
                                                 <li>Атеросклероз брахиоцефальных (сонных и&nbsp;позвоночных) артерий, артерий верхних и&nbsp;нижних конечностей, брюшной полости, почек</li>
@@ -194,7 +191,6 @@
                                             </ul>
                                             <p>Травмы конечностей и&nbsp;внутренних органов</p>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

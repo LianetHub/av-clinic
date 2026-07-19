@@ -19,6 +19,14 @@
 		}
 	}
 
+	&__error {
+		display: none;
+		margin-top: 0.25rem;
+		color: $red;
+		font-size: 0.75rem;
+		line-height: 130%;
+	}
+
 	// .form__label
 	&__label {
 		line-height: 120%;
@@ -88,6 +96,12 @@
 	// .form__checkbox
 	&__checkbox {
 		margin-top: 1rem;
+
+		&._error {
+			.form__error {
+				display: block;
+			}
+		}
 	}
 
 
@@ -138,10 +152,10 @@
 	&__content {
 		position: relative;
 		display: block;
-		color: #313542;
+		color: #271605;
 		padding-left: 2rem;
 		font-size: 0.75rem;
-		line-height: 120%;
+		line-height: 130%;
 		cursor: pointer;
 		user-select: none;
 

@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	devFunctions.OS();
 	devFunctions.initYandexMap();
 	devFunctions.mask();
+	devFunctions.formSubmit();
 	devFunctions.initDetailsTabs();
 	devFunctions.initSwipers();
 	devFunctions.initDirectionsPage();

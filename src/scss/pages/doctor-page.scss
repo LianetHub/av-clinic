@@ -65,6 +65,15 @@
 // }
 
 .tags {
+	@media (min-width:$md2) {
+		&:not(:first-child) {
+			margin-top: rem(-50);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: rem(-25);
+		}
+	}
 
 	// .tags__inner
 	&__inner {
@@ -437,7 +446,8 @@
 		}
 	}
 
-	.doctor-list {
+	.doctor-list,
+	p {
 		margin-top: rem(16);
 	}
 }

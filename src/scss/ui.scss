@@ -38,6 +38,20 @@
 	}
 }
 
+.title-xs {
+	font-weight: 500;
+	font-size: 1rem;
+
+	@media (min-width:$md4) {
+		font-size: 1.125rem;
+	}
+
+	@media (min-width:$md2) {
+		font-weight: 600;
+		font-size: 1.25rem;
+	}
+}
+
 .pc-only {
 	@media (max-width:$md3) {
 		display: none !important;

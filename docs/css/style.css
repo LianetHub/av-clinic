@@ -140,6 +140,22 @@
   }
 }
 
+.title-xs {
+  font-weight: 500;
+  font-size: 1rem;
+}
+@media (min-width: 743.98px) {
+  .title-xs {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .title-xs {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+}
+
 @media (max-width: 959.98px) {
   .pc-only {
     display: none !important;
@@ -5820,6 +5836,14 @@ body {
   }
 }
 
+@media (min-width: 1199.98px) {
+  .tags:not(:first-child) {
+    margin-top: -3.125rem;
+  }
+  .tags:not(:last-child) {
+    margin-bottom: -1.5625rem;
+  }
+}
 .tags__inner {
   display: flex;
   flex-wrap: wrap;
@@ -6150,7 +6174,8 @@ body {
     font-size: 1.5rem;
   }
 }
-.doctor-education .doctor-list {
+.doctor-education .doctor-list,
+.doctor-education p {
   margin-top: 1rem;
 }
 

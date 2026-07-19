@@ -16,13 +16,16 @@
                                 <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                                     <ul class="breadcrumbs__list">
                                         <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a>
+                                            <meta itemprop="position" content="1">
                                         </li>
                                         <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                                            <a href="doctors.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Врачи</span></a><meta itemprop="position" content="2">
+                                            <a href="doctors.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Врачи</span></a>
+                                            <meta itemprop="position" content="2">
                                         </li>
                                         <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                                            <span class="breadcrumbs__link" itemprop="name">Романовский Ростислав Русланович</span><meta itemprop="position" content="3">
+                                            <span class="breadcrumbs__link" itemprop="name">Романовский Ростислав Русланович</span>
+                                            <meta itemprop="position" content="3">
                                         </li>
                                     </ul>
                                 </nav>
@@ -127,13 +130,12 @@
                             <div class="col-lg-6">
                                 <div class="section-header__caption">симптомы</div>
                             </div>
-                            <div class="col-lg-6">
-                                <h2 class="section-header__title title color-accent">С&nbsp;какими симптомами обращаться</h2>
-                            </div>
                         </div>
                         <div class="feature-list__body">
                             <div class="row">
-                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <h2 class="title color-accent">С&nbsp;какими симптомами <br> обращаться</h2>
+                                </div>
                                 <div class="col-lg-6">
                                     <ul class="feature-list__list">
                                         @@loop('./html/templates/_feature-list-item.html', './html/json/doctor-romanovsky-symptoms.json')
@@ -150,7 +152,7 @@
                                 <div class="section-header__caption">подготовка к приёму</div>
                             </div>
                             <div class="col-lg-6">
-                                <h2 class="section-header__title title color-accent">Минимально желательный список анализов перед приёмом:</h2>
+                                <h2 class="section-header__title title-xs color-accent">Минимально желательный список анализов перед приёмом:</h2>
                             </div>
                         </div>
                         <div class="doctor-preparation__body">
@@ -178,15 +180,11 @@
                             <div class="col-lg-6">
                                 <div class="section-header__caption">методы лечения</div>
                             </div>
-                        </div>
-                        <div class="doctor-methods__body">
-                            <div class="row">
-                                <div class="col-lg-6 offset-lg-6">
-                                    <h3 class="doctor-methods__title">Основные методы лечения</h3>
-                                    <ul class="doctor-list">
-                                        @@loop('./html/templates/_doctor-methods-item.html', './html/json/doctor-romanovsky-treatment.json')
-                                    </ul>
-                                </div>
+                            <div class="col-lg-6">
+                                <h3 class="doctor-methods__title">Основные методы лечения</h3>
+                                <ul class="doctor-list">
+                                    @@loop('./html/templates/_doctor-methods-item.html', './html/json/doctor-romanovsky-treatment.json')
+                                </ul>
                             </div>
                         </div>
                     </div>

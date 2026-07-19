@@ -107,7 +107,7 @@
                                 <div class="section-header__caption">подготовка к приёму</div>
                             </div>
                             <div class="col-lg-6">
-                                <h2 class="section-header__title title color-accent">Специально сдавать анализы не&nbsp;требуется, достаточно взять имеющиеся старые анализы, диагностики и&nbsp;заключения специалистов.</h2>
+                                <h2 class="section-header__title title-xs color-accent">Специально сдавать анализы не&nbsp;требуется, достаточно взять имеющиеся старые анализы, диагностики и&nbsp;заключения специалистов.</h2>
                             </div>
                         </div>
                     </div>
@@ -118,15 +118,11 @@
                             <div class="col-lg-6">
                                 <div class="section-header__caption">методы лечения</div>
                             </div>
-                        </div>
-                        <div class="doctor-methods__body">
-                            <div class="row">
-                                <div class="col-lg-6 offset-lg-6">
-                                    <h3 class="doctor-methods__title">Основные методы лечения</h3>
-                                    <ul class="doctor-list">
-                                        @@loop('./html/templates/_doctor-methods-item.html', './html/json/doctor-gribenyuk-treatment.json')
-                                    </ul>
-                                </div>
+                            <div class="col-lg-6">
+                                <h3 class="doctor-methods__title">Основные методы лечения</h3>
+                                <ul class="doctor-list">
+                                    @@loop('./html/templates/_doctor-methods-item.html', './html/json/doctor-gribenyuk-treatment.json')
+                                </ul>
                             </div>
                         </div>
                     </div>

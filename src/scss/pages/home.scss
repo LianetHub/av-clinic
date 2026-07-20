@@ -166,6 +166,21 @@
             }
         }
 
+        &.tagline__text--small {
+            font-size: 1rem;
+            font-weight: 500;
+            max-width: 54.5rem;
+
+            @media (min-width:$md5) {
+                font-size: 1.125rem;
+            }
+
+            @media (min-width:$md3) {
+                font-size: 1.25rem;
+            }
+
+        }
+
         @media (min-width:$md5) {
             font-size: rem(22);
         }

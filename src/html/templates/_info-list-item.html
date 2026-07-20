@@ -21,7 +21,7 @@
                     <ul class="info-list__item-tags">
                         @@for (var i = 0; i < chips.length; i++) {
                             <li class="info-list__item-tag">
-                                <a href="" class="chip">`+chips[i]+`</a>
+                                <a href="`+(chips[i].slug || '#')+`" class="chip">`+chips[i].title+`</a>
                             </li>
                         }    
                     </ul>

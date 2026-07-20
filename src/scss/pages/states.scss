@@ -1,4 +1,5 @@
 .states-programs {
+
 	// .states-programs__container
 	&__container {}
 
@@ -101,6 +102,7 @@
 	}
 
 	@media (any-hover: hover) {
+
 		&:hover,
 		&:focus-within {
 			.states-program__title {
@@ -219,6 +221,7 @@
 }
 
 .states-results {
+
 	// .states-results__note
 	&__note {
 		margin-top: rem(24);
@@ -281,7 +284,67 @@
 	}
 }
 
+.feature-list--program {
+	.feature-list__body {
+		margin-top: rem(24);
+		padding-top: rem(24);
+		border-top: rem(1) solid rgba(128, 100, 72, 0.3);
+
+		.row {
+			--gutter-y: rem(24);
+		}
+
+		@media (min-width:$md4) {
+			margin-top: rem(32);
+		}
+
+		@media (min-width:$md2) {
+			margin-top: rem(40);
+			padding-top: rem(32);
+		}
+	}
+
+	.feature-list__list {
+		border-top: 0;
+	}
+
+	.feature-list__item {
+		padding: rem(24) 0;
+
+		&:first-child {
+			padding-top: 0;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+	.feature-list__item-title {
+		font-weight: 600;
+		font-size: rem(18);
+		line-height: normal;
+		color: #432821;
+
+		@media (min-width:$md4) {
+			font-size: rem(20);
+		}
+
+		@media (min-width:$md2) {
+			font-size: rem(24);
+		}
+	}
+
+	.feature-list__item-desc {
+		margin-top: rem(8);
+		font-size: rem(14);
+		line-height: 1.2;
+		color: #271605;
+	}
+}
+
 .faq {
+
 	// .faq__container
 	&__container {}
 
@@ -311,6 +374,7 @@
 	// .faq__item
 	&__item {
 		border-top: rem(1) solid rgba(128, 100, 72, 0.35);
+		overflow: hidden;
 
 		&:last-child {
 			border-bottom: rem(1) solid rgba(128, 100, 72, 0.35);

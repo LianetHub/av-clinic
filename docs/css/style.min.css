@@ -4471,6 +4471,21 @@ body {
 .tagline__text p:not(:last-child) {
   margin-bottom: 0.75rem;
 }
+.tagline__text.tagline__text--small {
+  font-size: 1rem;
+  font-weight: 500;
+  max-width: 54.5rem;
+}
+@media (min-width: 575.98px) {
+  .tagline__text.tagline__text--small {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 959.98px) {
+  .tagline__text.tagline__text--small {
+    font-size: 1.25rem;
+  }
+}
 @media (min-width: 575.98px) {
   .tagline__text {
     font-size: 1.375rem;
@@ -5706,6 +5721,60 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.feature-list--program .feature-list__body {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 0.0625rem solid rgba(128, 100, 72, 0.3);
+}
+.feature-list--program .feature-list__body .row {
+  --gutter-y: rem(24);
+}
+@media (min-width: 743.98px) {
+  .feature-list--program .feature-list__body {
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .feature-list--program .feature-list__body {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+  }
+}
+.feature-list--program .feature-list__list {
+  border-top: 0;
+}
+.feature-list--program .feature-list__item {
+  padding: 1.5rem 0;
+}
+.feature-list--program .feature-list__item:first-child {
+  padding-top: 0;
+}
+.feature-list--program .feature-list__item:last-child {
+  border-bottom: 0;
+}
+.feature-list--program .feature-list__item-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: normal;
+  color: #432821;
+}
+@media (min-width: 743.98px) {
+  .feature-list--program .feature-list__item-title {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .feature-list--program .feature-list__item-title {
+    font-size: 1.5rem;
+  }
+}
+.feature-list--program .feature-list__item-desc {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: #271605;
+}
+
 .faq__title {
   margin-top: 1.5rem;
   text-align: center;
@@ -5729,6 +5798,7 @@ body {
 }
 .faq__item {
   border-top: 0.0625rem solid rgba(128, 100, 72, 0.35);
+  overflow: hidden;
 }
 .faq__item:last-child {
   border-bottom: 0.0625rem solid rgba(128, 100, 72, 0.35);

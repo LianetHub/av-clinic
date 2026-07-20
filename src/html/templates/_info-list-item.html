@@ -29,7 +29,7 @@
                 @@if(typeof price !=='undefined'){
                     <div class="info-list__item-price">стоимость <span>@@price</span> ₽</div>
                     <div class="info-list__item-actions">
-                        <a href="" class="info-list__item-action btn btn-sm btn-primary">Записаться</a>
+                        <a href="#callback" data-fancybox class="info-list__item-action btn btn-sm btn-primary">Записаться</a>
                         <a href="@@if(typeof slug !== 'undefined'){@@slug}" class="info-list__item-action btn btn-sm btn-secondary">Подробнее</a>
                     </div>
                 }

@@ -733,7 +733,7 @@ body {
 
 		@media (min-width:$md4) {
 			font-weight: 600;
-			font-size: 1.25rem;
+			font-size: rem(18);
 		}
 
 	}
@@ -742,12 +742,21 @@ body {
 	&__item-desc {
 		margin-top: 0.5rem;
 		font-size: 0.875rem;
-		line-height: 140%;
-		color: rgba($color: #271605, $alpha: .8);
+		line-height: 1.4;
+		color: #271605;
 
 		@media (min-width:$md4) {
-			margin-top: 0.125rem;
-			font-size: 1rem;
+			margin-top: rem(8);
+			font-size: rem(16);
+		}
+
+		ul {
+			padding-left: rem(24);
+			list-style: disc;
+		}
+
+		li+li {
+			margin-top: rem(4);
 		}
 	}
 }

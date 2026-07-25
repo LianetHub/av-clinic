@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Цены"
+    })
+    <body itemscope itemtype="https://schema.org/CollectionPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 7
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="prices-page">
+                    <div class="prices-page__container container">
+                        <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1">
+                                </li>
+                                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <span class="breadcrumbs__link" itemprop="name">Цены</span><meta itemprop="position" content="2">
+                                </li>
+                            </ul>
+                        </nav>
+                        <h1 class="prices-page__heading title-lg color-accent" itemprop="name">Стоимость услуг</h1>
+                        <p class="prices-page__intro">Откройте нужную категорию или воспользуйтесь поиском по названию услуги</p>
+                        <form class="prices-page__search" action="#" role="search">
+                            <span class="prices-page__search-icon icon-search" aria-hidden="true"></span>
+                            <input type="text" class="prices-page__search-input" placeholder="Поиск по услугам" autocomplete="off">
+                        </form>
+                        <div class="prices-page__list" data-spollers>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Консультации специалистов</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-consultations.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Капельницы</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-drips.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Физиотерапевтическое отделение</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-physiotherapy.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Оториноларингологические услуги</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-otorhinolaryngology.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Чекапы / программы обследования</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-checkups.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Манипуляции акушерско-гинекологические</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-gynecology.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Функциональная диагностика</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-functional-diagnostics.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Общие манипуляции и процедуры</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-general.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Манипуляции урологические</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-urology.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Манипуляции хирургические</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-surgery.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Косметологические манипуляции</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-cosmetology.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Восполнение дефицитов внутривенно</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-deficiencies.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Ультразвуковые диагностические исследования</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-ultrasound.json')
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prices-page__category">
+                                <button type="button" class="prices-page__toggle" data-spoller>Помощь на дому</button>
+                                <div class="prices-page__body">
+                                    <ul class="price__list">
+                                        @@loop('./html/templates/_price-list-item.html', './html/json/prices-home-care.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {})
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

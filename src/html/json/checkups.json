@@ -104,7 +104,8 @@
         "desc": "Комплексная диагностика причин, триггеров и&nbsp;иммунных нарушений при&nbsp;кожных высыпаниях",
         "price": "13&nbsp;900 / 58&nbsp;000",
         "note": "длительность симптомов до&nbsp;6&nbsp;недель / более 6&nbsp;недель",
-        "tags": "general allergology"
+        "tags": "general allergology",
+        "slug": "urticaria-diagnosis.html"
     },
     {
         "title": "Чек-ап «Высокий ферритин»",

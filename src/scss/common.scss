@@ -1530,6 +1530,14 @@ body {
 		}
 	}
 
+	// .heading__note
+	&__note {
+		margin-top: 0.5rem;
+		font-size: 0.875rem;
+		line-height: 120%;
+		color: rgba($color: #432821, $alpha: .60);
+	}
+
 	// .heading__desc
 	&__desc {
 

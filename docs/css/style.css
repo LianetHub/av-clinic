@@ -3296,6 +3296,12 @@ body {
     font-size: 2rem;
   }
 }
+.heading__note {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 120%;
+  color: rgba(67, 40, 33, 0.6);
+}
 .heading__desc {
   font-size: 0.875rem;
   margin-top: 1.125rem;

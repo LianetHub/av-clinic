@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Пациентам"
+    })
+    <body itemscope itemtype="https://schema.org/WebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 10
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="patients-hero">
+                    <div class="patients-hero__container container">
+                        <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a>
+                                    <meta itemprop="position" content="1">
+                                </li>
+                                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                    <span class="breadcrumbs__link" itemprop="name">Пациентам</span>
+                                    <meta itemprop="position" content="2">
+                                </li>
+                            </ul>
+                        </nav>
+                        <h1 class="patients-hero__title title-lg color-accent" itemprop="name">Информация для пациентов</h1>
+                        <p class="patients-hero__intro" itemprop="description">На этой странице мы&nbsp;собрали всю необходимую информацию для пациентов клиники AV&nbsp;Clinic: подготовка к&nbsp;визиту, документы, порядок оплаты и&nbsp;ответы на&nbsp;частые вопросы</p>
+                        <div class="patients-hero__nav">
+                            <a href="#preparation" class="patients-hero__chip chip">Подготовка к&nbsp;визиту</a>
+                            <a href="#payment" class="patients-hero__chip chip">Документы и&nbsp;оплата</a>
+                            <a href="#legal" class="patients-hero__chip chip">Юридическая информация</a>
+                            <a href="#faq" class="patients-hero__chip chip">Вопросы и&nbsp;ответы</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="preparation" class="feature-list patients-prep">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">подготовка к&nbsp;визиту</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Перед визитом</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p class="patients-prep__note">Поддержка администратора по&nbsp;телефону <a href="tel:+74951913196">8&nbsp;(495)&nbsp;191-31-96</a></p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list patients-prep__list">
+                                        <li class="feature-list__item patients-prep__item">
+                                            <div class="feature-list__item-title">Возьмите оригинал паспорта или другой документ, удостоверяющий личность</div>
+                                            <div class="patients-alt" data-spollers>
+                                                <button type="button" class="patients-alt__toggle" data-spoller>
+                                                    <span class="patients-alt__open">Посмотреть альтернативные документы</span>
+                                                    <span class="patients-alt__close">Свернуть</span>
+                                                </button>
+                                                <div class="patients-alt__body">
+                                                    <p><strong>Альтернативные документы:</strong></p>
+                                                    <ul>
+                                                        <li>Загранпаспорт гражданина РФ;</li>
+                                                        <li>Дипломатический паспорт;</li>
+                                                        <li>Удостоверение личности военнослужащего РФ;</li>
+                                                        <li>Временное удостоверение личности гражданина РФ;</li>
+                                                        <li>При отсутствии паспорта: нотариально заверенная копия паспорта (по&nbsp;согласованию с&nbsp;руководством);</li>
+                                                        <li>Для несовершеннолетних: свидетельство о&nbsp;рождении плюс паспорт одного из&nbsp;родителей.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="feature-list__item">
+                                            <div class="feature-list__item-title">На первое посещение закладывайте 15–20 минут на&nbsp;оформление документов, подписания договора и&nbsp;создания медицинской карты</div>
+                                        </li>
+                                        <li class="feature-list__item">
+                                            <div class="feature-list__item-title">В последующие визиты приходите за&nbsp;10 минут до&nbsp;приёма</div>
+                                        </li>
+                                        <li class="feature-list__item">
+                                            <div class="feature-list__item-title">Если задерживаетесь, заранее предупредите клинику по&nbsp;телефону</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="payment" class="feature-list patients-payment">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">документы и&nbsp;оплата</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Информация о&nbsp;заключении договора и&nbsp;порядке оплаты медицинских услуг</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="patients-qr">
+                                        <img src="@img/patients/qr.jpg" class="patients-qr__image" width="200" height="200" alt="QR-код для оплаты">
+                                        <div class="patients-qr__content">
+                                            <div class="patients-qr__title">QR-код для оплаты</div>
+                                            <p class="patients-qr__desc">Отсканируйте код камерой телефона или банковским приложением</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="patients-payment__intro">
+                                        <div class="patients-payment__subtitle">Как все устроено</div>
+                                        <ul class="patients-payment__bullets">
+                                            <li>Стандартный порядок оплаты: в&nbsp;день посещения после оказания услуги</li>
+                                            <li>Иностранным гражданам и&nbsp;части услуг может требоваться 100% предоплата</li>
+                                            <li>Оплатить можно наличными, картой, онлайн по&nbsp;QR-коду или банковским переводом</li>
+                                        </ul>
+                                    </div>
+                                    <div class="faq__list corporate-docs" data-spollers>
+                                        <div class="faq__item">
+                                            <button type="button" class="faq__question" data-spoller>Заключение договора с&nbsp;ООО&nbsp;«ДИ-МЕД»</button>
+                                            <div class="faq__answer">
+                                                <p>Мы&nbsp;придерживаемся прозрачного сотрудничества и&nbsp;предоставляем возможность ознакомиться с&nbsp;договором заранее.</p>
+                                                <p><strong>Процесс лечения и&nbsp;оплаты:</strong></p>
+                                                <ul>
+                                                    <li>После каждого визита подписывается Акт оказания услуг (в&nbsp;двух экземплярах)</li>
+                                                    <li>На основе акта формируется счёт</li>
+                                                    <li>Стандартный порядок: оплата в&nbsp;день посещения в&nbsp;кассе клиники</li>
+                                                </ul>
+                                                <p>Подписание договора означает согласие на&nbsp;обработку личной информации и&nbsp;получение уведомлений через СМС и&nbsp;интернет.</p>
+                                                <p><strong>Условия договора:</strong></p>
+                                                <ul>
+                                                    <li>Действует бессрочно до&nbsp;окончания обязательств</li>
+                                                    <li>Можно назначить представителя</li>
+                                                    <li>Персональные данные защищены врачебной тайной</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="faq__item">
+                                            <button type="button" class="faq__question" data-spoller>Порядок проведения взаиморасчётов за&nbsp;оказание медицинских услуг</button>
+                                            <div class="faq__answer">
+                                                <p>Клиника использует актуальный прайс-лист, размещённый на&nbsp;сайте. Информация может меняться согласно внутреннему регламенту компании при расширении услуг или изменении тарифов. Все цены указаны в&nbsp;рублях.</p>
+                                                <p><strong>Условия оплаты амбулаторных услуг:</strong></p>
+                                                <p>Консультации и&nbsp;обследования оплачиваются в&nbsp;день обращения. Иностранные граждане могут пользоваться услугами только при условии 100% предоплаты. Некоторые услуги для граждан РФ также требуют предварительной оплаты.</p>
+                                                <p><strong>Особенности диагностических услуг:</strong></p>
+                                                <p>Диагностические исследования и&nbsp;лабораторная работа не&nbsp;предусматривают постоплату. Исключение составляют услуги, назначенные врачом во&nbsp;время приёма&nbsp;— они могут оплачиваться после проведения обследования.</p>
+                                                <p><strong>Комплексные пакеты услуг:</strong></p>
+                                                <p>Комплексные услуги предусматривают снижение стоимости каждого компонента. При частичном использовании производится перерасчёт без скидки, с&nbsp;вычетом полной цены оказанных услуг.</p>
+                                                <p><strong>Способы оплаты:</strong></p>
+                                                <ul>
+                                                    <li>Наличные деньги или карты (МИР, Visa, Mastercard) через терминал</li>
+                                                    <li>Банковский перевод на&nbsp;расчётный счёт клиники</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="legal" class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">юридическая информация</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Лицензии и&nbsp;документы</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <div class="faq__list corporate-docs" data-spollers>
+                                        <div class="faq__item">
+                                            <button type="button" class="faq__question" data-spoller>Карточка организации</button>
+                                            <div class="faq__answer">
+                                                <p>Общество с&nbsp;ограниченной ответственностью «ДИ-МЕД» (ООО&nbsp;«ДИ-МЕД»)</p>
+                                                <p>ИНН:&nbsp;7730307929<br>КПП:&nbsp;773001001<br>ОГРН:&nbsp;1237700480203<br>ОКПО:&nbsp;52081717</p>
+                                                <p>Банковские реквизиты:<br>Банк:&nbsp;АО&nbsp;«АЛЬФА-БАНК»<br>р/с:&nbsp;40702810002720007603<br>БИК:&nbsp;044525593<br>к/с:&nbsp;30101810200000000593</p>
+                                                <p>Юридический адрес:&nbsp;121059, г.&nbsp;Москва, ул.&nbsp;1-я Бородинская, д.&nbsp;3<br>Фактический адрес:&nbsp;121059, г.&nbsp;Москва, ул.&nbsp;1-я Бородинская, д.&nbsp;3<br>Телефон:&nbsp;8&nbsp;(495)&nbsp;191-31-96<br>Электронная почта:&nbsp;<a href="mailto:info@av-clinic.ru">info@av-clinic.ru</a></p>
+                                                <p>Медицинская лицензия:&nbsp;№Л041-01137-77/01083107 от&nbsp;06.03.2024<br>Генеральный директор:&nbsp;Козмидис Афанасий Дионисович</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="feature-list__list">
+                                        <li class="feature-list__item">
+                                            <div class="feature-list__item-title">Лицензия ООО&nbsp;«Ди-Мед»</div>
+                                            <div class="feature-list__item-desc">
+                                                <a href="" target="_blank" rel="noopener noreferrer">открыть документ</a>
+                                            </div>
+                                        </li>
+                                        <li class="feature-list__item">
+                                            <div class="feature-list__item-title">Договор на&nbsp;предоставление платных медицинских услуг</div>
+                                            <div class="feature-list__item-desc">
+                                                <a href="" target="_blank" rel="noopener noreferrer">открыть документ</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="faq" class="faq">
+                    <div class="faq__container container">
+                        <div class="section-header">
+                            <div class="section-header__caption">вопросы и&nbsp;ответы</div>
+                        </div>
+                        <h2 class="faq__title title color-accent">Собрали ответы на&nbsp;самые частые организационные вопросы, которые обычно возникают до&nbsp;визита или сразу после него</h2>
+                        <div class="faq__list" data-spollers data-one-spoller>
+                            @@loop('./html/templates/_faq-item-html.html', './html/json/patients-faq.json')
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {
+                "title": "Остались вопросы?",
+                "subtitle": "Если остались вопросы по&nbsp;документам, времени приезда, оплате или получению результатов, администратор поможет быстро сориентироваться.",
+                "hint": "Оставьте свой номер телефона, мы&nbsp;перезвоним и&nbsp;всё расскажем.",
+                "btnText": "Отправить"
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

@@ -14,7 +14,12 @@
             <p class="visit__subtitle">Сделайте шаг навстречу состоянию, где есть жизненная энергия, внутренний баланс и&nbsp;красота, которая идёт изнутри.</p>
             }
             @@if(typeof hideHint === 'undefined' || !hideHint){
+            @@if(typeof hint !== 'undefined'){
+            <div class="visit__hint">@@hint</div>
+            }
+            @@if(typeof hint === 'undefined'){
             <div class="visit__hint">Оставьте свой номер телефона, мы перезвоним в течение 15&nbsp;минут и&nbsp;подберем для вас удобное время.</div>
+            }
             }
             <form action="#" class="visit__form form">
                 <div class="form__field">

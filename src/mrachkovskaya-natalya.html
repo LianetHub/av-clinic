@@ -100,7 +100,7 @@
                             <div class="row">
                                 <div class="col-lg-6"></div>
                                 <div class="col-lg-6">
-                                    <ul class="doctor-list">
+                                    <ul>
                                         @@loop('./html/templates/_doctor-list-item.html', './html/json/doctor-mrachkovskaya-education.json')
                                     </ul>
                                 </div>
@@ -151,14 +151,14 @@
                         <div class="doctor-methods__body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <h3 class="doctor-methods__title">Что входит в&nbsp;приём</h3>
-                                    <ul class="doctor-list">
+                                    <h3>Что входит в&nbsp;приём</h3>
+                                    <ul>
                                         @@loop('./html/templates/_doctor-methods-item.html', './html/json/doctor-mrachkovskaya-appointment.json')
                                     </ul>
                                 </div>
                                 <div class="col-lg-6">
-                                    <h3 class="doctor-methods__title">Основные методы лечения</h3>
-                                    <ul class="doctor-list">
+                                    <h3>Основные методы лечения</h3>
+                                    <ul>
                                         @@loop('./html/templates/_doctor-methods-item.html', './html/json/doctor-mrachkovskaya-treatment.json')
                                     </ul>
                                 </div>

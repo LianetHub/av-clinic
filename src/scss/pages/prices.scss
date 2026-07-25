@@ -54,9 +54,13 @@
 	// .prices-page__search-icon
 	&__search-icon {
 		flex-shrink: 0;
+		padding: 0;
+		border: 0;
+		background: none;
 		font-size: rem(20);
 		color: rgba(#271605, 0.6);
 		line-height: 1;
+		cursor: pointer;
 	}
 
 	// .prices-page__search-input

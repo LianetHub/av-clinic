@@ -1374,9 +1374,13 @@ body {
 
 	// .contacts__map
 	&__map {
-		filter: saturate(10%);
 		width: 100%;
 		height: 20rem;
+
+		// Фильтр только на тайлы, чтобы placemark оставался #806448
+		[class*="ground-pane"] {
+			filter: saturate(10%);
+		}
 
 		@media (min-width:$md4) {
 			height: 25rem;

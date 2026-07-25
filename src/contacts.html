@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Контакты"
+    })
+    <body itemscope itemtype="https://schema.org/ContactPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            'active': 8
+            })
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="contacts contacts--page" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic">
+                    <div class="contacts__content">
+                        <div class="contacts__container container">
+                            <div class="contacts__body">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a>
+                                            <meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Контакты</span>
+                                            <meta itemprop="position" content="2">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="contacts__badge">
+                                    <img src="@img/good-place.svg" alt="Хорошее место 2026">
+                                </div>
+                                <h1 class="contacts__title title-lg" itemprop="name">Контакты</h1>
+                                <a href="tel:+74951913196" class="contacts__phone title" itemprop="telephone">+7 495 191-31-96</a>
+                                <address class="contacts__address title-sm" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                    <span itemprop="streetAddress">г. Москва, ул. 1-я Бородинская д. 3</span>
+                                </address>
+                                <div class="contacts__time" itemprop="openingHours" content="Mo-Su 08:00-20:00">ежедневно: 08.00–20.00</div>
+                                <a href="mailto:info@av-clinic.ru" class="contacts__email title-sm" itemprop="email">info@av-clinic.ru</a>
+                                <div class="contacts__socials socials">
+                                    <a href="" aria-label="Мы в Max" class="socials__item icon-max"></a>
+                                    <a href="" aria-label="Мы в Telegram" class="socials__item icon-telegram"></a>
+                                    <a href="" aria-label="Мы в Whatsapp" class="socials__item icon-whatsapp"></a>
+                                </div>
+                                <p class="contacts__note">Ответим в удобном мессенджере или поможем подобрать ближайшее время визита</p>
+                                <div class="contacts__chips">
+                                    <div class="contacts__chip chip">5 мин. пешком от м. «Киевская»</div>
+                                    <div class="contacts__chip chip">Бесплатная парковка</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__map" id="map" data-center="55.74662356898305,37.568991499999974" data-coords="55.74662356898305,37.568991499999974" data-zoom="17" data-icon="@img/placemark.svg" itemprop="geo" itemscope itemtype="https://schema.org/GeoCoordinates">
+                            <meta itemprop="latitude" content="55.74662356898305">
+                            <meta itemprop="longitude" content="37.568991499999974">
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_visit.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

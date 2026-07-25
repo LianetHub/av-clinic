@@ -95,7 +95,8 @@
         "title": "Чек-ап «Атопический дерматит»",
         "desc": "Комплексное обследование для&nbsp;выявления и&nbsp;коррекции причин возникновения воспалительных заболеваний кожи",
         "price": "50&nbsp;000",
-        "tags": "general allergology"
+        "tags": "general allergology",
+        "slug": "atopic-dermatitis.html"
     },
     {
         "title": "Чек-ап «Диагностика крапивницы»",

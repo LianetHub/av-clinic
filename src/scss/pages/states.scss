@@ -425,6 +425,7 @@
 		line-height: 1.3;
 		color: #806448;
 		opacity: 0.8;
+	
 
 		.icon-chevron-down {
 			display: inline-flex;
@@ -458,7 +459,8 @@
 
 	// .program-group__body
 	&__body {
-		padding-top: rem(8);
+		padding-top: rem(8);	
+		max-width: rem(586);
 
 		p {
 			font-size: rem(12);

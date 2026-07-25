@@ -5936,6 +5936,7 @@ body {
 }
 .program-group__body {
   padding-top: 0.5rem;
+  max-width: 36.625rem;
 }
 .program-group__body p {
   font-size: 0.75rem;

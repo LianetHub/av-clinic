@@ -2344,6 +2344,43 @@ body {
   }
 }
 
+.info-list__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 743.98px) {
+  .info-list__filters {
+    margin-top: 2rem;
+  }
+}
+.info-list__filters .chip {
+  border-color: #432821;
+  color: rgba(39, 22, 5, 0.6);
+  cursor: pointer;
+  background: transparent;
+}
+.info-list__filters .chip.active {
+  background: #432821;
+  border-color: #432821;
+  color: #fff;
+  opacity: 1;
+}
+@media (any-hover: hover) {
+  .info-list__filters .chip:hover:not(.active) {
+    background-color: #432821;
+    border-color: #432821;
+    color: #fff;
+    opacity: 1;
+  }
+}
+.info-list__item-note {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 130%;
+  color: rgba(67, 40, 33, 0.6);
+}
 .info-list__list {
   border-top: 0.0625rem solid rgba(128, 100, 72, 0.35);
   margin-top: 2rem;

@@ -1,7 +1,12 @@
 <section id="visit" class="visit">
     <div class="visit__container container">
         <div class="visit__content">
+            @@if(typeof title !== 'undefined'){
+            <h2 class="visit__title title">@@title</h2>
+            }
+            @@if(typeof title === 'undefined'){
             <h2 class="visit__title title">Запланируйте свой визит в&nbsp;AV-Clinic</h2>
+            }
             @@if(typeof subtitle !== 'undefined'){
             <p class="visit__subtitle">@@subtitle</p>
             }
@@ -24,7 +29,12 @@
                     <input type="checkbox" name="agreement" class="checkbox__input hidden" hidden>
                     <span class="checkbox__content">Я даю согласие на <a href="" class="checkbox__link">обработку персональных данных</a></span>
                 </label>
+                @@if(typeof btnText !== 'undefined'){
+                <button type="submit" class="form__btn btn btn-primary">@@btnText</button>
+                }
+                @@if(typeof btnText === 'undefined'){
                 <button type="submit" class="form__btn btn btn-primary">Запланировать визит</button>
+                }
             </form>
         </div>
     </div>

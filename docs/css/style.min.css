@@ -4535,7 +4535,7 @@ body {
 }
 
 .tagline__text {
-  max-width: 50.25rem;
+  max-width: 51.25rem;
   text-align: center;
   line-height: 140%;
   margin: 0 auto;
@@ -6847,4 +6847,57 @@ body {
   .prices-page__body .price__item-value {
     font-size: 1.25rem;
   }
+}
+
+.feature-list__list--corporate .feature-list__item-title {
+  color: #432821;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@media (min-width: 1199.98px) {
+  .feature-list__list--corporate-accent .feature-list__item-title {
+    color: #432821;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.corporate-docs {
+  margin-top: 0;
+  max-width: none;
+  margin-inline: 0;
+}
+.corporate-docs + .feature-list__list {
+  margin-top: 0.5rem;
+  border-top: 0;
+}
+.corporate-docs + .feature-list__list .feature-list__item-desc a {
+  color: inherit;
+  text-decoration: underline;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+@media (any-hover: hover) {
+  .corporate-docs + .feature-list__list .feature-list__item-desc a:hover {
+    opacity: 1;
+  }
+}
+.corporate-docs .faq__answer p + p {
+  margin-top: 0.75rem;
+}
+
+.heading__badge {
+  background: #fff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  width: fit-content;
+}
+.heading__badge img {
+  display: block;
+  width: 10rem;
+  height: auto;
+  border-radius: 0.5rem;
 }

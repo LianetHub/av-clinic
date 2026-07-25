@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Корпоративным клиентам"
+    })
+    <body itemscope itemtype="https://schema.org/MedicalWebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="heading">
+                    <div class="heading__wrapper">
+                        <div class="heading__container container">
+                            <div class="heading__content">
+                                <nav aria-label="Хлебные крошки" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                    <ul class="breadcrumbs__list">
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <a href="index.html" class="breadcrumbs__link" itemprop="item"><span itemprop="name">Главная</span></a>
+                                            <meta itemprop="position" content="1">
+                                        </li>
+                                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                            <span class="breadcrumbs__link" itemprop="name">Корпоративным клиентам</span>
+                                            <meta itemprop="position" content="2">
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="heading__badge">
+                                    <img src="@img/good-place.svg" alt="Хорошее место 2026">
+                                </div>
+                                <h1 class="heading__title title-lg" itemprop="name">AV Clinic для бизнеса</h1>
+                                <div class="heading__tagline">Корпоративная медицина нового уровня: забота о&nbsp;здоровье сотрудников без&nbsp;посредников и&nbsp;формальностей</div>
+                                <div class="heading__desc" itemprop="description">
+                                    <p>Болеющие, выгорающие, работающие на&nbsp;износ сотрудники&nbsp;— это&nbsp;прямые потери для&nbsp;бизнеса. AV&nbsp;Clinic предлагает корпоративную медицину нового уровня: без&nbsp;посредников в&nbsp;виде страховых компаний, без&nbsp;бумажной волокиты и&nbsp;стандартных пакетов «для&nbsp;галочки».</p>
+                                    <p>Мы&nbsp;создаём индивидуальные программы медицинского сопровождения под&nbsp;задачи вашей компании&nbsp;— с&nbsp;учётом профессии, уровня стресса и&nbsp;реального состояния здоровья каждого сотрудника.</p>
+                                </div>
+                                <a href="#visit" class="heading__btn btn btn-primary">Связаться с&nbsp;нами</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading__image">
+                        <img src="@img/corporate.jpg" class="cover-image" alt="Корпоративная медицина в AV-Clinic" itemprop="image">
+                    </div>
+                    <div itemprop="provider" itemscope itemtype="https://schema.org/MedicalClinic" itemid="https://av-clinic.ru/#clinic">
+                        <meta itemprop="name" content="Альтера Вита">
+                    </div>
+                </section>
+                <div class="tagline">
+                    <div class="tagline__container container">
+                        <blockquote class="tagline__text">
+                            Здоровье&nbsp;команды&nbsp;— ресурс&nbsp;компании.<br>
+                            Чек-апы, консультации профильных специалистов,&nbsp;IV-терапия и&nbsp;лечение&nbsp;— всё в&nbsp;одном месте, в&nbsp;пространстве, где люди хотят бывать.
+                        </blockquote>
+                    </div>
+                </div>
+                <section class="steps">
+                    <div class="steps__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">корпоративным клиентам</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Мы&nbsp;создаём индивидуальные программы медицинского сопровождения, которые помогают:</h2>
+                            </div>
+                        </div>
+                        <div class="steps__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_steps-item.html', './html/json/corporate-programs.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">выгоды для бизнеса</div>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2 class="feature-list__title title color-accent">Почему выгодно работать напрямую с&nbsp;клиникой, а&nbsp;не&nbsp;через&nbsp;страховую?</h2>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list feature-list__list--corporate">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/corporate-benefits.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">преимущества</div>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2 class="feature-list__title title color-accent">Преимущества корпоративной медицины на&nbsp;практике</h2>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="feature-list__list feature-list__list--corporate-accent">
+                                        @@loop('./html/templates/_feature-list-item.html', './html/json/corporate-advantages.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="rates">
+                    <div class="rates__conatiner container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">рейтинги</div>
+                            </div>
+                        </div>
+                        <div class="rates__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_rate-item.html', './html/json/rates.json')
+                            </div>
+                            <div class="swiper__footer">
+                                <div class="swiper__controls">
+                                    <button type="button" class="swiper__prev swiper-button-prev icon-arrow-left"></button>
+                                    <div class="swiper__pagination swiper-pagination"></div>
+                                    <button type="button" class="swiper__next swiper-button-next icon-arrow-right"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feature-list">
+                    <div class="feature-list__container container">
+                        <div class="section-header row">
+                            <div class="col-lg-6">
+                                <div class="section-header__caption">юридическая информация</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="section-header__title title color-accent">Лицензии и&nbsp;документы</h2>
+                            </div>
+                        </div>
+                        <div class="feature-list__body">
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <div class="faq__list corporate-docs" data-spollers>
+                                        <div class="faq__item">
+                                            <button type="button" class="faq__question" data-spoller>Карточка организации</button>
+                                            <div class="faq__answer">
+                                                <p>Общество с&nbsp;ограниченной ответственностью «ДИ-МЕД» (ООО&nbsp;«ДИ-МЕД»)</p>
+                                                <p>ИНН:&nbsp;7730307929<br>КПП:&nbsp;773001001<br>ОГРН:&nbsp;1237700480203<br>ОКПО:&nbsp;52081717</p>
+                                                <p>Банковские реквизиты:<br>Банк:&nbsp;АО&nbsp;«АЛЬФА-БАНК»<br>р/с:&nbsp;40702810002720007603<br>БИК:&nbsp;044525593<br>к/с:&nbsp;30101810200000000593</p>
+                                                <p>Юридический адрес:&nbsp;121059, г.&nbsp;Москва, ул.&nbsp;1-я Бородинская, д.&nbsp;3<br>Фактический адрес:&nbsp;121059, г.&nbsp;Москва, ул.&nbsp;1-я Бородинская, д.&nbsp;3<br>Телефон:&nbsp;8&nbsp;(495)&nbsp;191-31-96<br>Электронная почта:&nbsp;<a href="mailto:info@av-clinic.ru">info@av-clinic.ru</a></p>
+                                                <p>Медицинская лицензия:&nbsp;№Л041-01137-77/01083107 от&nbsp;06.03.2024<br>Генеральный директор:&nbsp;Козмидис Афанасий Дионисович</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="feature-list__list">
+                                        <li class="feature-list__item">
+                                            <div class="feature-list__item-title">Лицензия ООО&nbsp;«Ди-Мед»</div>
+                                            <div class="feature-list__item-desc">
+                                                <a href="" target="_blank" rel="noopener noreferrer">открыть документ</a>
+                                            </div>
+                                        </li>
+                                        <li class="feature-list__item">
+                                            <div class="feature-list__item-title">Договор на&nbsp;предоставление платных медицинских услуг</div>
+                                            <div class="feature-list__item-desc">
+                                                <a href="" target="_blank" rel="noopener noreferrer">открыть документ</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_gallery.html', {})
+                @@include('html/_visit.html', {
+                "title": "Остались вопросы?",
+                "subtitle": "Оставьте свой номер телефона, мы&nbsp;свяжемся с&nbsp;вами для&nbsp;уточнения деталей и&nbsp;подготовки предложения, разработанного специально для&nbsp;вашей компании",
+                "hideHint": true,
+                "btnText": "Отправить"
+                })
+                @@include('html/_contacts.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

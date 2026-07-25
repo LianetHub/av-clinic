@@ -110,9 +110,42 @@ function initGallerySlider() {
 	});
 }
 
+function initSpaceSlider() {
+	const galleryEl = document.querySelector(".space__gallery");
+	if (!galleryEl) return;
+
+	const mainEl = galleryEl.querySelector(".space__main");
+	const thumbsEl = galleryEl.querySelector(".space__thumbs");
+	if (!mainEl || !thumbsEl) return;
+
+	const thumbsSwiper = new Swiper(thumbsEl, {
+		slidesPerView: "auto",
+		spaceBetween: 16,
+		watchSlidesProgress: true,
+		breakpoints: {
+			743.98: {
+				spaceBetween: 24,
+			},
+		},
+	});
+
+	new Swiper(mainEl, {
+		speed: 600,
+		spaceBetween: 16,
+		navigation: {
+			nextEl: galleryEl.querySelector(".space__next"),
+			prevEl: galleryEl.querySelector(".space__prev"),
+		},
+		thumbs: {
+			swiper: thumbsSwiper,
+		},
+	});
+}
+
 export function initSwipers() {
 	initHeroSlider();
 	initCardSliders();
 	initConditionsSliders();
 	initGallerySlider();
+	initSpaceSlider();
 }

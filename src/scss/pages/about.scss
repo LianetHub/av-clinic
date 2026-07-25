@@ -1,0 +1,182 @@
+.feature-list__list--about {
+	.feature-list__item {
+		padding: rem(24) 0;
+
+		@media (min-width: $md2) {
+			padding: rem(40) 0;
+		}
+	}
+
+	.feature-list__item-title {
+		font-weight: 600;
+		font-size: rem(20);
+		line-height: 1.2;
+		color: #432821;
+
+		@media (min-width: $md4) {
+			font-size: rem(24);
+		}
+
+		@media (min-width: $md2) {
+			font-size: rem(32);
+		}
+	}
+
+	.feature-list__item-desc {
+		margin-top: rem(16);
+		font-size: rem(14);
+		line-height: 1.4;
+		color: #271605;
+
+		@media (min-width: $md4) {
+			font-size: rem(16);
+		}
+	}
+}
+
+.space {
+
+	// .space__container
+	&__container {}
+
+	// .space__gallery
+	&__gallery {
+		margin-top: rem(32);
+
+		@media (min-width: $md3) {
+			margin-top: rem(40);
+		}
+	}
+
+	// .space__stage
+	&__stage {
+		position: relative;
+
+		@media (min-width: $md3) {
+			padding-inline: rem(112);
+		}
+	}
+
+	// .space__main
+	&__main {
+		border-radius: rem(8);
+		overflow: hidden;
+	}
+
+	// .space__slide
+	&__slide {
+		display: block;
+		height: auto;
+		width: 100%;
+		overflow: hidden;
+		aspect-ratio: 358 / 320;
+
+		@media (min-width:$md5) {
+			aspect-ratio: 698 / 480;
+		}
+
+		@media (min-width:$md2) {
+			aspect-ratio: 1096 / 640;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	// .space__prev, .space__next
+	&__prev,
+	&__next {
+		position: absolute !important;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		margin-top: 0 !important;
+		background: #432821;
+		color: #fff;
+
+		@media (min-width:$md3) {
+			background: transparent;
+			color: #432821;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: transparent;
+				color: #806448;
+			}
+		}
+
+		&:active {
+			background: transparent;
+			color: #806448;
+		}
+	}
+
+	&__prev {
+		left: -0.75rem;
+
+		@media (min-width:$md5) {
+			left: 0.5rem;
+
+		}
+
+		@media (min-width:$md3) {
+			left: 0;
+		}
+	}
+
+	&__next {
+		right: -0.75rem;
+
+		@media (min-width:$md5) {
+			right: 0.5rem;
+		}
+
+		@media (min-width:$md3) {
+			right: 0;
+		}
+	}
+
+	// .space__thumbs
+	&__thumbs {
+		margin-top: rem(16);
+		max-width: rem(1096);
+		margin-inline: auto;
+
+		@media (min-width: $md3) {
+			margin-top: rem(24);
+		}
+	}
+
+	// .space__thumb
+	&__thumb {
+		width: rem(120);
+		height: rem(120);
+		overflow: hidden;
+		border-radius: rem(4);
+		cursor: pointer;
+		opacity: 0.6;
+		transition: opacity 0.3s ease;
+
+		@media (min-width: $md4) {
+			width: rem(160);
+			height: rem(160);
+		}
+
+		@media (min-width: $md2) {
+			width: rem(200);
+			height: rem(200);
+		}
+
+		&.swiper-slide-thumb-active {
+			opacity: 1;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

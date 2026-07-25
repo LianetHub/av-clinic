@@ -54,7 +54,8 @@
         "title": "Женское здоровье: Подготовка к&nbsp;беременности",
         "desc": "Комплексное обследование для&nbsp;базовой оценки здоровья и&nbsp;подготовки организма к&nbsp;беременности",
         "price": "77&nbsp;000",
-        "tags": "women under40"
+        "tags": "women under40",
+        "slug": "women-health-pregnancy.html"
     },
     {
         "title": "Женское здоровье: После&nbsp;родов",

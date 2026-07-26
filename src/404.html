@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    "title": "Страница не найдена"
+    })
+    <body itemscope itemtype="https://schema.org/WebPage">
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page" itemprop="mainContentOfPage">
+                <section class="error">
+                    <div class="error__wrapper">
+                        <div class="error__container container">
+                            <div class="error__content">
+                                <h1 class="error__title title-lg color-accent" itemprop="name">
+                                    <span class="error__code">404</span>
+                                    <span class="error__caption">Страница не найдена</span>
+                                </h1>
+                                <p class="error__desc">Возможно, она&nbsp;устарела, была удалена, или&nbsp;был&nbsp;введён неверный адрес в&nbsp;адресной строке.</p>
+                                <a href="index.html" class="error__btn btn btn-primary">Перейти на&nbsp;главную</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="error__image">
+                        <img src="@img/404.jpg" class="cover-image" alt="Интерьер клиники AV-Clinic">
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

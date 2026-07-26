@@ -62,8 +62,31 @@
 
 		p {
 			&+p,
-			&+ul {
+			&+ul,
+			&+ol {
 				margin-top: rem(8);
+			}
+		}
+
+		ol {
+			padding-left: rem(24);
+			list-style: decimal;
+			display: flex;
+			flex-direction: column;
+			gap: rem(16);
+
+			&+p {
+				margin-top: rem(16);
+			}
+
+			> li {
+				> p {
+					margin: 0;
+				}
+
+				> ul {
+					margin-top: rem(8);
+				}
 			}
 		}
 

@@ -4,7 +4,11 @@ export const formSubmit = () => {
 	const forms = document.querySelectorAll("form");
 
 	forms.forEach((form) => {
-		if (form.classList.contains('configurator') || form.classList.contains('search')) return;
+		if (
+			form.classList.contains('configurator') ||
+			form.classList.contains('search') ||
+			form.classList.contains('prices-page__search')
+		) return;
 
 		form.addEventListener("submit", formSend);
 

@@ -13,3 +13,4 @@ export { initDoctorReviews } from "./doctor-reviews.js";
 export { initSwipers } from "./swipers.js";
 export { spollers } from "./spoller.js";
 export { initCheckupFilters } from "./checkup-filters.js";
+export { initPricesSearch } from "./prices-search.js";

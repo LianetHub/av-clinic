@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	devFunctions.initDirectionsPage();
 	devFunctions.initDoctorReviews();
 	devFunctions.initCheckupFilters();
+	devFunctions.initPricesSearch();
 	devFunctions.spollers();
 
 	// clickHandler

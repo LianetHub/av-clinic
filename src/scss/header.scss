@@ -399,13 +399,15 @@
 			left: 0;
 			right: 0;
 
-			// Сетка вместо columns: элемент жёстко закреплён за своим
-			// столбцом и не «перепрыгивает» при раскрытии subsubmenu.
+			// Два столбца по порядку в HTML (сначала левый столбец, затем правый).
 			.submenu__list {
 				display: grid;
 				grid-template-columns: repeat(2, minmax(0, 1fr));
+				grid-template-rows: repeat(9, auto);
+				grid-auto-flow: column;
 				column-gap: rem(40);
 				align-content: start;
+				border-top: 0;
 			}
 
 			.submenu__item {

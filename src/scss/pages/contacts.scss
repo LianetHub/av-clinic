@@ -40,31 +40,15 @@
 
 	.contacts__badge {
 		margin-top: 1.5rem;
-		background: #fff;
-		padding: rem(12);
-		border-radius: rem(8);
-		width: fit-content;
-		flex-shrink: 0;
 
 		@media (max-width:$md3) {
 			position: absolute;
 			top: 0;
 			right: 0;
 		}
+
 		@media (max-width:$md5) {
-			padding: rem(8);
 			top: -0.5rem;
-		}
-
-		img {
-			display: block;
-			height: auto;
-			width: rem(80);
-			@media (min-width:$md5) {
-				width: rem(120);
-			
-			}
-
 		}
 	}
 

@@ -81,9 +81,9 @@ function initHeroSlider() {
 	new Swiper(".hero__slider", {
 		slidesPerView: 1,
 		loop: true,
-		speed: 2000,
+		speed: 1500,
 		autoplay: {
-			delay: 5000,
+			delay: 2500,
 			disableOnInteraction: false,
 			stopOnLastSlide: false,
 		},

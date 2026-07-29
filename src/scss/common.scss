@@ -1837,3 +1837,28 @@ body {
 		}
 	}
 }
+
+// Бейдж Яндекс «Хорошее место»
+.yandex-badge {
+	--yandex-badge-w: #{rem(150)};
+	--yandex-badge-h: #{rem(50)};
+	display: block;
+	width: var(--yandex-badge-w);
+	height: var(--yandex-badge-h);
+	line-height: 0;
+	overflow: hidden;
+	border-radius: rem(4);
+	flex-shrink: 0;
+
+	&__frame {
+		display: block;
+		border: 0;
+		width: var(--yandex-badge-w);
+		height: var(--yandex-badge-h);
+		max-width: none;
+		transform: scale(calc(var(--yandex-badge-w) / 150px));
+		transform-origin: 0 0;
+	}
+
+
+}

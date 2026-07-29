@@ -149,18 +149,20 @@
                 </section>
                 <section class="benefits">
                     <div class="benefits__container container">
-                        <div class="section-header row">
-                            <div class="col-lg-6">
-                                <div class="section-header__caption">преимущества</div>
+                        <div class="benefits__sticky">
+                            <div class="section-header row">
+                                <div class="col-lg-6">
+                                    <div class="section-header__caption">преимущества</div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2 class="section-header__title title color-accent">Почему нас выбирают</h2>
+                                    <p class="section-header__desc">Уникальное пространство, комфорт и сервис доведенные до совершенства в сочетании с&nbsp;высочайшими стандартами качества медицинской помощи, делают каждый визит в AV-Clinic особенными.</p>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <h2 class="section-header__title title color-accent">Почему нас выбирают</h2>
-                                <p class="section-header__desc">Уникальное пространство, комфорт и сервис доведенные до совершенства в сочетании с&nbsp;высочайшими стандартами качества медицинской помощи, делают каждый визит в AV-Clinic особенными.</p>
-                            </div>
+                            <ul class="benefits__list">
+                                @@loop('./html/templates/_benefits-item.html', './html/json/benefits.json')
+                            </ul>
                         </div>
-                        <ul class="benefits__list">
-                            @@loop('./html/templates/_benefits-item.html', './html/json/benefits.json')
-                        </ul>
                     </div>
                 </section>
                 <section class="rates">

@@ -100,12 +100,13 @@ function initGallerySlider() {
 
 	new Swiper(sliderEl, {
 		slidesPerView: "auto",
-		speed: 600,
 		spaceBetween: 24,
 		loop: true,
+		speed: 15000,
+		allowTouchMove: true,
 		autoplay: {
-			delay: 5000,
-			stopOnLastSlide: false,
+			delay: 0,
+			disableOnInteraction: false,
 		},
 	});
 }

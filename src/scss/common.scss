@@ -1676,7 +1676,11 @@ body {
 .gallery {
 
 	// .gallery__slider
-	&__slider {}
+	&__slider {
+		.swiper-wrapper {
+			transition-timing-function: linear !important;
+		}
+	}
 
 	// .gallery__slide
 	&__slide {

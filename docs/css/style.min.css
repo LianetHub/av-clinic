@@ -3416,6 +3416,9 @@ body {
   }
 }
 
+.gallery__slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 .gallery__slide.swiper-slide {
   width: 19.5rem;
   height: 18.125rem;

@@ -5158,17 +5158,17 @@ body {
   transition: opacity 0.3s ease, filter 0.3s ease;
   height: auto;
 }
+.rates__card-image img {
+  width: calc(var(--rates-img-w, 200) * 1rem / 16);
+  height: auto;
+  max-width: 100%;
+}
 @media (max-width: 743.98px) {
   .rates__card-image picture {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-  }
-  .rates__card-image img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
   }
 }
 @media (max-width: 743.98px) {
@@ -7320,6 +7320,7 @@ body {
 
 .patients-hero {
   position: relative;
+  padding-bottom: 2.5rem;
 }
 .patients-hero::before {
   content: "";
@@ -7328,14 +7329,13 @@ body {
   background: rgba(128, 100, 72, 0.05);
   pointer-events: none;
 }
-.patients-hero__container {
-  position: relative;
-  padding-bottom: 2.5rem;
-}
 @media (min-width: 743.98px) {
-  .patients-hero__container {
+  .patients-hero {
     padding-bottom: 3rem;
   }
+}
+.patients-hero__container {
+  position: relative;
 }
 .patients-hero__title {
   margin-top: 2.5rem;

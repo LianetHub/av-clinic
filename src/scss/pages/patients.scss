@@ -9,14 +9,16 @@
 		pointer-events: none;
 	}
 
+	padding-bottom: rem(40);
+
+	@media (min-width: $md4) {
+		padding-bottom: rem(48);
+	}
+
 	// .patients-hero__container
 	&__container {
 		position: relative;
-		padding-bottom: rem(40);
 
-		@media (min-width: $md4) {
-			padding-bottom: rem(48);
-		}
 	}
 
 	// .patients-hero__title
@@ -165,7 +167,7 @@
 			font-size: rem(16);
 		}
 
-		p + ul {
+		p+ul {
 			margin-top: rem(8);
 		}
 
@@ -174,7 +176,7 @@
 			list-style: disc;
 		}
 
-		li + li {
+		li+li {
 			margin-top: rem(4);
 		}
 
@@ -218,7 +220,7 @@
 			font-size: rem(16);
 		}
 
-		li + li {
+		li+li {
 			margin-top: rem(4);
 		}
 	}
@@ -233,13 +235,13 @@
 			list-style: disc;
 		}
 
-		li + li {
+		li+li {
 			margin-top: rem(4);
 		}
 
-		p + ul,
-		ul + p,
-		p + p {
+		p+ul,
+		ul+p,
+		p+p {
 			margin-top: rem(8);
 		}
 
@@ -310,12 +312,12 @@
 		list-style: disc;
 	}
 
-	li + li {
+	li+li {
 		margin-top: rem(4);
 	}
 
-	p + ul,
-	ul + p {
+	p+ul,
+	ul+p {
 		margin-top: rem(8);
 	}
 

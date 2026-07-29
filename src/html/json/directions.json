@@ -17,6 +17,13 @@
     },
     {
         "extrasClass": "swiper-slide",
+        "slug": "/peptide-therapy.html",
+        "poster": "@img/services/peptide-therapy.jpg",
+        "name": "Пептидная терапия",
+        "desc": "Персонализированная пептидная поддержка для восстановления ресурса, энергии и качества старения"
+    },
+    {
+        "extrasClass": "swiper-slide",
         "slug": "/gynecology.html",
         "poster": "@img/services/gynecology.jpg",
         "name": "Гинекология",

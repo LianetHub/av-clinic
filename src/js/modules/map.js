@@ -2,16 +2,28 @@ export const initYandexMap = () => {
     const mapContainer = document.getElementById('map');
     if (!mapContainer) return;
 
+    const BASE_ICON_SIZE = [39, 47];
+
     let myMap;
+    let myPlacemark;
 
     const getIconParams = () => {
-        const width = window.innerWidth;
-        let size = [39, 47];
+        const rootFs = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+        const scale = rootFs / 16;
+        const size = [BASE_ICON_SIZE[0] * scale, BASE_ICON_SIZE[1] * scale];
 
         return {
-            size: size,
+            size,
             offset: [-(size[0] / 2), -size[1]]
         };
+    };
+
+    const applyIconSize = () => {
+        if (!myPlacemark) return;
+
+        const iconParams = getIconParams();
+        myPlacemark.options.set('iconImageSize', iconParams.size);
+        myPlacemark.options.set('iconImageOffset', iconParams.offset);
     };
 
     const init = () => {
@@ -45,9 +57,11 @@ export const initYandexMap = () => {
             });
         }
 
-        const myPlacemark = new ymaps.Placemark(coords, {}, placemarkOptions);
+        myPlacemark = new ymaps.Placemark(coords, {}, placemarkOptions);
 
         myMap.geoObjects.add(myPlacemark);
+
+        window.addEventListener('resize', applyIconSize);
     };
 
     const loadScript = () => {

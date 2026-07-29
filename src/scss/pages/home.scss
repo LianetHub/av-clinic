@@ -738,8 +738,18 @@
 
     // .benefits__item-image
     &__item-image {
-        & img {
-            min-height: 10rem;
+        @media (max-width:$md3) {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+
+            picture,
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
         @media (min-width:$md3) {

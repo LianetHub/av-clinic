@@ -42,9 +42,19 @@
 		display: grid;
 		grid-template-columns: minmax(0, 1fr);
 		gap: rem(24);
+		// Full-bleed cards on mobile (cancel .container padding)
+		margin-inline: -1rem;
+		width: calc(100% + 2rem);
+
+		@media (min-width:$md5) {
+			margin-inline: -1.5rem;
+			width: calc(100% + 3rem);
+		}
 
 		@media (min-width:$md4) {
 			margin-top: rem(40);
+			margin-inline: 0;
+			width: auto;
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 			column-gap: rem(24);
 			row-gap: rem(32);
@@ -52,6 +62,58 @@
 
 		@media (min-width:$md2) {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+}
+
+.doctor-card.doctor-card_page {
+	.doctor-card__actions {
+		display: flex;
+		width: 100%;
+		gap: 0.5rem;
+		margin-top: auto;
+
+		@media (min-width:$md2) {
+			display: none;
+		}
+	}
+
+	.doctor-card__actions .doctor-card__btn {
+		flex: 1 1 0;
+		margin-top: 0;
+		justify-content: center;
+		padding-inline: 0.5rem;
+
+		@media (min-width:$md2) {
+			position: static;
+			transform: none;
+			opacity: 1;
+			color: rgba($color: #271605, $alpha: .60);
+			border-color: rgba($color: #271605, $alpha: .60);
+		}
+	}
+
+	.doctor-card__btn_desktop {
+		display: none;
+	}
+
+	.doctor-card__body {
+		@media (min-width:$md2) {
+			.doctor-card__btn_desktop {
+				display: inline-flex;
+				position: static;
+				transform: none;
+				opacity: 1;
+				margin-top: auto;
+				color: rgba($color: #271605, $alpha: .60);
+				border-color: rgba($color: #271605, $alpha: .60);
+			}
+		}
+	}
+
+	.doctor-card__desc {
+		@media (max-width:$md2) {
+			padding-bottom: 0;
 		}
 	}
 }

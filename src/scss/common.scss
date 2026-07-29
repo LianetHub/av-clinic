@@ -1097,7 +1097,8 @@ body {
 		font-size: 0.875rem;
 		line-height: 120%;
 		color: #271605;
-		align-self: center;
+		align-self: flex-start;
+		text-align: left;
 
 		@media (min-width:$md4) {
 			max-width: 65%;
@@ -1111,11 +1112,12 @@ body {
 		font-weight: 600;
 		line-height: normal;
 		color: #432821;
-		text-align: right;
+		text-align: left;
 		white-space: nowrap;
 
 		@media (min-width:$md4) {
 			font-size: 1.25rem;
+			text-align: right;
 		}
 	}
 }
@@ -1156,8 +1158,12 @@ body {
 		margin: auto;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: stretch;
 		max-width: 28.5rem;
+
+		@media (min-width:$md4) {
+			align-items: center;
+		}
 
 		@media (min-width:$md2) {
 			max-width: rem(700);
@@ -1167,18 +1173,23 @@ body {
 
 	// .visit__title
 	&__title {
-		text-align: center;
+		text-align: left;
 		max-width: 26rem;
+
+		@media (min-width:$md4) {
+			text-align: center;
+		}
 	}
 
 	// .visit__subtitle
 	&__subtitle {
-		text-align: center;
+		text-align: left;
 		margin-top: 1rem;
 		max-width: 28.4375rem;
 		font-size: 0.875rem;
 
 		@media (min-width:$md4) {
+			text-align: center;
 			font-size: 1rem;
 		}
 
@@ -1192,10 +1203,14 @@ body {
 	// .visit__hint
 	&__hint {
 		margin-top: 0.5rem;
-		text-align: center;
+		text-align: left;
 		color: rgba($color: #271605, $alpha: .6);
 		font-size: 0.75rem;
 		line-height: 130%;
+
+		@media (min-width:$md4) {
+			text-align: center;
+		}
 	}
 
 	// .visit__form
@@ -1593,6 +1608,8 @@ body {
 	// .heading__image
 	&__image {
 		background-color: rgba($color: #432821, $alpha: .1);
+		width: 100%;
+		overflow: hidden;
 
 		&.heading__image--doctor {
 			padding: 0 4rem;
@@ -1602,6 +1619,20 @@ body {
 
 		@media (max-width:$md5) {
 			height: 17.375rem;
+		}
+
+		@media (max-width:$md3) {
+			&:not(.heading__image--doctor) {
+				height: 17.375rem;
+
+				picture,
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
 		}
 
 		@media (min-width:$md3) {

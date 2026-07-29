@@ -81,12 +81,15 @@
 
 	// .header__logo
 	&__logo {
-		max-width: rem(74);
+		width: rem(74);
 		position: relative;
 		z-index: 6;
-
+		& img {
+			width: 100%;
+		}
+		
 		@media (min-width:$md4) {
-			max-width: rem(137);
+			width: rem(137);
 		}
 	}
 

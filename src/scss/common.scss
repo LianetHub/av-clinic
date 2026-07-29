@@ -2,6 +2,11 @@
 	scroll-margin-top: $header;
 }
 
+html {
+	@media (min-width: 1440px) {
+		font-size: vw(16);
+	}
+}
 
 
 body {

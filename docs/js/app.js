@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	devFunctions.initDoctorReviews();
 	devFunctions.initCheckupFilters();
 	devFunctions.initPricesSearch();
-	devFunctions.initBenefitsScroll();
+	devFunctions.initBenefits();
 	devFunctions.spollers();
 
 	// clickHandler

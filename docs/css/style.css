@@ -1,20 +1,20 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Manrope-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Manrope-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 .breadcrumbs__item:not(:last-child)::before,
@@ -7528,16 +7528,6 @@ body {
     min-height: 26.5rem;
   }
 
-  .benefits__container:has(.benefits__sticky) {
-    height: var(--benefits-scroll-length, 200vh);
-  }
-
-  .benefits__sticky {
-    position: sticky;
-    top: var(--header-height);
-    padding-bottom: 2.5rem;
-  }
-
   .benefits__item:first-child .benefits__item-details {
     border-top: 0.0625rem solid rgba(128, 100, 72, 0.35);
   }
@@ -7557,7 +7547,6 @@ body {
             transform: none;
   }
 
-  .benefits__item:first-child .benefits__item-title,
   .benefits__item.active .benefits__item-title {
     color: #806448;
     -webkit-transform: scale(1.0833333333);
@@ -7565,29 +7554,12 @@ body {
             transform: scale(1.0833333333);
   }
 
-  .benefits__item:first-child .benefits__item-desc,
   .benefits__item.active .benefits__item-desc {
     color: #271605;
   }
 
-  .benefits__item:first-child .benefits__item-image,
   .benefits__item.active .benefits__item-image {
     opacity: 1;
-  }
-
-  .benefits__list:has(.active) .benefits__item:first-child:not(.active) .benefits__item-title {
-    color: inherit;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-
-  .benefits__list:has(.active) .benefits__item:first-child:not(.active) .benefits__item-desc {
-    color: rgba(39, 22, 5, 0.6);
-  }
-
-  .benefits__list:has(.active) .benefits__item:first-child:not(.active) .benefits__item-image {
-    opacity: 0;
   }
 
   .benefits__item-image {

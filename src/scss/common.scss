@@ -905,7 +905,6 @@ body {
 		}
 
 		@media (min-width:$md4) {
-			overflow: hidden;
 			margin-top: rem(40);
 		}
 	}
@@ -1149,6 +1148,21 @@ body {
 }
 
 .visit {
+	&:last-child {
+		padding-bottom: rem(64);
+
+		@media (min-width:$md5) {
+			padding-bottom: rem(80);
+		}
+
+		@media (min-width:$md3) {
+			padding-bottom: rem(100);
+		}
+
+		@media (min-width:$md2) {
+			padding-bottom: rem(120);
+		}
+	}
 
 	// .visit__container
 	&__container {}
@@ -1870,6 +1884,61 @@ body {
 
 			}
 		}
+	}
+}
+
+// Кнопка «наверх»
+.scroll-top {
+	position: fixed;
+	right: rem(16);
+	bottom: rem(16);
+	z-index: $ui-index-4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: rem(48);
+	height: rem(48);
+	border-radius: 50%;
+	background: $accent;
+	color: #fff;
+	font-size: rem(20);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transform: translateY(rem(8));
+	transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+
+	@media (min-width:$md4) {
+		right: rem(24);
+		bottom: rem(24);
+		width: rem(56);
+		height: rem(56);
+		font-size: rem(22);
+	}
+
+	&::before {
+		transform: rotate(180deg);
+	}
+
+	&.is-visible {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+		transform: translateY(0);
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: #806448;
+		}
+	}
+
+	&:active {
+		background: rgba($color: #432821, $alpha: .5);
+	}
+
+	&:focus-visible {
+		box-shadow: 0 0 rem(1) rem(1) #000;
 	}
 }
 

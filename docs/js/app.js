@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	devFunctions.initCheckupFilters();
 	devFunctions.initPricesSearch();
 	devFunctions.initBenefits();
+	devFunctions.initScrollTop();
 	devFunctions.spollers();
 
 	// clickHandler

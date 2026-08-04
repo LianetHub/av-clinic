@@ -10,18 +10,11 @@
             })
             <main class="page" itemprop="mainContentOfPage">
                 <section class="hero">
-                    <div class="hero__slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="hero__slide swiper-slide">
-                                <img src="@img/hero/01.jpg" class="cover-image" alt="Фото компании">
-                            </div>
-                            <div class="hero__slide swiper-slide">
-                                <img src="@img/hero/02.jpg" class="cover-image" alt="Фото компании">
-                            </div>
-                            <div class="hero__slide swiper-slide">
-                                <img src="@img/hero/03.jpg" class="cover-image" alt="Фото компании">
-                            </div>
-                        </div>
+                    <div class="hero__video">
+                        <video class="cover-image" playsinline autoplay loop muted poster="@img/hero/01.jpg">
+                            <source src="files/hero-mobile.mp4" type="video/mp4" media="(max-width: 743.98px)">
+                            <source src="files/hero-desktop.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="hero__container container">
                         <div class="hero__badge yandex-badge ">

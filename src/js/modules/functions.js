@@ -16,3 +16,4 @@ export { initCheckupFilters } from "./checkup-filters.js";
 export { initPricesSearch } from "./prices-search.js";
 export { initBenefits } from "./benefits.js";
 export { initScrollTop } from "./scroll-top.js";
+export { initSubsubmenuPosition } from "./subsubmenu-position.js";

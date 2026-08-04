@@ -75,25 +75,6 @@ function initConditionsSliders() {
 	});
 }
 
-function initHeroSlider() {
-	if (!document.querySelector(".hero__slider")) return;
-
-	new Swiper(".hero__slider", {
-		slidesPerView: 1,
-		loop: true,
-		speed: 1500,
-		autoplay: {
-			delay: 2500,
-			disableOnInteraction: false,
-			stopOnLastSlide: false,
-		},
-		effect: "fade",
-		fadeEffect: {
-			crossFade: true,
-		},
-	});
-}
-
 function initGallerySlider() {
 	const sliderEl = document.querySelector(".gallery__slider");
 	if (!sliderEl) return;
@@ -144,7 +125,6 @@ function initSpaceSlider() {
 }
 
 export function initSwipers() {
-	initHeroSlider();
 	initCardSliders();
 	initConditionsSliders();
 	initGallerySlider();

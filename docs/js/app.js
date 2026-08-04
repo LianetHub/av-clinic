@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	devFunctions.initPricesSearch();
 	devFunctions.initBenefits();
 	devFunctions.initScrollTop();
+	devFunctions.initSubsubmenuPosition();
 	devFunctions.spollers();
 
 	// clickHandler

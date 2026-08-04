@@ -39,16 +39,14 @@
         }
     }
 
-    // .hero__slider
-    &__slider {
+    // .hero__video
+    &__video {
         position: absolute;
         inset: 0;
         z-index: -1;
         pointer-events: none;
+        overflow: hidden;
     }
-
-    // .hero__slide
-    &__slide {}
 
     // .hero__container
     &__container {

@@ -124,9 +124,29 @@ function initSpaceSlider() {
 	});
 }
 
+function initHeadingSlider() {
+	document.querySelectorAll(".heading__slider").forEach((sliderEl) => {
+		new Swiper(sliderEl, {
+			slidesPerView: 1,
+			speed: 600,
+			loop: true,
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: sliderEl.querySelector(".swiper-pagination"),
+				clickable: true,
+				type: "bullets",
+			},
+		});
+	});
+}
+
 export function initSwipers() {
 	initCardSliders();
 	initConditionsSliders();
 	initGallerySlider();
 	initSpaceSlider();
+	initHeadingSlider();
 }

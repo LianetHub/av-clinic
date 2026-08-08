@@ -337,11 +337,15 @@
             </div>
         </div>
     </div>
-    <form action="#" class="search">
+    <form action="#" class="search" role="search">
         <div class="search__container container">
             <div class="search__row">
-                <input type="text" name="search" class="search__input form__control" placeholder="Искать">
-                <button type="submit" aria-label="Искать" class="search__btn icon-search"></button>
+                <div class="search__field">
+                    <span class="search__icon icon-search" aria-hidden="true"></span>
+                    <input type="text" name="search" class="search__input" placeholder="Что ищете?" autocomplete="off">
+                    <button type="submit" class="search__btn">Найти</button>
+                </div>
+                <button type="button" class="search__close" aria-label="Закрыть поиск"></button>
             </div>
         </div>
     </form>

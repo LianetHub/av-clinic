@@ -82,10 +82,11 @@
 		width: rem(74);
 		position: relative;
 		z-index: 6;
+
 		& img {
 			width: 100%;
 		}
-		
+
 		@media (min-width:$md4) {
 			width: rem(137);
 		}
@@ -182,6 +183,12 @@
 	z-index: 6;
 	background: #fff;
 
+	@media (min-width:$md3) {
+		padding: rem(17) 0;
+		background: #806448;
+		color: #fff;
+	}
+
 	@media (max-width:$md3) {
 		position: fixed;
 		top: 0;
@@ -230,11 +237,19 @@
 				gap: 0.5rem;
 				font-size: 0.75rem;
 				font-weight: 600;
+				color: #fff;
+				transition: color 0.3s ease, opacity 0.3s ease;
 
 				&::before {
 					width: 1.25rem;
 					height: 1.25rem;
 					font-size: 1.25rem;
+				}
+
+				@media (any-hover: hover) {
+					&:hover {
+						opacity: 0.7;
+					}
 				}
 			}
 		}
@@ -273,8 +288,8 @@
 
 		@media (min-width:$md3) {
 			gap: 0.125rem;
-			padding: 1rem 0;
-			margin: -1rem 0;
+			padding: 0;
+			margin: 0;
 
 		}
 
@@ -294,10 +309,18 @@
 			.menu__arrow {
 				transform: rotate(180deg);
 				color: #806448;
+
+				@media (min-width:$md3) {
+					color: #F6F6F5;
+				}
 			}
 
 			.menu__link {
 				color: #806448;
+
+				@media (min-width:$md3) {
+					color: #F6F6F5;
+				}
 			}
 
 		}
@@ -307,10 +330,18 @@
 				.menu__arrow {
 					transform: rotate(180deg);
 					color: #806448;
+
+					@media (min-width:$md3) {
+						color: #F6F6F5;
+					}
 				}
 
 				.menu__link {
 					color: #806448;
+
+					@media (min-width:$md3) {
+						color: #F6F6F5;
+					}
 				}
 
 				.submenu {
@@ -326,11 +357,11 @@
 			&:focus-within {
 				.menu__arrow {
 					transform: rotate(180deg);
-					color: #806448;
+					color: #F6F6F5;
 				}
 
 				.menu__link {
-					color: #806448;
+					color: #F6F6F5;
 				}
 
 				.submenu {
@@ -355,16 +386,25 @@
 		@media (min-width:$md3) {
 			padding: 0;
 			flex: 0 1 auto;
+			color: #fff;
 		}
 
 		&.active {
 			color: #806448;
+
+			@media (min-width:$md3) {
+				color: #F6F6F5;
+			}
 		}
 	}
 
 	// .menu__arrow	
 	&__arrow {
 		transition: color 0.3s ease, transform 0.3s ease;
+
+		@media (min-width:$md3) {
+			color: #fff;
+		}
 
 		@media (max-width:$md3) {
 			width: 1.5rem;
@@ -400,10 +440,9 @@
 			left: 0;
 			right: 0;
 
-			// Два столбца по порядку в HTML (сначала левый столбец, затем правый).
 			.submenu__list {
 				display: grid;
-				grid-template-columns: repeat(2, minmax(0, 1fr));
+				grid-template-columns: repeat(2, 1fr);
 				grid-template-rows: repeat(9, auto);
 				grid-auto-flow: column;
 				column-gap: rem(40);
@@ -741,39 +780,217 @@
 .search {
 	position: absolute;
 	top: 100%;
+	left: 0;
 	width: 100%;
-	background: #fff;
+	background: #806448;
 	padding: 0.5rem 0 1rem;
-	z-index: 1;
+	z-index: 7;
 	transform: translateY(-100%);
 	overflow: hidden;
 	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
 	transition: all 0.3s ease;
+
+	@media (min-width:$md3) {
+		// Align with .header__menu row under .header__top — 50px (Figma)
+		top: auto;
+		bottom: 0;
+		transform: none;
+		overflow: visible;
+		height: rem(50);
+		display: flex;
+		align-items: center;
+		padding: 0;
+	}
 
 	&.open {
 		transform: none;
 		visibility: visible;
 		opacity: 1;
+		pointer-events: auto;
 	}
 
 	// .search__container
-	&__container {}
+	&__container {
+		width: 100%;
+		box-sizing: border-box;
+	}
 
 	// .search__row
 	&__row {
+		display: flex;
+		align-items: center;
+		gap: rem(12);
+
+		@media (min-width:$md3) {
+			gap: rem(24);
+		}
+	}
+
+	// .search__field
+	&__field {
 		position: relative;
+		display: flex;
+		align-items: center;
+		gap: rem(8);
+		flex: 1 1 auto;
+		width: 100%;
+		min-width: 0;
+		// mobile — прежние удобные размеры, цвета как в макете
+		min-height: rem(44);
+		padding-left: rem(12);
+		background: #F6F6F5;
+		border-radius: rem(16);
+		overflow: hidden;
+
+		@media (min-width:$md3) {
+			max-width: rem(1073);
+			margin-left: auto;
+			min-height: 0;
+			height: rem(32);
+			padding: 0 rem(137) 0 rem(24);
+			overflow: visible;
+		}
+	}
+
+	// .search__icon
+	&__icon {
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: rem(20);
+		height: rem(20);
+		color: #271605;
+		line-height: 1;
+
+		&::before {
+			width: rem(20);
+			height: rem(20);
+			font-size: rem(20);
+		}
 	}
 
 	// .search__input
 	&__input {
-		padding-left: 2rem;
+		flex: 1 1 auto;
+		min-width: 0;
+		width: 100%;
+		padding: 0.5rem 0;
+		border: 0;
+		background: transparent;
+		outline: none;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 140%;
+		color: #271605;
+		caret-color: $accent;
+
+		@media (min-width:$md4) {
+			font-size: 1rem;
+		}
+
+		&::placeholder {
+			color: #271605;
+			opacity: 0.6;
+		}
+
+		@media (min-width:$md3) {
+			height: 100%;
+			padding: 0;
+			font-size: rem(12);
+			line-height: 1;
+		}
 	}
 
 	// .search__btn
 	&__btn {
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
+		// mobile — те же цвета, размер как у btn-sm
+		position: relative;
+		flex-shrink: 0;
+		align-self: stretch;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		padding: 0.45rem 1rem;
+		border: 0;
+		border-radius: rem(16);
+		background: #432821;
+		color: #fff;
+		font-size: 0.75rem;
+		font-weight: 600;
+		line-height: 1;
+		text-transform: uppercase;
+		white-space: nowrap;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: #271605;
+			}
+		}
+
+		&:active {
+			background: rgba($color: #432821, $alpha: .5);
+		}
+
+		@media (min-width:$md3) {
+			// desktop — 137×32 (Figma)
+			position: absolute;
+			top: 0;
+			right: 0;
+			align-self: auto;
+			width: rem(137);
+			height: 100%;
+			padding: 0 rem(48);
+			font-size: rem(12);
+		}
+	}
+
+	// .search__close
+	&__close {
+		flex-shrink: 0;
+		position: relative;
+		width: rem(32);
+		height: rem(32);
+		border: 0;
+		border-radius: rem(10);
+		background: transparent;
+		color: #fff;
+		cursor: pointer;
+
+		@media (min-width:$md3) {
+			width: rem(40);
+			height: rem(40);
+		}
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: rem(14);
+			height: rem(1.5);
+			background: currentColor;
+			border-radius: rem(1);
+		}
+
+		&::before {
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+
+		&::after {
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
 	}
 }

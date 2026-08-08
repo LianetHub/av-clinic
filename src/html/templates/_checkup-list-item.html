@@ -1,30 +1,21 @@
-<li class="info-list__item" @@if(typeof tags !== 'undefined'){data-tags="@@tags"}>
-    <div class="row">
-        <div class="col-md-6">
-            <a href="@@if(typeof slug !== 'undefined'){@@slug}" class="info-list__item-main">
-                <div class="info-list__item-title title-sm icon-arrow-right">
-                    @@title
-                </div>
-            </a>
-        </div>
-        <div class="col-md-6">
-            <div class="info-list__item-details icon-arrow-right">
-                @@if(typeof desc !=='undefined'){
-                    <p class="info-list__item-desc">@@desc</p>
-                }
-                @@if(typeof price !=='undefined'){
-                    <div class="info-list__item-price">стоимость <span>@@price</span> ₽</div>
-                }
-                @@if(typeof note !=='undefined'){
-                    <p class="info-list__item-note">@@note</p>
-                }
-                @@if(typeof price !=='undefined'){
-                    <div class="info-list__item-actions">
-                        <a href="#callback" data-fancybox class="info-list__item-action btn btn-sm btn-primary">Записаться</a>
-                        <a href="@@if(typeof slug !== 'undefined'){@@slug}" class="info-list__item-action btn btn-sm btn-secondary">Подробнее</a>
-                    </div>
-                }
+<li class="checkup-program" data-format="complex"@@if(typeof condition !== 'undefined'){ data-condition="@@condition"}@@if(typeof gender !== 'undefined'){ data-gender="@@gender"}>
+    <div class="checkup-program__row">
+        <a href="@@slug" class="checkup-program__title title-sm">@@title</a>
+        <div class="checkup-program__details">
+            @@if(typeof desc !== 'undefined'){
+                <p class="checkup-program__desc">@@desc</p>
+            }
+            @@if(typeof price !== 'undefined'){
+                <div class="checkup-program__price">стоимость <span>@@price</span> ₽</div>
+            }
+            @@if(typeof note !== 'undefined'){
+                <p class="checkup-program__note">@@note</p>
+            }
+            <div class="checkup-program__actions">
+                <a href="#callback" data-fancybox class="checkup-program__action btn btn-sm btn-primary">Записаться</a>
+                <a href="@@slug" class="checkup-program__action btn btn-sm btn-secondary">Подробнее</a>
             </div>
         </div>
+        <a href="@@slug" class="checkup-program__arrow icon-arrow-right" aria-label="Подробнее"></a>
     </div>
 </li>

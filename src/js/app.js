@@ -51,7 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.addEventListener("click", (e) => {
 		const target = e.target;
 
-		if (target.classList.contains("header__search-toggler")) {
+		if (target.closest(".search__close")) {
+			closeSearch();
+			searchInput?.blur();
+			return;
+		}
+
+		if (target.classList.contains("header__search-toggler") || target.closest(".header__search-toggler")) {
 			if (search.classList.contains("open")) {
 				closeSearch();
 			} else {

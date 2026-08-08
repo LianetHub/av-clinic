@@ -1,0 +1,21 @@
+<li class="checkup-program">
+    <div class="checkup-program__row">
+        <a href="@@slug" class="checkup-program__title title-sm">@@title</a>
+        <div class="checkup-program__details">
+            @@if(typeof desc !== 'undefined'){
+                <p class="checkup-program__desc">@@desc</p>
+            }
+            @@if(typeof price !== 'undefined'){
+                <div class="checkup-program__price">стоимость <span>@@price</span> ₽</div>
+            }
+            @@if(typeof note !== 'undefined'){
+                <p class="checkup-program__note">@@note</p>
+            }
+            <div class="checkup-program__actions">
+                <a href="#callback" data-fancybox class="checkup-program__action btn btn-sm btn-primary">Записаться</a>
+                <a href="@@slug" class="checkup-program__action btn btn-sm btn-secondary">Подробнее</a>
+            </div>
+        </div>
+        <a href="@@slug" class="checkup-program__arrow icon-arrow-right" aria-label="Подробнее"></a>
+    </div>
+</li>
